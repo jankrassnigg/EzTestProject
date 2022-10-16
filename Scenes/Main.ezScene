@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{16842432385057006245,4672938843884355077}}
-		u4 %Hash{3806762285251399722}
+		u4 %Hash{8459692381209974130}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -263,7 +263,7 @@ o
 		f %NearPlane{0}
 		f %Radius{0x00009642}
 		s %ReflectionProbeMode{"ezReflectionProbeMode::Static"}
-		b %ShowDebugInfo{1}
+		b %ShowDebugInfo{0}
 		b %ShowMipMaps{0}
 		b %SphereProjection{1}
 	}
