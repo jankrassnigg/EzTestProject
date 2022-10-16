@@ -11,7 +11,7 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"F:/D/GitHub/EzTestProject/PolyHaven/SchoolChair_01_2k.gltf/textures/SchoolChair_01_diff_2k.jpg"}
+			s{"PolyHaven/SchoolChair_01_2k.gltf/textures/SchoolChair_01_diff_2k.jpg"}
 		}
 		Uuid %DocumentID{u4{13925923843206964355,5711477483156795549}}
 		u4 %Hash{17865814193393210755}
@@ -41,7 +41,7 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"F:/D/GitHub/EzTestProject/PolyHaven/SchoolChair_01_2k.gltf/textures/SchoolChair_01_diff_2k.jpg"}
+		s %Input1{"PolyHaven/SchoolChair_01_2k.gltf/textures/SchoolChair_01_diff_2k.jpg"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}

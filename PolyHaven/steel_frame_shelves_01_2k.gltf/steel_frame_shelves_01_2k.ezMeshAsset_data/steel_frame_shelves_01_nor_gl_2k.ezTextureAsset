@@ -11,7 +11,7 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"F:/D/GitHub/EzTestProject/PolyHaven/steel_frame_shelves_01_2k.gltf/textures/steel_frame_shelves_01_nor_gl_2k.jpg"}
+			s{"PolyHaven/steel_frame_shelves_01_2k.gltf/textures/steel_frame_shelves_01_nor_gl_2k.jpg"}
 		}
 		Uuid %DocumentID{u4{4973556593398815151,5652656552174845130}}
 		u4 %Hash{3152544411318066588}
@@ -41,7 +41,7 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"F:/D/GitHub/EzTestProject/PolyHaven/steel_frame_shelves_01_2k.gltf/textures/steel_frame_shelves_01_nor_gl_2k.jpg"}
+		s %Input1{"PolyHaven/steel_frame_shelves_01_2k.gltf/textures/steel_frame_shelves_01_nor_gl_2k.jpg"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}

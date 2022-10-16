@@ -11,7 +11,7 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"F:/D/GitHub/EzTestProject/PolyHaven/coffee_table_round_01_2k.gltf/textures/coffee_table_round_01_diff_2k.jpg"}
+			s{"PolyHaven/coffee_table_round_01_2k.gltf/textures/coffee_table_round_01_diff_2k.jpg"}
 		}
 		Uuid %DocumentID{u4{14829168091542208425,5039703932147630153}}
 		u4 %Hash{13198116836207107725}
@@ -41,7 +41,7 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"F:/D/GitHub/EzTestProject/PolyHaven/coffee_table_round_01_2k.gltf/textures/coffee_table_round_01_diff_2k.jpg"}
+		s %Input1{"PolyHaven/coffee_table_round_01_2k.gltf/textures/coffee_table_round_01_diff_2k.jpg"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}

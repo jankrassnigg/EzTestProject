@@ -11,7 +11,7 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"F:/D/GitHub/EzTestProject/PolyHaven/fancy_picture_frame_01_2k.gltf/textures/fancy_picture_frame_01_nor_gl_2k.jpg"}
+			s{"PolyHaven/fancy_picture_frame_01_2k.gltf/textures/fancy_picture_frame_01_nor_gl_2k.jpg"}
 		}
 		Uuid %DocumentID{u4{10401425847403106953,5174250024809030511}}
 		u4 %Hash{12052962122497914894}
@@ -41,7 +41,7 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"F:/D/GitHub/EzTestProject/PolyHaven/fancy_picture_frame_01_2k.gltf/textures/fancy_picture_frame_01_nor_gl_2k.jpg"}
+		s %Input1{"PolyHaven/fancy_picture_frame_01_2k.gltf/textures/fancy_picture_frame_01_nor_gl_2k.jpg"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}

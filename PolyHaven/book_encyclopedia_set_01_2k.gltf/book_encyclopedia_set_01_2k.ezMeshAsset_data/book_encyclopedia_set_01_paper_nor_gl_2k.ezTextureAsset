@@ -11,7 +11,7 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"F:/D/GitHub/EzTestProject/PolyHaven/book_encyclopedia_set_01_2k.gltf/textures/book_encyclopedia_set_01_paper_nor_gl_2k.jpg"}
+			s{"PolyHaven/book_encyclopedia_set_01_2k.gltf/textures/book_encyclopedia_set_01_paper_nor_gl_2k.jpg"}
 		}
 		Uuid %DocumentID{u4{8979283010776733596,4840576578047671880}}
 		u4 %Hash{8670030944233703046}
@@ -41,7 +41,7 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"F:/D/GitHub/EzTestProject/PolyHaven/book_encyclopedia_set_01_2k.gltf/textures/book_encyclopedia_set_01_paper_nor_gl_2k.jpg"}
+		s %Input1{"PolyHaven/book_encyclopedia_set_01_2k.gltf/textures/book_encyclopedia_set_01_paper_nor_gl_2k.jpg"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}

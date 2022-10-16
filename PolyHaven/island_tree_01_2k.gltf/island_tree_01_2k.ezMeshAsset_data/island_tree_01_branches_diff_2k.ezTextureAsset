@@ -11,7 +11,7 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"F:/D/GitHub/EzTestProject/PolyHaven/island_tree_01_2k.gltf/textures/island_tree_01_branches_diff_2k.jpg"}
+			s{"PolyHaven/island_tree_01_2k.gltf/textures/island_tree_01_branches_diff_2k.jpg"}
 		}
 		Uuid %DocumentID{u4{3515256819528791221,5648102341024410546}}
 		u4 %Hash{1959755484656118408}
@@ -41,7 +41,7 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"F:/D/GitHub/EzTestProject/PolyHaven/island_tree_01_2k.gltf/textures/island_tree_01_branches_diff_2k.jpg"}
+		s %Input1{"PolyHaven/island_tree_01_2k.gltf/textures/island_tree_01_branches_diff_2k.jpg"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}

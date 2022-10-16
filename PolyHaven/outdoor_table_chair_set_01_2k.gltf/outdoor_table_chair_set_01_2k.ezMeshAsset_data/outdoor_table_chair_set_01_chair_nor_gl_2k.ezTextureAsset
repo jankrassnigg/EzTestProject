@@ -11,7 +11,7 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"F:/D/GitHub/EzTestProject/PolyHaven/outdoor_table_chair_set_01_2k.gltf/textures/outdoor_table_chair_set_01_chair_nor_gl_2k.jpg"}
+			s{"PolyHaven/outdoor_table_chair_set_01_2k.gltf/textures/outdoor_table_chair_set_01_chair_nor_gl_2k.jpg"}
 		}
 		Uuid %DocumentID{u4{2288775126455207613,5160927057747151272}}
 		u4 %Hash{10266830207260411712}
@@ -41,7 +41,7 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"F:/D/GitHub/EzTestProject/PolyHaven/outdoor_table_chair_set_01_2k.gltf/textures/outdoor_table_chair_set_01_chair_nor_gl_2k.jpg"}
+		s %Input1{"PolyHaven/outdoor_table_chair_set_01_2k.gltf/textures/outdoor_table_chair_set_01_chair_nor_gl_2k.jpg"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}

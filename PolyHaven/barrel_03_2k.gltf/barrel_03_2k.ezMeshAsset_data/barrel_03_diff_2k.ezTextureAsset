@@ -11,7 +11,7 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"F:/D/GitHub/EzTestProject/PolyHaven/barrel_03_2k.gltf/textures/barrel_03_diff_2k.jpg"}
+			s{"PolyHaven/barrel_03_2k.gltf/textures/barrel_03_diff_2k.jpg"}
 		}
 		Uuid %DocumentID{u4{14975960750766919343,5177959555517721318}}
 		u4 %Hash{12769048810002345378}
@@ -41,7 +41,7 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"F:/D/GitHub/EzTestProject/PolyHaven/barrel_03_2k.gltf/textures/barrel_03_diff_2k.jpg"}
+		s %Input1{"PolyHaven/barrel_03_2k.gltf/textures/barrel_03_diff_2k.jpg"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}

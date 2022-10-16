@@ -11,7 +11,7 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"F:/D/GitHub/EzTestProject/PolyHaven/sofa_03_2k.gltf/textures/sofa_03_diff_2k.jpg"}
+			s{"PolyHaven/sofa_03_2k.gltf/textures/sofa_03_diff_2k.jpg"}
 		}
 		Uuid %DocumentID{u4{6630779962269830060,5220997957598845557}}
 		u4 %Hash{9429393481005387013}
@@ -41,7 +41,7 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"F:/D/GitHub/EzTestProject/PolyHaven/sofa_03_2k.gltf/textures/sofa_03_diff_2k.jpg"}
+		s %Input1{"PolyHaven/sofa_03_2k.gltf/textures/sofa_03_diff_2k.jpg"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}

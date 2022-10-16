@@ -11,7 +11,7 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"F:/D/GitHub/EzTestProject/PolyHaven/modern_coffee_table_01_2k.gltf/textures/modern_coffee_table_01_nor_gl_2k.jpg"}
+			s{"PolyHaven/modern_coffee_table_01_2k.gltf/textures/modern_coffee_table_01_nor_gl_2k.jpg"}
 		}
 		Uuid %DocumentID{u4{5228193463003245999,5294993142778208156}}
 		u4 %Hash{1392511629194206661}
@@ -41,7 +41,7 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"F:/D/GitHub/EzTestProject/PolyHaven/modern_coffee_table_01_2k.gltf/textures/modern_coffee_table_01_nor_gl_2k.jpg"}
+		s %Input1{"PolyHaven/modern_coffee_table_01_2k.gltf/textures/modern_coffee_table_01_nor_gl_2k.jpg"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}

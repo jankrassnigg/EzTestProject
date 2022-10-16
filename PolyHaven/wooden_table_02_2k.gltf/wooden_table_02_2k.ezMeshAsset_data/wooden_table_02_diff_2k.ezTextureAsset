@@ -11,7 +11,7 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"F:/D/GitHub/EzTestProject/PolyHaven/wooden_table_02_2k.gltf/textures/wooden_table_02_diff_2k.jpg"}
+			s{"PolyHaven/wooden_table_02_2k.gltf/textures/wooden_table_02_diff_2k.jpg"}
 		}
 		Uuid %DocumentID{u4{4192744675386393762,4830612074741398605}}
 		u4 %Hash{10379808631833386398}
@@ -41,7 +41,7 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"F:/D/GitHub/EzTestProject/PolyHaven/wooden_table_02_2k.gltf/textures/wooden_table_02_diff_2k.jpg"}
+		s %Input1{"PolyHaven/wooden_table_02_2k.gltf/textures/wooden_table_02_diff_2k.jpg"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}
