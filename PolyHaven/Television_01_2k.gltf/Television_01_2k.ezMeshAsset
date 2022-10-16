@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/Television_01_2k.gltf/Television_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{9542528616758287544,5639706452953978803}}
-		u4 %Hash{5917415729669806647}
+		u4 %Hash{3689329159380029731}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -49,7 +49,7 @@ o
 		b %Cap2{1}
 		u2 %Detail{0}
 		u2 %Detail2{0}
-		b %FlipForwardDir{0}
+		b %FlipForwardDir{1}
 		f %Height{0x0000803F}
 		b %ImportMaterials{1}
 		VarArray %Materials

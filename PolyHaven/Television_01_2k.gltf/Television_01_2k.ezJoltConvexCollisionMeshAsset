@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/Television_01_2k.gltf/Television_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{11845777883035240838,4626934193041016576}}
-		u4 %Hash{13399694926000114728}
+		u4 %Hash{7200349233376856035}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -35,7 +35,7 @@ o
 	{
 		s %ConvexMeshType{"ezJoltConvexCollisionMeshType::ConvexHull"}
 		u1 %Detail{1}
-		b %FlipForwardDir{0}
+		b %FlipForwardDir{1}
 		f %Height{0x0000803F}
 		b %IsConvexMesh{1}
 		u2 %MaxConvexPieces{5}

@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/SchoolChair_01_2k.gltf/SchoolChair_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{9790019579666250940,4645828374068650528}}
-		u4 %Hash{751297888914786441}
+		u4 %Hash{5655784922802985209}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -49,7 +49,7 @@ o
 		b %Cap2{1}
 		u2 %Detail{0}
 		u2 %Detail2{0}
-		b %FlipForwardDir{0}
+		b %FlipForwardDir{1}
 		f %Height{0x0000803F}
 		b %ImportMaterials{1}
 		VarArray %Materials

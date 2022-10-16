@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/vintage_wooden_drawer_01_2k.gltf/vintage_wooden_drawer_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{7867052089377059217,4999681999217397017}}
-		u4 %Hash{854204166788818026}
+		u4 %Hash{34738095033251969}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -35,7 +35,7 @@ o
 	{
 		s %ConvexMeshType{"ezJoltConvexCollisionMeshType::ConvexHull"}
 		u1 %Detail{1}
-		b %FlipForwardDir{0}
+		b %FlipForwardDir{1}
 		f %Height{0x0000803F}
 		b %IsConvexMesh{1}
 		u2 %MaxConvexPieces{5}

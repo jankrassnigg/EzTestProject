@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/brass_pot_02_2k.gltf/brass_pot_02_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{13054680997672180132,4678542816149056152}}
-		u4 %Hash{9781402620451953699}
+		u4 %Hash{11056978413632984615}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -38,7 +38,7 @@ o
 		b %Cap2{1}
 		u2 %Detail{0}
 		u2 %Detail2{0}
-		b %FlipForwardDir{0}
+		b %FlipForwardDir{1}
 		f %Height{0x0000803F}
 		b %ImportMaterials{1}
 		VarArray %Materials

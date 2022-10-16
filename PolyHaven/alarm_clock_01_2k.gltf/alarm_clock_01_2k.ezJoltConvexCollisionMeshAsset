@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/alarm_clock_01_2k.gltf/alarm_clock_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{2719452324113040268,4705448751251966982}}
-		u4 %Hash{6318388557619670459}
+		u4 %Hash{5097876988170851727}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -54,7 +54,7 @@ o
 	{
 		s %ConvexMeshType{"ezJoltConvexCollisionMeshType::ConvexHull"}
 		u1 %Detail{1}
-		b %FlipForwardDir{0}
+		b %FlipForwardDir{1}
 		f %Height{0x0000803F}
 		b %IsConvexMesh{1}
 		u2 %MaxConvexPieces{5}

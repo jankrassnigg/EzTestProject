@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/treasure_chest_2k.gltf/treasure_chest_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{7773211336119483582,5242758193055516716}}
-		u4 %Hash{1540471230308091937}
+		u4 %Hash{3538105820534956378}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -49,7 +49,7 @@ o
 		b %Cap2{1}
 		u2 %Detail{0}
 		u2 %Detail2{0}
-		b %FlipForwardDir{0}
+		b %FlipForwardDir{1}
 		f %Height{0x0000803F}
 		b %ImportMaterials{1}
 		VarArray %Materials

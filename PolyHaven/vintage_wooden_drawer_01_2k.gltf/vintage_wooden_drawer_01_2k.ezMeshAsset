@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/vintage_wooden_drawer_01_2k.gltf/vintage_wooden_drawer_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{4587352293524502453,4744153238346332781}}
-		u4 %Hash{12825495365091626580}
+		u4 %Hash{5658938296525262222}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -38,7 +38,7 @@ o
 		b %Cap2{1}
 		u2 %Detail{0}
 		u2 %Detail2{0}
-		b %FlipForwardDir{0}
+		b %FlipForwardDir{1}
 		f %Height{0x0000803F}
 		b %ImportMaterials{1}
 		VarArray %Materials

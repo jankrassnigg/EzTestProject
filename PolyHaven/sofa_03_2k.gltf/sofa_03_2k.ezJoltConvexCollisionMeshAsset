@@ -11,7 +11,7 @@ o
 		s %AssetType{"Jolt_Colmesh_Convex"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{18345334139235906953,5056619727936520501}}
-		u4 %Hash{7995271888880296458}
+		u4 %Hash{3514841361837720150}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -29,10 +29,10 @@ o
 	{
 		s %ConvexMeshType{"ezJoltConvexCollisionMeshType::ConvexDecomposition"}
 		u1 %Detail{1}
-		b %FlipForwardDir{0}
+		b %FlipForwardDir{1}
 		f %Height{0x0000803F}
 		b %IsConvexMesh{1}
-		u2 %MaxConvexPieces{3}
+		u2 %MaxConvexPieces{4}
 		s %MeshFile{"PolyHaven/sofa_03_2k.gltf/sofa_03_2k.gltf"}
 		f %Radius{0x0000003F}
 		f %Radius2{0x0000003F}
