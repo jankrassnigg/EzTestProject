@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{16842432385057006245,4672938843884355077}}
-		u4 %Hash{10012582048724998296}
+		u4 %Hash{3806762285251399722}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -142,7 +142,7 @@ o
 			Uuid{u4{8825593601779902139,5486556145579982151}}
 		}
 		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0,0,0x00003040}}
+		Vec3 %LocalPosition{f{0,0,0x6190803F}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
@@ -263,7 +263,7 @@ o
 		f %NearPlane{0}
 		f %Radius{0x00009642}
 		s %ReflectionProbeMode{"ezReflectionProbeMode::Static"}
-		b %ShowDebugInfo{0}
+		b %ShowDebugInfo{1}
 		b %ShowMipMaps{0}
 		b %SphereProjection{1}
 	}

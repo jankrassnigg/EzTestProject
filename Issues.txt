@@ -8,3 +8,6 @@ importing wine_bottles_01_2k.gltf crashes editor
 asset import -> jolt has no icon
 texture paths are imported absolute
 import treasure chest hangs editor
+split ARM texture to occlusion/rough/metal
+asset import doesn't import roughness textures
+ARM texture support

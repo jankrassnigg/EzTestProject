@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{16849191026064454829,4804803414722459465}}
+	Uuid %id{u4{4587352293524502453,4744153238346332781}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -11,16 +11,15 @@ o
 		s %AssetType{"Mesh"}
 		VarArray %Dependencies
 		{
-			s{"PolyHaven/fancy_picture_frame_01_2k.gltf/fancy_picture_frame_01_2k.gltf"}
+			s{"PolyHaven/vintage_wooden_drawer_01_2k.gltf/vintage_wooden_drawer_01_2k.gltf"}
 		}
-		Uuid %DocumentID{u4{16849191026064454829,4804803414722459465}}
-		u4 %Hash{15297694147726264010}
+		Uuid %DocumentID{u4{4587352293524502453,4744153238346332781}}
+		u4 %Hash{12825495365091626580}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ c3cf70ab-120e-4fda-b71a-baad8c13626c }"}
-			s{"{ fbe1b232-5de7-4c2c-b27a-180e9df52ead }"}
+			s{"{ 2ad5347f-36ff-43cc-93da-2185d1fa6ddd }"}
 		}
 	}
 }
@@ -29,7 +28,7 @@ Objects
 {
 o
 {
-	Uuid %id{u4{3668373377798423438,4697964937839931491}}
+	Uuid %id{u4{14127097412265531274,5167632250643420888}}
 	s %t{"ezMeshAssetProperties"}
 	u3 %v{3}
 	p
@@ -39,15 +38,14 @@ o
 		b %Cap2{1}
 		u2 %Detail{0}
 		u2 %Detail2{0}
-		b %FlipForwardDir{1}
+		b %FlipForwardDir{0}
 		f %Height{0x0000803F}
 		b %ImportMaterials{1}
 		VarArray %Materials
 		{
-			Uuid{u4{4389506413873086380,4885979718992516509}}
-			Uuid{u4{7722549873924524944,4894369480455782913}}
+			Uuid{u4{16425407772476782502,5274357944677219112}}
 		}
-		s %MeshFile{"PolyHaven/fancy_picture_frame_01_2k.gltf/fancy_picture_frame_01_2k.gltf"}
+		s %MeshFile{"PolyHaven/vintage_wooden_drawer_01_2k.gltf/vintage_wooden_drawer_01_2k.gltf"}
 		s %NormalPrecision{"ezMeshNormalPrecision::_10Bit"}
 		s %PrimitiveType{"ezMeshPrimitive::File"}
 		f %Radius{0x0000003F}
@@ -62,24 +60,13 @@ o
 }
 o
 {
-	Uuid %id{u4{4389506413873086380,4885979718992516509}}
+	Uuid %id{u4{16425407772476782502,5274357944677219112}}
 	s %t{"ezMaterialResourceSlot"}
 	u3 %v{1}
 	p
 	{
-		s %Label{"fancy_picture_frame_01"}
-		s %Resource{"{ fbe1b232-5de7-4c2c-b27a-180e9df52ead }"}
-	}
-}
-o
-{
-	Uuid %id{u4{7722549873924524944,4894369480455782913}}
-	s %t{"ezMaterialResourceSlot"}
-	u3 %v{1}
-	p
-	{
-		s %Label{"fancy_picture_frame_01_canvas"}
-		s %Resource{"{ c3cf70ab-120e-4fda-b71a-baad8c13626c }"}
+		s %Label{"vintage_wooden_drawer_01"}
+		s %Resource{"{ 2ad5347f-36ff-43cc-93da-2185d1fa6ddd }"}
 	}
 }
 o
@@ -92,7 +79,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{3668373377798423438,4697964937839931491}}
+			Uuid{u4{14127097412265531274,5167632250643420888}}
 		}
 	}
 }
