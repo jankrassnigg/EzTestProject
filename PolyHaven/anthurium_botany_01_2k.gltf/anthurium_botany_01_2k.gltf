@@ -1,0 +1,548 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v1.7.33",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "mesh": 0,
+      "name": "anthurium_botany_01_a",
+      "translation": [
+        -1,
+        0,
+        0
+      ]
+    },
+    {
+      "mesh": 1,
+      "name": "anthurium_botany_01_b"
+    },
+    {
+      "mesh": 2,
+      "name": "anthurium_botany_04_d",
+      "translation": [
+        -1,
+        0,
+        -1
+      ]
+    },
+    {
+      "mesh": 3,
+      "name": "anthurium_botany_01_c",
+      "translation": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "mesh": 4,
+      "name": "anthurium_botany_05_e",
+      "translation": [
+        0,
+        0,
+        -1
+      ]
+    },
+    {
+      "mesh": 5,
+      "name": "anthurium_botany_06_f",
+      "translation": [
+        1,
+        0,
+        -1
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "alphaCutoff": 0.5,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "name": "anthurium_botany_01",
+      "normalTexture": {
+        "index": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0,
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Plane.016",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Plane.026",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Plane.032",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Plane.039",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 12,
+            "NORMAL": 13,
+            "TEXCOORD_0": 14
+          },
+          "indices": 15,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Plane.019",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 16,
+            "NORMAL": 17,
+            "TEXCOORD_0": 18
+          },
+          "indices": 19,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "name": "Plane.020",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 20,
+            "NORMAL": 21,
+            "TEXCOORD_0": 22
+          },
+          "indices": 23,
+          "material": 0
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/jpeg",
+      "name": "anthurium_botany_01_nor_gl",
+      "uri": "textures/anthurium_botany_01_nor_gl_2k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "anthurium_botany_01_diff",
+      "uri": "textures/anthurium_botany_01_diff_2k.jpg"
+    },
+    {
+      "mimeType": "image/jpeg",
+      "name": "anthurium_botany_01_rough",
+      "uri": "textures/anthurium_botany_01_arm_2k.jpg"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 9703,
+      "max": [
+        0.4767429530620575,
+        0.491083025932312,
+        0.6520127654075623
+      ],
+      "min": [
+        -0.4198586642742157,
+        -0.010460162535309792,
+        -0.49077996611595154
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 9703,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 9703,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 47424,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 9568,
+      "max": [
+        0.3789527714252472,
+        0.46555307507514954,
+        0.26650765538215637
+      ],
+      "min": [
+        -0.3782408833503723,
+        -0.006754738278687,
+        -0.3045084476470947
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 9568,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 9568,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 46632,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 6557,
+      "max": [
+        0.2326434701681137,
+        0.29747316241264343,
+        0.20564046502113342
+      ],
+      "min": [
+        -0.2486880123615265,
+        -0.004955824930220842,
+        -0.1457533985376358
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 6557,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 6557,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5123,
+      "count": 31080,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 12,
+      "componentType": 5126,
+      "count": 5656,
+      "max": [
+        0.37632912397384644,
+        0.3561249077320099,
+        0.31795385479927063
+      ],
+      "min": [
+        -0.2246183156967163,
+        -0.007083198055624962,
+        -0.33903226256370544
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 13,
+      "componentType": 5126,
+      "count": 5656,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 14,
+      "componentType": 5126,
+      "count": 5656,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 15,
+      "componentType": 5123,
+      "count": 27216,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 16,
+      "componentType": 5126,
+      "count": 4863,
+      "max": [
+        0.1160813644528389,
+        0.15633538365364075,
+        0.22224682569503784
+      ],
+      "min": [
+        -0.20385827124118805,
+        -0.003745077410712838,
+        -0.0668550580739975
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 17,
+      "componentType": 5126,
+      "count": 4863,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 18,
+      "componentType": 5126,
+      "count": 4863,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 19,
+      "componentType": 5123,
+      "count": 22992,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 20,
+      "componentType": 5126,
+      "count": 5570,
+      "max": [
+        0.18069294095039368,
+        0.1371111273765564,
+        0.17581713199615479
+      ],
+      "min": [
+        -0.13244472444057465,
+        -0.004064231179654598,
+        -0.111049585044384
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 21,
+      "componentType": 5126,
+      "count": 5570,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 22,
+      "componentType": 5126,
+      "count": 5570,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 23,
+      "componentType": 5123,
+      "count": 26112,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 116436,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 116436,
+      "byteOffset": 116436
+    },
+    {
+      "buffer": 0,
+      "byteLength": 77624,
+      "byteOffset": 232872
+    },
+    {
+      "buffer": 0,
+      "byteLength": 94848,
+      "byteOffset": 310496
+    },
+    {
+      "buffer": 0,
+      "byteLength": 114816,
+      "byteOffset": 405344
+    },
+    {
+      "buffer": 0,
+      "byteLength": 114816,
+      "byteOffset": 520160
+    },
+    {
+      "buffer": 0,
+      "byteLength": 76544,
+      "byteOffset": 634976
+    },
+    {
+      "buffer": 0,
+      "byteLength": 93264,
+      "byteOffset": 711520
+    },
+    {
+      "buffer": 0,
+      "byteLength": 78684,
+      "byteOffset": 804784
+    },
+    {
+      "buffer": 0,
+      "byteLength": 78684,
+      "byteOffset": 883468
+    },
+    {
+      "buffer": 0,
+      "byteLength": 52456,
+      "byteOffset": 962152
+    },
+    {
+      "buffer": 0,
+      "byteLength": 62160,
+      "byteOffset": 1014608
+    },
+    {
+      "buffer": 0,
+      "byteLength": 67872,
+      "byteOffset": 1076768
+    },
+    {
+      "buffer": 0,
+      "byteLength": 67872,
+      "byteOffset": 1144640
+    },
+    {
+      "buffer": 0,
+      "byteLength": 45248,
+      "byteOffset": 1212512
+    },
+    {
+      "buffer": 0,
+      "byteLength": 54432,
+      "byteOffset": 1257760
+    },
+    {
+      "buffer": 0,
+      "byteLength": 58356,
+      "byteOffset": 1312192
+    },
+    {
+      "buffer": 0,
+      "byteLength": 58356,
+      "byteOffset": 1370548
+    },
+    {
+      "buffer": 0,
+      "byteLength": 38904,
+      "byteOffset": 1428904
+    },
+    {
+      "buffer": 0,
+      "byteLength": 45984,
+      "byteOffset": 1467808
+    },
+    {
+      "buffer": 0,
+      "byteLength": 66840,
+      "byteOffset": 1513792
+    },
+    {
+      "buffer": 0,
+      "byteLength": 66840,
+      "byteOffset": 1580632
+    },
+    {
+      "buffer": 0,
+      "byteLength": 44560,
+      "byteOffset": 1647472
+    },
+    {
+      "buffer": 0,
+      "byteLength": 52224,
+      "byteOffset": 1692032
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1744256,
+      "uri": "anthurium_botany_01.bin"
+    }
+  ]
+}

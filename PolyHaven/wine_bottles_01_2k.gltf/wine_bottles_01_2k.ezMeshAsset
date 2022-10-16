@@ -1,0 +1,394 @@
+HeaderV2
+{
+o
+{
+	Uuid %id{u4{10965561667828230542,5189368877137231902}}
+	s %t{"ezAssetDocumentInfo"}
+	u3 %v{2}
+	s %n{"Header"}
+	p
+	{
+		s %AssetType{"Mesh"}
+		VarArray %Dependencies
+		{
+			s{"PolyHaven/wine_bottles_01_2k.gltf/wine_bottles_01_2k.gltf"}
+		}
+		Uuid %DocumentID{u4{10965561667828230542,5189368877137231902}}
+		u4 %Hash{17510988429580273662}
+		VarArray %MetaInfo{}
+		VarArray %Outputs{}
+		VarArray %References
+		{
+			s{"{ 10cdacdb-40e4-4a4a-9277-6633bf141b05 }"}
+			s{"{ 2bae51bc-c36e-4b5f-86ad-c45efd895600 }"}
+			s{"{ 2e8e02ce-4874-44b8-98d9-62c54199bcf1 }"}
+			s{"{ 5c6479f0-0478-409c-b100-2e76d1bf7cff }"}
+			s{"{ 60b9e946-797a-4bf8-ade5-9c29fff21197 }"}
+			s{"{ 67865e13-03c2-41aa-ada6-e6d8812a66f4 }"}
+			s{"{ 8c0b313b-970d-4627-9e49-4ac4f53af780 }"}
+			s{"{ a8bb2952-2b17-430b-8e84-669b661c96d8 }"}
+			s{"{ c9f959e7-8da8-4da1-93a2-9b084e82d258 }"}
+			s{"{ d98b178b-0f61-4959-b409-39cb5f44a207 }"}
+			s{"{ f23fe109-f8e1-4b5f-bc43-d85dc9291448 }"}
+			s{"{ fd9263f8-cf12-44fb-9ea6-a904e7f5715e }"}
+		}
+	}
+}
+}
+Objects
+{
+o
+{
+	Uuid %id{u4{17493476755146651269,4688645273860218538}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"wine_bottles_01_wine_light_red"}
+		s %Resource{"{ fd9263f8-cf12-44fb-9ea6-a904e7f5715e }"}
+	}
+}
+o
+{
+	Uuid %id{u4{10539587512920499883,4708993266883058215}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"wine_bottles_01_intertwine"}
+		s %Resource{"{ f23fe109-f8e1-4b5f-bc43-d85dc9291448 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{17498306071609252775,4846592656778984777}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"wine_bottles_01_glass_clear"}
+		s %Resource{"{ c9f959e7-8da8-4da1-93a2-9b084e82d258 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{10295378980312177034,4888549234098446425}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"wine_bottles_01_ftero_vinea_02"}
+		s %Resource{"{ 10cdacdb-40e4-4a4a-9277-6633bf141b05 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{769743995120824477,4897514484906147884}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"wine_bottles_01_glass_yellow"}
+		s %Resource{"{ 8c0b313b-970d-4627-9e49-4ac4f53af780 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{6803329064460684223,4935544951765665974}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"wine_bottles_01_glass_green"}
+		s %Resource{"{ 5c6479f0-0478-409c-b100-2e76d1bf7cff }"}
+	}
+}
+o
+{
+	Uuid %id{u4{14554589311516166560,4946218188590715886}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"wine_bottles_01_seal_cork"}
+		s %Resource{"{ d98b178b-0f61-4959-b409-39cb5f44a207 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8647158613395746483,5108704811716665973}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"wine_bottles_01_wine_clear"}
+		s %Resource{"{ 60b9e946-797a-4bf8-ade5-9c29fff21197 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{13860856234508178090,5246671717907033873}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"wine_bottles_01_glass_orange"}
+		s %Resource{"{ 2bae51bc-c36e-4b5f-86ad-c45efd895600 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{13803360219529184701,5256902109677081628}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"wine_bottles_01_ftero_vinea_01"}
+		s %Resource{"{ 67865e13-03c2-41aa-ada6-e6d8812a66f4 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{5658790275966480573,5302319118085219338}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"wine_bottles_01_clearwater"}
+		s %Resource{"{ 2e8e02ce-4874-44b8-98d9-62c54199bcf1 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1549585748655204240,5433819052344111709}}
+	s %t{"ezMeshAssetProperties"}
+	u3 %v{3}
+	p
+	{
+		Angle %Angle{f{0xDC0FC940}}
+		b %Cap{1}
+		b %Cap2{1}
+		u2 %Detail{0}
+		u2 %Detail2{0}
+		b %FlipForwardDir{0}
+		f %Height{0x0000803F}
+		b %ImportMaterials{1}
+		VarArray %Materials
+		{
+			Uuid{u4{13860856234508178090,5246671717907033873}}
+			Uuid{u4{14554589311516166560,4946218188590715886}}
+			Uuid{u4{6826266421568357562,5668152512621551988}}
+			Uuid{u4{10295378980312177034,4888549234098446425}}
+			Uuid{u4{769743995120824477,4897514484906147884}}
+			Uuid{u4{8647158613395746483,5108704811716665973}}
+			Uuid{u4{5658790275966480573,5302319118085219338}}
+			Uuid{u4{17498306071609252775,4846592656778984777}}
+			Uuid{u4{17493476755146651269,4688645273860218538}}
+			Uuid{u4{10539587512920499883,4708993266883058215}}
+			Uuid{u4{6803329064460684223,4935544951765665974}}
+			Uuid{u4{13803360219529184701,5256902109677081628}}
+		}
+		s %MeshFile{"PolyHaven/wine_bottles_01_2k.gltf/wine_bottles_01_2k.gltf"}
+		s %NormalPrecision{"ezMeshNormalPrecision::_10Bit"}
+		s %PrimitiveType{"ezMeshPrimitive::File"}
+		f %Radius{0x0000003F}
+		f %Radius2{0x0000003F}
+		b %RecalculateNormals{0}
+		b %RecalculateTangents{1}
+		s %RightDir{"ezBasisAxis::PositiveX"}
+		s %TexCoordPrecision{"ezMeshTexCoordPrecision::_16Bit"}
+		f %UniformScaling{0x0000803F}
+		s %UpDir{"ezBasisAxis::PositiveY"}
+	}
+}
+o
+{
+	Uuid %id{u4{6826266421568357562,5668152512621551988}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"wine_bottles_01_wine_red"}
+		s %Resource{"{ a8bb2952-2b17-430b-8e84-669b661c96d8 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{18096612296587978288,6449934965513159559}}
+	s %t{"ezDocumentRoot"}
+	u3 %v{1}
+	s %n{"ObjectTree"}
+	p
+	{
+		VarArray %Children
+		{
+			Uuid{u4{1549585748655204240,5433819052344111709}}
+		}
+	}
+}
+}
+Types
+{
+o
+{
+	Uuid %id{u4{3975990526721687754,926589309994965004}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::IsEnum|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezEnumBase"}
+		s %PluginName{"ezEditorPluginAssets"}
+		VarArray %Properties{}
+		s %TypeName{"ezMeshPrimitive"}
+		u3 %TypeSize{1}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{5578311699685810862,3953450409323753049}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezReflectedClass"}
+		s %PluginName{"ezEditorPluginAssets"}
+		VarArray %Properties{}
+		s %TypeName{"ezMeshAssetProperties"}
+		u3 %TypeSize{1240}
+		u3 %TypeVersion{3}
+	}
+}
+o
+{
+	Uuid %id{u4{6089094783765586323,8705960867921430659}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezDocumentRoot"}
+		u3 %TypeSize{72}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{7523378465055293707,11345788873737253128}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"ezEditorPluginAssets"}
+		VarArray %Properties{}
+		s %TypeName{"ezMaterialResourceSlot"}
+		u3 %TypeSize{136}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{3437852327385397451,11533535376753039907}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::IsEnum|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezMeshTexCoordPrecision"}
+		u3 %TypeSize{1}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{3566230308987241816,14467924040829974905}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::IsEnum|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezMeshNormalPrecision"}
+		u3 %TypeSize{1}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{2947336711354777548,15013008608905564043}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezEnumBase"}
+		u3 %TypeSize{1}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{14469700887475489738,16951777026318265606}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::IsEnum|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezBasisAxis"}
+		u3 %TypeSize{1}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{983387834180907111,17935407260904399048}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezReflectedClass"}
+		u3 %TypeSize{8}
+		u3 %TypeVersion{1}
+	}
+}
+}
