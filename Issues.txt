@@ -1,0 +1,2 @@
+Drag tree model into scene -> editor crashes
+Collision layers are not created right away, need to open/close dialog first
