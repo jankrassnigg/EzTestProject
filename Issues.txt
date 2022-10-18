@@ -7,3 +7,4 @@ asset import doesn't import roughness textures
 ARM texture support
 Katana convex hull generation fails
 character controller can't slide along bed
+lantern_chandelier mesh import has issues

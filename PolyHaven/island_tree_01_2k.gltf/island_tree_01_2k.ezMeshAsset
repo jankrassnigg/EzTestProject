@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/island_tree_01_2k.gltf/island_tree_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{11991335107905819327,4720629073697215889}}
-		u4 %Hash{7529509350239191740}
+		u4 %Hash{14217267649204989508}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -91,7 +91,7 @@ o
 		b %RecalculateTangents{1}
 		s %RightDir{"ezBasisAxis::PositiveX"}
 		s %TexCoordPrecision{"ezMeshTexCoordPrecision::_16Bit"}
-		f %UniformScaling{0x0000803F}
+		f %UniformScaling{0x00000040}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 	}
 }
