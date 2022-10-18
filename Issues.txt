@@ -5,3 +5,5 @@ import treasure chest hangs editor
 split ARM texture to occlusion/rough/metal
 asset import doesn't import roughness textures
 ARM texture support
+Katana convex hull generation fails
+character controller can't slide along bed
