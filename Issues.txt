@@ -1,12 +1,6 @@
-Drag tree/any model into scene -> editor crashes
-Collision layers are not created right away, need to open/close dialog first
 Transform sofa_03 crashes editor
-no part highlighting for collision mesh assets
-collision mesh -> change convex pieces -> preview mesh doesn't change
 kill process -> may not get back up, if scene / mesh open
 importing wine_bottles_01_2k.gltf crashes editor
-asset import -> jolt has no icon
-texture paths are imported absolute
 import treasure chest hangs editor
 split ARM texture to occlusion/rough/metal
 asset import doesn't import roughness textures

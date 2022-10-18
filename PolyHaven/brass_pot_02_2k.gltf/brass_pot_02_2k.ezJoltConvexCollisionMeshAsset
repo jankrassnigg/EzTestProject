@@ -14,10 +14,13 @@ o
 			s{"PolyHaven/brass_pot_02_2k.gltf/brass_pot_02_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{9712376825938734014,5432189500180883571}}
-		u4 %Hash{17304004940787172019}
+		u4 %Hash{9031479275905861120}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
-		VarArray %References{}
+		VarArray %References
+		{
+			s{"{ 72115f7a-5947-4a21-899f-868368bd41d7 }"}
+		}
 	}
 }
 }
@@ -40,6 +43,7 @@ o
 		f %Radius{0x0000003F}
 		f %Radius2{0x0000003F}
 		s %RightDir{"ezBasisAxis::PositiveX"}
+		s %Surface{"{ 72115f7a-5947-4a21-899f-868368bd41d7 }"}
 		VarArray %Surfaces
 		{
 			Uuid{u4{4372686948225799613,5122210373955229912}}
@@ -126,7 +130,7 @@ o
 		s %PluginName{"ezEditorPluginJolt"}
 		VarArray %Properties{}
 		s %TypeName{"ezJoltCollisionMeshAssetProperties"}
-		u3 %TypeSize{1160}
+		u3 %TypeSize{1224}
 		u3 %TypeVersion{1}
 	}
 }

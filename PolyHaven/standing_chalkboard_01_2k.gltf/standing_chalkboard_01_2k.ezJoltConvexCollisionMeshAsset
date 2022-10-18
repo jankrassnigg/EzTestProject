@@ -14,10 +14,13 @@ o
 			s{"PolyHaven/standing_chalkboard_01_2k.gltf/standing_chalkboard_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{14089636328105483667,4804381344221145774}}
-		u4 %Hash{17606171260520825866}
+		u4 %Hash{2654700840695553703}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
-		VarArray %References{}
+		VarArray %References
+		{
+			s{"{ 58d44330-37a1-4c9d-9fa2-0540a1d8ee90 }"}
+		}
 	}
 }
 }
@@ -62,6 +65,7 @@ o
 		f %Radius{0x0000003F}
 		f %Radius2{0x0000003F}
 		s %RightDir{"ezBasisAxis::PositiveX"}
+		s %Surface{"{ 58d44330-37a1-4c9d-9fa2-0540a1d8ee90 }"}
 		VarArray %Surfaces
 		{
 			Uuid{u4{11650733581090478499,5372643815158633816}}
@@ -138,7 +142,7 @@ o
 		s %PluginName{"ezEditorPluginJolt"}
 		VarArray %Properties{}
 		s %TypeName{"ezJoltCollisionMeshAssetProperties"}
-		u3 %TypeSize{1160}
+		u3 %TypeSize{1224}
 		u3 %TypeVersion{1}
 	}
 }

@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/barrel_03_2k.gltf/barrel_03_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{4317913132061657994,5671867174971024889}}
-		u4 %Hash{3842123099339048320}
+		u4 %Hash{16294742723390896977}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -43,6 +43,7 @@ o
 		f %Radius{0x0000003F}
 		f %Radius2{0x0000003F}
 		s %RightDir{"ezBasisAxis::PositiveX"}
+		s %Surface{"{ 72115f7a-5947-4a21-899f-868368bd41d7 }"}
 		VarArray %Surfaces
 		{
 			Uuid{u4{8345125316334998408,5144423156994738152}}
@@ -129,7 +130,7 @@ o
 		s %PluginName{"ezEditorPluginJolt"}
 		VarArray %Properties{}
 		s %TypeName{"ezJoltCollisionMeshAssetProperties"}
-		u3 %TypeSize{1160}
+		u3 %TypeSize{1224}
 		u3 %TypeVersion{1}
 	}
 }

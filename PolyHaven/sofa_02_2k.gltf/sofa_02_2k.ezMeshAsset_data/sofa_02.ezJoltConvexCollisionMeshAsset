@@ -11,7 +11,7 @@ o
 		s %AssetType{"Jolt_Colmesh_Convex"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{5559235985940869001,5329086686517294611}}
-		u4 %Hash{3008556016027254318}
+		u4 %Hash{15935301958712385163}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -51,6 +51,7 @@ o
 		f %Radius{0x0000003F}
 		f %Radius2{0x0000003F}
 		s %RightDir{"ezBasisAxis::PositiveX"}
+		s %Surface{"{ 56a944d9-3686-4730-8b7d-104d2f02e2b1 }"}
 		VarArray %Surfaces
 		{
 			Uuid{u4{12213000324008376711,4676298428896064950}}
@@ -126,7 +127,7 @@ o
 		s %PluginName{"ezEditorPluginJolt"}
 		VarArray %Properties{}
 		s %TypeName{"ezJoltCollisionMeshAssetProperties"}
-		u3 %TypeSize{1160}
+		u3 %TypeSize{1224}
 		u3 %TypeVersion{1}
 	}
 }

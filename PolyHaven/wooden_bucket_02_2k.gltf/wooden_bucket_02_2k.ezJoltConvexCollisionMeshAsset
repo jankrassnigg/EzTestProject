@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/wooden_bucket_02_2k.gltf/wooden_bucket_02_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{13401440902061971360,4640602931187743930}}
-		u4 %Hash{5292709221261091738}
+		u4 %Hash{4481237995036488420}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -43,6 +43,7 @@ o
 		f %Radius{0x0000003F}
 		f %Radius2{0x0000003F}
 		s %RightDir{"ezBasisAxis::PositiveX"}
+		s %Surface{"{ 58d44330-37a1-4c9d-9fa2-0540a1d8ee90 }"}
 		VarArray %Surfaces
 		{
 			Uuid{u4{2092770442899930786,5623006626410487044}}
@@ -129,7 +130,7 @@ o
 		s %PluginName{"ezEditorPluginJolt"}
 		VarArray %Properties{}
 		s %TypeName{"ezJoltCollisionMeshAssetProperties"}
-		u3 %TypeSize{1160}
+		u3 %TypeSize{1224}
 		u3 %TypeVersion{1}
 	}
 }

@@ -14,10 +14,13 @@ o
 			s{"PolyHaven/alarm_clock_01_2k.gltf/alarm_clock_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{2719452324113040268,4705448751251966982}}
-		u4 %Hash{5097876988170851727}
+		u4 %Hash{275436244612570121}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
-		VarArray %References{}
+		VarArray %References
+		{
+			s{"{ 72115f7a-5947-4a21-899f-868368bd41d7 }"}
+		}
 	}
 }
 }
@@ -62,6 +65,7 @@ o
 		f %Radius{0x0000003F}
 		f %Radius2{0x0000003F}
 		s %RightDir{"ezBasisAxis::PositiveX"}
+		s %Surface{"{ 72115f7a-5947-4a21-899f-868368bd41d7 }"}
 		VarArray %Surfaces
 		{
 			Uuid{u4{17075243835790180739,5214814813199818399}}
@@ -138,7 +142,7 @@ o
 		s %PluginName{"ezEditorPluginJolt"}
 		VarArray %Properties{}
 		s %TypeName{"ezJoltCollisionMeshAssetProperties"}
-		u3 %TypeSize{1160}
+		u3 %TypeSize{1224}
 		u3 %TypeVersion{1}
 	}
 }

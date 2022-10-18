@@ -14,10 +14,13 @@ o
 			s{"PolyHaven/coffee_table_round_01_2k.gltf/coffee_table_round_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{171607181543487884,5214619156215715801}}
-		u4 %Hash{17767359429460056633}
+		u4 %Hash{6199765762283794291}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
-		VarArray %References{}
+		VarArray %References
+		{
+			s{"{ 0afb67de-55a8-4d36-8eb0-c5cee5d4c18d }"}
+		}
 	}
 }
 }
@@ -40,6 +43,7 @@ o
 		f %Radius{0x0000003F}
 		f %Radius2{0x0000003F}
 		s %RightDir{"ezBasisAxis::PositiveX"}
+		s %Surface{"{ 0afb67de-55a8-4d36-8eb0-c5cee5d4c18d }"}
 		VarArray %Surfaces
 		{
 			Uuid{u4{5686544557189912485,5233818726931091503}}
@@ -126,7 +130,7 @@ o
 		s %PluginName{"ezEditorPluginJolt"}
 		VarArray %Properties{}
 		s %TypeName{"ezJoltCollisionMeshAssetProperties"}
-		u3 %TypeSize{1160}
+		u3 %TypeSize{1224}
 		u3 %TypeVersion{1}
 	}
 }
