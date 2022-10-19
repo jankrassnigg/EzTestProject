@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/modern_coffee_table_01_2k.gltf/modern_coffee_table_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{7792991546802356901,5243087384013014107}}
-		u4 %Hash{2843285489014145304}
+		u4 %Hash{1821392057673078867}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ eda9eb37-91c4-4a95-b65e-ceb885c670be }"}
+			s{"{ 4b598997-ed0c-4e13-b7aa-58c2d9a46124 }"}
 		}
 	}
 }
@@ -66,7 +66,7 @@ o
 	p
 	{
 		s %Label{"modern_coffee_table_01"}
-		s %Resource{"{ eda9eb37-91c4-4a95-b65e-ceb885c670be }"}
+		s %Resource{"{ 4b598997-ed0c-4e13-b7aa-58c2d9a46124 }"}
 	}
 }
 o

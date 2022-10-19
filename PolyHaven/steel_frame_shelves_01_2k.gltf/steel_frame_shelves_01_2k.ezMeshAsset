@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/steel_frame_shelves_01_2k.gltf/steel_frame_shelves_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{13369351805612272831,5026674568119406817}}
-		u4 %Hash{15998831569574870044}
+		u4 %Hash{2584204426245385284}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ b5eb624e-a9eb-49f7-8ccf-e8aad160a4e0 }"}
+			s{"{ 98839701-947d-4876-86b1-65d85c1c1024 }"}
 		}
 	}
 }
@@ -34,7 +34,7 @@ o
 	p
 	{
 		s %Label{"steel_frame_shelves_01"}
-		s %Resource{"{ b5eb624e-a9eb-49f7-8ccf-e8aad160a4e0 }"}
+		s %Resource{"{ 98839701-947d-4876-86b1-65d85c1c1024 }"}
 	}
 }
 o

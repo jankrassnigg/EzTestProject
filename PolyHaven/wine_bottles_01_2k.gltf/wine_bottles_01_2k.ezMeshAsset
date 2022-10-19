@@ -14,23 +14,23 @@ o
 			s{"PolyHaven/wine_bottles_01_2k.gltf/wine_bottles_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{10965561667828230542,5189368877137231902}}
-		u4 %Hash{17510988429580273662}
+		u4 %Hash{2143159127368229552}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 10cdacdb-40e4-4a4a-9277-6633bf141b05 }"}
-			s{"{ 2bae51bc-c36e-4b5f-86ad-c45efd895600 }"}
-			s{"{ 2e8e02ce-4874-44b8-98d9-62c54199bcf1 }"}
-			s{"{ 5c6479f0-0478-409c-b100-2e76d1bf7cff }"}
-			s{"{ 60b9e946-797a-4bf8-ade5-9c29fff21197 }"}
-			s{"{ 67865e13-03c2-41aa-ada6-e6d8812a66f4 }"}
-			s{"{ 8c0b313b-970d-4627-9e49-4ac4f53af780 }"}
-			s{"{ a8bb2952-2b17-430b-8e84-669b661c96d8 }"}
-			s{"{ c9f959e7-8da8-4da1-93a2-9b084e82d258 }"}
-			s{"{ d98b178b-0f61-4959-b409-39cb5f44a207 }"}
-			s{"{ f23fe109-f8e1-4b5f-bc43-d85dc9291448 }"}
-			s{"{ fd9263f8-cf12-44fb-9ea6-a904e7f5715e }"}
+			s{"{ 0b739998-4bd7-43e3-be5c-ab88c1053a64 }"}
+			s{"{ 268a931e-9ec2-4497-87e7-78e3f68b064e }"}
+			s{"{ 28c0ef7e-9abc-4df7-8f94-33433564e129 }"}
+			s{"{ 543b8d7e-9956-41f4-8382-008795db2752 }"}
+			s{"{ 669931fa-fd7f-4190-ade3-f40c43e82f38 }"}
+			s{"{ 6cd03fec-3b74-4437-a58c-52e782318788 }"}
+			s{"{ 77ebd645-8581-4353-9839-fba04c7024db }"}
+			s{"{ 9d8a15f5-87e3-4e20-8573-f9f792395ebc }"}
+			s{"{ b85deadb-1f01-437f-9d01-1761fbadfba3 }"}
+			s{"{ dd50fdbb-6e37-47d6-a670-3a0b7b2c5ce4 }"}
+			s{"{ fa0e49d4-0528-478a-a355-7d9f70a43eba }"}
+			s{"{ fa1d1746-9dd7-4bc7-ab4a-f490be0ebc7c }"}
 		}
 	}
 }
@@ -45,7 +45,7 @@ o
 	p
 	{
 		s %Label{"wine_bottles_01_wine_light_red"}
-		s %Resource{"{ fd9263f8-cf12-44fb-9ea6-a904e7f5715e }"}
+		s %Resource{"{ 669931fa-fd7f-4190-ade3-f40c43e82f38 }"}
 	}
 }
 o
@@ -56,7 +56,7 @@ o
 	p
 	{
 		s %Label{"wine_bottles_01_intertwine"}
-		s %Resource{"{ f23fe109-f8e1-4b5f-bc43-d85dc9291448 }"}
+		s %Resource{"{ 28c0ef7e-9abc-4df7-8f94-33433564e129 }"}
 	}
 }
 o
@@ -67,7 +67,7 @@ o
 	p
 	{
 		s %Label{"wine_bottles_01_glass_clear"}
-		s %Resource{"{ c9f959e7-8da8-4da1-93a2-9b084e82d258 }"}
+		s %Resource{"{ dd50fdbb-6e37-47d6-a670-3a0b7b2c5ce4 }"}
 	}
 }
 o
@@ -78,7 +78,7 @@ o
 	p
 	{
 		s %Label{"wine_bottles_01_ftero_vinea_02"}
-		s %Resource{"{ 10cdacdb-40e4-4a4a-9277-6633bf141b05 }"}
+		s %Resource{"{ b85deadb-1f01-437f-9d01-1761fbadfba3 }"}
 	}
 }
 o
@@ -89,7 +89,7 @@ o
 	p
 	{
 		s %Label{"wine_bottles_01_glass_yellow"}
-		s %Resource{"{ 8c0b313b-970d-4627-9e49-4ac4f53af780 }"}
+		s %Resource{"{ 9d8a15f5-87e3-4e20-8573-f9f792395ebc }"}
 	}
 }
 o
@@ -100,7 +100,7 @@ o
 	p
 	{
 		s %Label{"wine_bottles_01_glass_green"}
-		s %Resource{"{ 5c6479f0-0478-409c-b100-2e76d1bf7cff }"}
+		s %Resource{"{ 543b8d7e-9956-41f4-8382-008795db2752 }"}
 	}
 }
 o
@@ -111,7 +111,7 @@ o
 	p
 	{
 		s %Label{"wine_bottles_01_seal_cork"}
-		s %Resource{"{ d98b178b-0f61-4959-b409-39cb5f44a207 }"}
+		s %Resource{"{ 6cd03fec-3b74-4437-a58c-52e782318788 }"}
 	}
 }
 o
@@ -122,7 +122,7 @@ o
 	p
 	{
 		s %Label{"wine_bottles_01_wine_clear"}
-		s %Resource{"{ 60b9e946-797a-4bf8-ade5-9c29fff21197 }"}
+		s %Resource{"{ fa0e49d4-0528-478a-a355-7d9f70a43eba }"}
 	}
 }
 o
@@ -133,7 +133,7 @@ o
 	p
 	{
 		s %Label{"wine_bottles_01_glass_orange"}
-		s %Resource{"{ 2bae51bc-c36e-4b5f-86ad-c45efd895600 }"}
+		s %Resource{"{ fa1d1746-9dd7-4bc7-ab4a-f490be0ebc7c }"}
 	}
 }
 o
@@ -144,7 +144,7 @@ o
 	p
 	{
 		s %Label{"wine_bottles_01_ftero_vinea_01"}
-		s %Resource{"{ 67865e13-03c2-41aa-ada6-e6d8812a66f4 }"}
+		s %Resource{"{ 268a931e-9ec2-4497-87e7-78e3f68b064e }"}
 	}
 }
 o
@@ -155,7 +155,7 @@ o
 	p
 	{
 		s %Label{"wine_bottles_01_clearwater"}
-		s %Resource{"{ 2e8e02ce-4874-44b8-98d9-62c54199bcf1 }"}
+		s %Resource{"{ 0b739998-4bd7-43e3-be5c-ab88c1053a64 }"}
 	}
 }
 o
@@ -209,7 +209,7 @@ o
 	p
 	{
 		s %Label{"wine_bottles_01_wine_red"}
-		s %Resource{"{ a8bb2952-2b17-430b-8e84-669b661c96d8 }"}
+		s %Resource{"{ 77ebd645-8581-4353-9839-fba04c7024db }"}
 	}
 }
 o

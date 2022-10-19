@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/wooden_table_02_2k.gltf/wooden_table_02_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{6612636530548752046,5152716663579620644}}
-		u4 %Hash{12257414989443966210}
+		u4 %Hash{14045521377730724898}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 897b910f-496e-4cf0-b082-b18f27dfc613 }"}
+			s{"{ dc881f81-9d6c-45ca-a9cf-717a5282806f }"}
 		}
 	}
 }
@@ -34,7 +34,7 @@ o
 	p
 	{
 		s %Label{"wooden_table_02"}
-		s %Resource{"{ 897b910f-496e-4cf0-b082-b18f27dfc613 }"}
+		s %Resource{"{ dc881f81-9d6c-45ca-a9cf-717a5282806f }"}
 	}
 }
 o

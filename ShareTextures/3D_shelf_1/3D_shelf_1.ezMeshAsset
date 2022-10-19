@@ -14,12 +14,12 @@ o
 			s{"ShareTextures/3D_shelf_1/3D_shelf_1.fbx"}
 		}
 		Uuid %DocumentID{u4{2480818716422399400,4797692698602982560}}
-		u4 %Hash{7792100254333136344}
+		u4 %Hash{5680505041835180478}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 188c5dd6-5e20-4430-ad9e-2cf6e548da9d }"}
+			s{"{ ad85242e-be6b-4b68-bd37-424eeef58245 }"}
 		}
 	}
 }
@@ -66,7 +66,7 @@ o
 	p
 	{
 		s %Label{"Material.005"}
-		s %Resource{"{ 188c5dd6-5e20-4430-ad9e-2cf6e548da9d }"}
+		s %Resource{"{ ad85242e-be6b-4b68-bd37-424eeef58245 }"}
 	}
 }
 o

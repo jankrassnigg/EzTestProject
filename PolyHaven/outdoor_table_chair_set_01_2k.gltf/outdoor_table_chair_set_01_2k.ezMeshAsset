@@ -14,13 +14,13 @@ o
 			s{"PolyHaven/outdoor_table_chair_set_01_2k.gltf/outdoor_table_chair_set_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{2381162273044081840,5068851304923300773}}
-		u4 %Hash{8821485748109833334}
+		u4 %Hash{15996841535800602435}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 8344eead-c807-4051-bd55-77a44b45f394 }"}
-			s{"{ e3d19d42-4302-4721-874f-4b1d7cd51cac }"}
+			s{"{ 792584ea-37f2-428c-8b09-a66db639e5df }"}
+			s{"{ c560fbef-8888-425d-ba79-f77f610e0847 }"}
 		}
 	}
 }
@@ -35,7 +35,7 @@ o
 	p
 	{
 		s %Label{"outdoor_table_chair_set_01_chair"}
-		s %Resource{"{ 8344eead-c807-4051-bd55-77a44b45f394 }"}
+		s %Resource{"{ 792584ea-37f2-428c-8b09-a66db639e5df }"}
 	}
 }
 o
@@ -46,7 +46,7 @@ o
 	p
 	{
 		s %Label{"outdoor_table_chair_set_01_table"}
-		s %Resource{"{ e3d19d42-4302-4721-874f-4b1d7cd51cac }"}
+		s %Resource{"{ c560fbef-8888-425d-ba79-f77f610e0847 }"}
 	}
 }
 o

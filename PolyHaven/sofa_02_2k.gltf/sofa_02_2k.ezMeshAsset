@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/sofa_02_2k.gltf/sofa_02_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{11548368204344003753,4746247998132664660}}
-		u4 %Hash{6800280352438825389}
+		u4 %Hash{7618854001882522831}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ e9f99a6b-42ed-4022-9195-9d2fe12177ef }"}
+			s{"{ f7d0ddae-b438-46c3-8292-5f6705e9fa49 }"}
 		}
 	}
 }
@@ -66,7 +66,7 @@ o
 	p
 	{
 		s %Label{"sofa_02"}
-		s %Resource{"{ e9f99a6b-42ed-4022-9195-9d2fe12177ef }"}
+		s %Resource{"{ f7d0ddae-b438-46c3-8292-5f6705e9fa49 }"}
 	}
 }
 o

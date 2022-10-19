@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/wooden_bucket_02_2k.gltf/wooden_bucket_02_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{13239017003406439593,5566347503399170397}}
-		u4 %Hash{11296805951272906891}
+		u4 %Hash{9948495811410788679}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 5086871c-df76-4c5a-8696-b569400e6dbf }"}
+			s{"{ 702fc567-2ee7-445d-a2a9-0cbd41c6dea6 }"}
 		}
 	}
 }
@@ -34,7 +34,7 @@ o
 	p
 	{
 		s %Label{"wooden_bucket_02"}
-		s %Resource{"{ 5086871c-df76-4c5a-8696-b569400e6dbf }"}
+		s %Resource{"{ 702fc567-2ee7-445d-a2a9-0cbd41c6dea6 }"}
 	}
 }
 o

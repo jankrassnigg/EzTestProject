@@ -14,13 +14,13 @@ o
 			s{"PolyHaven/alarm_clock_01_2k.gltf/alarm_clock_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{17207683910554270652,5201642140951939912}}
-		u4 %Hash{5683943002588466558}
+		u4 %Hash{14352151367155370964}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 06433271-a83e-4e2f-a68c-10d830b1b14e }"}
-			s{"{ 988b3ef9-1a9e-4d92-ae5a-5086773da994 }"}
+			s{"{ 9a9d52e5-42e3-4f7c-bfc4-65b96c9dcbca }"}
+			s{"{ c914b14c-7637-4bad-8c2b-e494bfb81065 }"}
 		}
 	}
 }
@@ -35,7 +35,7 @@ o
 	p
 	{
 		s %Label{"alarm_clock_01"}
-		s %Resource{"{ 06433271-a83e-4e2f-a68c-10d830b1b14e }"}
+		s %Resource{"{ 9a9d52e5-42e3-4f7c-bfc4-65b96c9dcbca }"}
 	}
 }
 o
@@ -79,7 +79,7 @@ o
 	p
 	{
 		s %Label{"alarm_clock_01_glass"}
-		s %Resource{"{ 988b3ef9-1a9e-4d92-ae5a-5086773da994 }"}
+		s %Resource{"{ c914b14c-7637-4bad-8c2b-e494bfb81065 }"}
 	}
 }
 o

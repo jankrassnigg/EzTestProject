@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/wooden_stool_01_2k.gltf/wooden_stool_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{14001507680675507386,5157069847149213421}}
-		u4 %Hash{15019774412156217156}
+		u4 %Hash{112435354905812631}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 1de4bc80-0f41-4c3c-973b-b10e29d141c4 }"}
+			s{"{ 7bba8fb4-39b7-497c-82e1-20389b4c8fda }"}
 		}
 	}
 }
@@ -34,7 +34,7 @@ o
 	p
 	{
 		s %Label{"wooden_stool_01"}
-		s %Resource{"{ 1de4bc80-0f41-4c3c-973b-b10e29d141c4 }"}
+		s %Resource{"{ 7bba8fb4-39b7-497c-82e1-20389b4c8fda }"}
 	}
 }
 o

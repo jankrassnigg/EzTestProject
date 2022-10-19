@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{11674072950561254275,4820870878858697183}}
+	Uuid %id{u4{6644611134871150479,5067919771591091371}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -13,8 +13,8 @@ o
 		{
 			s{"ShareTextures/3D_shelf_1/3D_shelf_1.ezMeshAsset_data/Shelf_1_BaseColor-2K.png"}
 		}
-		Uuid %DocumentID{u4{11674072950561254275,4820870878858697183}}
-		u4 %Hash{18217258193202635166}
+		Uuid %DocumentID{u4{6644611134871150479,5067919771591091371}}
+		u4 %Hash{122686804700945180}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -25,7 +25,7 @@ Objects
 {
 o
 {
-	Uuid %id{u4{7132806954301302164,4912478972488537466}}
+	Uuid %id{u4{17824367216840771233,4647734745328358340}}
 	s %t{"ezTextureAssetProperties"}
 	u3 %v{5}
 	p
@@ -64,7 +64,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{7132806954301302164,4912478972488537466}}
+			Uuid{u4{17824367216840771233,4647734745328358340}}
 		}
 	}
 }

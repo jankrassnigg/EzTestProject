@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/anthurium_botany_01_2k.gltf/anthurium_botany_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{11014243248912845713,4800464930616343442}}
-		u4 %Hash{12155906027512646782}
+		u4 %Hash{9777943865349170851}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 6f5a68ed-aa17-4277-9c80-ee1cb41de78b }"}
+			s{"{ 719475dd-7aaf-4b2a-8ba9-9249daa60379 }"}
 		}
 	}
 }
@@ -66,7 +66,7 @@ o
 	p
 	{
 		s %Label{"anthurium_botany_01"}
-		s %Resource{"{ 6f5a68ed-aa17-4277-9c80-ee1cb41de78b }"}
+		s %Resource{"{ 719475dd-7aaf-4b2a-8ba9-9249daa60379 }"}
 	}
 }
 o

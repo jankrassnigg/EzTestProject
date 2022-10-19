@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/antique_ceramic_vase_01_2k.gltf/antique_ceramic_vase_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{5799225392456449727,5156662257241788877}}
-		u4 %Hash{15864060106855611340}
+		u4 %Hash{12429597092975499365}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 23fa2656-f194-4be3-ae4d-c0442e585c94 }"}
+			s{"{ cd9c1c6d-fd7c-4144-94b3-045c89093300 }"}
 		}
 	}
 }
@@ -66,7 +66,7 @@ o
 	p
 	{
 		s %Label{"antique_ceramic_vase_01"}
-		s %Resource{"{ 23fa2656-f194-4be3-ae4d-c0442e585c94 }"}
+		s %Resource{"{ cd9c1c6d-fd7c-4144-94b3-045c89093300 }"}
 	}
 }
 o

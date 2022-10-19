@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/barrel_03_2k.gltf/barrel_03_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{10201015002129638334,4807718151252381399}}
-		u4 %Hash{7882300205630135666}
+		u4 %Hash{11920723803826428177}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ c549e139-23f1-49ee-b1ed-c0f2766c9a3c }"}
+			s{"{ 2194fb2b-df08-402b-a3dd-2259e1234a81 }"}
 		}
 	}
 }
@@ -34,7 +34,7 @@ o
 	p
 	{
 		s %Label{"barrel_03"}
-		s %Resource{"{ c549e139-23f1-49ee-b1ed-c0f2766c9a3c }"}
+		s %Resource{"{ 2194fb2b-df08-402b-a3dd-2259e1234a81 }"}
 	}
 }
 o

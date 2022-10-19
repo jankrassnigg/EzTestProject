@@ -14,14 +14,14 @@ o
 			s{"PolyHaven/island_tree_01_2k.gltf/island_tree_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{11991335107905819327,4720629073697215889}}
-		u4 %Hash{14217267649204989508}
+		u4 %Hash{14114169647655064309}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ c6d04d9f-b3a9-4f3b-b1d3-cede191a9500 }"}
-			s{"{ d5c93313-84f8-4664-a173-e736cade32c2 }"}
-			s{"{ ddacfea3-013f-4db1-b6e4-19903b29ce4e }"}
+			s{"{ 28b0c3b6-f2a7-4335-8bae-0c9338d72064 }"}
+			s{"{ c14c0f30-9786-42e2-8c99-6ec20372089a }"}
+			s{"{ d4e956ea-bbdc-4771-b4a8-652be42cc809 }"}
 		}
 	}
 }
@@ -36,7 +36,7 @@ o
 	p
 	{
 		s %Label{"island_tree_01_leaves"}
-		s %Resource{"{ c6d04d9f-b3a9-4f3b-b1d3-cede191a9500 }"}
+		s %Resource{"{ c14c0f30-9786-42e2-8c99-6ec20372089a }"}
 	}
 }
 o
@@ -47,7 +47,7 @@ o
 	p
 	{
 		s %Label{"island_tree_01"}
-		s %Resource{"{ d5c93313-84f8-4664-a173-e736cade32c2 }"}
+		s %Resource{"{ d4e956ea-bbdc-4771-b4a8-652be42cc809 }"}
 	}
 }
 o
@@ -58,7 +58,7 @@ o
 	p
 	{
 		s %Label{"island_tree_01_branches"}
-		s %Resource{"{ ddacfea3-013f-4db1-b6e4-19903b29ce4e }"}
+		s %Resource{"{ 28b0c3b6-f2a7-4335-8bae-0c9338d72064 }"}
 	}
 }
 o

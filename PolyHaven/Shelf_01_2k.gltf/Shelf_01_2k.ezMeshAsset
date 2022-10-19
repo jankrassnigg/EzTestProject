@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/Shelf_01_2k.gltf/Shelf_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{5663183470765665164,4961790839984171171}}
-		u4 %Hash{8536985503966009979}
+		u4 %Hash{9240328875354373087}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ f5b50537-5294-4da3-89a6-a5ff10faade7 }"}
+			s{"{ 16e3b1d7-5f8f-44a8-9531-38dd68703ade }"}
 		}
 	}
 }
@@ -66,7 +66,7 @@ o
 	p
 	{
 		s %Label{"Shelf_01"}
-		s %Resource{"{ f5b50537-5294-4da3-89a6-a5ff10faade7 }"}
+		s %Resource{"{ 16e3b1d7-5f8f-44a8-9531-38dd68703ade }"}
 	}
 }
 o

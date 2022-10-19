@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{8903816022807745448,4932647903586911990}}
+	Uuid %id{u4{1025855768967514297,4824026906860961400}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -11,10 +11,10 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"ShareTextures/3D_shelf_1/3D_shelf_1.ezMeshAsset_data/Shelf_1_Metallic-2K.png"}
+			s{"PolyHaven/island_tree_01_2k.gltf/textures/island_tree_01_branches_arm_2k.jpg"}
 		}
-		Uuid %DocumentID{u4{8903816022807745448,4932647903586911990}}
-		u4 %Hash{2663679717226061866}
+		Uuid %DocumentID{u4{1025855768967514297,4824026906860961400}}
+		u4 %Hash{13804124863030320563}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -25,7 +25,7 @@ Objects
 {
 o
 {
-	Uuid %id{u4{8516943702951406760,5404340470936338944}}
+	Uuid %id{u4{6164470404846071176,5433948970578653871}}
 	s %t{"ezTextureAssetProperties"}
 	u3 %v{5}
 	p
@@ -35,13 +35,13 @@ o
 		s %AddressModeW{"ezImageAddressMode::Repeat"}
 		f %AlphaThreshold{0x0000003F}
 		f %CVarResScale{0x0000803F}
-		s %ChannelMapping{"ezTexture2DChannelMappingEnum::R1"}
+		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
 		s %CompressionMode{"ezTexConvCompressionMode::Medium"}
 		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"ShareTextures/3D_shelf_1/3D_shelf_1.ezMeshAsset_data/Shelf_1_Metallic-2K.png"}
+		s %Input1{"PolyHaven/island_tree_01_2k.gltf/textures/island_tree_01_branches_arm_2k.jpg"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}
@@ -50,7 +50,7 @@ o
 		b %PremultipliedAlpha{0}
 		b %PreserveAlphaCoverage{0}
 		s %Resolution{"ezTexture2DResolution::Fixed256x256"}
-		s %TextureFilter{"ezTextureFilterSetting::LowQuality"}
+		s %TextureFilter{"ezTextureFilterSetting::DefaultQuality"}
 		s %Usage{"ezTexConvUsage::Linear"}
 	}
 }
@@ -64,7 +64,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{8516943702951406760,5404340470936338944}}
+			Uuid{u4{6164470404846071176,5433948970578653871}}
 		}
 	}
 }

@@ -14,13 +14,13 @@ o
 			s{"PolyHaven/fancy_picture_frame_01_2k.gltf/fancy_picture_frame_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{16849191026064454829,4804803414722459465}}
-		u4 %Hash{15297694147726264010}
+		u4 %Hash{10734164011533009480}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ c3cf70ab-120e-4fda-b71a-baad8c13626c }"}
-			s{"{ fbe1b232-5de7-4c2c-b27a-180e9df52ead }"}
+			s{"{ 33b8294a-b8b1-4987-ac7d-8d504bad5110 }"}
+			s{"{ 8431c047-c417-4ace-8f32-16b324c29cc8 }"}
 		}
 	}
 }
@@ -68,7 +68,7 @@ o
 	p
 	{
 		s %Label{"fancy_picture_frame_01"}
-		s %Resource{"{ fbe1b232-5de7-4c2c-b27a-180e9df52ead }"}
+		s %Resource{"{ 33b8294a-b8b1-4987-ac7d-8d504bad5110 }"}
 	}
 }
 o
@@ -79,7 +79,7 @@ o
 	p
 	{
 		s %Label{"fancy_picture_frame_01_canvas"}
-		s %Resource{"{ c3cf70ab-120e-4fda-b71a-baad8c13626c }"}
+		s %Resource{"{ 8431c047-c417-4ace-8f32-16b324c29cc8 }"}
 	}
 }
 o

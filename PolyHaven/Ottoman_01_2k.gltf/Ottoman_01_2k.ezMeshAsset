@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/Ottoman_01_2k.gltf/Ottoman_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{6386704224427327904,4692066099512168936}}
-		u4 %Hash{9317856506927452648}
+		u4 %Hash{1374570720383044436}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 4d117e73-8838-4e5f-9388-0c511cd583df }"}
+			s{"{ c91784ca-1876-4ade-b735-8408c8b1c067 }"}
 		}
 	}
 }
@@ -34,7 +34,7 @@ o
 	p
 	{
 		s %Label{"Ottoman_01"}
-		s %Resource{"{ 4d117e73-8838-4e5f-9388-0c511cd583df }"}
+		s %Resource{"{ c91784ca-1876-4ade-b735-8408c8b1c067 }"}
 	}
 }
 o

@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/wine_barrel_01_2k.gltf/wine_barrel_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{2531947851222585492,5646990964906982765}}
-		u4 %Hash{3892274488563200809}
+		u4 %Hash{3094782876937988064}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 2e072f46-f1ad-47b2-954a-8cc249a02124 }"}
+			s{"{ 52cae32f-9d4c-4c6b-8af2-23bb41bbf95f }"}
 		}
 	}
 }
@@ -34,7 +34,7 @@ o
 	p
 	{
 		s %Label{"wine_barrel_01"}
-		s %Resource{"{ 2e072f46-f1ad-47b2-954a-8cc249a02124 }"}
+		s %Resource{"{ 52cae32f-9d4c-4c6b-8af2-23bb41bbf95f }"}
 	}
 }
 o

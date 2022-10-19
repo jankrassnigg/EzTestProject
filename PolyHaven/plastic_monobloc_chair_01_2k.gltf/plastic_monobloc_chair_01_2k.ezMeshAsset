@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/plastic_monobloc_chair_01_2k.gltf/plastic_monobloc_chair_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{3516637269894756014,4800285312335037259}}
-		u4 %Hash{14393860756831987201}
+		u4 %Hash{11657927063369302318}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ e4fbca38-94c4-432a-a25b-076ad0c245d4 }"}
+			s{"{ 214ddbc2-b6d2-4ad4-888f-7cb466b6c98b }"}
 		}
 	}
 }
@@ -34,7 +34,7 @@ o
 	p
 	{
 		s %Label{"plastic_monobloc_chair_01"}
-		s %Resource{"{ e4fbca38-94c4-432a-a25b-076ad0c245d4 }"}
+		s %Resource{"{ 214ddbc2-b6d2-4ad4-888f-7cb466b6c98b }"}
 	}
 }
 o

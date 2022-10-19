@@ -14,14 +14,14 @@ o
 			s{"PolyHaven/lantern_chandelier_01_2k.gltf/lantern_chandelier_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{6375532494555178404,5733979029623175090}}
-		u4 %Hash{14373510319285040301}
+		u4 %Hash{533831496751474223}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 741ef50c-99fc-4f26-a7fb-4189d0b8b76f }"}
-			s{"{ 97b9225b-7730-4664-b086-c106a074096e }"}
-			s{"{ e73c0b12-3f60-4fe7-83a4-5256b6eaee7c }"}
+			s{"{ 49353124-9f51-431a-a98a-2df90aaa2aec }"}
+			s{"{ 8ec7cbae-2beb-4f4a-8416-35cec9a7968a }"}
+			s{"{ b1b5b675-1fda-4349-a8e1-ee4e6328a112 }"}
 		}
 	}
 }
@@ -36,7 +36,7 @@ o
 	p
 	{
 		s %Label{"lantern_chandelier_01_lamp"}
-		s %Resource{"{ e73c0b12-3f60-4fe7-83a4-5256b6eaee7c }"}
+		s %Resource{"{ 49353124-9f51-431a-a98a-2df90aaa2aec }"}
 	}
 }
 o
@@ -81,7 +81,7 @@ o
 	p
 	{
 		s %Label{"lantern_chandelier_01_glass"}
-		s %Resource{"{ 741ef50c-99fc-4f26-a7fb-4189d0b8b76f }"}
+		s %Resource{"{ b1b5b675-1fda-4349-a8e1-ee4e6328a112 }"}
 	}
 }
 o
@@ -92,7 +92,7 @@ o
 	p
 	{
 		s %Label{"lantern_chandelier_01"}
-		s %Resource{"{ 97b9225b-7730-4664-b086-c106a074096e }"}
+		s %Resource{"{ 8ec7cbae-2beb-4f4a-8416-35cec9a7968a }"}
 	}
 }
 o

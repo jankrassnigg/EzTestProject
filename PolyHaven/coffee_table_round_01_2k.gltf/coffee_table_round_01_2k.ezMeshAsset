@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/coffee_table_round_01_2k.gltf/coffee_table_round_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{5691732539966318769,5063677401297419429}}
-		u4 %Hash{2438270974523901072}
+		u4 %Hash{12731018343120157313}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 431f01c0-c7cd-426b-9a2f-b44ffc0e479a }"}
+			s{"{ 3c17e08e-4484-47c5-b5ff-cba5c3b871ee }"}
 		}
 	}
 }
@@ -34,7 +34,7 @@ o
 	p
 	{
 		s %Label{"coffee_table_round_01"}
-		s %Resource{"{ 431f01c0-c7cd-426b-9a2f-b44ffc0e479a }"}
+		s %Resource{"{ 3c17e08e-4484-47c5-b5ff-cba5c3b871ee }"}
 	}
 }
 o

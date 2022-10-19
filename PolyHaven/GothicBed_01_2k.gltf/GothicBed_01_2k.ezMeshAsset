@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/GothicBed_01_2k.gltf/GothicBed_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{6684668649033054390,4773666746483865108}}
-		u4 %Hash{10708227220789847187}
+		u4 %Hash{3933848612245871264}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 6181e411-8103-4384-b7a6-7a0b9fe9854a }"}
+			s{"{ c060af93-272a-41fd-bcfb-3341acebbd3e }"}
 		}
 	}
 }
@@ -66,7 +66,7 @@ o
 	p
 	{
 		s %Label{"GothicBed_01"}
-		s %Resource{"{ 6181e411-8103-4384-b7a6-7a0b9fe9854a }"}
+		s %Resource{"{ c060af93-272a-41fd-bcfb-3341acebbd3e }"}
 	}
 }
 o

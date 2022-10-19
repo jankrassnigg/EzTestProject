@@ -14,13 +14,13 @@ o
 			s{"PolyHaven/book_encyclopedia_set_01_2k.gltf/book_encyclopedia_set_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{2182870431002002852,5098238921101226530}}
-		u4 %Hash{2881508803438115809}
+		u4 %Hash{18152536563803388880}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 651bc682-cf67-47d1-bb5a-857b349ad017 }"}
-			s{"{ c645e65a-912c-44ed-b7f2-ba6ff2216407 }"}
+			s{"{ 4f51af69-cb49-432f-917d-ed8e3ece8fda }"}
+			s{"{ 537d2e92-0b8e-41cb-845e-09fab419d1b9 }"}
 		}
 	}
 }
@@ -35,7 +35,7 @@ o
 	p
 	{
 		s %Label{"book_encyclopedia_set_01_paper"}
-		s %Resource{"{ 651bc682-cf67-47d1-bb5a-857b349ad017 }"}
+		s %Resource{"{ 4f51af69-cb49-432f-917d-ed8e3ece8fda }"}
 	}
 }
 o
@@ -46,7 +46,7 @@ o
 	p
 	{
 		s %Label{"book_encyclopedia_set_01_cover"}
-		s %Resource{"{ c645e65a-912c-44ed-b7f2-ba6ff2216407 }"}
+		s %Resource{"{ 537d2e92-0b8e-41cb-845e-09fab419d1b9 }"}
 	}
 }
 o

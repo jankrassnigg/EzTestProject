@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{18286891837605814930,4849275946896762091}}
+	Uuid %id{u4{2079478914775191705,5393630025529723076}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -13,8 +13,8 @@ o
 		{
 			s{"ShareTextures/3D_shelf_1/3D_shelf_1.ezMeshAsset_data/Shelf_1_AO-2K.png"}
 		}
-		Uuid %DocumentID{u4{18286891837605814930,4849275946896762091}}
-		u4 %Hash{15021577265404905822}
+		Uuid %DocumentID{u4{2079478914775191705,5393630025529723076}}
+		u4 %Hash{7538854764947529780}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -25,7 +25,7 @@ Objects
 {
 o
 {
-	Uuid %id{u4{16668182426768180159,4967844686320633989}}
+	Uuid %id{u4{10432813961175531392,5487966843863645665}}
 	s %t{"ezTextureAssetProperties"}
 	u3 %v{5}
 	p
@@ -64,7 +64,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{16668182426768180159,4967844686320633989}}
+			Uuid{u4{10432813961175531392,5487966843863645665}}
 		}
 	}
 }

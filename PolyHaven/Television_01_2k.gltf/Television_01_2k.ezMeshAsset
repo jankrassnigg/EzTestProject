@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/Television_01_2k.gltf/Television_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{9542528616758287544,5639706452953978803}}
-		u4 %Hash{3689329159380029731}
+		u4 %Hash{14561449515154217773}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ c0a2e090-1c3c-41fe-9f7e-503f38b125d2 }"}
+			s{"{ 3085b218-0125-4a9c-a7f9-ab9cd5ca223d }"}
 		}
 	}
 }
@@ -34,7 +34,7 @@ o
 	p
 	{
 		s %Label{"Television_01"}
-		s %Resource{"{ c0a2e090-1c3c-41fe-9f7e-503f38b125d2 }"}
+		s %Resource{"{ 3085b218-0125-4a9c-a7f9-ab9cd5ca223d }"}
 	}
 }
 o

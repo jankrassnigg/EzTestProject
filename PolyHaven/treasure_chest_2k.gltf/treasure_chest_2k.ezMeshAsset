@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/treasure_chest_2k.gltf/treasure_chest_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{7773211336119483582,5242758193055516716}}
-		u4 %Hash{3538105820534956378}
+		u4 %Hash{15375338714087100287}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 99435710-9c12-484e-a130-f96071620157 }"}
+			s{"{ f73fcdef-626f-4ff3-911d-8968874020c1 }"}
 		}
 	}
 }
@@ -34,7 +34,7 @@ o
 	p
 	{
 		s %Label{"treasure_chest"}
-		s %Resource{"{ 99435710-9c12-484e-a130-f96071620157 }"}
+		s %Resource{"{ f73fcdef-626f-4ff3-911d-8968874020c1 }"}
 	}
 }
 o

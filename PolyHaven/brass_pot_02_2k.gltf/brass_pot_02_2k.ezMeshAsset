@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/brass_pot_02_2k.gltf/brass_pot_02_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{13054680997672180132,4678542816149056152}}
-		u4 %Hash{11056978413632984615}
+		u4 %Hash{15085095866078314714}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ d97376cd-e696-49d6-9336-b195618d9568 }"}
+			s{"{ ed323312-59db-4576-9a50-bb5414597777 }"}
 		}
 	}
 }
@@ -66,7 +66,7 @@ o
 	p
 	{
 		s %Label{"brass_pot_02"}
-		s %Resource{"{ d97376cd-e696-49d6-9336-b195618d9568 }"}
+		s %Resource{"{ ed323312-59db-4576-9a50-bb5414597777 }"}
 	}
 }
 o

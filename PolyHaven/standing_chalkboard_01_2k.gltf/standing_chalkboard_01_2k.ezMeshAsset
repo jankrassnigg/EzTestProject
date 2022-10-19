@@ -14,13 +14,13 @@ o
 			s{"PolyHaven/standing_chalkboard_01_2k.gltf/standing_chalkboard_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{1482907502604303537,5515011414808323725}}
-		u4 %Hash{6464292016829090059}
+		u4 %Hash{17384544523020720330}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 7f514ffb-baa2-424a-a418-9620c4d8ce77 }"}
-			s{"{ cfceeab8-0c49-462f-8c1b-059302394497 }"}
+			s{"{ 56678286-ada0-4fc8-9422-9d953f5b3a3c }"}
+			s{"{ a6a63fb4-1827-47e9-a9a2-d4acafc92ea4 }"}
 		}
 	}
 }
@@ -35,7 +35,7 @@ o
 	p
 	{
 		s %Label{"standing_chalkboard_01_frame"}
-		s %Resource{"{ cfceeab8-0c49-462f-8c1b-059302394497 }"}
+		s %Resource{"{ a6a63fb4-1827-47e9-a9a2-d4acafc92ea4 }"}
 	}
 }
 o
@@ -46,7 +46,7 @@ o
 	p
 	{
 		s %Label{"standing_chalkboard_01_board"}
-		s %Resource{"{ 7f514ffb-baa2-424a-a418-9620c4d8ce77 }"}
+		s %Resource{"{ 56678286-ada0-4fc8-9422-9d953f5b3a3c }"}
 	}
 }
 o

@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/vintage_wooden_drawer_01_2k.gltf/vintage_wooden_drawer_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{4587352293524502453,4744153238346332781}}
-		u4 %Hash{5658938296525262222}
+		u4 %Hash{2615046588998603221}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 2ad5347f-36ff-43cc-93da-2185d1fa6ddd }"}
+			s{"{ b8f8b26a-c3e5-4d76-9294-864e5c5181eb }"}
 		}
 	}
 }
@@ -66,7 +66,7 @@ o
 	p
 	{
 		s %Label{"vintage_wooden_drawer_01"}
-		s %Resource{"{ 2ad5347f-36ff-43cc-93da-2185d1fa6ddd }"}
+		s %Resource{"{ b8f8b26a-c3e5-4d76-9294-864e5c5181eb }"}
 	}
 }
 o

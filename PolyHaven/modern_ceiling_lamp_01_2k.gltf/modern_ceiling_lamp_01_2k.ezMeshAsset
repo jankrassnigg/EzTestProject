@@ -14,14 +14,14 @@ o
 			s{"PolyHaven/modern_ceiling_lamp_01_2k.gltf/modern_ceiling_lamp_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{11446890131185073792,5478983166272556352}}
-		u4 %Hash{4454341095793273866}
+		u4 %Hash{14368473501957898816}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 2ad5d9a4-6982-45b3-af9b-15c1bc75148f }"}
-			s{"{ 3b019e69-1748-4bcf-8e43-bc978e02cc28 }"}
-			s{"{ 6ba3bf73-c149-4916-b93e-8523c65085c2 }"}
+			s{"{ 23d241a1-9401-4b85-9e2a-0501d75cd716 }"}
+			s{"{ 4115d2d4-749b-446c-a412-0c9c042b8dcf }"}
+			s{"{ cbfe767d-d621-4554-a543-526d96b79eba }"}
 		}
 	}
 }
@@ -36,7 +36,7 @@ o
 	p
 	{
 		s %Label{"modern_ceiling_globe"}
-		s %Resource{"{ 2ad5d9a4-6982-45b3-af9b-15c1bc75148f }"}
+		s %Resource{"{ 23d241a1-9401-4b85-9e2a-0501d75cd716 }"}
 	}
 }
 o
@@ -47,7 +47,7 @@ o
 	p
 	{
 		s %Label{"modern_ceiling_lamp_01"}
-		s %Resource{"{ 6ba3bf73-c149-4916-b93e-8523c65085c2 }"}
+		s %Resource{"{ cbfe767d-d621-4554-a543-526d96b79eba }"}
 	}
 }
 o
@@ -58,7 +58,7 @@ o
 	p
 	{
 		s %Label{"modern_ceiling_lamp_01_glass"}
-		s %Resource{"{ 3b019e69-1748-4bcf-8e43-bc978e02cc28 }"}
+		s %Resource{"{ 4115d2d4-749b-446c-a412-0c9c042b8dcf }"}
 	}
 }
 o

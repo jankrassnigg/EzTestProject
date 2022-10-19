@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/painted_wooden_chair_01_2k.gltf/painted_wooden_chair_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{1606150277579581827,5530003353541386721}}
-		u4 %Hash{5069839372151300541}
+		u4 %Hash{539722601174924289}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 0fca936c-f6c1-45cb-bb68-6e731b8f3af0 }"}
+			s{"{ bb194fb1-80dc-4f5a-9f52-08c0e6e209b3 }"}
 		}
 	}
 }
@@ -66,7 +66,7 @@ o
 	p
 	{
 		s %Label{"painted_wooden_chair_01"}
-		s %Resource{"{ 0fca936c-f6c1-45cb-bb68-6e731b8f3af0 }"}
+		s %Resource{"{ bb194fb1-80dc-4f5a-9f52-08c0e6e209b3 }"}
 	}
 }
 o

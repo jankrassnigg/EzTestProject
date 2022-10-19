@@ -1,10 +1,4 @@
-Transform sofa_03 crashes editor
 kill process -> may not get back up, if scene / mesh open
-importing wine_bottles_01_2k.gltf crashes editor
-import treasure chest hangs editor
-split ARM texture to occlusion/rough/metal
-asset import doesn't import roughness textures
-ARM texture support
 Katana convex hull generation fails
 character controller can't slide along bed
-lantern_chandelier mesh import has issues
+modern ceiling lamp crashes editor

@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/SchoolChair_01_2k.gltf/SchoolChair_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{9790019579666250940,4645828374068650528}}
-		u4 %Hash{5655784922802985209}
+		u4 %Hash{5133644364877590931}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ b69d93a8-6a4f-40d8-a11e-99c53c7e69d1 }"}
+			s{"{ 6bec514f-5764-4507-9be0-8a5b03c4ec14 }"}
 		}
 	}
 }
@@ -34,7 +34,7 @@ o
 	p
 	{
 		s %Label{"SchoolChair_01"}
-		s %Resource{"{ b69d93a8-6a4f-40d8-a11e-99c53c7e69d1 }"}
+		s %Resource{"{ 6bec514f-5764-4507-9be0-8a5b03c4ec14 }"}
 	}
 }
 o

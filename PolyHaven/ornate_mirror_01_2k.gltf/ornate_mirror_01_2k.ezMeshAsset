@@ -14,12 +14,12 @@ o
 			s{"PolyHaven/ornate_mirror_01_2k.gltf/ornate_mirror_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{4497390555576783762,5552233184733536070}}
-		u4 %Hash{1271620975881259889}
+		u4 %Hash{6057026380995894506}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
-			s{"{ 090069c3-cc6c-4022-9bd1-159cd2de4207 }"}
+			s{"{ 01b0e176-17d9-4285-b177-65d578931d60 }"}
 		}
 	}
 }
@@ -34,7 +34,7 @@ o
 	p
 	{
 		s %Label{"ornate_mirror_01"}
-		s %Resource{"{ 090069c3-cc6c-4022-9bd1-159cd2de4207 }"}
+		s %Resource{"{ 01b0e176-17d9-4285-b177-65d578931d60 }"}
 	}
 }
 o

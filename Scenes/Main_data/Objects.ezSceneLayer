@@ -11,7 +11,7 @@ o
 		s %AssetType{"Layer"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{4701444393224082077,5486494231682240601}}
-		u4 %Hash{18404856728208192606}
+		u4 %Hash{453831087937286167}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -35,7 +35,7 @@ o
 			s{"{ 3d0acc59-414c-4a27-91cb-ff6f7d584aed }"}
 			s{"{ 3f052a98-85e7-40ed-a4d9-4a62338b2bb5 }"}
 			s{"{ 43641798-5590-4ab1-9c5b-9cb7f1934a84 }"}
-			s{"{ 4f207613-b81b-49f4-89ef-92d4ac5f264d }"}
+			s{"{ 4e6b55d8-627e-4b83-93df-c32cf7122d73 }"}
 			s{"{ 4f518700-2c22-4036-8689-7e1639a864a4 }"}
 			s{"{ 589b3954-0f68-41de-a90c-572bb20b44a0 }"}
 			s{"{ 58e63524-2081-4782-ae3e-21a8e3cdc45b }"}
@@ -1981,7 +1981,7 @@ o
 	p
 	{
 		b %Active{1}
-		s %CollisionMesh{"{ 4f207613-b81b-49f4-89ef-92d4ac5f264d }"}
+		s %CollisionMesh{"{ 4e6b55d8-627e-4b83-93df-c32cf7122d73 }"}
 	}
 }
 o
@@ -5490,7 +5490,7 @@ o
 	p
 	{
 		s %Anchor{""}
-		Color %Color{f{0x4035123F,0x70BAF53B,0x0C2E703E,0x0000803F}}
+		Color %Color{f{0x4035123F,0x70BAF53B,0x082E703E,0x0000803F}}
 		Vec3 %OffsetOrScale{f{0,0,0}}
 		s %Property1{"HalfExtents"}
 		s %Property2{""}
