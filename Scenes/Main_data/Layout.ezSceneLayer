@@ -11,7 +11,7 @@ o
 		s %AssetType{"Layer"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{2742665335107773320,5207556638966757326}}
-		u4 %Hash{11559169502253864724}
+		u4 %Hash{6002181981121934819}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -92,6 +92,36 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{17729591391954578592,4917450607179079287}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children
+		{
+			Uuid{u4{1301297095629739409,4709977915575123083}}
+			Uuid{u4{15476352488654587579,5312039279589597540}}
+			Uuid{u4{1341897206854460740,10679909362863577048}}
+			Uuid{u4{15405819817532489454,16240544786585784621}}
+			Uuid{u4{15058403899626332565,2673939518433672344}}
+		}
+		VarArray %Components{}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{"Environment"}
 		VarArray %Tags
 		{
 			s{"CastShadow"}
@@ -193,11 +223,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{1301297095629739409,4709977915575123083}}
-			Uuid{u4{15476352488654587579,5312039279589597540}}
-			Uuid{u4{1341897206854460740,10679909362863577048}}
-			Uuid{u4{15405819817532489454,16240544786585784621}}
-			Uuid{u4{15058403899626332565,2673939518433672344}}
+			Uuid{u4{17729591391954578592,4917450607179079287}}
 		}
 		Uuid %Settings{u4{13256294805203861388,5468361163097594132}}
 	}
