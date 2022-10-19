@@ -11,10 +11,11 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
+			s{"PolyHaven/jacaranda_tree_2k.gltf/textures/jacaranda_tree_leaves_alpha_2k.png"}
 			s{"PolyHaven/jacaranda_tree_2k.gltf/textures/jacaranda_tree_leaves_diff_2k.jpg"}
 		}
 		Uuid %DocumentID{u4{13776924214403453072,5125847625317257106}}
-		u4 %Hash{5884760579384286573}
+		u4 %Hash{5706078215616873363}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -35,14 +36,14 @@ o
 		s %AddressModeW{"ezImageAddressMode::Repeat"}
 		f %AlphaThreshold{0x0000003F}
 		f %CVarResScale{0x0000803F}
-		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1"}
+		s %ChannelMapping{"ezTexture2DChannelMappingEnum::RGB1_A2"}
 		s %CompressionMode{"ezTexConvCompressionMode::Medium"}
 		b %DilateColor{0}
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
 		s %Input1{"PolyHaven/jacaranda_tree_2k.gltf/textures/jacaranda_tree_leaves_diff_2k.jpg"}
-		s %Input2{""}
+		s %Input2{"PolyHaven/jacaranda_tree_2k.gltf/textures/jacaranda_tree_leaves_alpha_2k.png"}
 		s %Input3{""}
 		s %Input4{""}
 		b %IsRenderTarget{0}

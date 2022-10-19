@@ -14,10 +14,15 @@ o
 			s{"PolyHaven/jacaranda_tree_2k.gltf/jacaranda_tree_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{7014842177241712775,4793484196939628571}}
-		u4 %Hash{15470095607384330101}
+		u4 %Hash{14127544095225919053}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
-		VarArray %References{}
+		VarArray %References
+		{
+			s{"{ 481eebfb-eaf0-4e6e-aff5-d89584279421 }"}
+			s{"{ 8d6b52d7-97ae-402f-a126-ea22a5dcd85c }"}
+			s{"{ ad076ac1-347f-47f9-8720-b1e23ebe82cc }"}
+		}
 	}
 }
 }
@@ -38,7 +43,12 @@ o
 		b %FlipForwardDir{0}
 		f %Height{0x0000803F}
 		b %ImportMaterials{1}
-		VarArray %Materials{}
+		VarArray %Materials
+		{
+			Uuid{u4{1192386688139602100,5510774990664111559}}
+			Uuid{u4{13947312832899243698,5754023177462857227}}
+			Uuid{u4{14580512963619564729,4944289226231962675}}
+		}
 		s %MeshFile{"PolyHaven/jacaranda_tree_2k.gltf/jacaranda_tree_2k.gltf"}
 		s %NormalPrecision{"ezMeshNormalPrecision::_10Bit"}
 		s %PrimitiveType{"ezMeshPrimitive::File"}
@@ -50,6 +60,39 @@ o
 		s %TexCoordPrecision{"ezMeshTexCoordPrecision::_16Bit"}
 		f %UniformScaling{0x0000803F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
+	}
+}
+o
+{
+	Uuid %id{u4{14580512963619564729,4944289226231962675}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"jacaranda_tree_leaves"}
+		s %Resource{"{ 8d6b52d7-97ae-402f-a126-ea22a5dcd85c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1192386688139602100,5510774990664111559}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"jacaranda_tree_trunk"}
+		s %Resource{"{ 481eebfb-eaf0-4e6e-aff5-d89584279421 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{13947312832899243698,5754023177462857227}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"jacaranda_tree_branches"}
+		s %Resource{"{ ad076ac1-347f-47f9-8720-b1e23ebe82cc }"}
 	}
 }
 o
