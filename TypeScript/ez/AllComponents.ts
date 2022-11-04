@@ -732,6 +732,8 @@ export class JoltDynamicActorComponent extends JoltActorComponent
   AddAngularImpulse(vImpulse: Vec3): void { __CPP_ComponentFunction_Call(this, 3894470927, vImpulse); }
   get Kinematic(): boolean { return __CPP_ComponentProperty_get(this, 93598667); }
   set Kinematic(value: boolean) { __CPP_ComponentProperty_set(this, 93598667, value); }
+  get StartAsleep(): boolean { return __CPP_ComponentProperty_get(this, 1011106744); }
+  set StartAsleep(value: boolean) { __CPP_ComponentProperty_set(this, 1011106744, value); }
   get Mass(): number { return __CPP_ComponentProperty_get(this, 69266294); }
   set Mass(value: number) { __CPP_ComponentProperty_set(this, 69266294, value); }
   get Density(): number { return __CPP_ComponentProperty_get(this, 3010502594); }
@@ -1523,6 +1525,16 @@ export class StageSpaceComponent extends Component
   public static GetTypeNameHash(): number { return 3814358307; }
   get StageSpace(): Enum.XRStageSpace { return __CPP_ComponentProperty_get(this, 3796859176); }
   set StageSpace(value: Enum.XRStageSpace) { __CPP_ComponentProperty_set(this, 3796859176, value); }
+}
+
+export class StateMachineComponent extends Component
+{
+  public static GetTypeNameHash(): number { return 71440247; }
+  SetState(Name: string): boolean { return __CPP_ComponentFunction_Call(this, 3119358439, Name); }
+  get Resource(): string { return __CPP_ComponentProperty_get(this, 3553976178); }
+  set Resource(value: string) { __CPP_ComponentProperty_set(this, 3553976178, value); }
+  get InitialState(): string { return __CPP_ComponentProperty_get(this, 3055923916); }
+  set InitialState(value: string) { __CPP_ComponentProperty_set(this, 3055923916, value); }
 }
 
 export class TimedDeathComponent extends Component
