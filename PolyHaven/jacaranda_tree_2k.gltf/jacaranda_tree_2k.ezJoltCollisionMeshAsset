@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/jacaranda_tree_2k.gltf/jacaranda_tree_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{4565582595917153444,5483049542053579030}}
-		u4 %Hash{1784283348574334999}
+		u4 %Hash{16109710363149918173}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -34,6 +34,7 @@ o
 	u3 %v{1}
 	p
 	{
+		b %Exclude{1}
 		s %Label{"jacaranda_tree_branches"}
 		s %Resource{"{ 58d44330-37a1-4c9d-9fa2-0540a1d8ee90 }"}
 	}
@@ -73,6 +74,7 @@ o
 	u3 %v{1}
 	p
 	{
+		b %Exclude{1}
 		s %Label{"jacaranda_tree_leaves"}
 		s %Resource{"{ ccd32963-93f9-401c-95d1-bf4e491a2df3 }"}
 	}
@@ -84,6 +86,7 @@ o
 	u3 %v{1}
 	p
 	{
+		b %Exclude{0}
 		s %Label{"jacaranda_tree_trunk"}
 		s %Resource{"{ 58d44330-37a1-4c9d-9fa2-0540a1d8ee90 }"}
 	}
@@ -119,7 +122,6 @@ o
 		s %PluginName{"ezEditorPluginJolt"}
 		VarArray %Properties{}
 		s %TypeName{"ezJoltConvexCollisionMeshType"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -137,7 +139,6 @@ o
 		s %PluginName{"ezEditorPluginJolt"}
 		VarArray %Properties{}
 		s %TypeName{"ezJoltSurfaceResourceSlot"}
-		u3 %TypeSize{128}
 		u3 %TypeVersion{1}
 	}
 }
@@ -155,7 +156,6 @@ o
 		s %PluginName{"ezEditorPluginJolt"}
 		VarArray %Properties{}
 		s %TypeName{"ezJoltCollisionMeshAssetProperties"}
-		u3 %TypeSize{1224}
 		u3 %TypeVersion{1}
 	}
 }
@@ -173,7 +173,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezDocumentRoot"}
-		u3 %TypeSize{72}
 		u3 %TypeVersion{1}
 	}
 }
@@ -191,7 +190,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezEnumBase"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -209,7 +207,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezBasisAxis"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -227,7 +224,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezReflectedClass"}
-		u3 %TypeSize{8}
 		u3 %TypeVersion{1}
 	}
 }
