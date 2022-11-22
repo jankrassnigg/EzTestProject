@@ -527,6 +527,8 @@ export class GreyBoxComponent extends RenderComponent
   set GenerateCollision(value: boolean) { __CPP_ComponentProperty_set(this, 3417576651, value); }
   get IncludeInNavmesh(): boolean { return __CPP_ComponentProperty_get(this, 850252985); }
   set IncludeInNavmesh(value: boolean) { __CPP_ComponentProperty_set(this, 850252985, value); }
+  get UseAsOccluder(): boolean { return __CPP_ComponentProperty_get(this, 1048772127); }
+  set UseAsOccluder(value: boolean) { __CPP_ComponentProperty_set(this, 1048772127, value); }
 }
 
 export class HeadBoneComponent extends Component
@@ -1032,6 +1034,13 @@ export class MoveToComponent extends Component
 export class NpcComponent extends Component
 {
   public static GetTypeNameHash(): number { return 3286107829; }
+}
+
+export class OccluderComponent extends Component
+{
+  public static GetTypeNameHash(): number { return 88153051; }
+  get Extents(): Vec3 { return __CPP_ComponentProperty_get(this, 1943536156); }
+  set Extents(value: Vec3) { __CPP_ComponentProperty_set(this, 1943536156, value); }
 }
 
 export class ParticleComponent extends RenderComponent

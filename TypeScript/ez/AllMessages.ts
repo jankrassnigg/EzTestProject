@@ -131,6 +131,12 @@ export class MsgExtractGeometry extends Message
   constructor() { super(); this.TypeNameHash = 2851303219; }
 }
 
+export class MsgExtractOccluderData extends Message
+{
+  public static GetTypeNameHash(): number { return 3924382644; }
+  constructor() { super(); this.TypeNameHash = 3924382644; }
+}
+
 export class MsgExtractRenderData extends Message
 {
   public static GetTypeNameHash(): number { return 2914273568; }
