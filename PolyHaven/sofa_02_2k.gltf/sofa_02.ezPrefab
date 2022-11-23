@@ -11,7 +11,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{2691200780018322330,5500689329329467601}}
-		u4 %Hash{9474006848653758304}
+		u4 %Hash{13167123819844732629}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{16763617405779395542,5721219819425095115}}
@@ -31,7 +31,23 @@ o
 	u3 %v{3}
 	p
 	{
-		VarArray %Parameters{}
+		VarArray %Parameters
+		{
+			Uuid{u4{12431276802546142896,13818885069934346746}}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{12431276802546142896,13818885069934346746}}
+	s %t{"ezExposedParameter"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		b %DefaultValue{0}
+		s %Name{"Kinematic"}
+		s %Type{"bool"}
 	}
 }
 }
@@ -44,7 +60,22 @@ o
 	u3 %v{1}
 	p
 	{
-		VarArray %ExposedProperties{}
+		VarArray %ExposedProperties
+		{
+			Uuid{u4{416996884049755826,5734320013699184653}}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{416996884049755826,5734320013699184653}}
+	s %t{"ezExposedSceneProperty"}
+	u3 %v{1}
+	p
+	{
+		s %Name{"Kinematic"}
+		Uuid %Object{u4{370620895416243266,7712780360375106741}}
+		s %PropertyPath{"Kinematic"}
 	}
 }
 o
