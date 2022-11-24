@@ -2,7 +2,9 @@
 
 #include <Core/Input/Declarations.h>
 #include <Core/World/Declarations.h>
+#include <Core/World/World.h>
 #include <EzTestProjectPlugin/EzTestProjectPluginDLL.h>
+#include <Foundation/Types/UniquePtr.h>
 #include <GameEngine/GameApplication/GameApplication.h>
 #include <GameEngine/GameState/FallbackGameState.h>
 #include <GameEngine/GameState/GameState.h>
@@ -31,4 +33,9 @@ private:
   virtual void OnDeactivation() override;
   virtual void BeforeWorldUpdate() override;
   virtual void AfterWorldUpdate() override;
+
+  ezResult LoadObjectGraph(const char* szFile, ezWorld& world);
+
+  ezString m_sSwitchLevelTo;
+  ezTime m_LevelSwitched;
 };

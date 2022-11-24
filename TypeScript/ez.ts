@@ -65,7 +65,6 @@ export import Physics = __Physics.Physics;
 import __AllComponents = require("./ez/AllComponents")
 export import EventMessageHandlerComponent = __AllComponents.EventMessageHandlerComponent;
 export import GameStateTriggerComponent = __AllComponents.GameStateTriggerComponent;
-export import SampleRenderComponent = __AllComponents.SampleRenderComponent;
 export import AgentSteeringComponent = __AllComponents.AgentSteeringComponent;
 export import RenderComponent = __AllComponents.RenderComponent;
 export import AlwaysVisibleComponent = __AllComponents.AlwaysVisibleComponent;
@@ -254,7 +253,6 @@ export import XRTransformSpace = __AllEnums.XRTransformSpace;
 
 // AUTO-GENERATED
 import __AllFlags = require("./ez/AllFlags")
-export import SampleRenderComponentMask = __AllFlags.SampleRenderComponentMask;
 export import ClothSheetFlags = __AllFlags.ClothSheetFlags;
 export import JoltCharacterDebugFlags = __AllFlags.JoltCharacterDebugFlags;
 export import OnJoltContact = __AllFlags.OnJoltContact;

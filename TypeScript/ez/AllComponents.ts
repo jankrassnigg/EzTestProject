@@ -53,20 +53,6 @@ export class GameStateTriggerComponent extends EventMessageHandlerComponent
   public static GetTypeNameHash(): number { return 176371642; }
 }
 
-export class SampleRenderComponent extends Component
-{
-  public static GetTypeNameHash(): number { return 1881577424; }
-  SetRandomColor(): void { __CPP_ComponentFunction_Call(this, 1567567376); }
-  get Size(): number { return __CPP_ComponentProperty_get(this, 251756008); }
-  set Size(value: number) { __CPP_ComponentProperty_set(this, 251756008, value); }
-  get Color(): Color { return __CPP_ComponentProperty_get(this, 3176299597); }
-  set Color(value: Color) { __CPP_ComponentProperty_set(this, 3176299597, value); }
-  get Texture(): string { return __CPP_ComponentProperty_get(this, 84700230); }
-  set Texture(value: string) { __CPP_ComponentProperty_set(this, 84700230, value); }
-  get Render(): Flags.SampleRenderComponentMask { return __CPP_ComponentProperty_get(this, 2657821021); }
-  set Render(value: Flags.SampleRenderComponentMask) { __CPP_ComponentProperty_set(this, 2657821021, value); }
-}
-
 export class AgentSteeringComponent extends Component
 {
   public static GetTypeNameHash(): number { return 2433025557; }
