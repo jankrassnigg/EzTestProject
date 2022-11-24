@@ -19,6 +19,8 @@ public:
 
   virtual void ProcessInput() override;
 
+  virtual void HandleForwardedMessage(const ezMessage& msg) override;
+
 protected:
   virtual void ConfigureMainWindowInputDevices(ezWindow* pWindow) override;
   virtual void ConfigureInputActions() override;

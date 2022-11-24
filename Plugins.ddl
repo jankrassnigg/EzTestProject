@@ -1,5 +1,10 @@
 Plugin
 {
+	string %Path{"EzTestProjectPlugin"}
+	bool %LoadCopy{true}
+}
+Plugin
+{
 	string %Path{"ezFmodPlugin"}
 	bool %LoadCopy{false}
 }
@@ -10,27 +15,7 @@ Plugin
 }
 Plugin
 {
-	string %Path{"ezKrautPlugin"}
-	bool %LoadCopy{false}
-}
-Plugin
-{
 	string %Path{"ezParticlePlugin"}
-	bool %LoadCopy{false}
-}
-Plugin
-{
-	string %Path{"ezProcGenPlugin"}
-	bool %LoadCopy{false}
-}
-Plugin
-{
-	string %Path{"ezRecastPlugin"}
-	bool %LoadCopy{false}
-}
-Plugin
-{
-	string %Path{"ezRmlUiPlugin"}
 	bool %LoadCopy{false}
 }
 Plugin

@@ -11,7 +11,6 @@ export enum JoltRagdollStart {  BindPose = 0, WaitForPose = 1, Wait = 2 }
 export enum JoltSteppingMode {  Variable = 0, Fixed = 1, SemiFixed = 2 }
 export enum OnComponentFinishedAction {  None = 0, DeleteComponent = 1, DeleteGameObject = 2 }
 export enum OnComponentFinishedAction2 {  None = 0, DeleteComponent = 1, DeleteGameObject = 2, Restart = 3 }
-export enum ProcGenBlendMode {  Add = 0, Subtract = 1, Multiply = 2, Divide = 3, Max = 4, Min = 5, Set = 6 }
 export enum PropertyAnimMode {  Once = 0, Loop = 1, BackAndForth = 2 }
 export enum ReflectionProbeMode {  Static = 0, Dynamic = 1 }
 export enum RootMotionMode {  Ignore = 0, ApplyToOwner = 1, SendMoveCharacterMsg = 2 }

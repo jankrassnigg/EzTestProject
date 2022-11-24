@@ -1,6 +1,7 @@
 #include <EzTestProjectPlugin/EzTestProjectPluginPCH.h>
 
 #include <Core/Input/InputManager.h>
+#include <Core/Messages/TriggerMessage.h>
 #include <Core/System/Window.h>
 #include <Core/World/World.h>
 #include <EzTestProjectPlugin/GameState/EzTestProjectGameState.h>
@@ -64,7 +65,6 @@ static void RegisterInputAction(const char* szInputSet, const char* szInputActio
 void EzTestProjectGameState::ConfigureInputActions()
 {
   SUPER::ConfigureInputActions();
-
 }
 
 void EzTestProjectGameState::ProcessInput()
@@ -72,7 +72,14 @@ void EzTestProjectGameState::ProcessInput()
   SUPER::ProcessInput();
 
   ezWorld* pWorld = m_pMainWorld;
+}
 
+void EzTestProjectGameState::HandleForwardedMessage(const ezMessage& msg)
+{
+  if (const ezMsgTriggerTriggered* pMsg = ezDynamicCast<const ezMsgTriggerTriggered*>(&msg))
+  {
+    ezLog::Info("GameState received: {}", pMsg->m_sMessage);
+  }
 }
 
 void EzTestProjectGameState::ConfigureMainCamera()

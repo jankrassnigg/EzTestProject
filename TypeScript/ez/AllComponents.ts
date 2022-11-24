@@ -39,6 +39,34 @@ declare function __CPP_ComponentProperty_get(component: Component, id: number);
 declare function __CPP_ComponentProperty_set(component: Component, id: number, value);
 declare function __CPP_ComponentFunction_Call(component: Component, id: number, ...args);
 
+export class EventMessageHandlerComponent extends Component
+{
+  public static GetTypeNameHash(): number { return 2410982864; }
+  get HandleGlobalEvents(): boolean { return __CPP_ComponentProperty_get(this, 363574155); }
+  set HandleGlobalEvents(value: boolean) { __CPP_ComponentProperty_set(this, 363574155, value); }
+  get PassThroughUnhandledEvents(): boolean { return __CPP_ComponentProperty_get(this, 527316798); }
+  set PassThroughUnhandledEvents(value: boolean) { __CPP_ComponentProperty_set(this, 527316798, value); }
+}
+
+export class GameStateTriggerComponent extends EventMessageHandlerComponent
+{
+  public static GetTypeNameHash(): number { return 176371642; }
+}
+
+export class SampleRenderComponent extends Component
+{
+  public static GetTypeNameHash(): number { return 1881577424; }
+  SetRandomColor(): void { __CPP_ComponentFunction_Call(this, 1567567376); }
+  get Size(): number { return __CPP_ComponentProperty_get(this, 251756008); }
+  set Size(value: number) { __CPP_ComponentProperty_set(this, 251756008, value); }
+  get Color(): Color { return __CPP_ComponentProperty_get(this, 3176299597); }
+  set Color(value: Color) { __CPP_ComponentProperty_set(this, 3176299597, value); }
+  get Texture(): string { return __CPP_ComponentProperty_get(this, 84700230); }
+  set Texture(value: string) { __CPP_ComponentProperty_set(this, 84700230, value); }
+  get Render(): Flags.SampleRenderComponentMask { return __CPP_ComponentProperty_get(this, 2657821021); }
+  set Render(value: Flags.SampleRenderComponentMask) { __CPP_ComponentProperty_set(this, 2657821021, value); }
+}
+
 export class AgentSteeringComponent extends Component
 {
   public static GetTypeNameHash(): number { return 2433025557; }
@@ -388,15 +416,6 @@ export class DirectionalLightComponent extends LightComponent
   set SplitModeWeight(value: number) { __CPP_ComponentProperty_set(this, 2604859805, value); }
   get NearPlaneOffset(): number { return __CPP_ComponentProperty_get(this, 1922790091); }
   set NearPlaneOffset(value: number) { __CPP_ComponentProperty_set(this, 1922790091, value); }
-}
-
-export class EventMessageHandlerComponent extends Component
-{
-  public static GetTypeNameHash(): number { return 2410982864; }
-  get HandleGlobalEvents(): boolean { return __CPP_ComponentProperty_get(this, 363574155); }
-  set HandleGlobalEvents(value: boolean) { __CPP_ComponentProperty_set(this, 363574155, value); }
-  get PassThroughUnhandledEvents(): boolean { return __CPP_ComponentProperty_get(this, 527316798); }
-  set PassThroughUnhandledEvents(value: boolean) { __CPP_ComponentProperty_set(this, 527316798, value); }
 }
 
 export class FakeRopeComponent extends Component
@@ -990,15 +1009,6 @@ export class JoltVisColMeshComponent extends RenderComponent
   set CollisionMesh(value: string) { __CPP_ComponentProperty_set(this, 3233843482, value); }
 }
 
-export class KrautTreeComponent extends RenderComponent
-{
-  public static GetTypeNameHash(): number { return 3294337085; }
-  get KrautTree(): string { return __CPP_ComponentProperty_get(this, 149428869); }
-  set KrautTree(value: string) { __CPP_ComponentProperty_set(this, 149428869, value); }
-  get VariationIndex(): number { return __CPP_ComponentProperty_get(this, 2477224123); }
-  set VariationIndex(value: number) { __CPP_ComponentProperty_set(this, 2477224123, value); }
-}
-
 export class LineToComponent extends Component
 {
   public static GetTypeNameHash(): number { return 1533979394; }
@@ -1096,56 +1106,6 @@ export class PrefabReferenceComponent extends Component
   set Prefab(value: string) { __CPP_ComponentProperty_set(this, 3332257502, value); }
 }
 
-export class ProcPlacementComponent extends Component
-{
-  public static GetTypeNameHash(): number { return 1343147442; }
-  get Resource(): string { return __CPP_ComponentProperty_get(this, 1067834854); }
-  set Resource(value: string) { __CPP_ComponentProperty_set(this, 1067834854, value); }
-}
-
-export class ProcVertexColorComponent extends MeshComponent
-{
-  public static GetTypeNameHash(): number { return 2622601802; }
-  get Resource(): string { return __CPP_ComponentProperty_get(this, 1002571815); }
-  set Resource(value: string) { __CPP_ComponentProperty_set(this, 1002571815, value); }
-}
-
-export class ProcVolumeComponent extends Component
-{
-  public static GetTypeNameHash(): number { return 2813749526; }
-  get Value(): number { return __CPP_ComponentProperty_get(this, 1704225776); }
-  set Value(value: number) { __CPP_ComponentProperty_set(this, 1704225776, value); }
-  get SortOrder(): number { return __CPP_ComponentProperty_get(this, 2444394831); }
-  set SortOrder(value: number) { __CPP_ComponentProperty_set(this, 2444394831, value); }
-  get BlendMode(): Enum.ProcGenBlendMode { return __CPP_ComponentProperty_get(this, 3655564376); }
-  set BlendMode(value: Enum.ProcGenBlendMode) { __CPP_ComponentProperty_set(this, 3655564376, value); }
-}
-
-export class ProcVolumeBoxComponent extends ProcVolumeComponent
-{
-  public static GetTypeNameHash(): number { return 1473169506; }
-  get Extents(): Vec3 { return __CPP_ComponentProperty_get(this, 1294043772); }
-  set Extents(value: Vec3) { __CPP_ComponentProperty_set(this, 1294043772, value); }
-  get FadeOutStart(): Vec3 { return __CPP_ComponentProperty_get(this, 3293988461); }
-  set FadeOutStart(value: Vec3) { __CPP_ComponentProperty_set(this, 3293988461, value); }
-}
-
-export class ProcVolumeImageComponent extends ProcVolumeBoxComponent
-{
-  public static GetTypeNameHash(): number { return 1411226624; }
-  get Image(): string { return __CPP_ComponentProperty_get(this, 2537412671); }
-  set Image(value: string) { __CPP_ComponentProperty_set(this, 2537412671, value); }
-}
-
-export class ProcVolumeSphereComponent extends ProcVolumeComponent
-{
-  public static GetTypeNameHash(): number { return 1516368222; }
-  get Radius(): number { return __CPP_ComponentProperty_get(this, 3489263427); }
-  set Radius(value: number) { __CPP_ComponentProperty_set(this, 3489263427, value); }
-  get FadeOutStart(): number { return __CPP_ComponentProperty_get(this, 207388088); }
-  set FadeOutStart(value: number) { __CPP_ComponentProperty_set(this, 207388088, value); }
-}
-
 export class ProjectileComponent extends Component
 {
   public static GetTypeNameHash(): number { return 1307523631; }
@@ -1204,56 +1164,11 @@ export class RaycastComponent extends Component
   set TriggerMessage(value: string) { __CPP_ComponentProperty_set(this, 1295093099, value); }
 }
 
-export class RcAgentComponent extends AgentSteeringComponent
-{
-  public static GetTypeNameHash(): number { return 4201689488; }
-  get WalkSpeed(): number { return __CPP_ComponentProperty_get(this, 3941725637); }
-  set WalkSpeed(value: number) { __CPP_ComponentProperty_set(this, 3941725637, value); }
-}
-
-export class RcComponent extends Component
-{
-  public static GetTypeNameHash(): number { return 2693024273; }
-}
-
-export class RcMarkPoiVisibleComponent extends RcComponent
-{
-  public static GetTypeNameHash(): number { return 2492913972; }
-  get Radius(): number { return __CPP_ComponentProperty_get(this, 3267098695); }
-  set Radius(value: number) { __CPP_ComponentProperty_set(this, 3267098695, value); }
-  get CollisionLayer(): number { return __CPP_ComponentProperty_get(this, 2960102437); }
-  set CollisionLayer(value: number) { __CPP_ComponentProperty_set(this, 2960102437, value); }
-}
-
-export class RcNavMeshComponent extends RcComponent
-{
-  public static GetTypeNameHash(): number { return 2834181938; }
-  get ShowNavMesh(): boolean { return __CPP_ComponentProperty_get(this, 2416885943); }
-  set ShowNavMesh(value: boolean) { __CPP_ComponentProperty_set(this, 2416885943, value); }
-}
-
 export class RenderTargetActivatorComponent extends RenderComponent
 {
   public static GetTypeNameHash(): number { return 2562992528; }
   get RenderTarget(): string { return __CPP_ComponentProperty_get(this, 3221140373); }
   set RenderTarget(value: string) { __CPP_ComponentProperty_set(this, 3221140373, value); }
-}
-
-export class RmlUiCanvas2DComponent extends RenderComponent
-{
-  public static GetTypeNameHash(): number { return 487654276; }
-  get RmlFile(): string { return __CPP_ComponentProperty_get(this, 2826096337); }
-  set RmlFile(value: string) { __CPP_ComponentProperty_set(this, 2826096337, value); }
-  get AnchorPoint(): Vec2 { return __CPP_ComponentProperty_get(this, 2220851845); }
-  set AnchorPoint(value: Vec2) { __CPP_ComponentProperty_set(this, 2220851845, value); }
-  get Size(): Vec2 { return __CPP_ComponentProperty_get(this, 3722256716); }
-  set Size(value: Vec2) { __CPP_ComponentProperty_set(this, 3722256716, value); }
-  get Offset(): Vec2 { return __CPP_ComponentProperty_get(this, 4050008644); }
-  set Offset(value: Vec2) { __CPP_ComponentProperty_set(this, 4050008644, value); }
-  get PassInput(): boolean { return __CPP_ComponentProperty_get(this, 2890095111); }
-  set PassInput(value: boolean) { __CPP_ComponentProperty_set(this, 2890095111, value); }
-  get AutobindBlackboards(): boolean { return __CPP_ComponentProperty_get(this, 481634809); }
-  set AutobindBlackboards(value: boolean) { __CPP_ComponentProperty_set(this, 481634809, value); }
 }
 
 export class RopeRenderComponent extends RenderComponent
@@ -1456,11 +1371,6 @@ export class SliderComponent extends TransformComponent
   set Deceleration(value: number) { __CPP_ComponentProperty_set(this, 2302800190, value); }
   get RandomStart(): number { return __CPP_ComponentProperty_get(this, 1439600697); }
   set RandomStart(value: number) { __CPP_ComponentProperty_set(this, 1439600697, value); }
-}
-
-export class SoldierComponent extends NpcComponent
-{
-  public static GetTypeNameHash(): number { return 2864523232; }
 }
 
 export class SpatialAnchorComponent extends Component

@@ -143,12 +143,6 @@ export class MsgExtractRenderData extends Message
   constructor() { super(); this.TypeNameHash = 2914273568; }
 }
 
-export class MsgExtractVolumes extends Message
-{
-  public static GetTypeNameHash(): number { return 4107494019; }
-  constructor() { super(); this.TypeNameHash = 4107494019; }
-}
-
 export class MsgFmodSoundFinished extends EventMessage
 {
   public static GetTypeNameHash(): number { return 4054082438; }
@@ -226,12 +220,6 @@ export class MsgRetrieveBoneState extends Message
 {
   public static GetTypeNameHash(): number { return 2483229000; }
   constructor() { super(); this.TypeNameHash = 2483229000; }
-}
-
-export class MsgRmlUiReload extends Message
-{
-  public static GetTypeNameHash(): number { return 1859392301; }
-  constructor() { super(); this.TypeNameHash = 1859392301; }
 }
 
 export class MsgRopePoseUpdated extends Message
