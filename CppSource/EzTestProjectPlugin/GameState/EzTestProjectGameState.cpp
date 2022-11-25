@@ -91,10 +91,14 @@ void EzTestProjectGameState::HandleForwardedMessage(const ezMessage& msg)
 {
   if (const ezMsgTriggerTriggered* pMsg = ezDynamicCast<const ezMsgTriggerTriggered*>(&msg))
   {
+    if (pMsg->m_TriggerState != ezTriggerState::Activated)
+      return;
+
     ezLog::Info("GameState received: {}", pMsg->m_sMessage);
 
-    if (ezTime::Now() - m_LevelSwitched < ezTime::Seconds(3))
+    if (ezTime::Now() - m_LevelSwitched < ezTime::Seconds(1))
     {
+      // prevent a crash bug :(
       ezLog::Info("Too soon");
       return;
     }

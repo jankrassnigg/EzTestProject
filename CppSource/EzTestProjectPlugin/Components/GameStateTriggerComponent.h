@@ -31,4 +31,7 @@ public:
 protected:
   virtual bool OnUnhandledMessage(ezMessage& msg, bool bWasPostedMsg) override;
   virtual bool OnUnhandledMessage(ezMessage& msg, bool bWasPostedMsg) const override;
+
+  virtual void Initialize() override;
+
 };

@@ -29,10 +29,6 @@ bool GameStateTriggerComponent::HandlesEventMessage(const ezEventMessage& msg) c
 {
   if (const ezMsgTriggerTriggered* pMsg = ezDynamicCast<const ezMsgTriggerTriggered*>(&msg))
   {
-    ezGameStateBase* pGameState = ezGameApplicationBase::GetGameApplicationBaseInstance()->GetActiveGameStateLinkedToWorld(GetOwner()->GetWorld());
-
-    pGameState->HandleForwardedMessage(msg);
-
     return true;
   }
 
@@ -40,10 +36,33 @@ bool GameStateTriggerComponent::HandlesEventMessage(const ezEventMessage& msg) c
 }
 bool GameStateTriggerComponent::OnUnhandledMessage(ezMessage& msg, bool bWasPostedMsg)
 {
+  if (const ezMsgTriggerTriggered* pMsg = ezDynamicCast<const ezMsgTriggerTriggered*>(&msg))
+  {
+    ezGameStateBase* pGameState = ezGameApplicationBase::GetGameApplicationBaseInstance()->GetActiveGameStateLinkedToWorld(GetOwner()->GetWorld());
+
+    pGameState->HandleForwardedMessage(msg);
+    return true;
+  }
+
   return false;
 }
 
 bool GameStateTriggerComponent::OnUnhandledMessage(ezMessage& msg, bool bWasPostedMsg) const
 {
+  if (const ezMsgTriggerTriggered* pMsg = ezDynamicCast<const ezMsgTriggerTriggered*>(&msg))
+  {
+    ezGameStateBase* pGameState = ezGameApplicationBase::GetGameApplicationBaseInstance()->GetActiveGameStateLinkedToWorld(GetOwner()->GetWorld());
+
+    pGameState->HandleForwardedMessage(msg);
+    return true;
+  }
+
   return false;
+}
+
+void GameStateTriggerComponent::Initialize()
+{
+  SUPER::Initialize();
+
+  EnableUnhandledMessageHandler(true);
 }
