@@ -9,6 +9,7 @@
 #include <EzTestProjectPlugin/GameState/EzTestProjectGameState.h>
 #include <Foundation/Configuration/CVar.h>
 #include <Foundation/Logging/Log.h>
+#include <GameEngine/Animation/SliderComponent.h>
 #include <RendererCore/Debug/DebugRenderer.h>
 
 EZ_BEGIN_DYNAMIC_REFLECTED_TYPE(EzTestProjectGameState, 1, ezRTTIDefaultAllocator<EzTestProjectGameState>)
@@ -91,33 +92,78 @@ void EzTestProjectGameState::HandleForwardedMessage(const ezMessage& msg)
 {
   if (const ezMsgTriggerTriggered* pMsg = ezDynamicCast<const ezMsgTriggerTriggered*>(&msg))
   {
-    if (pMsg->m_TriggerState != ezTriggerState::Activated)
+    if (pMsg->m_sMessage.GetString().StartsWith("ChangeLevel_"))
+    {
+      if (pMsg->m_TriggerState != ezTriggerState::Activated)
+        return;
+
+      if (ezTime::Now() - m_LevelSwitched < ezTime::Seconds(1))
+      {
+        // prevent a crash bug :(
+        ezLog::Info("Too soon");
+        return;
+      }
+
+      if (pMsg->m_sMessage.GetString() == "ChangeLevel_Room1")
+      {
+        m_sSwitchLevelTo = "{ 4413ae89-ce73-92dc-358c-ba3152a1427c }";
+        return;
+      }
+      if (pMsg->m_sMessage.GetString() == "ChangeLevel_Room2")
+      {
+        m_sSwitchLevelTo = "{ 54297160-efe8-4a95-88cb-4d23130a6121 }";
+        return;
+      }
+      if (pMsg->m_sMessage.GetString() == "ChangeLevel_Room3")
+      {
+        m_sSwitchLevelTo = "{ 0c279c89-a42c-4fa5-935f-bd579495e60f }";
+        return;
+      }
+      if (pMsg->m_sMessage.GetString() == "ChangeLevel_Hub")
+      {
+        m_sSwitchLevelTo = "{ 1ff66ef3-fc6d-99f6-4c0f-887e399f20b6 }";
+        return;
+      }
+    }
+
+    if (pMsg->m_sMessage.GetString() == "Pickup_Item1")
+    {
+      m_bHasItem[0] = true;
       return;
-
-    ezLog::Info("GameState received: {}", pMsg->m_sMessage);
-
-    if (ezTime::Now() - m_LevelSwitched < ezTime::Seconds(1))
+    }
+    if (pMsg->m_sMessage.GetString() == "Pickup_Item2")
     {
-      // prevent a crash bug :(
-      ezLog::Info("Too soon");
+      m_bHasItem[1] = true;
+      return;
+    }
+    if (pMsg->m_sMessage.GetString() == "Pickup_Item3")
+    {
+      m_bHasItem[2] = true;
       return;
     }
 
-    if (pMsg->m_sMessage.GetString() == "ChangeLevel_Room1")
+    if (pMsg->m_sMessage.GetString() == "Hub_Door1")
     {
-      m_sSwitchLevelTo = "{ 4413ae89-ce73-92dc-358c-ba3152a1427c }";
-    }
-    if (pMsg->m_sMessage.GetString() == "ChangeLevel_Room2")
-    {
-      m_sSwitchLevelTo = "{ 54297160-efe8-4a95-88cb-4d23130a6121 }";
-    }
-    if (pMsg->m_sMessage.GetString() == "ChangeLevel_Room3")
-    {
-      m_sSwitchLevelTo = "{ 0c279c89-a42c-4fa5-935f-bd579495e60f }";
-    }
-    if (pMsg->m_sMessage.GetString() == "ChangeLevel_Hub")
-    {
-      m_sSwitchLevelTo = "{ 1ff66ef3-fc6d-99f6-4c0f-887e399f20b6 }";
+      ezGameObject* pObj;
+      if (m_pMainWorld->TryGetObjectWithGlobalKey("Hub_Door1", pObj))
+      {
+        ezSliderComponent* pSlider;
+        if (pObj->TryGetComponentOfBaseType(pSlider))
+        {
+          if (pMsg->m_TriggerState == ezTriggerState::Activated)
+          {
+            pSlider->SetDirectionForwards(true);
+            pSlider->SetRunning(true);
+          }
+          else if (pMsg->m_TriggerState == ezTriggerState::Deactivated)
+          {
+            pSlider->SetDirectionForwards(false);
+            pSlider->SetRunning(true);
+          }
+        }
+      }
+
+      return;
     }
   }
 }

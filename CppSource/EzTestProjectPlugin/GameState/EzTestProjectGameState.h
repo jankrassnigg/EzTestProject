@@ -38,4 +38,6 @@ private:
 
   ezString m_sSwitchLevelTo;
   ezTime m_LevelSwitched;
+
+  bool m_bHasItem[3] = { false, false, false };
 };

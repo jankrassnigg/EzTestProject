@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{1145767619572096915,5739173809243004041}}
-		u4 %Hash{15053616247700182356}
+		u4 %Hash{7787774234177105831}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -504,8 +504,128 @@ o
 			Uuid{u4{11130289291005285644,289320103780462452}}
 			Uuid{u4{12703873351809372279,2135041407791742533}}
 			Uuid{u4{16219900806462451697,15246125701714153375}}
+			Uuid{u4{1591558092633934544,12676526921505311800}}
 		}
 		Uuid %Settings{u4{15502792606718807721,5268035411969260150}}
+	}
+}
+o
+{
+	Uuid %id{u4{5107585547287013962,7340867141718171026}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{10557091722436831054,8025508695438109317}}
+			Uuid{u4{7418450710889772848,7351182737094741042}}
+			Uuid{u4{6495781094421316944,7380516029452950798}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x6066E63F,0x000028C0,0x00009840}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{7418450710889772848,7351182737094741042}}
+	s %t{"ezJoltShapeBoxComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		Vec3 %HalfExtents{f{0x00002040,0x00001840,0x0000A03F}}
+	}
+}
+o
+{
+	Uuid %id{u4{6495781094421316944,7380516029452950798}}
+	s %t{"GameStateTriggerComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %HandleGlobalEvents{0}
+		b %PassThroughUnhandledEvents{0}
+	}
+}
+o
+{
+	Uuid %id{u4{10557091722436831054,8025508695438109317}}
+	s %t{"ezJoltTriggerComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		u1 %CollisionLayer{0}
+		s %TriggerMessage{"Pickup_Item3"}
+	}
+}
+o
+{
+	Uuid %id{u4{1591558092633934544,12676526921505311800}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children
+		{
+			Uuid{u4{5107585547287013962,7340867141718171026}}
+		}
+		VarArray %Components
+		{
+			Uuid{u4{13328925439263459813,12905840971458419768}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x0000E0BF,0x000050C0,0x000040C0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{13328925439263459813,12905840971458419768}}
+	s %t{"ezGreyBoxComponent"}
+	u3 %v{5}
+	p
+	{
+		b %Active{1}
+		Color %Color{f{0x026EFE3E,0x0000803F,0,0x0000803F}}
+		Angle %Curvature{f{0}}
+		u3 %Detail{16}
+		b %GenerateCollision{1}
+		b %IncludeInNavmesh{1}
+		s %Material{""}
+		s %Shape{"ezGreyBoxShape::Box"}
+		f %SizeNegX{0x9A99993F}
+		f %SizeNegY{0x0000A040}
+		f %SizeNegZ{0}
+		f %SizePosX{0x9A999940}
+		f %SizePosY{0}
+		f %SizePosZ{0x00008040}
+		b %SlopedBottom{0}
+		b %SlopedTop{0}
+		f %Thickness{0x0000003F}
+		b %UseAsOccluder{1}
 	}
 }
 o
