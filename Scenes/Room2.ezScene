@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{2405214753305512840,5374465511460008288}}
-		u4 %Hash{6647678192325921583}
+		u4 %Hash{2990237108558685011}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -37,7 +37,7 @@ o
 		{
 			Uuid{u4{3233764229871551142,3171951804588494203}}
 			Uuid{u4{95123218324492936,2497625846245125928}}
-			Uuid{u4{17619197675565588648,2526959138603335684}}
+			Uuid{u4{7981230246672643761,4623135132703954705}}
 		}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0x6066E63F,0x000028C0,0x00009840}}
@@ -61,18 +61,6 @@ o
 	{
 		b %Active{1}
 		Vec3 %HalfExtents{f{0x00002040,0x00001840,0x0000A03F}}
-	}
-}
-o
-{
-	Uuid %id{u4{17619197675565588648,2526959138603335684}}
-	s %t{"GameStateTriggerComponent"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		b %HandleGlobalEvents{0}
-		b %PassThroughUnhandledEvents{0}
 	}
 }
 o
@@ -148,6 +136,18 @@ o
 	p
 	{
 		Uuid %Layer{u4{2405214753305512840,5374465511460008288}}
+	}
+}
+o
+{
+	Uuid %id{u4{7981230246672643761,4623135132703954705}}
+	s %t{"ezForwardEventsToGameStateComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %HandleGlobalEvents{0}
+		b %PassThroughUnhandledEvents{0}
 	}
 }
 o
@@ -468,6 +468,18 @@ o
 }
 o
 {
+	Uuid %id{u4{17941087228535912347,5487299188643493706}}
+	s %t{"ezForwardEventsToGameStateComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %HandleGlobalEvents{0}
+		b %PassThroughUnhandledEvents{0}
+	}
+}
+o
+{
 	Uuid %id{u4{7306610693035534502,5676106752778449022}}
 	s %t{"ezDirectionalLightComponent"}
 	u3 %v{3}
@@ -577,7 +589,7 @@ o
 		{
 			Uuid{u4{3359849132688121286,16547273849497945626}}
 			Uuid{u4{221208121141063080,15872947891154577351}}
-			Uuid{u4{17745282578382158792,15902281183512787107}}
+			Uuid{u4{17941087228535912347,5487299188643493706}}
 		}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0x6066663F,0x000074C0,0x0000B03F}}
@@ -601,18 +613,6 @@ o
 	{
 		b %Active{1}
 		Vec3 %HalfExtents{f{0x00002040,0x00001840,0x0000A03F}}
-	}
-}
-o
-{
-	Uuid %id{u4{17745282578382158792,15902281183512787107}}
-	s %t{"GameStateTriggerComponent"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		b %HandleGlobalEvents{0}
-		b %PassThroughUnhandledEvents{0}
 	}
 }
 o
@@ -721,6 +721,26 @@ o
 }
 Types
 {
+o
+{
+	Uuid %id{u4{12258727328464356970,113627773504126755}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{1206310757622303127,7019604220602696241}}
+		}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezEventMessageHandlerComponent"}
+		s %PluginName{"EzTestProjectPlugin"}
+		VarArray %Properties{}
+		s %TypeName{"ezForwardEventsToGameStateComponent"}
+		u3 %TypeVersion{1}
+	}
+}
 o
 {
 	Uuid %id{u4{6914292285925798136,1108246313736053318}}
@@ -926,22 +946,12 @@ o
 }
 o
 {
-	Uuid %id{u4{4787718766513567674,6623098258402935862}}
-	s %t{"ezReflectedTypeDescriptor"}
+	Uuid %id{u4{1206310757622303127,7019604220602696241}}
+	s %t{"ezCategoryAttribute"}
 	u3 %v{1}
 	p
 	{
-		VarArray %Attributes
-		{
-			Uuid{u4{4869826244716335671,9069499321452005827}}
-		}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
-		VarArray %Functions{}
-		s %ParentTypeName{"ezEventMessageHandlerComponent"}
-		s %PluginName{"EzTestProjectPlugin"}
-		VarArray %Properties{}
-		s %TypeName{"GameStateTriggerComponent"}
-		u3 %TypeVersion{1}
+		s %Category{"EzTestProject"}
 	}
 }
 o
@@ -1028,16 +1038,6 @@ o
 		s %Name{"GetObjectFilterID"}
 		Uuid %ReturnValue{u4{2797605736284022243,11870783614192411682}}
 		s %Type{"ezFunctionType::Member"}
-	}
-}
-o
-{
-	Uuid %id{u4{4869826244716335671,9069499321452005827}}
-	s %t{"ezCategoryAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Category{"EzTestProject"}
 	}
 }
 o

@@ -53,6 +53,15 @@ export class GameStateTriggerComponent extends EventMessageHandlerComponent
   public static GetTypeNameHash(): number { return 176371642; }
 }
 
+export class TriggerModifierComponent extends EventMessageHandlerComponent
+{
+  public static GetTypeNameHash(): number { return 669395249; }
+  get ActivationDelay(): number { return __CPP_ComponentProperty_get(this, 873667821); }
+  set ActivationDelay(value: number) { __CPP_ComponentProperty_set(this, 873667821, value); }
+  get DeactivationDelay(): number { return __CPP_ComponentProperty_get(this, 927736211); }
+  set DeactivationDelay(value: number) { __CPP_ComponentProperty_set(this, 927736211, value); }
+}
+
 export class AgentSteeringComponent extends Component
 {
   public static GetTypeNameHash(): number { return 2433025557; }
@@ -476,6 +485,11 @@ export class FogComponent extends SettingsComponent
   set ModulateWithSkyColor(value: boolean) { __CPP_ComponentProperty_set(this, 992867426, value); }
   get SkyDistance(): number { return __CPP_ComponentProperty_get(this, 645510939); }
   set SkyDistance(value: number) { __CPP_ComponentProperty_set(this, 645510939, value); }
+}
+
+export class ForwardEventsToGameStateComponent extends EventMessageHandlerComponent
+{
+  public static GetTypeNameHash(): number { return 1132316266; }
 }
 
 export class MeshComponent extends MeshComponentBase

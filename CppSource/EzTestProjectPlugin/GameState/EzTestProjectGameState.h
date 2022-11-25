@@ -21,7 +21,7 @@ public:
 
   virtual void ProcessInput() override;
 
-  virtual void HandleForwardedMessage(const ezMessage& msg) override;
+  void OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg);
 
 protected:
   virtual void ConfigureMainWindowInputDevices(ezWindow* pWindow) override;
@@ -40,4 +40,6 @@ private:
   ezTime m_LevelSwitched;
 
   bool m_bHasItem[3] = { false, false, false };
+
+  ezUniquePtr<ezWorld> m_pNewWorld;
 };
