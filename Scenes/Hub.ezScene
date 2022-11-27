@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{13123664383442423628,11094332277691674355}}
-		u4 %Hash{6596037131665903525}
+		u4 %Hash{1013570037789502}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -1931,18 +1931,6 @@ o
 }
 o
 {
-	Uuid %id{u4{11142014358289245865,4973485296517195835}}
-	s %t{"GameStateTriggerComponent"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		b %HandleGlobalEvents{0}
-		b %PassThroughUnhandledEvents{0}
-	}
-}
-o
-{
 	Uuid %id{u4{14540207270095032482,4974501223317719396}}
 	s %t{"ezGameObject"}
 	u3 %v{1}
@@ -2279,6 +2267,18 @@ o
 o
 {
 	Uuid %id{u4{1531494893739681692,5067296162614236023}}
+	s %t{"ezForwardEventsToGameStateComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %HandleGlobalEvents{0}
+		b %PassThroughUnhandledEvents{0}
+	}
+}
+o
+{
+	Uuid %id{u4{14820348190370632880,5069315232808435481}}
 	s %t{"ezForwardEventsToGameStateComponent"}
 	u3 %v{1}
 	p
@@ -3035,7 +3035,7 @@ o
 		VarArray %Components
 		{
 			Uuid{u4{14279477660884476298,4992244701389252293}}
-			Uuid{u4{11142014358289245865,4973485296517195835}}
+			Uuid{u4{14820348190370632880,5069315232808435481}}
 		}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0x00009040,0x00008CC0,0x00006040}}
@@ -9823,26 +9823,6 @@ o
 }
 o
 {
-	Uuid %id{u4{4787718766513567674,6623098258402935862}}
-	s %t{"ezReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{4869826244716335671,9069499321452005827}}
-		}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
-		VarArray %Functions{}
-		s %ParentTypeName{"ezEventMessageHandlerComponent"}
-		s %PluginName{"EzTestProjectPlugin"}
-		VarArray %Properties{}
-		s %TypeName{"GameStateTriggerComponent"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
 	Uuid %id{u4{7605758958972330253,6687734095884105025}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -10143,16 +10123,6 @@ o
 		s %Name{"AddLinearImpulse"}
 		Uuid %ReturnValue{u4{12476024009156659430,18058972465083403801}}
 		s %Type{"ezFunctionType::Member"}
-	}
-}
-o
-{
-	Uuid %id{u4{4869826244716335671,9069499321452005827}}
-	s %t{"ezCategoryAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Category{"EzTestProject"}
 	}
 }
 o

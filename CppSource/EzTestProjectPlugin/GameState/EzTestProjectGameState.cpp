@@ -13,14 +13,12 @@
 #include <RendererCore/Debug/DebugRenderer.h>
 
 EZ_BEGIN_DYNAMIC_REFLECTED_TYPE(EzTestProjectGameState, 1, ezRTTIDefaultAllocator<EzTestProjectGameState>)
-{
-  EZ_BEGIN_MESSAGEHANDLERS
   {
-    EZ_MESSAGE_HANDLER(ezMsgTriggerTriggered, OnMsgTriggerTriggered),
+    EZ_BEGIN_MESSAGEHANDLERS
+    {
+      EZ_MESSAGE_HANDLER(ezMsgTriggerTriggered, OnMsgTriggerTriggered),
+    } EZ_END_MESSAGEHANDLERS;
   }
-  EZ_END_MESSAGEHANDLERS;
-
-}
 EZ_END_DYNAMIC_REFLECTED_TYPE;
 
 EzTestProjectGameState::EzTestProjectGameState() = default;
@@ -31,6 +29,9 @@ void EzTestProjectGameState::OnActivation(ezWorld* pWorld, const ezTransform* pS
   EZ_LOG_BLOCK("GameState::Activate");
 
   SUPER::OnActivation(pWorld, pStartPosition);
+
+  ezWorldDesc desc("Elevator");
+  m_pElevatorWorld = EZ_DEFAULT_NEW(ezWorld, desc);
 }
 
 void EzTestProjectGameState::OnDeactivation()
@@ -43,29 +44,57 @@ void EzTestProjectGameState::OnDeactivation()
 void EzTestProjectGameState::AfterWorldUpdate()
 {
   SUPER::AfterWorldUpdate();
+
+  m_pPreviousWorld.Clear();
 }
 
 void EzTestProjectGameState::BeforeWorldUpdate()
 {
-  if (!m_sSwitchLevelTo.IsEmpty())
+  if (m_LevelState == LevelState::None)
   {
-    ezWorldDesc desc("asdf");
-    m_pNewWorld = EZ_DEFAULT_NEW(ezWorld, desc);
+    m_LevelState = LevelState::Active;
+  }
 
-    if (LoadObjectGraph(m_sSwitchLevelTo, *m_pNewWorld).Succeeded())
+  if (m_LevelState == LevelState::LoadingScreen)
+  {
+    const ezTime tRem = ezTime::Now() - m_LevelSwitched;
+    const ezInt32 iPerc = (ezInt32)(ezMath::Min(1.0f, (tRem.AsFloatInSeconds() / 1.0f)) * 100.0f);
+
+    ezDebugRenderer::DrawInfoText(m_pMainWorld, ezDebugRenderer::ScreenPlacement::TopCenter, "Loading", ezFmt("Loading Level: {}%%", iPerc));
+
+    if (iPerc == 100)
     {
-      m_pMainWorld = m_pNewWorld.Borrow();
+      m_LevelState = LevelState::Active;
+      m_pActiveWorld = std::move(m_pLoadingWorld);
 
-      ezView* pView = nullptr;
-      if (ezRenderWorld::TryGetView(m_hMainView, pView))
-      {
-        pView->SetWorld(m_pMainWorld);
-      }
+      ChangeMainWorld(m_pActiveWorld.Borrow());
 
       SpawnPlayer(nullptr).IgnoreResult();
     }
+  }
 
+  if (m_LevelState == LevelState::Active && !m_sSwitchLevelTo.IsEmpty())
+  {
+    ezLog::Info("Switching to level {}", m_sSwitchLevelTo);
 
+    ChangeMainWorld(m_pElevatorWorld.Borrow());
+    m_LevelState = LevelState::LoadingScreen;
+
+    m_pPreviousWorld = std::move(m_pActiveWorld);
+
+    ezWorldDesc desc(m_sSwitchLevelTo);
+    m_pLoadingWorld = EZ_DEFAULT_NEW(ezWorld, desc);
+
+    if (LoadObjectGraph(m_sSwitchLevelTo, *m_pLoadingWorld).Succeeded())
+    {
+      ezLog::Success("Loading scene succeeded.");
+    }
+    else
+    {
+      m_LevelState = LevelState::Error;
+      ezLog::Error("Loading scene failed.");
+      m_pLoadingWorld.Clear();
+    }
 
     m_sSwitchLevelTo.Clear();
     m_LevelSwitched = ezTime::Now();

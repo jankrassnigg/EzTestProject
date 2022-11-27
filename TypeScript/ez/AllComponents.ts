@@ -48,11 +48,6 @@ export class EventMessageHandlerComponent extends Component
   set PassThroughUnhandledEvents(value: boolean) { __CPP_ComponentProperty_set(this, 527316798, value); }
 }
 
-export class GameStateTriggerComponent extends EventMessageHandlerComponent
-{
-  public static GetTypeNameHash(): number { return 176371642; }
-}
-
 export class TriggerModifierComponent extends EventMessageHandlerComponent
 {
   public static GetTypeNameHash(): number { return 669395249; }

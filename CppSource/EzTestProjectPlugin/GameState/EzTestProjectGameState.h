@@ -39,7 +39,20 @@ private:
   ezString m_sSwitchLevelTo;
   ezTime m_LevelSwitched;
 
-  bool m_bHasItem[3] = { false, false, false };
+  bool m_bHasItem[3] = {false, false, false};
 
-  ezUniquePtr<ezWorld> m_pNewWorld;
+  ezUniquePtr<ezWorld> m_pElevatorWorld;
+  ezUniquePtr<ezWorld> m_pLoadingWorld;
+  ezUniquePtr<ezWorld> m_pActiveWorld;
+  ezUniquePtr<ezWorld> m_pPreviousWorld;
+
+  enum class LevelState
+  {
+    None,
+    LoadingScreen,
+    Active,
+    Error,
+  };
+
+  LevelState m_LevelState = LevelState::None;
 };

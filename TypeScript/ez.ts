@@ -64,7 +64,6 @@ export import Physics = __Physics.Physics;
 // AUTO-GENERATED
 import __AllComponents = require("./ez/AllComponents")
 export import EventMessageHandlerComponent = __AllComponents.EventMessageHandlerComponent;
-export import GameStateTriggerComponent = __AllComponents.GameStateTriggerComponent;
 export import TriggerModifierComponent = __AllComponents.TriggerModifierComponent;
 export import AgentSteeringComponent = __AllComponents.AgentSteeringComponent;
 export import RenderComponent = __AllComponents.RenderComponent;

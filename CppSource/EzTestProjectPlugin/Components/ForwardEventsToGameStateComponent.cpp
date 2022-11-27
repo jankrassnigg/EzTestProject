@@ -19,7 +19,7 @@ ezForwardEventsToGameStateComponent::~ezForwardEventsToGameStateComponent() = de
 
 bool ezForwardEventsToGameStateComponent::HandlesEventMessage(const ezEventMessage& msg) const
 {
-  if (ezGameStateBase* pGameState = ezGameApplicationBase::GetGameApplicationBaseInstance()->GetActiveGameStateLinkedToWorld(GetOwner()->GetWorld()))
+  if (ezGameStateBase* pGameState = ezGameApplicationBase::GetGameApplicationBaseInstance()->GetActiveGameState())
   {
     return pGameState->GetDynamicRTTI()->CanHandleMessage(msg.GetId());
   }
@@ -29,7 +29,7 @@ bool ezForwardEventsToGameStateComponent::HandlesEventMessage(const ezEventMessa
 
 bool ezForwardEventsToGameStateComponent::OnUnhandledMessage(ezMessage& msg, bool bWasPostedMsg)
 {
-  if (ezGameStateBase* pGameState = ezGameApplicationBase::GetGameApplicationBaseInstance()->GetActiveGameStateLinkedToWorld(GetOwner()->GetWorld()))
+  if (ezGameStateBase* pGameState = ezGameApplicationBase::GetGameApplicationBaseInstance()->GetActiveGameState())
   {
     return pGameState->GetDynamicRTTI()->DispatchMessage(pGameState, msg);
   }
@@ -39,7 +39,7 @@ bool ezForwardEventsToGameStateComponent::OnUnhandledMessage(ezMessage& msg, boo
 
 bool ezForwardEventsToGameStateComponent::OnUnhandledMessage(ezMessage& msg, bool bWasPostedMsg) const
 {
-  if (const ezGameStateBase* pGameState = ezGameApplicationBase::GetGameApplicationBaseInstance()->GetActiveGameStateLinkedToWorld(GetOwner()->GetWorld()))
+  if (const ezGameStateBase* pGameState = ezGameApplicationBase::GetGameApplicationBaseInstance()->GetActiveGameState())
   {
     return pGameState->GetDynamicRTTI()->DispatchMessage(pGameState, msg);
   }
