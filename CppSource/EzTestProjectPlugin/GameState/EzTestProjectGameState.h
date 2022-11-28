@@ -45,6 +45,7 @@ private:
   ezUniquePtr<ezWorld> m_pLoadingWorld;
   ezUniquePtr<ezWorld> m_pActiveWorld;
   ezUniquePtr<ezWorld> m_pPreviousWorld;
+  ezCollectionResourceHandle m_hLoadingCollection;
 
   enum class LevelState
   {

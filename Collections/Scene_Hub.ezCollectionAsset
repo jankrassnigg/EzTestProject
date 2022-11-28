@@ -1,0 +1,281 @@
+HeaderV2
+{
+o
+{
+	Uuid %id{u4{7996168976852629408,5409930412996463680}}
+	s %t{"ezAssetDocumentInfo"}
+	u3 %v{2}
+	s %n{"Header"}
+	p
+	{
+		s %AssetType{"Collection"}
+		VarArray %Dependencies
+		{
+			s{"{ 041351e8-9142-411d-a041-7a66a721a258 }"}
+			s{"{ 05906bf7-ef5b-4a1c-b0a3-46c256116fc7 }"}
+			s{"{ 05af8d07-0b38-44a6-8d50-49731ae2625d }"}
+			s{"{ 0719a0e0-a9c6-4eb9-843a-b42732842bff }"}
+			s{"{ 08ca2714-0ee3-457a-940d-db0820e5679f }"}
+			s{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+			s{"{ 0a105955-e069-4523-80ce-7b9867bde687 }"}
+			s{"{ 0afb67de-55a8-4d36-8eb0-c5cee5d4c18d }"}
+			s{"{ 0d76b162-f1fd-41b3-a9fa-28f86531a827 }"}
+			s{"{ 0e22cbf0-977f-4a68-9570-3b91932ef2dc }"}
+			s{"{ 1334942b-cbf7-4e4d-acdb-45873ac68715 }"}
+			s{"{ 13f89b51-14f9-45ad-8f5e-55eb44f78a66 }"}
+			s{"{ 14bf3313-89f3-4692-873c-d127980bf748 }"}
+			s{"{ 1539981d-3bac-4fde-8a0f-b93ca58fc242 }"}
+			s{"{ 1676f0d1-5fcd-4c56-9a0b-3fd0d9105925 }"}
+			s{"{ 173ee10a-fb26-47f2-a10c-c500f69d7c25 }"}
+			s{"{ 18328be3-cd2d-4cd4-b39a-eca98fc67cdd }"}
+			s{"{ 19566b37-4be1-44df-8cfa-3c11932a70f7 }"}
+			s{"{ 1ff66ef3-fc6d-99f6-4c0f-887e399f20b6 }"}
+			s{"{ 2297581d-ee6d-4bcd-b25a-921ce42f0022 }"}
+			s{"{ 23b68c6b-0622-4ff0-8ab2-baf1689f1831 }"}
+			s{"{ 23d1d294-0f71-4f3e-9630-726259ad0c3e }"}
+			s{"{ 24fb3a6a-3102-4dc3-9abc-af67f6fa6a20 }"}
+			s{"{ 253d2ab5-9f15-4285-8aef-6b7d2849e336 }"}
+			s{"{ 25b75609-7b37-4fa1-a4fe-531b1358e33b }"}
+			s{"{ 2786cb26-28ab-4c65-a2ec-083f91b007c7 }"}
+			s{"{ 29a3f425-d6db-4d46-9979-324961c91204 }"}
+			s{"{ 2a3a77b2-2f8c-4f93-a4e5-eb5706717a58 }"}
+			s{"{ 368da1e1-84c0-4cbe-83a9-06ef2a314a16 }"}
+			s{"{ 3c17e08e-4484-47c5-b5ff-cba5c3b871ee }"}
+			s{"{ 3c9619e9-d539-4e95-80ab-7e040a2507ae }"}
+			s{"{ 4006424a-cecf-496e-8009-d9872e3fd2e8 }"}
+			s{"{ 44d7424d-99aa-476d-8759-d2916803450c }"}
+			s{"{ 481eebfb-eaf0-4e6e-aff5-d89584279421 }"}
+			s{"{ 49353124-9f51-431a-a98a-2df90aaa2aec }"}
+			s{"{ 49eb14d9-9e6a-4d67-b8bb-44af3f01de06 }"}
+			s{"{ 4b388145-2712-4505-a33e-b277b9f99a73 }"}
+			s{"{ 4dc82890-39e3-4bfc-a97d-86a984d4d3db }"}
+			s{"{ 4e659c93-2099-488e-aa28-2fbdb5448818 }"}
+			s{"{ 4e6b55d8-627e-4b83-93df-c32cf7122d73 }"}
+			s{"{ 4f3f0c69-8061-4ffe-aaa6-9ae98f55db75 }"}
+			s{"{ 5139f1dc-2b22-44cc-9309-1949e1d61c90 }"}
+			s{"{ 56a944d9-3686-4730-8b7d-104d2f02e2b1 }"}
+			s{"{ 589b3954-0f68-41de-a90c-572bb20b44a0 }"}
+			s{"{ 58d44330-37a1-4c9d-9fa2-0540a1d8ee90 }"}
+			s{"{ 58e63524-2081-4782-ae3e-21a8e3cdc45b }"}
+			s{"{ 59aca100-d91d-45f0-9d89-a5c1c0e51e5c }"}
+			s{"{ 5c63723b-1aea-40db-b3c6-4e99e4a21403 }"}
+			s{"{ 5c77d477-f7a8-40f9-ad7d-f1a13988fae1 }"}
+			s{"{ 5f0dfb6f-be9d-4712-b295-ea91ed9d8739 }"}
+			s{"{ 64afa906-c511-40f4-90b7-3b842b008212 }"}
+			s{"{ 64d3d26c-3e5d-46ab-8072-b9b65e850c77 }"}
+			s{"{ 6a6ec7a9-27d7-482f-8ae7-e5c230d9d42b }"}
+			s{"{ 6bec514f-5764-4507-9be0-8a5b03c4ec14 }"}
+			s{"{ 6f2dcc06-1cb5-414d-8c43-5e027b6fbd25 }"}
+			s{"{ 6f547fc4-1f7b-4327-a33a-a7b5d045f5d3 }"}
+			s{"{ 71cbf7c3-d210-4fca-9f24-53d73f6d21f1 }"}
+			s{"{ 72115f7a-5947-4a21-899f-868368bd41d7 }"}
+			s{"{ 73196af8-7d11-41ae-8ff1-cdc52b699371 }"}
+			s{"{ 7459af7f-22e5-4c62-bc5f-4f6fbd5cb10a }"}
+			s{"{ 748157ee-7b13-4ce5-bab9-26e2a661e0c3 }"}
+			s{"{ 7580d57e-5f3c-4f5e-a574-be22333d3ccd }"}
+			s{"{ 76232b2b-7b8c-4d99-84d3-46fa3453b763 }"}
+			s{"{ 7845d9e2-cd7a-4d7e-ba72-53d282800d47 }"}
+			s{"{ 788f0834-50d2-49f8-837f-1beb61a87ea7 }"}
+			s{"{ 7addd61f-86d1-4bef-92fd-86ba81c40205 }"}
+			s{"{ 7b20382f-4f81-4d45-999c-2c1bfed98775 }"}
+			s{"{ 7b93f7de-56ee-4fdb-8b7f-feacde161d17 }"}
+			s{"{ 7bba6648-0431-4e62-8aca-f7e856a00887 }"}
+			s{"{ 7c71fc2d-2a1a-4938-9305-f3a0f26d73cc }"}
+			s{"{ 7d0122e9-98e6-4c07-8d05-e46e2facaa99 }"}
+			s{"{ 8044a36f-e313-4204-973d-796231798973 }"}
+			s{"{ 80560e97-f6f6-438c-9d68-073d2dc558df }"}
+			s{"{ 8b221e76-59a0-4140-83e4-bf5c914c145c }"}
+			s{"{ 8d2f57d9-0c7e-485e-8c39-ce88d2ab6102 }"}
+			s{"{ 8d6b52d7-97ae-402f-a126-ea22a5dcd85c }"}
+			s{"{ 8e11085f-df09-4844-a81f-d407b973b47d }"}
+			s{"{ 8ec7cbae-2beb-4f4a-8416-35cec9a7968a }"}
+			s{"{ 8ec92f7e-616c-4069-a617-56d895813b9d }"}
+			s{"{ 8f19ce05-bf1e-4626-9659-e6acc058dee5 }"}
+			s{"{ 91bd56fc-ecb9-4daa-9bbc-2992c87dc97f }"}
+			s{"{ 926c6d0e-19bf-4055-9775-74ff38934360 }"}
+			s{"{ 935d0a8d-c356-4bed-bb22-9ffc32254e4e }"}
+			s{"{ 99817ca5-cbc4-4645-b168-39c99618fd4e }"}
+			s{"{ 9a9d52e5-42e3-4f7c-bfc4-65b96c9dcbca }"}
+			s{"{ 9d0ba6dc-6fca-45be-9319-048695ddd932 }"}
+			s{"{ 9da0668a-140a-45ac-99ce-09b2c904ddee }"}
+			s{"{ 9f45a46b-a903-424b-bea9-cd04465df675 }"}
+			s{"{ a1040c26-65cb-44ad-bce1-1d143ec3fca9 }"}
+			s{"{ a28bc6e0-f7ba-4e1a-9515-8ccf0ae28d1c }"}
+			s{"{ a3cae220-4c4a-4079-bc3c-201ef022dd87 }"}
+			s{"{ a4cf3149-cf95-4240-873e-8a2587335c33 }"}
+			s{"{ a4f8fb8f-4276-485a-8781-0cfb5304b622 }"}
+			s{"{ a8ea93c2-5541-45b3-8472-1d0d5cc08f1c }"}
+			s{"{ a9ac49ec-1978-4cfd-99fc-6ad42cfa3641 }"}
+			s{"{ abb5f06e-f4f2-4fb1-94e9-eed4a51e4490 }"}
+			s{"{ ac0503e6-5361-439a-a288-d5ab6b7d9014 }"}
+			s{"{ ac2a135b-f151-4400-bf7d-e17aef1e55f2 }"}
+			s{"{ ac614d7c-2b31-4a7b-aa0c-c5d8200b7b89 }"}
+			s{"{ ad076ac1-347f-47f9-8720-b1e23ebe82cc }"}
+			s{"{ b14ecf51-a531-4b5b-be0d-dde56c125a70 }"}
+			s{"{ b1b5b675-1fda-4349-a8e1-ee4e6328a112 }"}
+			s{"{ b54a9f2d-62fd-446f-ad76-1a0257ffedd9 }"}
+			s{"{ b5da7079-8f0a-4f4c-80d7-c72842e3890c }"}
+			s{"{ b80a7749-b9bb-4680-b4fb-8a38845579c8 }"}
+			s{"{ bb194fb1-80dc-4f5a-9f52-08c0e6e209b3 }"}
+			s{"{ bc248b48-f1f7-482f-bcbb-caaf58f9cdee }"}
+			s{"{ c00814fd-10b0-4c2c-9e38-f7589564e4b5 }"}
+			s{"{ c0f0c6ee-b3a6-4b85-9e14-4d73dd2c74c0 }"}
+			s{"{ c17861fe-63ac-46f6-8802-43451dbf2aa5 }"}
+			s{"{ c814fe78-9702-2f7d-71b0-c28cc6b8f57c }"}
+			s{"{ c914b14c-7637-4bad-8c2b-e494bfb81065 }"}
+			s{"{ c91784ca-1876-4ade-b735-8408c8b1c067 }"}
+			s{"{ c9f24533-1a11-4a28-a699-675e358d020b }"}
+			s{"{ ca100197-be92-480a-9e2f-44f8b7a19322 }"}
+			s{"{ cbabe99b-6099-4294-a7a6-64e06917b837 }"}
+			s{"{ cc4c7740-77c5-401c-8ff9-48964190efa5 }"}
+			s{"{ cfcc713d-8d6c-414e-9c39-2791211434c4 }"}
+			s{"{ d1bb0b52-b8dc-485a-824c-c9e5efd27414 }"}
+			s{"{ d615cd66-0904-00ca-81f9-768ff4fc24ee }"}
+			s{"{ db328e43-aadf-486b-a68c-c298bbc0b26a }"}
+			s{"{ dc881f81-9d6c-45ca-a9cf-717a5282806f }"}
+			s{"{ de1477b1-d661-49f5-ae41-62c6489e7997 }"}
+			s{"{ dfd08f92-ab41-4722-90d0-fe68947731bf }"}
+			s{"{ e22c84a8-5f61-4b46-92b8-e85ddb630554 }"}
+			s{"{ e43c693e-8922-44d7-bffb-c0a1ed600f9d }"}
+			s{"{ e5a8ab13-1565-43d4-a93e-7493fe78f6db }"}
+			s{"{ e812a8dc-bfab-4996-9b78-f5d27006a1f2 }"}
+			s{"{ ea228dbf-530d-406c-ac32-9d03b8d1caec }"}
+			s{"{ ea3342cc-a89a-49d0-a3a0-d76e4edba8f5 }"}
+			s{"{ eb09001b-e07a-4285-8788-eb41cbb95961 }"}
+			s{"{ eb65b095-1abd-4cbd-b8c7-f465c4bb5bf7 }"}
+			s{"{ ec25d25f-a638-4528-b683-b00419232786 }"}
+			s{"{ ed12c430-7368-4a14-a45c-aab2a466bdbb }"}
+			s{"{ ee5a10d8-b8b3-410d-86da-cb9595971e2b }"}
+			s{"{ ef10b13f-ac39-400c-abad-a6af85578750 }"}
+			s{"{ ef602619-f786-4f48-a557-3c9bad255c73 }"}
+			s{"{ f449df53-03b9-47ab-9b4b-d830d5ee596d }"}
+			s{"{ f7d0ddae-b438-46c3-8292-5f6705e9fa49 }"}
+			s{"{ f962fc28-661b-485c-a527-c997e239a3f0 }"}
+			s{"{ fa1acd98-171b-46cf-816a-f5d9bc733ad7 }"}
+			s{"{ faae58e4-f687-4f0e-af7d-87ac6d39e523 }"}
+			s{"{ faef89a6-b1fc-4bda-ae82-b20e080a53ac }"}
+			s{"{ ff00fab2-d956-4006-b837-3e0850d21acf }"}
+		}
+		Uuid %DocumentID{u4{7996168976852629408,5409930412996463680}}
+		u4 %Hash{10429941117962014712}
+		VarArray %MetaInfo{}
+		VarArray %Outputs{}
+		VarArray %References
+		{
+			s{"{ 1ff66ef3-fc6d-99f6-4c0f-887e399f20b6 }"}
+		}
+	}
+}
+}
+Objects
+{
+o
+{
+	Uuid %id{u4{1224660079923554223,5441491684884787018}}
+	s %t{"ezCollectionAssetEntry"}
+	u3 %v{1}
+	p
+	{
+		s %Asset{"{ 1ff66ef3-fc6d-99f6-4c0f-887e399f20b6 }"}
+		s %Name{"Scene_Hub"}
+	}
+}
+o
+{
+	Uuid %id{u4{16732676174147942069,6209815767846745494}}
+	s %t{"ezCollectionAssetData"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Entries
+		{
+			Uuid{u4{1224660079923554223,5441491684884787018}}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{8924621076698428970,7092507033557198286}}
+	s %t{"ezDocumentRoot"}
+	u3 %v{1}
+	s %n{"ObjectTree"}
+	p
+	{
+		VarArray %Children
+		{
+			Uuid{u4{16732676174147942069,6209815767846745494}}
+		}
+	}
+}
+}
+Types
+{
+o
+{
+	Uuid %id{u4{13590641013881919643,2844595810355963325}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezReflectedClass"}
+		s %PluginName{"ezEditorPluginAssets"}
+		VarArray %Properties{}
+		s %TypeName{"ezCollectionAssetEntry"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{6089094783765586323,8705960867921430659}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezDocumentRoot"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{12165807254422627566,15044647769667105818}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezReflectedClass"}
+		s %PluginName{"ezEditorPluginAssets"}
+		VarArray %Properties{}
+		s %TypeName{"ezCollectionAssetData"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{983387834180907111,17935407260904399048}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezReflectedClass"}
+		u3 %TypeVersion{1}
+	}
+}
+}

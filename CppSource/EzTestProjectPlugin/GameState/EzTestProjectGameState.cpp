@@ -58,7 +58,21 @@ void EzTestProjectGameState::BeforeWorldUpdate()
   if (m_LevelState == LevelState::LoadingScreen)
   {
     const ezTime tRem = ezTime::Now() - m_LevelSwitched;
-    const ezInt32 iPerc = (ezInt32)(ezMath::Min(1.0f, (tRem.AsFloatInSeconds() / 1.0f)) * 100.0f);
+    ezInt32 iPerc = (ezInt32)(ezMath::Min(1.0f, (tRem.AsFloatInSeconds() / 1.0f)) * 100.0f);
+
+    if (m_hLoadingCollection.IsValid())
+    {
+      ezResourceLock<ezCollectionResource> pCollection(m_hLoadingCollection, ezResourceAcquireMode::BlockTillLoaded_NeverFail);
+      if (pCollection.GetAcquireResult() == ezResourceAcquireResult::Final)
+      {
+        pCollection->PreloadResources();
+
+        float progress = 0.0f;
+        pCollection->IsLoadingFinished(&progress);
+
+        iPerc = (ezInt32)(progress * 100.0f);
+      }
+    }
 
     ezDebugRenderer::DrawInfoText(m_pMainWorld, ezDebugRenderer::ScreenPlacement::TopCenter, "Loading", ezFmt("Loading Level: {}%%", iPerc));
 
@@ -155,21 +169,25 @@ void EzTestProjectGameState::OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg)
     if (msg.m_sMessage.GetString() == "ChangeLevel_Room1")
     {
       m_sSwitchLevelTo = "{ 4413ae89-ce73-92dc-358c-ba3152a1427c }";
+      m_hLoadingCollection.Invalidate();
       return;
     }
     if (msg.m_sMessage.GetString() == "ChangeLevel_Room2")
     {
       m_sSwitchLevelTo = "{ 54297160-efe8-4a95-88cb-4d23130a6121 }";
+      m_hLoadingCollection.Invalidate();
       return;
     }
     if (msg.m_sMessage.GetString() == "ChangeLevel_Room3")
     {
       m_sSwitchLevelTo = "{ 0c279c89-a42c-4fa5-935f-bd579495e60f }";
+      m_hLoadingCollection.Invalidate();
       return;
     }
     if (msg.m_sMessage.GetString() == "ChangeLevel_Hub")
     {
       m_sSwitchLevelTo = "{ 1ff66ef3-fc6d-99f6-4c0f-887e399f20b6 }";
+      m_hLoadingCollection = ezResourceManager::LoadResource<ezCollectionResource>("{ 2e3c8c40-ef0c-4b13-a0b7-4ca55119f86e }");
       return;
     }
   }
