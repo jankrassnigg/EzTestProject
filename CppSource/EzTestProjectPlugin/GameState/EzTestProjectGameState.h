@@ -37,15 +37,9 @@ private:
   ezResult LoadObjectGraph(const char* szFile, ezWorld& world);
 
   ezString m_sSwitchLevelTo;
-  ezTime m_LevelSwitched;
+  ezString m_sSwitchLevelToCollection;
 
   bool m_bHasItem[3] = {false, false, false};
-
-  ezUniquePtr<ezWorld> m_pElevatorWorld;
-  ezUniquePtr<ezWorld> m_pLoadingWorld;
-  ezUniquePtr<ezWorld> m_pActiveWorld;
-  ezUniquePtr<ezWorld> m_pPreviousWorld;
-  ezCollectionResourceHandle m_hLoadingCollection;
 
   enum class LevelState
   {
