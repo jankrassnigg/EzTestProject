@@ -63,8 +63,6 @@ export import Physics = __Physics.Physics;
 
 // AUTO-GENERATED
 import __AllComponents = require("./ez/AllComponents")
-export import EventMessageHandlerComponent = __AllComponents.EventMessageHandlerComponent;
-export import TriggerModifierComponent = __AllComponents.TriggerModifierComponent;
 export import AgentSteeringComponent = __AllComponents.AgentSteeringComponent;
 export import RenderComponent = __AllComponents.RenderComponent;
 export import AlwaysVisibleComponent = __AllComponents.AlwaysVisibleComponent;
@@ -91,6 +89,7 @@ export import DecalComponent = __AllComponents.DecalComponent;
 export import DeviceTrackingComponent = __AllComponents.DeviceTrackingComponent;
 export import LightComponent = __AllComponents.LightComponent;
 export import DirectionalLightComponent = __AllComponents.DirectionalLightComponent;
+export import EventMessageHandlerComponent = __AllComponents.EventMessageHandlerComponent;
 export import FakeRopeComponent = __AllComponents.FakeRopeComponent;
 export import FmodComponent = __AllComponents.FmodComponent;
 export import FmodEventComponent = __AllComponents.FmodEventComponent;

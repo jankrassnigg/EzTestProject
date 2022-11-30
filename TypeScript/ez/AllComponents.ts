@@ -39,24 +39,6 @@ declare function __CPP_ComponentProperty_get(component: Component, id: number);
 declare function __CPP_ComponentProperty_set(component: Component, id: number, value);
 declare function __CPP_ComponentFunction_Call(component: Component, id: number, ...args);
 
-export class EventMessageHandlerComponent extends Component
-{
-  public static GetTypeNameHash(): number { return 2410982864; }
-  get HandleGlobalEvents(): boolean { return __CPP_ComponentProperty_get(this, 363574155); }
-  set HandleGlobalEvents(value: boolean) { __CPP_ComponentProperty_set(this, 363574155, value); }
-  get PassThroughUnhandledEvents(): boolean { return __CPP_ComponentProperty_get(this, 527316798); }
-  set PassThroughUnhandledEvents(value: boolean) { __CPP_ComponentProperty_set(this, 527316798, value); }
-}
-
-export class TriggerModifierComponent extends EventMessageHandlerComponent
-{
-  public static GetTypeNameHash(): number { return 669395249; }
-  get ActivationDelay(): number { return __CPP_ComponentProperty_get(this, 873667821); }
-  set ActivationDelay(value: number) { __CPP_ComponentProperty_set(this, 873667821, value); }
-  get DeactivationDelay(): number { return __CPP_ComponentProperty_get(this, 927736211); }
-  set DeactivationDelay(value: number) { __CPP_ComponentProperty_set(this, 927736211, value); }
-}
-
 export class AgentSteeringComponent extends Component
 {
   public static GetTypeNameHash(): number { return 2433025557; }
@@ -406,6 +388,15 @@ export class DirectionalLightComponent extends LightComponent
   set SplitModeWeight(value: number) { __CPP_ComponentProperty_set(this, 2604859805, value); }
   get NearPlaneOffset(): number { return __CPP_ComponentProperty_get(this, 1922790091); }
   set NearPlaneOffset(value: number) { __CPP_ComponentProperty_set(this, 1922790091, value); }
+}
+
+export class EventMessageHandlerComponent extends Component
+{
+  public static GetTypeNameHash(): number { return 2410982864; }
+  get HandleGlobalEvents(): boolean { return __CPP_ComponentProperty_get(this, 363574155); }
+  set HandleGlobalEvents(value: boolean) { __CPP_ComponentProperty_set(this, 363574155, value); }
+  get PassThroughUnhandledEvents(): boolean { return __CPP_ComponentProperty_get(this, 527316798); }
+  set PassThroughUnhandledEvents(value: boolean) { __CPP_ComponentProperty_set(this, 527316798, value); }
 }
 
 export class FakeRopeComponent extends Component
