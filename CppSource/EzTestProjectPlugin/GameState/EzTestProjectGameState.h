@@ -40,14 +40,4 @@ private:
   ezString m_sSwitchLevelToCollection;
 
   bool m_bHasItem[3] = {false, false, false};
-
-  enum class LevelState
-  {
-    None,
-    LoadingScreen,
-    Active,
-    Error,
-  };
-
-  LevelState m_LevelState = LevelState::None;
 };

@@ -79,31 +79,16 @@ void EzTestProjectGameState::ProcessInput()
 {
   SUPER::ProcessInput();
 
-  if (m_LevelState == LevelState::None)
-  {
-    m_LevelState = LevelState::Active;
-  }
-
-  if (m_LevelState == LevelState::LoadingScreen)
+  if (IsLoadingScene())
   {
     ezInt32 iPerc = GetSceneLoadingProgress();
-
-    ezLog::Info("Loading Level: {}%%", iPerc);
     ezDebugRenderer::DrawInfoText(m_pMainWorld, ezDebugRenderer::ScreenPlacement::TopCenter, "Loading", ezFmt("Loading Level: {}%%", iPerc));
-
-    if (iPerc == 100)
-    {
-      m_LevelState = LevelState::Active;
-      SwitchToLoadedScene();
-    }
   }
-
-  if (m_LevelState == LevelState::Active && !m_sSwitchLevelTo.IsEmpty())
+  else if (!m_sSwitchLevelTo.IsEmpty())
   {
     ezLog::Info("Switching to level {}", m_sSwitchLevelTo);
 
-    SwitchToLoadingScreen();
-    m_LevelState = LevelState::LoadingScreen;
+    // SwitchToLoadingScreen();
 
     QueueSceneLoading(m_sSwitchLevelTo, m_sSwitchLevelToCollection);
 
