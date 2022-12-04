@@ -286,6 +286,13 @@ export class ColorAnimationComponent extends Component
   set ApplyToChildren(value: boolean) { __CPP_ComponentProperty_set(this, 1543662045, value); }
 }
 
+export class CommentComponent extends Component
+{
+  public static GetTypeNameHash(): number { return 3498221260; }
+  get Comment(): string { return __CPP_ComponentProperty_get(this, 3941988709); }
+  set Comment(value: string) { __CPP_ComponentProperty_set(this, 3941988709, value); }
+}
+
 export class CustomMeshComponent extends RenderComponent
 {
   public static GetTypeNameHash(): number { return 1082120609; }
@@ -390,7 +397,12 @@ export class DirectionalLightComponent extends LightComponent
   set NearPlaneOffset(value: number) { __CPP_ComponentProperty_set(this, 1922790091, value); }
 }
 
-export class EventMessageHandlerComponent extends Component
+export class EventMessageHandlerBaseComponent extends Component
+{
+  public static GetTypeNameHash(): number { return 1303556842; }
+}
+
+export class EventMessageHandlerComponent extends EventMessageHandlerBaseComponent
 {
   public static GetTypeNameHash(): number { return 2410982864; }
   get HandleGlobalEvents(): boolean { return __CPP_ComponentProperty_get(this, 363574155); }
@@ -1451,6 +1463,15 @@ export class TimedDeathComponent extends Component
   set DelayRange(value: number) { __CPP_ComponentProperty_set(this, 1350176412, value); }
   get TimeoutPrefab(): string { return __CPP_ComponentProperty_get(this, 978098831); }
   set TimeoutPrefab(value: string) { __CPP_ComponentProperty_set(this, 978098831, value); }
+}
+
+export class TriggerDelayModifierComponent extends EventMessageHandlerBaseComponent
+{
+  public static GetTypeNameHash(): number { return 928702445; }
+  get ActivationDelay(): number { return __CPP_ComponentProperty_get(this, 3433323958); }
+  set ActivationDelay(value: number) { __CPP_ComponentProperty_set(this, 3433323958, value); }
+  get DeactivationDelay(): number { return __CPP_ComponentProperty_get(this, 789862730); }
+  set DeactivationDelay(value: number) { __CPP_ComponentProperty_set(this, 789862730, value); }
 }
 
 export class VisualScriptComponent extends EventMessageHandlerComponent

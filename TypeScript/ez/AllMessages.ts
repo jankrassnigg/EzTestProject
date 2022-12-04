@@ -101,6 +101,7 @@ export class MsgComponentInternalTrigger extends Message
   public static GetTypeNameHash(): number { return 2150357888; }
   constructor() { super(); this.TypeNameHash = 2150357888; }
   Message: string;
+  Payload: number = 0;
 }
 
 export class MsgComponentsChanged extends Message

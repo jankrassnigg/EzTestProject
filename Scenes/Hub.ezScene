@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{13123664383442423628,11094332277691674355}}
-		u4 %Hash{1013570037789502}
+		u4 %Hash{16163140335742221425}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -1084,20 +1084,6 @@ o
 }
 o
 {
-	Uuid %id{u4{13887982355116714881,4743650192362100050}}
-	s %t{"TriggerModifierComponent"}
-	u3 %v{1}
-	p
-	{
-		Time %ActivationDelay{d{0x000000000000F03F}}
-		b %Active{1}
-		Time %DeactivationDelay{d{0x0000000000000040}}
-		b %HandleGlobalEvents{0}
-		b %PassThroughUnhandledEvents{0}
-	}
-}
-o
-{
 	Uuid %id{u4{10923401542708588954,4745299399465292343}}
 	s %t{"ezGreyBoxComponent"}
 	u3 %v{5}
@@ -1767,6 +1753,18 @@ o
 		b %SlopedTop{0}
 		f %Thickness{0x0000003F}
 		b %UseAsOccluder{0}
+	}
+}
+o
+{
+	Uuid %id{u4{16920696761155459515,4917368526498618558}}
+	s %t{"ezTriggerDelayModifierComponent"}
+	u3 %v{1}
+	p
+	{
+		Time %ActivationDelay{d{0x000000000000E03F}}
+		b %Active{1}
+		Time %DeactivationDelay{d{0x0000000000000040}}
 	}
 }
 o
@@ -4498,7 +4496,7 @@ o
 		{
 			Uuid{u4{6740686849078611348,5403937430216266490}}
 			Uuid{u4{13279344445767772040,4696223855959221510}}
-			Uuid{u4{13887982355116714881,4743650192362100050}}
+			Uuid{u4{16920696761155459515,4917368526498618558}}
 		}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0,0,0}}
@@ -9174,14 +9172,11 @@ o
 	u3 %v{1}
 	p
 	{
-		VarArray %Attributes
-		{
-			Uuid{u4{1206310757622303127,7019604220602696241}}
-		}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
 		VarArray %Functions{}
 		s %ParentTypeName{"ezEventMessageHandlerComponent"}
-		s %PluginName{"EzTestProjectPlugin"}
+		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezForwardEventsToGameStateComponent"}
 		u3 %TypeVersion{1}
@@ -9435,20 +9430,6 @@ o
 }
 o
 {
-	Uuid %id{u4{17762441195664754466,2500976921228468214}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes{}
-		s %Category{"ezPropertyCategory::Member"}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"DeactivationDelay"}
-		s %Type{"ezTime"}
-	}
-}
-o
-{
 	Uuid %id{u4{5009753258260405712,2877066798947251804}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -9642,9 +9623,12 @@ o
 o
 {
 	Uuid %id{u4{11135730192525964575,4819325472927372842}}
-	s %t{"ezHiddenAttribute"}
+	s %t{"ezCategoryAttribute"}
 	u3 %v{1}
-	p{}
+	p
+	{
+		s %Category{"Editing Utilities"}
+	}
 }
 o
 {
@@ -9675,30 +9659,6 @@ o
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
 		s %Name{"CustomCenterOfMass"}
 		s %Type{"bool"}
-	}
-}
-o
-{
-	Uuid %id{u4{8913694024920344881,5112154049156321992}}
-	s %t{"ezReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{2696816104944631528,9630746438034507553}}
-		}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
-		VarArray %Functions{}
-		s %ParentTypeName{"ezEventMessageHandlerComponent"}
-		s %PluginName{"EzTestProjectPlugin"}
-		VarArray %Properties
-		{
-			Uuid{u4{6866591149935205378,11594482947089626221}}
-			Uuid{u4{17762441195664754466,2500976921228468214}}
-		}
-		s %TypeName{"TriggerModifierComponent"}
-		u3 %TypeVersion{1}
 	}
 }
 o
@@ -9752,11 +9712,11 @@ o
 		VarArray %Attributes{}
 		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Abstract|ezTypeFlags::Minimal"}
 		VarArray %Functions{}
-		s %ParentTypeName{"ezComponent"}
+		s %ParentTypeName{"ezEventMessageHandlerBaseComponent"}
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezEventMessageHandlerComponent"}
-		u3 %TypeVersion{3}
+		u3 %TypeVersion{4}
 	}
 }
 o
@@ -9836,16 +9796,6 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezMeshComponentBase"}
 		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{1206310757622303127,7019604220602696241}}
-	s %t{"ezCategoryAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Category{"EzTestProject"}
 	}
 }
 o
@@ -10178,16 +10128,6 @@ o
 }
 o
 {
-	Uuid %id{u4{2696816104944631528,9630746438034507553}}
-	s %t{"ezCategoryAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Category{"EzTestProject"}
-	}
-}
-o
-{
 	Uuid %id{u4{14619222012368174598,9914418461412086272}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -10378,20 +10318,6 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezSceneDocumentSettingsBase"}
 		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{6866591149935205378,11594482947089626221}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes{}
-		s %Category{"ezPropertyCategory::Member"}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"ActivationDelay"}
-		s %Type{"ezTime"}
 	}
 }
 o
@@ -10625,6 +10551,23 @@ o
 }
 o
 {
+	Uuid %id{u4{17557227232053354477,14571284226767265629}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezEventMessageHandlerBaseComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezTriggerDelayModifierComponent"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
 	Uuid %id{u4{10244937169896853361,14776906713232524690}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -10709,6 +10652,23 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezEnumBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{3787352830645547754,15085386463493454160}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Abstract|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezEventMessageHandlerBaseComponent"}
 		u3 %TypeVersion{1}
 	}
 }
