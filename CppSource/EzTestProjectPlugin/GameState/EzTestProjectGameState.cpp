@@ -90,7 +90,7 @@ void EzTestProjectGameState::ProcessInput()
 
     // SwitchToLoadingScreen();
 
-    QueueSceneLoading(m_sSwitchLevelTo, m_sSwitchLevelToCollection);
+    StartSceneLoading(m_sSwitchLevelTo, m_sSwitchLevelToCollection).AssertSuccess();
 
     m_sSwitchLevelTo.Clear();
     m_sSwitchLevelToCollection.Clear();
