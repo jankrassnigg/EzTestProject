@@ -48,16 +48,19 @@ void EzTestProjectGameState::OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg)
     if (msg.m_sMessage.GetString() == "ChangeLevel_Room1")
     {
       m_sSwitchLevelTo = "{ 4413ae89-ce73-92dc-358c-ba3152a1427c }";
+      m_sSwitchLevelToCollection = "{ f0261110-f1f9-4730-a36c-1b9470c9020e }";
       return;
     }
     if (msg.m_sMessage.GetString() == "ChangeLevel_Room2")
     {
       m_sSwitchLevelTo = "{ 54297160-efe8-4a95-88cb-4d23130a6121 }";
+      m_sSwitchLevelToCollection = "{ 3d949c7e-c45f-478b-ade2-c99a261a6a48 }";
       return;
     }
     if (msg.m_sMessage.GetString() == "ChangeLevel_Room3")
     {
       m_sSwitchLevelTo = "{ 0c279c89-a42c-4fa5-935f-bd579495e60f }";
+      m_sSwitchLevelToCollection = "{ cc9c120c-5d42-442e-9aa2-00f97d313031 }";
       return;
     }
     if (msg.m_sMessage.GetString() == "ChangeLevel_Hub")

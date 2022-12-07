@@ -1,0 +1,181 @@
+HeaderV2
+{
+o
+{
+	Uuid %id{u4{1009590751842757795,5129866031353172240}}
+	s %t{"ezAssetDocumentInfo"}
+	u3 %v{2}
+	s %n{"Header"}
+	p
+	{
+		s %AssetType{"Collection"}
+		VarArray %Dependencies
+		{
+			s{"{ 0a105955-e069-4523-80ce-7b9867bde687 }"}
+			s{"{ 100c3054-8f43-4006-8d1f-ec605f8bd3b0 }"}
+			s{"{ 117d3fd1-07e5-4acb-923f-5c7a35ea4eb2 }"}
+			s{"{ 1539981d-3bac-4fde-8a0f-b93ca58fc242 }"}
+			s{"{ 17996328-f786-40f5-9910-033284dc4f1d }"}
+			s{"{ 1d39d2ba-ada7-4230-86f7-515a35b2d38e }"}
+			s{"{ 223f50e1-55e3-45c2-bf2c-bf22a27a89b9 }"}
+			s{"{ 23d1d294-0f71-4f3e-9630-726259ad0c3e }"}
+			s{"{ 26693a08-86e6-4817-a7b7-892e765d9395 }"}
+			s{"{ 3ad9bbd6-019c-49c0-85ed-98ed2a388efe }"}
+			s{"{ 42eec342-cb83-4605-895d-590efe63d82b }"}
+			s{"{ 4413ae89-ce73-92dc-358c-ba3152a1427c }"}
+			s{"{ 44d7424d-99aa-476d-8759-d2916803450c }"}
+			s{"{ 58d44330-37a1-4c9d-9fa2-0540a1d8ee90 }"}
+			s{"{ 58e63524-2081-4782-ae3e-21a8e3cdc45b }"}
+			s{"{ 59aca100-d91d-45f0-9d89-a5c1c0e51e5c }"}
+			s{"{ 5a06c679-295d-4460-8d9f-4e147aa4d6c5 }"}
+			s{"{ 64d3d26c-3e5d-46ab-8072-b9b65e850c77 }"}
+			s{"{ 6a6ec7a9-27d7-482f-8ae7-e5c230d9d42b }"}
+			s{"{ 72115f7a-5947-4a21-899f-868368bd41d7 }"}
+			s{"{ 76232b2b-7b8c-4d99-84d3-46fa3453b763 }"}
+			s{"{ 7c71fc2d-2a1a-4938-9305-f3a0f26d73cc }"}
+			s{"{ 7d5e0054-a5fa-488c-a9bb-3f63784d6b98 }"}
+			s{"{ 8044a36f-e313-4204-973d-796231798973 }"}
+			s{"{ 8f19ce05-bf1e-4626-9659-e6acc058dee5 }"}
+			s{"{ 98839701-947d-4876-86b1-65d85c1c1024 }"}
+			s{"{ 9b1316b3-3bd4-4688-ab43-94aa042e23ba }"}
+			s{"{ 9d0ba6dc-6fca-45be-9319-048695ddd932 }"}
+			s{"{ 9f45a46b-a903-424b-bea9-cd04465df675 }"}
+			s{"{ ac2a135b-f151-4400-bf7d-e17aef1e55f2 }"}
+			s{"{ c0f0c6ee-b3a6-4b85-9e14-4d73dd2c74c0 }"}
+			s{"{ d1bb0b52-b8dc-485a-824c-c9e5efd27414 }"}
+			s{"{ db328e43-aadf-486b-a68c-c298bbc0b26a }"}
+			s{"{ dc16c76a-e1aa-44fa-8ed8-adb59a4642b8 }"}
+			s{"{ dc881f81-9d6c-45ca-a9cf-717a5282806f }"}
+			s{"{ de1477b1-d661-49f5-ae41-62c6489e7997 }"}
+			s{"{ de5ac9f5-b918-4e4c-905b-bfad022934dc }"}
+			s{"{ e00262e8-58f5-42f5-880d-569257047201 }"}
+			s{"{ e2df9659-acc4-40ad-91f2-d64a4c63ffb9 }"}
+			s{"{ f1367852-087d-4477-93a1-22d727b12530 }"}
+			s{"{ f962fc28-661b-485c-a527-c997e239a3f0 }"}
+			s{"{ fa1acd98-171b-46cf-816a-f5d9bc733ad7 }"}
+			s{"{ faef89a6-b1fc-4bda-ae82-b20e080a53ac }"}
+			s{"{ fdacbe82-3687-4b8b-a229-44507c508233 }"}
+		}
+		Uuid %DocumentID{u4{1009590751842757795,5129866031353172240}}
+		u4 %Hash{3163987583878184539}
+		VarArray %MetaInfo{}
+		VarArray %Outputs{}
+		VarArray %References
+		{
+			s{"{ 4413ae89-ce73-92dc-358c-ba3152a1427c }"}
+		}
+	}
+}
+}
+Objects
+{
+o
+{
+	Uuid %id{u4{1494486698574477999,4752613995386376098}}
+	s %t{"ezCollectionAssetData"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Entries
+		{
+			Uuid{u4{12917362025541355435,5282830389582208462}}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{12917362025541355435,5282830389582208462}}
+	s %t{"ezCollectionAssetEntry"}
+	u3 %v{1}
+	p
+	{
+		s %Asset{"{ 4413ae89-ce73-92dc-358c-ba3152a1427c }"}
+		s %Name{""}
+	}
+}
+o
+{
+	Uuid %id{u4{18096612296587978288,6449934965513159559}}
+	s %t{"ezDocumentRoot"}
+	u3 %v{1}
+	s %n{"ObjectTree"}
+	p
+	{
+		VarArray %Children
+		{
+			Uuid{u4{1494486698574477999,4752613995386376098}}
+		}
+	}
+}
+}
+Types
+{
+o
+{
+	Uuid %id{u4{13590641013881919643,2844595810355963325}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezReflectedClass"}
+		s %PluginName{"ezEditorPluginAssets"}
+		VarArray %Properties{}
+		s %TypeName{"ezCollectionAssetEntry"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{6089094783765586323,8705960867921430659}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezDocumentRoot"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{12165807254422627566,15044647769667105818}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezReflectedClass"}
+		s %PluginName{"ezEditorPluginAssets"}
+		VarArray %Properties{}
+		s %TypeName{"ezCollectionAssetData"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{983387834180907111,17935407260904399048}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezReflectedClass"}
+		u3 %TypeVersion{1}
+	}
+}
+}
