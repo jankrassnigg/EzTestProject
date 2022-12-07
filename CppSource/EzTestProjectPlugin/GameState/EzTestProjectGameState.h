@@ -27,5 +27,6 @@ private:
   ezString m_sSwitchLevelTo;
   ezString m_sSwitchLevelToCollection;
 
+  bool m_bSwitchLevelImmediate = false;
   bool m_bHasItem[3] = {false, false, false};
 };
