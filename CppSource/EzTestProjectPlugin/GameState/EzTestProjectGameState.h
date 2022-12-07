@@ -17,25 +17,13 @@ public:
   EzTestProjectGameState();
   ~EzTestProjectGameState();
 
-  virtual ezGameStatePriority DeterminePriority(ezWorld* pWorld) const override;
+  virtual ezGameStatePriority DeterminePriority(ezWorld* pWorld) const override { return ezGameStatePriority::Default; }
 
   virtual void ProcessInput() override;
 
   void OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg);
 
-protected:
-  virtual void ConfigureMainWindowInputDevices(ezWindow* pWindow) override;
-  virtual void ConfigureInputActions() override;
-  virtual void ConfigureMainCamera() override;
-
 private:
-  virtual void OnActivation(ezWorld* pWorld, const ezTransform* pStartPosition) override;
-  virtual void OnDeactivation() override;
-  virtual void BeforeWorldUpdate() override;
-  virtual void AfterWorldUpdate() override;
-
-  ezResult LoadObjectGraph(const char* szFile, ezWorld& world);
-
   ezString m_sSwitchLevelTo;
   ezString m_sSwitchLevelToCollection;
 
