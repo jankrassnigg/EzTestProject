@@ -6,6 +6,7 @@
 #include <Foundation/Configuration/CVar.h>
 #include <Foundation/Logging/Log.h>
 #include <GameEngine/Animation/SliderComponent.h>
+#include <GameEngine/Gameplay/PlayerStartPointComponent.h>
 #include <RendererCore/Debug/DebugRenderer.h>
 
 EZ_BEGIN_DYNAMIC_REFLECTED_TYPE(EzTestProjectGameState, 1, ezRTTIDefaultAllocator<EzTestProjectGameState>)
@@ -52,32 +53,37 @@ void EzTestProjectGameState::ProcessInput()
 
 void EzTestProjectGameState::OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg)
 {
-  if (msg.m_sMessage.GetString().StartsWith("ChangeLevel_") || msg.m_sMessage.GetString().StartsWith("PreloadLevel_"))
+  ezStringBuilder triggerMsg = msg.m_sMessage.GetString();
+
+  if (triggerMsg.StartsWith("ChangeLevel_") || triggerMsg.StartsWith("PreloadLevel_"))
   {
     if (msg.m_TriggerState != ezTriggerState::Activated)
       return;
 
-    m_bSwitchLevelImmediate = msg.m_sMessage.GetString().StartsWith("ChangeLevel_");
+    triggerMsg.TrimWordStart("PreloadLevel_");
 
-    if (msg.m_sMessage.GetString().EndsWith("_Room1"))
+    m_bSwitchLevelImmediate = triggerMsg.TrimWordStart("ChangeLevel_");
+    m_sSwitchLevelToSpawnPoint = triggerMsg;
+
+    if (triggerMsg.StartsWith("Room1"))
     {
       m_sSwitchLevelTo = "{ 4413ae89-ce73-92dc-358c-ba3152a1427c }";
       m_sSwitchLevelToCollection = "{ f0261110-f1f9-4730-a36c-1b9470c9020e }";
       return;
     }
-    if (msg.m_sMessage.GetString().EndsWith("_Room2"))
+    if (triggerMsg.StartsWith("Room2"))
     {
       m_sSwitchLevelTo = "{ 54297160-efe8-4a95-88cb-4d23130a6121 }";
       m_sSwitchLevelToCollection = "{ 3d949c7e-c45f-478b-ade2-c99a261a6a48 }";
       return;
     }
-    if (msg.m_sMessage.GetString().EndsWith("_Room3"))
+    if (triggerMsg.StartsWith("Room3"))
     {
       m_sSwitchLevelTo = "{ 0c279c89-a42c-4fa5-935f-bd579495e60f }";
       m_sSwitchLevelToCollection = "{ cc9c120c-5d42-442e-9aa2-00f97d313031 }";
       return;
     }
-    if (msg.m_sMessage.GetString().EndsWith("_Hub"))
+    if (triggerMsg.StartsWith("Hub"))
     {
       m_sSwitchLevelTo = "{ 1ff66ef3-fc6d-99f6-4c0f-887e399f20b6 }";
       m_sSwitchLevelToCollection = "{ 2e3c8c40-ef0c-4b13-a0b7-4ca55119f86e }";
@@ -124,4 +130,60 @@ void EzTestProjectGameState::OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg)
 
     return;
   }
+}
+
+ezResult EzTestProjectGameState::SpawnPlayer(const ezTransform* pStartPosition)
+{
+  if (m_pMainWorld == nullptr)
+    return EZ_FAILURE;
+
+  EZ_LOCK(m_pMainWorld->GetWriteMarker());
+
+  ezGameObject* pStartNode = nullptr;
+  ezTransform customTransform;
+  if (m_pMainWorld->TryGetObjectWithGlobalKey(ezTempHashedString(m_sSwitchLevelToSpawnPoint), pStartNode))
+  {
+    customTransform = pStartNode->GetGlobalTransform();
+    pStartPosition = &customTransform;
+
+    ezLog::Info("Found target spawn position '{}'", m_sSwitchLevelToSpawnPoint);
+  }
+  else
+  {
+    ezLog::Warning("Did not find target spawn position '{}'", m_sSwitchLevelToSpawnPoint);
+  }
+
+  ezPlayerStartPointComponentManager* pMan = m_pMainWorld->GetComponentManager<ezPlayerStartPointComponentManager>();
+  if (pMan == nullptr)
+    return EZ_FAILURE;
+
+  for (auto it = pMan->GetComponents(); it.IsValid(); ++it)
+  {
+    if (it->IsActive() && it->GetPlayerPrefab().IsValid())
+    {
+      ezResourceLock<ezPrefabResource> pPrefab(it->GetPlayerPrefab(), ezResourceAcquireMode::BlockTillLoaded);
+
+      if (pPrefab.GetAcquireResult() == ezResourceAcquireResult::Final)
+      {
+        const ezUInt16 uiTeamID = it->GetOwner()->GetTeamID();
+        ezTransform startPos = it->GetOwner()->GetGlobalTransform();
+
+        if (pStartPosition)
+        {
+          startPos = *pStartPosition;
+          startPos.m_vScale.Set(1.0f);
+          // startPos.m_vPosition.z += 1.0f; // do not spawn player prefabs on the ground, they may not have their origin there
+        }
+
+        ezPrefabInstantiationOptions options;
+        options.m_pOverrideTeamID = &uiTeamID;
+
+        pPrefab->InstantiatePrefab(*m_pMainWorld, startPos, options, &(it->m_Parameters));
+
+        return EZ_SUCCESS;
+      }
+    }
+  }
+
+  return EZ_FAILURE;
 }

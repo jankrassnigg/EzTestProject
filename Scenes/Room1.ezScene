@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{8953896383559666741,10582560218872524425}}
-		u4 %Hash{7136198341536570967}
+		u4 %Hash{9120991322253572718}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -880,7 +880,7 @@ o
 			Uuid{u4{12110354743709867169,4934063903006519754}}
 		}
 		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x34330340,0x6766E63F,0x34330340}}
+		Vec3 %LocalPosition{f{0x33335340,0x00002040,0x0000803F}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
@@ -2043,8 +2043,8 @@ o
 			Uuid{u4{17373663931631820929,5668885459795397220}}
 		}
 		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x6066E63F,0x000028C0,0x33334340}}
-		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalPosition{f{0x6866E63F,0x000020C0,0x9A993940}}
+		Quat %LocalRotation{f{0,0,0x000080BF,0x2EBD3BB3}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
@@ -2063,7 +2063,7 @@ o
 	p
 	{
 		b %Active{1}
-		Vec3 %HalfExtents{f{0x00002040,0x00001840,0x0000A03F}}
+		Vec3 %HalfExtents{f{0x00004040,0x00004040,0x0000803F}}
 	}
 }
 o
@@ -2370,7 +2370,7 @@ o
 	{
 		b %Active{1}
 		u1 %CollisionLayer{0}
-		s %TriggerMessage{"ChangeLevel_Hub"}
+		s %TriggerMessage{"ChangeLevel_Hub_Enter1"}
 	}
 }
 o

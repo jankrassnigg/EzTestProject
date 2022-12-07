@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{1145767619572096915,5739173809243004041}}
-		u4 %Hash{11380044512451738554}
+		u4 %Hash{7303922987319414627}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -76,7 +76,7 @@ o
 			Uuid{u4{4302225979722297343,90677493376999370}}
 		}
 		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x0000E8C0,0,0x0000403F}}
+		Vec3 %LocalPosition{f{0x000000C1,0,0x0000003F}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
@@ -688,7 +688,7 @@ o
 	{
 		b %Active{1}
 		u1 %CollisionLayer{0}
-		s %TriggerMessage{"ChangeLevel_Hub"}
+		s %TriggerMessage{"ChangeLevel_Hub_Enter3"}
 	}
 }
 o
@@ -728,14 +728,11 @@ o
 	u3 %v{1}
 	p
 	{
-		VarArray %Attributes
-		{
-			Uuid{u4{1206310757622303127,7019604220602696241}}
-		}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
 		VarArray %Functions{}
 		s %ParentTypeName{"ezEventMessageHandlerComponent"}
-		s %PluginName{"EzTestProjectPlugin"}
+		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezForwardEventsToGameStateComponent"}
 		u3 %TypeVersion{1}
@@ -917,11 +914,11 @@ o
 		VarArray %Attributes{}
 		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Abstract|ezTypeFlags::Minimal"}
 		VarArray %Functions{}
-		s %ParentTypeName{"ezComponent"}
+		s %ParentTypeName{"ezEventMessageHandlerBaseComponent"}
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezEventMessageHandlerComponent"}
-		u3 %TypeVersion{3}
+		u3 %TypeVersion{4}
 	}
 }
 o
@@ -942,16 +939,6 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezJoltShapeComponent"}
 		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{1206310757622303127,7019604220602696241}}
-	s %t{"ezCategoryAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Category{"EzTestProject"}
 	}
 }
 o
@@ -1395,6 +1382,23 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezEnumBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{3787352830645547754,15085386463493454160}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Abstract|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezEventMessageHandlerBaseComponent"}
 		u3 %TypeVersion{1}
 	}
 }

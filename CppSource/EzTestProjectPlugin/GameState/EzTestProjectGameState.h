@@ -24,8 +24,11 @@ public:
   void OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg);
 
 private:
+  virtual ezResult SpawnPlayer(const ezTransform* pStartPosition) override;
+
   ezString m_sSwitchLevelTo;
   ezString m_sSwitchLevelToCollection;
+  ezString m_sSwitchLevelToSpawnPoint;
 
   bool m_bSwitchLevelImmediate = false;
   bool m_bHasItem[3] = {false, false, false};
