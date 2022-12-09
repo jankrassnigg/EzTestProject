@@ -90,7 +90,6 @@ export import DecalComponent = __AllComponents.DecalComponent;
 export import DeviceTrackingComponent = __AllComponents.DeviceTrackingComponent;
 export import LightComponent = __AllComponents.LightComponent;
 export import DirectionalLightComponent = __AllComponents.DirectionalLightComponent;
-export import EventMessageHandlerBaseComponent = __AllComponents.EventMessageHandlerBaseComponent;
 export import EventMessageHandlerComponent = __AllComponents.EventMessageHandlerComponent;
 export import FakeRopeComponent = __AllComponents.FakeRopeComponent;
 export import FmodComponent = __AllComponents.FmodComponent;

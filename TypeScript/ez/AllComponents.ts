@@ -397,12 +397,7 @@ export class DirectionalLightComponent extends LightComponent
   set NearPlaneOffset(value: number) { __CPP_ComponentProperty_set(this, 1922790091, value); }
 }
 
-export class EventMessageHandlerBaseComponent extends Component
-{
-  public static GetTypeNameHash(): number { return 1303556842; }
-}
-
-export class EventMessageHandlerComponent extends EventMessageHandlerBaseComponent
+export class EventMessageHandlerComponent extends Component
 {
   public static GetTypeNameHash(): number { return 2410982864; }
   get HandleGlobalEvents(): boolean { return __CPP_ComponentProperty_get(this, 363574155); }
@@ -1465,7 +1460,7 @@ export class TimedDeathComponent extends Component
   set TimeoutPrefab(value: string) { __CPP_ComponentProperty_set(this, 978098831, value); }
 }
 
-export class TriggerDelayModifierComponent extends EventMessageHandlerBaseComponent
+export class TriggerDelayModifierComponent extends Component
 {
   public static GetTypeNameHash(): number { return 928702445; }
   get ActivationDelay(): number { return __CPP_ComponentProperty_get(this, 3433323958); }

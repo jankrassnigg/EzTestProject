@@ -18,7 +18,12 @@ EZ_BEGIN_DYNAMIC_REFLECTED_TYPE(EzTestProjectGameState, 1, ezRTTIDefaultAllocato
   }
 EZ_END_DYNAMIC_REFLECTED_TYPE;
 
-EzTestProjectGameState::EzTestProjectGameState() = default;
+EzTestProjectGameState::EzTestProjectGameState()
+{
+  // TODO: put this into default code
+  // EnableSceneSelectionMenu(false);
+}
+
 EzTestProjectGameState::~EzTestProjectGameState() = default;
 
 void EzTestProjectGameState::ProcessInput()
