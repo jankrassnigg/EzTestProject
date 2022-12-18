@@ -65,6 +65,8 @@ void EzTestProjectGameState::OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg)
     if (msg.m_TriggerState != ezTriggerState::Activated)
       return;
 
+    ezLog::Info(triggerMsg);
+
     triggerMsg.TrimWordStart("PreloadLevel_");
 
     m_bSwitchLevelImmediate = triggerMsg.TrimWordStart("ChangeLevel_");
@@ -74,26 +76,36 @@ void EzTestProjectGameState::OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg)
     {
       m_sSwitchLevelTo = "{ 4413ae89-ce73-92dc-358c-ba3152a1427c }";
       m_sSwitchLevelToCollection = "{ f0261110-f1f9-4730-a36c-1b9470c9020e }";
-      return;
     }
-    if (triggerMsg.StartsWith("Room2"))
+    else if (triggerMsg.StartsWith("Room2"))
     {
       m_sSwitchLevelTo = "{ 54297160-efe8-4a95-88cb-4d23130a6121 }";
       m_sSwitchLevelToCollection = "{ 3d949c7e-c45f-478b-ade2-c99a261a6a48 }";
-      return;
     }
-    if (triggerMsg.StartsWith("Room3"))
+    else if (triggerMsg.StartsWith("Room3"))
     {
       m_sSwitchLevelTo = "{ 0c279c89-a42c-4fa5-935f-bd579495e60f }";
       m_sSwitchLevelToCollection = "{ cc9c120c-5d42-442e-9aa2-00f97d313031 }";
-      return;
     }
-    if (triggerMsg.StartsWith("Hub"))
+    else if (triggerMsg.StartsWith("Hub"))
     {
       m_sSwitchLevelTo = "{ 1ff66ef3-fc6d-99f6-4c0f-887e399f20b6 }";
       m_sSwitchLevelToCollection = "{ 2e3c8c40-ef0c-4b13-a0b7-4ca55119f86e }";
-      return;
     }
+
+    if (m_sSwitchLevelTo == GetActiveSceneName())
+    {
+      ezLog::Info("Active scene: {}", GetActiveSceneName());
+      ezLog::Info("Loading scene: {}", GetLoadingSceneName());
+      ezLog::Info("Ignoring scene load request '{}' (already there).", m_sSwitchLevelTo);
+
+      m_bSwitchLevelImmediate = false;
+      m_sSwitchLevelToSpawnPoint.Clear();
+      m_sSwitchLevelTo.Clear();
+      m_sSwitchLevelToCollection.Clear();
+    }
+
+    return;
   }
 
   if (msg.m_sMessage.GetString() == "Pickup_Item1")
