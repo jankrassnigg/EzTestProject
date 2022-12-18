@@ -21,7 +21,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{13137086232298444945,5417018497203437789}}
-		u4 %Hash{413265018419658971}
+		u4 %Hash{13233467479291214305}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{13204147433226910393,7936210542171955986}}
@@ -201,7 +201,7 @@ o
 	p
 	{
 		b %Active{1}
-		u1 %CollisionLayer{0}
+		u1 %CollisionLayer{9}
 		s %TriggerMessage{"PreloadLevel_Hub"}
 	}
 }
@@ -1162,7 +1162,7 @@ o
 	p
 	{
 		b %Active{1}
-		u1 %CollisionLayer{0}
+		u1 %CollisionLayer{9}
 		s %TriggerMessage{"ChangeLevel_Room1_EnterHub"}
 	}
 }
@@ -1384,7 +1384,7 @@ o
 	p
 	{
 		b %Active{1}
-		u1 %CollisionLayer{0}
+		u1 %CollisionLayer{9}
 		s %TriggerMessage{"PreloadLevel_Room1"}
 	}
 }
@@ -1527,7 +1527,7 @@ o
 	p
 	{
 		b %Active{1}
-		u1 %CollisionLayer{0}
+		u1 %CollisionLayer{9}
 		s %TriggerMessage{"ChangeLevel_Hub_Enter1"}
 	}
 }
