@@ -11,7 +11,7 @@ o
 		s %AssetType{"StateMachine"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{30238915811071927,4881598679084016788}}
-		u4 %Hash{10426365138499215673}
+		u4 %Hash{11033007925259536657}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References{}
@@ -34,6 +34,21 @@ o
 }
 o
 {
+	Uuid %id{u4{670828176101020838,4793567865110708303}}
+	s %t{"ezStateMachineTransition_Compound"}
+	u3 %v{1}
+	p
+	{
+		s %Operator{"ezStateMachineLogicOperator::And"}
+		VarArray %SubTransitions
+		{
+			Uuid{u4{11612593073458102694,4928210523428937765}}
+			Uuid{u4{5004196343361861792,4935488116072265442}}
+		}
+	}
+}
+o
+{
 	Uuid %id{u4{12139263788319970958,4805477801374103602}}
 	s %t{"ezStateMachineNode"}
 	u3 %v{1}
@@ -47,16 +62,79 @@ o
 }
 o
 {
-	Uuid %id{u4{16456212688314444217,4903613132353831079}}
+	Uuid %id{u4{14911429849527793304,4908111521440371680}}
+	s %t{"ezBlackboardCondition"}
+	u3 %v{1}
+	p
+	{
+		d %ComparisonValue{0x000000000000F03F}
+		s %EntryName{"State"}
+		s %Operator{"ezComparisonOperator::Equal"}
+	}
+}
+o
+{
+	Uuid %id{u4{15182928891430213270,4917056818865598680}}
 	s %t{"ezStateMachineTransition_BlackboardConditions"}
 	u3 %v{1}
 	p
 	{
 		VarArray %Conditions
 		{
-			Uuid{u4{13411992886382014897,5191007053264151198}}
+			Uuid{u4{14911429849527793304,4908111521440371680}}
 		}
 		s %Operator{"ezStateMachineLogicOperator::And"}
+	}
+}
+o
+{
+	Uuid %id{u4{11612593073458102694,4928210523428937765}}
+	s %t{"ezStateMachineTransition_BlackboardConditions"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Conditions
+		{
+			Uuid{u4{8287511326133671322,5069115690911594187}}
+		}
+		s %Operator{"ezStateMachineLogicOperator::And"}
+	}
+}
+o
+{
+	Uuid %id{u4{5004196343361861792,4935488116072265442}}
+	s %t{"ezStateMachineTransition_Timeout"}
+	u3 %v{1}
+	p
+	{
+		Time %Timeout{d{0x000000000000E03F}}
+	}
+}
+o
+{
+	Uuid %id{u4{974332912558901146,5035866312186249757}}
+	s %t{"ezStateMachineTransition_Compound"}
+	u3 %v{1}
+	p
+	{
+		s %Operator{"ezStateMachineLogicOperator::And"}
+		VarArray %SubTransitions
+		{
+			Uuid{u4{15182928891430213270,4917056818865598680}}
+			Uuid{u4{14939845320148849837,5536079009021996776}}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{8287511326133671322,5069115690911594187}}
+	s %t{"ezBlackboardCondition"}
+	u3 %v{1}
+	p
+	{
+		d %ComparisonValue{0}
+		s %EntryName{"State"}
+		s %Operator{"ezComparisonOperator::Equal"}
 	}
 }
 o
@@ -82,19 +160,7 @@ o
 		s %Connection::SourcePin{"Exit"}
 		Uuid %Connection::Target{u4{12139263788319970958,4805477801374103602}}
 		s %Connection::TargetPin{"Enter"}
-		Uuid %Type{u4{16456212688314444217,4903613132353831079}}
-	}
-}
-o
-{
-	Uuid %id{u4{13411992886382014897,5191007053264151198}}
-	s %t{"ezBlackboardCondition"}
-	u3 %v{1}
-	p
-	{
-		d %ComparisonValue{0}
-		s %EntryName{"State"}
-		s %Operator{"ezComparisonOperator::Equal"}
+		Uuid %Type{u4{670828176101020838,4793567865110708303}}
 	}
 }
 o
@@ -120,33 +186,17 @@ o
 		s %Connection::SourcePin{"Exit"}
 		Uuid %Connection::Target{u4{1090109571085400965,5361658419878213877}}
 		s %Connection::TargetPin{"Enter"}
-		Uuid %Type{u4{16438704622545437626,5563934962705215760}}
+		Uuid %Type{u4{974332912558901146,5035866312186249757}}
 	}
 }
 o
 {
-	Uuid %id{u4{16438704622545437626,5563934962705215760}}
-	s %t{"ezStateMachineTransition_BlackboardConditions"}
+	Uuid %id{u4{14939845320148849837,5536079009021996776}}
+	s %t{"ezStateMachineTransition_Timeout"}
 	u3 %v{1}
 	p
 	{
-		VarArray %Conditions
-		{
-			Uuid{u4{6005487442460315051,5721313640145122200}}
-		}
-		s %Operator{"ezStateMachineLogicOperator::And"}
-	}
-}
-o
-{
-	Uuid %id{u4{6005487442460315051,5721313640145122200}}
-	s %t{"ezBlackboardCondition"}
-	u3 %v{1}
-	p
-	{
-		d %ComparisonValue{0x000000000000F03F}
-		s %EntryName{"State"}
-		s %Operator{"ezComparisonOperator::Equal"}
+		Time %Timeout{d{0x000000000000E03F}}
 	}
 }
 o
@@ -200,6 +250,23 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezStateMachineTransition"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{219779765415136218,3256450268205370147}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezStateMachineTransition"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezStateMachineTransition_Timeout"}
 		u3 %TypeVersion{1}
 	}
 }
@@ -370,6 +437,23 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezEnumBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{6749735196937192528,17387544071479029423}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezStateMachineTransition"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezStateMachineTransition_Compound"}
 		u3 %TypeVersion{1}
 	}
 }
