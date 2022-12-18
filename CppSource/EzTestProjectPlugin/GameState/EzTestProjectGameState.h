@@ -29,6 +29,8 @@ private:
   ezString m_sSwitchLevelTo;
   ezString m_sSwitchLevelToCollection;
   ezString m_sSwitchLevelToSpawnPoint;
+  ezTransform m_RelativeSpawnPosition;
+  ezGameObjectHandle m_hSpawnedPlayer;
 
   bool m_bSwitchLevelImmediate = false;
   bool m_bHasItem[3] = {false, false, false};

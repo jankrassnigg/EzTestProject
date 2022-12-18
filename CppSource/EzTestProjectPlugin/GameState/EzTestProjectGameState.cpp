@@ -105,6 +105,17 @@ void EzTestProjectGameState::OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg)
       m_sSwitchLevelToCollection.Clear();
     }
 
+    ezGameObject* pPlayerNode;
+    ezGameObject* pReferenceNode;
+    if (m_pMainWorld->TryGetObject(m_hSpawnedPlayer, pPlayerNode) && m_pMainWorld->TryGetObjectWithGlobalKey(ezTempHashedString(m_sSwitchLevelToSpawnPoint), pReferenceNode))
+    {
+      m_RelativeSpawnPosition.SetLocalTransform(pReferenceNode->GetGlobalTransform(), pPlayerNode->GetGlobalTransform());
+    }
+    else
+    {
+      m_RelativeSpawnPosition.SetIdentity();
+    }
+
     return;
   }
 
@@ -160,7 +171,7 @@ ezResult EzTestProjectGameState::SpawnPlayer(const ezTransform* pStartPosition)
   ezTransform customTransform;
   if (m_pMainWorld->TryGetObjectWithGlobalKey(ezTempHashedString(m_sSwitchLevelToSpawnPoint), pStartNode))
   {
-    customTransform = pStartNode->GetGlobalTransform();
+    customTransform = pStartNode->GetGlobalTransform() * m_RelativeSpawnPosition;
     pStartPosition = &customTransform;
 
     ezLog::Info("Found target spawn position '{}'", m_sSwitchLevelToSpawnPoint);
@@ -192,10 +203,18 @@ ezResult EzTestProjectGameState::SpawnPlayer(const ezTransform* pStartPosition)
           // startPos.m_vPosition.z += 1.0f; // do not spawn player prefabs on the ground, they may not have their origin there
         }
 
+        ezDynamicArray<ezGameObject*> spawnedRoots;
+
         ezPrefabInstantiationOptions options;
         options.m_pOverrideTeamID = &uiTeamID;
+        options.m_pCreatedRootObjectsOut = &spawnedRoots;
 
         pPrefab->InstantiatePrefab(*m_pMainWorld, startPos, options, &(it->m_Parameters));
+
+        if (!spawnedRoots.IsEmpty())
+          m_hSpawnedPlayer = spawnedRoots[0]->GetHandle();
+        else
+          m_hSpawnedPlayer.Invalidate();
 
         return EZ_SUCCESS;
       }
