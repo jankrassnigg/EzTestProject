@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{13123664383442423628,11094332277691674355}}
-		u4 %Hash{10931472903719121060}
+		u4 %Hash{16299816299218017049}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -5191,7 +5191,6 @@ o
 			Uuid{u4{11867894113888062546,9320075853772252784}}
 			Uuid{u4{209848140718239988,14730077039554517122}}
 			Uuid{u4{3668032158807414685,5267137747667276383}}
-			Uuid{u4{7674571010064859228,9949826368521271435}}
 			Uuid{u4{4074585324649379577,15162944912662175427}}
 			Uuid{u4{6446418440350688663,1653465771534426655}}
 			Uuid{u4{5459093179251583552,9652641085192734130}}
@@ -5665,45 +5664,6 @@ o
 		{
 			s{"CastShadow"}
 		}
-	}
-}
-o
-{
-	Uuid %id{u4{7674571010064859228,9949826368521271435}}
-	s %t{"ezGameObject"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		VarArray %Children{}
-		VarArray %Components
-		{
-			Uuid{u4{13124077185214676320,10634467922241209726}}
-			Uuid{u4{9985436173667618114,9960141963897841451}}
-			Uuid{u4{4549755939679793236,10359112440958231769}}
-		}
-		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x01004041,0x9A99D9C0,0x6666AE40}}
-		Quat %LocalRotation{f{0,0,0,0x0000803F}}
-		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
-		f %LocalUniformScaling{0x0000803F}
-		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
-	}
-}
-o
-{
-	Uuid %id{u4{9985436173667618114,9960141963897841451}}
-	s %t{"ezJoltShapeBoxComponent"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		Vec3 %HalfExtents{f{0xCDCC0440,0xCECC8C3F,0x0200D03F}}
 	}
 }
 o
@@ -6298,18 +6258,6 @@ o
 		{
 			s{"CastShadow"}
 		}
-	}
-}
-o
-{
-	Uuid %id{u4{4549755939679793236,10359112440958231769}}
-	s %t{"ezForwardEventsToGameStateComponent"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		b %HandleGlobalEvents{0}
-		b %PassThroughUnhandledEvents{0}
 	}
 }
 o
@@ -6952,18 +6900,6 @@ o
 		{
 			s{"CastShadow"}
 		}
-	}
-}
-o
-{
-	Uuid %id{u4{13124077185214676320,10634467922241209726}}
-	s %t{"ezJoltTriggerComponent"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		u1 %CollisionLayer{0}
-		s %TriggerMessage{"PreloadLevel_Room1"}
 	}
 }
 o

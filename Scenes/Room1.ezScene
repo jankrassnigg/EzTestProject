@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{8953896383559666741,10582560218872524425}}
-		u4 %Hash{11913828613849060258}
+		u4 %Hash{3992172973939486079}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -1187,7 +1187,10 @@ o
 	p
 	{
 		b %Active{1}
-		VarDict %Parameters{}
+		VarDict %Parameters
+		{
+			b %IsHub{0}
+		}
 		s %Prefab{"{ 638800dd-1d9f-4b2d-91d8-d233534e50b6 }"}
 	}
 }
@@ -1340,7 +1343,6 @@ o
 			Uuid{u4{16344436177563511446,5062231757821979176}}
 			Uuid{u4{9698094639984253924,15713250587469591970}}
 			Uuid{u4{11431401853246117531,4647458000790922734}}
-			Uuid{u4{3239979650713389779,15644524172823749883}}
 			Uuid{u4{18393569869280538240,4706730830726713871}}
 			Uuid{u4{10156634369758065225,10734361247804916820}}
 		}
@@ -2447,18 +2449,6 @@ o
 }
 o
 {
-	Uuid %id{u4{16855425006762372129,11163000676279224429}}
-	s %t{"ezForwardEventsToGameStateComponent"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		b %HandleGlobalEvents{0}
-		b %PassThroughUnhandledEvents{0}
-	}
-}
-o
-{
 	Uuid %id{u4{708790146194398027,11172522108385637985}}
 	s %t{"ezGameObject"}
 	u3 %v{1}
@@ -2958,45 +2948,6 @@ o
 }
 o
 {
-	Uuid %id{u4{3239979650713389779,15644524172823749883}}
-	s %t{"ezGameObject"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		VarArray %Children{}
-		VarArray %Components
-		{
-			Uuid{u4{8689485825863206871,16329165726543688174}}
-			Uuid{u4{5550844814316148665,15654839768200319899}}
-			Uuid{u4{16855425006762372129,11163000676279224429}}
-		}
-		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x33339341,0x9A991940,0x6666E6BF}}
-		Quat %LocalRotation{f{0,0,0,0x0000803F}}
-		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
-		f %LocalUniformScaling{0x0000803F}
-		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
-	}
-}
-o
-{
-	Uuid %id{u4{5550844814316148665,15654839768200319899}}
-	s %t{"ezJoltShapeBoxComponent"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		Vec3 %HalfExtents{f{0x00002040,0x00001840,0x0000A03F}}
-	}
-}
-o
-{
 	Uuid %id{u4{9698094639984253924,15713250587469591970}}
 	s %t{"ezGameObject"}
 	u3 %v{1}
@@ -3140,18 +3091,6 @@ o
 		{
 			s{"CastShadow"}
 		}
-	}
-}
-o
-{
-	Uuid %id{u4{8689485825863206871,16329165726543688174}}
-	s %t{"ezJoltTriggerComponent"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		u1 %CollisionLayer{0}
-		s %TriggerMessage{"PreloadLevel_Hub"}
 	}
 }
 o
