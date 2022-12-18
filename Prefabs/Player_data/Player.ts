@@ -89,8 +89,7 @@ export class Player extends ez.TickedTypescriptComponent {
 
                 }
                 else {
-                    
-                    let hit = ez.Physics.Raycast(this.camera.GetGlobalPosition(), this.camera.GetGlobalDirForwards(), 2.0, 8);
+                    let hit = ez.Physics.Raycast(this.camera.GetGlobalPosition(), this.camera.GetGlobalDirForwards(), 1.0, 8);
 
                     if (hit != null && hit.actorObject) {
 

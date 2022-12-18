@@ -6,6 +6,7 @@
 #include <Foundation/Configuration/CVar.h>
 #include <Foundation/Logging/Log.h>
 #include <GameEngine/Animation/SliderComponent.h>
+#include <GameEngine/Gameplay/BlackboardComponent.h>
 #include <GameEngine/Gameplay/PlayerStartPointComponent.h>
 #include <RendererCore/Debug/DebugRenderer.h>
 
@@ -14,6 +15,7 @@ EZ_BEGIN_DYNAMIC_REFLECTED_TYPE(EzTestProjectGameState, 1, ezRTTIDefaultAllocato
     EZ_BEGIN_MESSAGEHANDLERS
     {
       EZ_MESSAGE_HANDLER(ezMsgTriggerTriggered, OnMsgTriggerTriggered),
+      EZ_MESSAGE_HANDLER(ezMsgGenericEvent, OnMsgGenericEvent),
     } EZ_END_MESSAGEHANDLERS;
   }
 EZ_END_DYNAMIC_REFLECTED_TYPE;
@@ -22,9 +24,21 @@ EzTestProjectGameState::EzTestProjectGameState()
 {
   // TODO: put this into default code
   // EnableSceneSelectionMenu(false);
+
+  m_pGlobalStateBlackboard = ezBlackboard::Create();
+  m_pGlobalStateBlackboard->SetName("Globals");
+
+  ezHashedString hs;
+  hs.Assign("State");
+  m_pGlobalStateBlackboard->RegisterEntry(hs, 0);
+
+  ezBlackboard::RegisterAsGlobal(m_pGlobalStateBlackboard);
 }
 
-EzTestProjectGameState::~EzTestProjectGameState() = default;
+EzTestProjectGameState::~EzTestProjectGameState()
+{
+  ezBlackboard::UnregisterAsGlobal(m_pGlobalStateBlackboard);
+}
 
 void EzTestProjectGameState::ProcessInput()
 {
@@ -60,12 +74,12 @@ void EzTestProjectGameState::OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg)
 {
   ezStringBuilder triggerMsg = msg.m_sMessage.GetString();
 
+  ezLog::Info("Trigger Msg: {}", triggerMsg);
+
   if (triggerMsg.StartsWith("ChangeLevel_") || triggerMsg.StartsWith("PreloadLevel_"))
   {
     if (msg.m_TriggerState != ezTriggerState::Activated)
       return;
-
-    ezLog::Info(triggerMsg);
 
     triggerMsg.TrimWordStart("PreloadLevel_");
 
@@ -157,6 +171,37 @@ void EzTestProjectGameState::OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg)
     }
 
     return;
+  }
+}
+
+void EzTestProjectGameState::OnMsgGenericEvent(ezMsgGenericEvent& msg)
+{
+  ezLog::Info("ezMsgGenericEvent: {}", msg.m_sMessage.GetString());
+
+  if (msg.m_sMessage.GetString() == "Use")
+  {
+    ezGameObject* pSender;
+    if (m_pMainWorld->TryGetObject(msg.m_hSenderObject, pSender))
+    {
+      ezLog::Info("Sender: {}", pSender->GetName());
+    }
+
+    if (m_pMainWorld->TryGetObjectWithGlobalKey("ButtonLight", pSender))
+    {
+      if (auto pBB = m_pGlobalStateBlackboard) // ezBlackboardComponent::FindBlackboard(pSender))
+      {
+        ezLog::Info("Found Blackboard");
+
+        if (auto pEntry = pBB->GetEntry("State"))
+        {
+          ezLog::Info("Found State entry");
+
+          ezInt32 val = pEntry->m_Value.ConvertTo<ezInt32>();
+          val = (val == 0) ? 1 : 0;
+          pBB->SetEntryValue("State", val).IgnoreResult();
+        }
+      }
+    }
   }
 }
 

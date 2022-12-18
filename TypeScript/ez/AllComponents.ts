@@ -1447,6 +1447,8 @@ export class StateMachineComponent extends Component
   set Resource(value: string) { __CPP_ComponentProperty_set(this, 3553976178, value); }
   get InitialState(): string { return __CPP_ComponentProperty_get(this, 3055923916); }
   set InitialState(value: string) { __CPP_ComponentProperty_set(this, 3055923916, value); }
+  get BlackboardName(): string { return __CPP_ComponentProperty_get(this, 3412889803); }
+  set BlackboardName(value: string) { __CPP_ComponentProperty_set(this, 3412889803, value); }
 }
 
 export class TimedDeathComponent extends Component

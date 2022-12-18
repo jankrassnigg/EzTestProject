@@ -1,6 +1,8 @@
 #pragma once
 
 #include <Core/Input/Declarations.h>
+#include <Core/Messages/CommonMessages.h>
+#include <Core/Utils/Blackboard.h>
 #include <Core/World/Declarations.h>
 #include <Core/World/World.h>
 #include <EzTestProjectPlugin/EzTestProjectPluginDLL.h>
@@ -22,6 +24,7 @@ public:
   virtual void ProcessInput() override;
 
   void OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg);
+  void OnMsgGenericEvent(ezMsgGenericEvent& msg);
 
 private:
   virtual ezResult SpawnPlayer(const ezTransform* pStartPosition) override;
@@ -31,6 +34,7 @@ private:
   ezString m_sSwitchLevelToSpawnPoint;
   ezTransform m_RelativeSpawnPosition;
   ezGameObjectHandle m_hSpawnedPlayer;
+  ezSharedPtr<ezBlackboard> m_pGlobalStateBlackboard;
 
   bool m_bSwitchLevelImmediate = false;
   bool m_bHasItem[3] = {false, false, false};
