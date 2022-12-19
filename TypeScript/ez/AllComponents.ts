@@ -39,6 +39,11 @@ declare function __CPP_ComponentProperty_get(component: Component, id: number);
 declare function __CPP_ComponentProperty_set(component: Component, id: number, value);
 declare function __CPP_ComponentFunction_Call(component: Component, id: number, ...args);
 
+export class SocketAttachComponent extends Component
+{
+  public static GetTypeNameHash(): number { return 1416590267; }
+}
+
 export class AgentSteeringComponent extends Component
 {
   public static GetTypeNameHash(): number { return 2433025557; }

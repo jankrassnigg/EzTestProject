@@ -10,15 +10,18 @@
 #include <GameEngine/Gameplay/PlayerStartPointComponent.h>
 #include <RendererCore/Debug/DebugRenderer.h>
 
+// clang-format off
 EZ_BEGIN_DYNAMIC_REFLECTED_TYPE(EzTestProjectGameState, 1, ezRTTIDefaultAllocator<EzTestProjectGameState>)
+{
+  EZ_BEGIN_MESSAGEHANDLERS
   {
-    EZ_BEGIN_MESSAGEHANDLERS
-    {
-      EZ_MESSAGE_HANDLER(ezMsgTriggerTriggered, OnMsgTriggerTriggered),
-      EZ_MESSAGE_HANDLER(ezMsgGenericEvent, OnMsgGenericEvent),
-    } EZ_END_MESSAGEHANDLERS;
+    EZ_MESSAGE_HANDLER(ezMsgTriggerTriggered, OnMsgTriggerTriggered),
+    EZ_MESSAGE_HANDLER(ezMsgGenericEvent, OnMsgGenericEvent),
   }
+  EZ_END_MESSAGEHANDLERS;
+}
 EZ_END_DYNAMIC_REFLECTED_TYPE;
+// clang-format on
 
 EzTestProjectGameState::EzTestProjectGameState()
 {
