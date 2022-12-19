@@ -204,6 +204,7 @@ export import MsgFmodSoundFinished = __AllMessages.MsgFmodSoundFinished;
 export import MsgGenericEvent = __AllMessages.MsgGenericEvent;
 export import MsgInputActionTriggered = __AllMessages.MsgInputActionTriggered;
 export import MsgMoveCharacterController = __AllMessages.MsgMoveCharacterController;
+export import MsgObjectGrabbed = __AllMessages.MsgObjectGrabbed;
 export import MsgOnlyApplyToObject = __AllMessages.MsgOnlyApplyToObject;
 export import MsgPhysicsAddForce = __AllMessages.MsgPhysicsAddForce;
 export import MsgPhysicsAddImpulse = __AllMessages.MsgPhysicsAddImpulse;

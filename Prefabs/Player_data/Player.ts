@@ -79,6 +79,15 @@ export class Player extends ez.TickedTypescriptComponent {
                 this.flashlight.SetActiveFlag(!this.flashlight.GetActiveFlag());
             }
 
+            if (msg.InputAction == "Shoot") {
+
+                if (this.grabObject.HasObjectGrabbed()) {
+                    var dir = ez.Vec3.UnitAxisX();
+                    dir.MulNumber(4);
+                    this.grabObject.ThrowGrabbedObject(dir);
+                }
+            }
+
             if (msg.InputAction == "Use") {
 
                 if (this.grabObject.HasObjectGrabbed()) {

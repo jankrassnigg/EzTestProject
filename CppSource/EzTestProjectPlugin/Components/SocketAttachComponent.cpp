@@ -1,7 +1,7 @@
 #include <EzTestProjectPlugin/EzTestProjectPluginPCH.h>
 
 #include <EzTestProjectPlugin/Components/SocketAttachComponent.h>
-#include <JoltPlugin/Constraints/JoltPointConstraintComponent.h>
+#include <JoltPlugin/Constraints/JoltFixedConstraintComponent.h>
 
 // clang-format off
 EZ_BEGIN_COMPONENT_TYPE(SocketAttachComponent, 1, ezComponentMode::Static)
@@ -13,6 +13,7 @@ EZ_BEGIN_COMPONENT_TYPE(SocketAttachComponent, 1, ezComponentMode::Static)
   EZ_BEGIN_MESSAGEHANDLERS
   {
     EZ_MESSAGE_HANDLER(ezMsgSensorDetectedObjectsChanged, OnMsgSensorDetectedObjectsChanged),
+    EZ_MESSAGE_HANDLER(ezMsgObjectGrabbed, OnMsgObjectGrabbed),
   }
   EZ_END_MESSAGEHANDLERS;
 }
@@ -32,20 +33,12 @@ void SocketAttachComponent::DeserializeComponent(ezWorldReader& stream)
 void SocketAttachComponent::Update()
 {
   ezWorld* pWorld = GetOwner()->GetWorld();
+  const ezTime tNow = pWorld->GetClock().GetAccumulatedTime();
 
   if (!m_hAttachPoint.IsInvalidated())
-  {
-    if (ezTime::Now() - m_Attached > ezTime::Seconds(2))
-    {
-      ezLog::Warning("Removing AttachPoint");
-      pWorld->DeleteObjectDelayed(m_hAttachPoint, false);
-      m_hAttachPoint.Invalidate();
-    }
-
     return;
-  }
 
-  if (ezTime::Now() - m_Attached < ezTime::Seconds(4))
+  if (tNow - m_Attached < ezTime::Seconds(1))
     return;
 
   const ezTransform tOwn = GetOwner()->GetGlobalTransform();
@@ -68,7 +61,7 @@ void SocketAttachComponent::Update()
 
     // if ((line.m_start - line.m_end).GetLengthSquared() < ezMath::Square(0.5f))
     {
-      m_Attached = ezTime::Now();
+      m_Attached = tNow;
 
       ezGameObjectDesc go;
       go.m_hParent = hObj;
@@ -77,8 +70,8 @@ void SocketAttachComponent::Update()
       ezGameObject* pAttach;
       m_hAttachPoint = pWorld->CreateObject(go, pAttach);
 
-      ezJoltPointConstraintComponent* pConstraint;
-      pWorld->GetOrCreateComponentManager<ezJoltPointConstraintComponentManager>()->CreateComponent(pAttach, pConstraint);
+      ezJoltFixedConstraintComponent* pConstraint;
+      pWorld->GetOrCreateComponentManager<ezJoltFixedConstraintComponentManager>()->CreateComponent(pAttach, pConstraint);
 
       pConstraint->SetActors({}, tOther, GetOwner()->GetHandle(), ezTransform::IdentityTransform());
 
@@ -103,4 +96,31 @@ void SocketAttachComponent::OnSimulationStarted()
 void SocketAttachComponent::OnMsgSensorDetectedObjectsChanged(ezMsgSensorDetectedObjectsChanged& msg)
 {
   m_Sockets = msg.m_DetectedObjects;
+}
+
+void SocketAttachComponent::OnMsgObjectGrabbed(ezMsgObjectGrabbed& msg)
+{
+  if (msg.m_bGotGrabbed)
+  {
+    ++m_iGrabs;
+
+    Detach();
+    m_Attached = GetOwner()->GetWorld()->GetClock().GetAccumulatedTime();
+  }
+  else
+  {
+    --m_iGrabs;
+  }
+}
+
+bool SocketAttachComponent::Detach()
+{
+  if (m_hAttachPoint.IsInvalidated())
+    return false;
+
+  GetOwner()->GetWorld()->DeleteObjectDelayed(m_hAttachPoint, false);
+  m_hAttachPoint.Invalidate();
+
+  ezLog::Warning("Removing AttachPoint");
+  return true;
 }
