@@ -14,6 +14,17 @@ public:
 
   void Update();
 
+  void SetOutput(ezInt32 value);                  // [ property ]
+  ezInt32 GetOutput() const { return m_iOutput; } // [ property ]
+
+  void SetInput(ezInt32 value);                 // [ property ]
+  ezInt32 GetInput() const { return m_iInput; } // [ property ]
+
+  void SetBuddyReference(const char* szReference); // [ property ]
+  void SetBuddy(ezGameObjectHandle hObject);
+
+  void SetConnectedTo(ezGameObjectHandle hObject);
+
 protected:
   virtual void OnDeactivated() override;
   virtual void OnSimulationStarted() override;
@@ -21,11 +32,23 @@ protected:
   void OnMsgSensorDetectedObjectsChanged(ezMsgSensorDetectedObjectsChanged& msg);
   void OnMsgObjectGrabbed(ezMsgObjectGrabbed& msg);
 
-  bool Detach();
+  void Detach();
 
-  ezDynamicArray<ezGameObjectHandle> m_Sockets;
+  ezGameObjectHandle m_hClosestSocket;
 
   ezTime m_Attached;
   ezGameObjectHandle m_hAttachPoint;
   ezInt32 m_iGrabs = 0;
+
+  ezInt32 m_iOutput = 0;
+  ezInt32 m_iInput = 0;
+
+  ezGameObjectHandle m_hBuddy;
+  ezGameObjectHandle m_hConnectedTo;
+
+  void InputChanged(ezInt32 iInput);
+  void OutputChanged(ezInt32 iOutput);
+
+private:
+  const char* DummyGetter() const { return nullptr; }
 };

@@ -42,6 +42,10 @@ declare function __CPP_ComponentFunction_Call(component: Component, id: number, 
 export class SocketAttachComponent extends Component
 {
   public static GetTypeNameHash(): number { return 1416590267; }
+  get Output(): number { return __CPP_ComponentProperty_get(this, 3252953453); }
+  set Output(value: number) { __CPP_ComponentProperty_set(this, 3252953453, value); }
+  get Buddy(): string { return __CPP_ComponentProperty_get(this, 4124619687); }
+  set Buddy(value: string) { __CPP_ComponentProperty_set(this, 4124619687, value); }
 }
 
 export class AgentSteeringComponent extends Component

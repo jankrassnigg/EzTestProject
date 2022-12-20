@@ -189,7 +189,7 @@ void EzTestProjectGameState::OnMsgGenericEvent(ezMsgGenericEvent& msg)
       ezLog::Info("Sender: {}", pSender->GetName());
     }
 
-    if (m_pMainWorld->TryGetObjectWithGlobalKey("ButtonLight", pSender))
+    //if (m_pMainWorld->TryGetObjectWithGlobalKey("ButtonLight", pSender))
     {
       if (auto pBB = m_pGlobalStateBlackboard) // ezBlackboardComponent::FindBlackboard(pSender))
       {
