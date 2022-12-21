@@ -2,11 +2,11 @@
 #include <GameEngine/AI/SensorComponent.h>
 #include <JoltPlugin/Constraints/JoltGrabObjectComponent.h>
 
-using SocketAttachComponentManager = ezComponentManagerSimple<class SocketAttachComponent, ezComponentUpdateType::WhenSimulating>;
+using ezPowerConnectorComponentManager = ezComponentManagerSimple<class ezPowerConnectorComponent, ezComponentUpdateType::WhenSimulating>;
 
-class SocketAttachComponent : public ezComponent
+class ezPowerConnectorComponent : public ezComponent
 {
-  EZ_DECLARE_COMPONENT_TYPE(SocketAttachComponent, ezComponent, SocketAttachComponentManager);
+  EZ_DECLARE_COMPONENT_TYPE(ezPowerConnectorComponent, ezComponent, ezPowerConnectorComponentManager);
 
 public:
   virtual void SerializeComponent(ezWorldWriter& stream) const override;

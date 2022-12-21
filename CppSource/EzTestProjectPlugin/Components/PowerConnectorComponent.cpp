@@ -1,11 +1,11 @@
 #include <EzTestProjectPlugin/EzTestProjectPluginPCH.h>
 
 #include <Core/Messages/SetColorMessage.h>
-#include <EzTestProjectPlugin/Components/SocketAttachComponent.h>
+#include <EzTestProjectPlugin/Components/PowerConnectorComponent.h>
 #include <JoltPlugin/Constraints/JoltFixedConstraintComponent.h>
 
 // clang-format off
-EZ_BEGIN_COMPONENT_TYPE(SocketAttachComponent, 1, ezComponentMode::Static)
+EZ_BEGIN_COMPONENT_TYPE(ezPowerConnectorComponent, 1, ezComponentMode::Static)
 {
   EZ_BEGIN_PROPERTIES
   {
@@ -22,14 +22,14 @@ EZ_BEGIN_COMPONENT_TYPE(SocketAttachComponent, 1, ezComponentMode::Static)
   EZ_END_MESSAGEHANDLERS;
   EZ_BEGIN_ATTRIBUTES
   {
-    new ezCategoryAttribute("EzTestProject"),
+    new ezCategoryAttribute("Gameplay"),
   }
   EZ_END_ATTRIBUTES;
 }
 EZ_END_COMPONENT_TYPE;
 // clang-format on
 
-void SocketAttachComponent::SerializeComponent(ezWorldWriter& stream) const
+void ezPowerConnectorComponent::SerializeComponent(ezWorldWriter& stream) const
 {
   SUPER::SerializeComponent(stream);
 
@@ -40,7 +40,7 @@ void SocketAttachComponent::SerializeComponent(ezWorldWriter& stream) const
   s << m_iOutput;
 }
 
-void SocketAttachComponent::DeserializeComponent(ezWorldReader& stream)
+void ezPowerConnectorComponent::DeserializeComponent(ezWorldReader& stream)
 {
   SUPER::DeserializeComponent(stream);
 
@@ -51,7 +51,7 @@ void SocketAttachComponent::DeserializeComponent(ezWorldReader& stream)
   s >> m_iOutput;
 }
 
-void SocketAttachComponent::Update()
+void ezPowerConnectorComponent::Update()
 {
   if (!m_hAttachPoint.IsInvalidated())
     return;
@@ -87,7 +87,7 @@ void SocketAttachComponent::Update()
   }
 }
 
-void SocketAttachComponent::SetOutput(ezInt32 value)
+void ezPowerConnectorComponent::SetOutput(ezInt32 value)
 {
   if (m_iOutput == value)
     return;
@@ -97,7 +97,7 @@ void SocketAttachComponent::SetOutput(ezInt32 value)
   OutputChanged(m_iOutput);
 }
 
-void SocketAttachComponent::SetInput(ezInt32 value)
+void ezPowerConnectorComponent::SetInput(ezInt32 value)
 {
   if (m_iInput == value)
     return;
@@ -112,7 +112,7 @@ void SocketAttachComponent::SetInput(ezInt32 value)
   GetOwner()->SendMessageRecursive(msg);
 }
 
-void SocketAttachComponent::SetBuddyReference(const char* szReference)
+void ezPowerConnectorComponent::SetBuddyReference(const char* szReference)
 {
   auto resolver = GetWorld()->GetGameObjectReferenceResolver();
 
@@ -122,7 +122,7 @@ void SocketAttachComponent::SetBuddyReference(const char* szReference)
   SetBuddy(resolver(szReference, GetHandle(), "Buddy"));
 }
 
-void SocketAttachComponent::SetBuddy(ezGameObjectHandle hNewBuddy)
+void ezPowerConnectorComponent::SetBuddy(ezGameObjectHandle hNewBuddy)
 {
   if (m_hBuddy == hNewBuddy)
     return;
@@ -139,7 +139,7 @@ void SocketAttachComponent::SetBuddy(ezGameObjectHandle hNewBuddy)
   ezGameObject* pBuddy;
   if (GetOwner()->GetWorld()->TryGetObject(hPrevBuddy, pBuddy))
   {
-    SocketAttachComponent* pConnector;
+    ezPowerConnectorComponent* pConnector;
     if (pBuddy->TryGetComponentOfBaseType(pConnector))
     {
       pConnector->SetOutput(0);
@@ -151,7 +151,7 @@ void SocketAttachComponent::SetBuddy(ezGameObjectHandle hNewBuddy)
 
   if (GetOwner()->GetWorld()->TryGetObject(hNewBuddy, pBuddy))
   {
-    SocketAttachComponent* pConnector;
+    ezPowerConnectorComponent* pConnector;
     if (pBuddy->TryGetComponentOfBaseType(pConnector))
     {
       pConnector->SetBuddy(GetOwner()->GetHandle());
@@ -160,7 +160,7 @@ void SocketAttachComponent::SetBuddy(ezGameObjectHandle hNewBuddy)
   }
 }
 
-void SocketAttachComponent::SetConnectedTo(ezGameObjectHandle hNewConnectedTo)
+void ezPowerConnectorComponent::SetConnectedTo(ezGameObjectHandle hNewConnectedTo)
 {
   if (m_hConnectedTo == hNewConnectedTo)
     return;
@@ -177,7 +177,7 @@ void SocketAttachComponent::SetConnectedTo(ezGameObjectHandle hNewConnectedTo)
   ezGameObject* pConnectedTo;
   if (GetOwner()->GetWorld()->TryGetObject(hPrevConnectedTo, pConnectedTo))
   {
-    SocketAttachComponent* pConnector;
+    ezPowerConnectorComponent* pConnector;
     if (pConnectedTo->TryGetComponentOfBaseType(pConnector))
     {
       pConnector->SetInput(0);
@@ -189,7 +189,7 @@ void SocketAttachComponent::SetConnectedTo(ezGameObjectHandle hNewConnectedTo)
 
   if (GetOwner()->GetWorld()->TryGetObject(hNewConnectedTo, pConnectedTo))
   {
-    SocketAttachComponent* pConnector;
+    ezPowerConnectorComponent* pConnector;
     if (pConnectedTo->TryGetComponentOfBaseType(pConnector))
     {
       pConnector->SetConnectedTo(GetOwner()->GetHandle());
@@ -198,7 +198,7 @@ void SocketAttachComponent::SetConnectedTo(ezGameObjectHandle hNewConnectedTo)
   }
 }
 
-void SocketAttachComponent::OnDeactivated()
+void ezPowerConnectorComponent::OnDeactivated()
 {
   Detach();
   SetBuddy({});
@@ -206,7 +206,7 @@ void SocketAttachComponent::OnDeactivated()
   SUPER::OnDeactivated();
 }
 
-void SocketAttachComponent::OnSimulationStarted()
+void ezPowerConnectorComponent::OnSimulationStarted()
 {
   SUPER::OnSimulationStarted();
 
@@ -221,7 +221,7 @@ void SocketAttachComponent::OnSimulationStarted()
   }
 }
 
-void SocketAttachComponent::OnMsgSensorDetectedObjectsChanged(ezMsgSensorDetectedObjectsChanged& msg)
+void ezPowerConnectorComponent::OnMsgSensorDetectedObjectsChanged(ezMsgSensorDetectedObjectsChanged& msg)
 {
   if (msg.m_DetectedObjects.IsEmpty())
     m_hClosestSocket.Invalidate();
@@ -229,7 +229,7 @@ void SocketAttachComponent::OnMsgSensorDetectedObjectsChanged(ezMsgSensorDetecte
     m_hClosestSocket = msg.m_DetectedObjects[0];
 }
 
-void SocketAttachComponent::OnMsgObjectGrabbed(ezMsgObjectGrabbed& msg)
+void ezPowerConnectorComponent::OnMsgObjectGrabbed(ezMsgObjectGrabbed& msg)
 {
   if (msg.m_bGotGrabbed)
   {
@@ -244,7 +244,7 @@ void SocketAttachComponent::OnMsgObjectGrabbed(ezMsgObjectGrabbed& msg)
   }
 }
 
-void SocketAttachComponent::Detach()
+void ezPowerConnectorComponent::Detach()
 {
   SetConnectedTo({});
 
@@ -255,7 +255,7 @@ void SocketAttachComponent::Detach()
   }
 }
 
-void SocketAttachComponent::InputChanged(ezInt32 iInput)
+void ezPowerConnectorComponent::InputChanged(ezInt32 iInput)
 {
   if (!IsActiveAndSimulating())
     return;
@@ -266,7 +266,7 @@ void SocketAttachComponent::InputChanged(ezInt32 iInput)
   ezGameObject* pBuddy;
   if (GetOwner()->GetWorld()->TryGetObject(m_hBuddy, pBuddy))
   {
-    SocketAttachComponent* pConnector;
+    ezPowerConnectorComponent* pConnector;
     if (pBuddy->TryGetComponentOfBaseType(pConnector))
     {
       pConnector->SetOutput(iInput);
@@ -274,7 +274,7 @@ void SocketAttachComponent::InputChanged(ezInt32 iInput)
   }
 }
 
-void SocketAttachComponent::OutputChanged(ezInt32 iOutput)
+void ezPowerConnectorComponent::OutputChanged(ezInt32 iOutput)
 {
   if (!IsActiveAndSimulating())
     return;
@@ -285,7 +285,7 @@ void SocketAttachComponent::OutputChanged(ezInt32 iOutput)
   ezGameObject* pConnectedTo;
   if (GetOwner()->GetWorld()->TryGetObject(m_hConnectedTo, pConnectedTo))
   {
-    SocketAttachComponent* pConnector;
+    ezPowerConnectorComponent* pConnector;
     if (pConnectedTo->TryGetComponentOfBaseType(pConnector))
     {
       pConnector->SetInput(iOutput);
