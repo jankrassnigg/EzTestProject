@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{13123664383442423628,11094332277691674355}}
-		u4 %Hash{7603818331004093874}
+		u4 %Hash{6232721808894010765}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -127,7 +127,7 @@ o
 			Uuid{u4{13350052289334226327,15116029881821608389}}
 		}
 		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x401BF5BD,0x602D503E,0x907654BE}}
+		Vec3 %LocalPosition{f{0x0010F53D,0x302F9EBE,0x70CD7EBE}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
@@ -1217,6 +1217,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{"{ c7744917-f542-89d8-09b2-cfd351b5f8f4 }"}
+		s %ConnectedTo{""}
 		u2 %Output{0}
 	}
 }
@@ -2157,6 +2158,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{"{ 04e0dac1-2127-cf76-d189-c94cb6003d09 }"}
+		s %ConnectedTo{""}
 		u2 %Output{0}
 	}
 }
@@ -2382,6 +2384,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{"{ 21063425-6447-8dd7-3e97-283da7e6fcbf }"}
+		s %ConnectedTo{""}
 		u2 %Output{0}
 	}
 }
@@ -2394,6 +2397,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{""}
+		s %ConnectedTo{""}
 		u2 %Output{1}
 	}
 }
@@ -2551,6 +2555,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{""}
+		s %ConnectedTo{""}
 		u2 %Output{1}
 	}
 }
@@ -2639,6 +2644,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{"{ 0052943f-e386-8af1-3545-9ec764ad947c }"}
+		s %ConnectedTo{""}
 		u2 %Output{0}
 	}
 }
@@ -2746,6 +2752,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{"{ 9d428de2-dfb6-e004-9ff9-a5ea63a01d5d }"}
+		s %ConnectedTo{""}
 		u2 %Output{0}
 	}
 }
@@ -2836,6 +2843,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{"{ 00d105b1-2a45-4858-8238-7a17e0ff65b7 }"}
+		s %ConnectedTo{""}
 		u2 %Output{0}
 	}
 }
@@ -3228,6 +3236,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{"{ 0a909e2b-3055-6369-b62a-a03bfb7e748f }"}
+		s %ConnectedTo{""}
 		u2 %Output{0}
 	}
 }
@@ -3384,6 +3393,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{"{ 6e1f15fa-7ae3-cbbc-9969-746877debce9 }"}
+		s %ConnectedTo{""}
 		u2 %Output{0}
 	}
 }
@@ -4129,6 +4139,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{"{ 29c6bc9b-c6b0-485c-b8b3-1c9539c55dd8 }"}
+		s %ConnectedTo{""}
 		u2 %Output{0}
 	}
 }
@@ -5831,6 +5842,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{"{ 63e5d148-aab4-2185-2673-fba6d555b09a }"}
+		s %ConnectedTo{""}
 		u2 %Output{0}
 	}
 }
@@ -6588,7 +6600,7 @@ o
 			Uuid{u4{11568147907067800225,4946069173464958829}}
 		}
 		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x4797CB40,0x561C0940,0xD9221D40}}
+		Vec3 %LocalPosition{f{0xE130D540,0xBC826F40,0x0C565040}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0xCDCC4C3E}
@@ -7099,6 +7111,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{"{ 5170438a-dfa2-d0fb-c5be-62ae7cd00e4a }"}
+		s %ConnectedTo{""}
 		u2 %Output{0}
 	}
 }
@@ -7667,6 +7680,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{""}
+		s %ConnectedTo{""}
 		u2 %Output{0}
 	}
 }
@@ -7826,6 +7840,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{"{ 5a30cc00-420b-8b81-3fdb-56060faf6f62 }"}
+		s %ConnectedTo{""}
 		u2 %Output{0}
 	}
 }
@@ -9925,7 +9940,7 @@ o
 		}
 		VarArray %Components{}
 		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x3AA1B040,0x384E8340,0x2C9D3940}}
+		Vec3 %LocalPosition{f{0x10F9CE40,0x384E8340,0xAC396940}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
@@ -10124,6 +10139,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{"{ 674c7789-242f-1596-4f7a-d455a3929f91 }"}
+		s %ConnectedTo{"{ 0a909e2b-3055-6369-b62a-a03bfb7e748f }"}
 		u2 %Output{0}
 	}
 }
@@ -10664,6 +10680,7 @@ o
 	{
 		b %Active{1}
 		s %Buddy{"{ 700cffff-8698-d01b-c996-c8ad357100aa }"}
+		s %ConnectedTo{"{ 6514c697-11f9-76c6-e5ea-9b92feefaa8a }"}
 		u2 %Output{0}
 	}
 }
@@ -12308,6 +12325,37 @@ o
 }
 o
 {
+	Uuid %id{u4{16204730041955164661,1625104322871004801}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{16072914432711739065,8931628198399937206}}
+		}
+		s %Category{"ezPropertyCategory::Member"}
+		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Const|ezPropertyFlags::Phantom"}
+		s %Name{"Buddy"}
+		s %Type{"ezConstCharPtr"}
+	}
+}
+o
+{
+	Uuid %id{u4{1243079997935383768,1702909490586100320}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"ezPropertyCategory::Member"}
+		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
+		s %Name{"Output"}
+		s %Type{"ezUInt16"}
+	}
+}
+o
+{
 	Uuid %id{u4{6487045259038071186,1956881576343766018}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -12582,6 +12630,13 @@ o
 		s %TypeName{"ezSliderComponent"}
 		u3 %TypeVersion{3}
 	}
+}
+o
+{
+	Uuid %id{u4{13715256536231335304,3926345638035657472}}
+	s %t{"ezGameObjectReferenceAttribute"}
+	u3 %v{1}
+	p{}
 }
 o
 {
@@ -13242,6 +13297,13 @@ o
 }
 o
 {
+	Uuid %id{u4{16072914432711739065,8931628198399937206}}
+	s %t{"ezGameObjectReferenceAttribute"}
+	u3 %v{1}
+	p{}
+}
+o
+{
 	Uuid %id{u4{7417499903715108436,8980847774302045021}}
 	s %t{"ezReflectedFunctionDescriptor"}
 	u3 %v{1}
@@ -13794,12 +13856,20 @@ o
 	u3 %v{1}
 	p
 	{
-		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Attributes
+		{
+			Uuid{u4{7014796804996552049,17070558652826234893}}
+		}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
 		VarArray %Functions{}
 		s %ParentTypeName{"ezComponent"}
 		s %PluginName{"EzTestProjectPlugin"}
-		VarArray %Properties{}
+		VarArray %Properties
+		{
+			Uuid{u4{1243079997935383768,1702909490586100320}}
+			Uuid{u4{16204730041955164661,1625104322871004801}}
+			Uuid{u4{14851204719803681643,13459869119129204407}}
+		}
 		s %TypeName{"ezPowerConnectorComponent"}
 		u3 %TypeVersion{1}
 	}
@@ -13922,6 +13992,23 @@ o
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
 		s %Name{"ContinuousCollisionDetection"}
 		s %Type{"bool"}
+	}
+}
+o
+{
+	Uuid %id{u4{14851204719803681643,13459869119129204407}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{13715256536231335304,3926345638035657472}}
+		}
+		s %Category{"ezPropertyCategory::Member"}
+		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Const|ezPropertyFlags::Phantom"}
+		s %Name{"ConnectedTo"}
+		s %Type{"ezConstCharPtr"}
 	}
 }
 o
@@ -14300,6 +14387,16 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezBasisAxis"}
 		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{7014796804996552049,17070558652826234893}}
+	s %t{"ezCategoryAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %Category{"Gameplay"}
 	}
 }
 o

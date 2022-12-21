@@ -218,6 +218,7 @@ export import MsgSetColor = __AllMessages.MsgSetColor;
 export import MsgSetFloatParameter = __AllMessages.MsgSetFloatParameter;
 export import MsgSetMeshMaterial = __AllMessages.MsgSetMeshMaterial;
 export import MsgSetPlaying = __AllMessages.MsgSetPlaying;
+export import MsgSetPowerInput = __AllMessages.MsgSetPowerInput;
 export import MsgStateMachineStateChanged = __AllMessages.MsgStateMachineStateChanged;
 export import MsgTransformChanged = __AllMessages.MsgTransformChanged;
 export import MsgTriggerTriggered = __AllMessages.MsgTriggerTriggered;

@@ -30,6 +30,7 @@ public:
   void SetBuddyReference(const char* szReference); // [ property ]
   void SetBuddy(ezGameObjectHandle hObject);
 
+  void SetConnectedToReference(const char* szReference); // [ property ]
   void SetConnectedTo(ezGameObjectHandle hObject);
 
   bool IsConnected() const;
@@ -42,6 +43,7 @@ protected:
   void OnMsgObjectGrabbed(ezMsgObjectGrabbed& msg);                               // [ message handler ]
 
   void Detach();
+  void Attach(ezGameObjectHandle hSocket);
 
   ezGameObjectHandle m_hClosestSocket;
 

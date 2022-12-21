@@ -27,6 +27,7 @@ EZ_BEGIN_COMPONENT_TYPE(ezPowerConnectorComponent, 1, ezComponentMode::Static)
   {
     EZ_ACCESSOR_PROPERTY("Output", GetOutput, SetOutput),
     EZ_ACCESSOR_PROPERTY("Buddy", DummyGetter, SetBuddyReference)->AddAttributes(new ezGameObjectReferenceAttribute()),
+    EZ_ACCESSOR_PROPERTY("ConnectedTo", DummyGetter, SetConnectedToReference)->AddAttributes(new ezGameObjectReferenceAttribute()),
   }
   EZ_END_PROPERTIES;
   EZ_BEGIN_MESSAGEHANDLERS
@@ -51,6 +52,7 @@ void ezPowerConnectorComponent::SerializeComponent(ezWorldWriter& stream) const
   auto& s = stream.GetStream();
 
   stream.WriteGameObjectHandle(m_hBuddy);
+  // stream.WriteGameObjectHandle(m_hConnectedTo);
 
   s << m_uiOutput;
 }
@@ -62,6 +64,7 @@ void ezPowerConnectorComponent::DeserializeComponent(ezWorldReader& stream)
   auto& s = stream.GetStream();
 
   m_hBuddy = stream.ReadGameObjectHandle();
+  // m_hConnectedTo = stream.ReadGameObjectHandle();
 
   s >> m_uiOutput;
 }
@@ -80,44 +83,7 @@ void ezPowerConnectorComponent::Update()
   if (m_hClosestSocket.IsInvalidated())
     return;
 
-  ezGameObject* pClosestSocket;
-  if (pWorld->TryGetObject(m_hClosestSocket, pClosestSocket))
-  {
-    ezPowerConnectorComponent* pConnector;
-    if (pClosestSocket->TryGetComponentOfBaseType(pConnector))
-    {
-      // don't connect to an already connected object
-      if (pConnector->IsConnected())
-        return;
-    }
-
-    m_Attached = tNow;
-    const ezTransform tSocket = pClosestSocket->GetGlobalTransform();
-
-    ezGameObjectDesc go;
-    go.m_hParent = m_hClosestSocket;
-
-    ezGameObject* pAttach;
-    m_hAttachPoint = pWorld->CreateObject(go, pAttach);
-
-    ezJoltFixedConstraintComponent* pConstraint;
-    pWorld->GetOrCreateComponentManager<ezJoltFixedConstraintComponentManager>()->CreateComponent(pAttach, pConstraint);
-
-    pConstraint->SetActors({}, tSocket, GetOwner()->GetHandle(), ezTransform::IdentityTransform());
-
-    SetConnectedTo(m_hClosestSocket);
-
-    if (!m_hGrabbedBy.IsInvalidated())
-    {
-      ezGameObject* pGrab;
-      if (pWorld->TryGetObject(m_hGrabbedBy, pGrab))
-      {
-        ezMsgReleaseObjectGrab msg;
-        msg.m_hGrabbedObjectToRelease = GetOwner()->GetHandle();
-        pGrab->SendMessage(msg);
-      }
-    }
-  }
+  Attach(m_hClosestSocket);
 }
 
 void ezPowerConnectorComponent::SetOutput(ezUInt16 value)
@@ -188,6 +154,16 @@ void ezPowerConnectorComponent::SetBuddy(ezGameObjectHandle hNewBuddy)
   }
 }
 
+void ezPowerConnectorComponent::SetConnectedToReference(const char* szReference)
+{
+  auto resolver = GetWorld()->GetGameObjectReferenceResolver();
+
+  if (!resolver.IsValid())
+    return;
+
+  SetConnectedTo(resolver(szReference, GetHandle(), "ConnectedTo"));
+}
+
 void ezPowerConnectorComponent::SetConnectedTo(ezGameObjectHandle hNewConnectedTo)
 {
   if (m_hConnectedTo == hNewConnectedTo)
@@ -244,6 +220,14 @@ void ezPowerConnectorComponent::OnSimulationStarted()
 {
   SUPER::OnSimulationStarted();
 
+  ezGameObjectHandle hAlreadyConnectedTo = m_hConnectedTo;
+  m_hConnectedTo.Invalidate();
+
+  if (!hAlreadyConnectedTo.IsInvalidated())
+  {
+    Attach(hAlreadyConnectedTo);
+  }
+
   if (m_uiInput != 0)
   {
     InputChanged(m_uiInput);
@@ -283,6 +267,50 @@ void ezPowerConnectorComponent::OnMsgObjectGrabbed(ezMsgObjectGrabbed& msg)
     if (ezGameObject* pSensor = GetOwner()->FindChildByName("SensorOnGrab"))
     {
       pSensor->SetActiveFlag(false);
+    }
+  }
+}
+
+void ezPowerConnectorComponent::Attach(ezGameObjectHandle hSocket)
+{
+  ezWorld* pWorld = GetOwner()->GetWorld();
+
+  ezGameObject* pSocket;
+  if (!pWorld->TryGetObject(hSocket, pSocket))
+    return;
+
+  ezPowerConnectorComponent* pConnector;
+  if (pSocket->TryGetComponentOfBaseType(pConnector))
+  {
+    // don't connect to an already connected object
+    if (pConnector->IsConnected())
+      return;
+  }
+
+  m_Attached = pWorld->GetClock().GetAccumulatedTime();
+  const ezTransform tSocket = pSocket->GetGlobalTransform();
+
+  ezGameObjectDesc go;
+  go.m_hParent = hSocket;
+
+  ezGameObject* pAttach;
+  m_hAttachPoint = pWorld->CreateObject(go, pAttach);
+
+  ezJoltFixedConstraintComponent* pConstraint;
+  pWorld->GetOrCreateComponentManager<ezJoltFixedConstraintComponentManager>()->CreateComponent(pAttach, pConstraint);
+
+  pConstraint->SetActors({}, tSocket, GetOwner()->GetHandle(), ezTransform::IdentityTransform());
+
+  SetConnectedTo(hSocket);
+
+  if (!m_hGrabbedBy.IsInvalidated())
+  {
+    ezGameObject* pGrab;
+    if (pWorld->TryGetObject(m_hGrabbedBy, pGrab))
+    {
+      ezMsgReleaseObjectGrab msg;
+      msg.m_hGrabbedObjectToRelease = GetOwner()->GetHandle();
+      pGrab->SendMessage(msg);
     }
   }
 }
