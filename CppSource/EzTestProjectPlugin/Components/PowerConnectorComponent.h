@@ -2,6 +2,13 @@
 #include <GameEngine/AI/SensorComponent.h>
 #include <JoltPlugin/Constraints/JoltGrabObjectComponent.h>
 
+class ezMsgSetPowerInput : public ezEventMessage
+{
+  EZ_DECLARE_MESSAGE_TYPE(ezMsgSetPowerInput, ezEventMessage);
+
+  ezUInt16 m_uiPower = 0;
+};
+
 using ezPowerConnectorComponentManager = ezComponentManagerSimple<class ezPowerConnectorComponent, ezComponentUpdateType::WhenSimulating>;
 
 class ezPowerConnectorComponent : public ezComponent
@@ -14,11 +21,11 @@ public:
 
   void Update();
 
-  void SetOutput(ezInt32 value);                  // [ property ]
-  ezInt32 GetOutput() const { return m_iOutput; } // [ property ]
+  void SetInput(ezUInt16 value);
+  ezUInt16 GetInput() const { return m_uiInput; }
 
-  void SetInput(ezInt32 value);                 // [ property ]
-  ezInt32 GetInput() const { return m_iInput; } // [ property ]
+  void SetOutput(ezUInt16 value);                   // [ property ]
+  ezUInt16 GetOutput() const { return m_uiOutput; } // [ property ]
 
   void SetBuddyReference(const char* szReference); // [ property ]
   void SetBuddy(ezGameObjectHandle hObject);
@@ -42,14 +49,14 @@ protected:
   ezGameObjectHandle m_hAttachPoint;
   ezGameObjectHandle m_hGrabbedBy;
 
-  ezInt32 m_iOutput = 0;
-  ezInt32 m_iInput = 0;
+  ezUInt16 m_uiOutput = 0;
+  ezUInt16 m_uiInput = 0;
 
   ezGameObjectHandle m_hBuddy;
   ezGameObjectHandle m_hConnectedTo;
 
-  void InputChanged(ezInt32 iInput);
-  void OutputChanged(ezInt32 iOutput);
+  void InputChanged(ezUInt16 uiInput);
+  void OutputChanged(ezUInt16 uiOutput);
 
 private:
   const char* DummyGetter() const { return nullptr; }

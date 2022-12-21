@@ -5,11 +5,26 @@
 #include <JoltPlugin/Constraints/JoltFixedConstraintComponent.h>
 
 // clang-format off
+EZ_IMPLEMENT_MESSAGE_TYPE(ezMsgSetPowerInput);
+EZ_BEGIN_DYNAMIC_REFLECTED_TYPE(ezMsgSetPowerInput, 1, ezRTTIDefaultAllocator<ezMsgSetPowerInput>)
+{
+  EZ_BEGIN_PROPERTIES
+  {
+    EZ_MEMBER_PROPERTY("Power", m_uiPower),
+  }
+  EZ_END_PROPERTIES;
+  EZ_BEGIN_ATTRIBUTES
+  {
+      new ezAutoGenVisScriptMsgHandler()
+  }
+  EZ_END_ATTRIBUTES;
+}
+EZ_END_DYNAMIC_REFLECTED_TYPE;
+
 EZ_BEGIN_COMPONENT_TYPE(ezPowerConnectorComponent, 1, ezComponentMode::Static)
 {
   EZ_BEGIN_PROPERTIES
   {
-    //EZ_ACCESSOR_PROPERTY("Input", GetInput, SetInput),
     EZ_ACCESSOR_PROPERTY("Output", GetOutput, SetOutput),
     EZ_ACCESSOR_PROPERTY("Buddy", DummyGetter, SetBuddyReference)->AddAttributes(new ezGameObjectReferenceAttribute()),
   }
@@ -37,7 +52,7 @@ void ezPowerConnectorComponent::SerializeComponent(ezWorldWriter& stream) const
 
   stream.WriteGameObjectHandle(m_hBuddy);
 
-  s << m_iOutput;
+  s << m_uiOutput;
 }
 
 void ezPowerConnectorComponent::DeserializeComponent(ezWorldReader& stream)
@@ -48,7 +63,7 @@ void ezPowerConnectorComponent::DeserializeComponent(ezWorldReader& stream)
 
   m_hBuddy = stream.ReadGameObjectHandle();
 
-  s >> m_iOutput;
+  s >> m_uiOutput;
 }
 
 void ezPowerConnectorComponent::Update()
@@ -105,29 +120,24 @@ void ezPowerConnectorComponent::Update()
   }
 }
 
-void ezPowerConnectorComponent::SetOutput(ezInt32 value)
+void ezPowerConnectorComponent::SetOutput(ezUInt16 value)
 {
-  if (m_iOutput == value)
+  if (m_uiOutput == value)
     return;
 
-  m_iOutput = value;
+  m_uiOutput = value;
 
-  OutputChanged(m_iOutput);
+  OutputChanged(m_uiOutput);
 }
 
-void ezPowerConnectorComponent::SetInput(ezInt32 value)
+void ezPowerConnectorComponent::SetInput(ezUInt16 value)
 {
-  if (m_iInput == value)
+  if (m_uiInput == value)
     return;
 
-  m_iInput = value;
+  m_uiInput = value;
 
-  InputChanged(m_iInput);
-
-  ezMsgSetColor msg;
-  msg.m_Color = (m_iInput > 0) ? ezColor::Red : ezColor::White;
-
-  GetOwner()->SendMessageRecursive(msg);
+  InputChanged(m_uiInput);
 }
 
 void ezPowerConnectorComponent::SetBuddyReference(const char* szReference)
@@ -173,7 +183,7 @@ void ezPowerConnectorComponent::SetBuddy(ezGameObjectHandle hNewBuddy)
     if (pBuddy->TryGetComponentOfBaseType(pConnector))
     {
       pConnector->SetBuddy(GetOwner()->GetHandle());
-      pConnector->SetOutput(m_iInput);
+      pConnector->SetOutput(m_uiInput);
     }
   }
 }
@@ -211,7 +221,7 @@ void ezPowerConnectorComponent::SetConnectedTo(ezGameObjectHandle hNewConnectedT
     if (pConnectedTo->TryGetComponentOfBaseType(pConnector))
     {
       pConnector->SetConnectedTo(GetOwner()->GetHandle());
-      pConnector->SetInput(m_iOutput);
+      pConnector->SetInput(m_uiOutput);
     }
   }
 }
@@ -234,14 +244,14 @@ void ezPowerConnectorComponent::OnSimulationStarted()
 {
   SUPER::OnSimulationStarted();
 
-  if (m_iInput != 0)
+  if (m_uiInput != 0)
   {
-    InputChanged(m_iInput);
+    InputChanged(m_uiInput);
   }
 
-  if (m_iOutput != 0)
+  if (m_uiOutput != 0)
   {
-    OutputChanged(m_iOutput);
+    OutputChanged(m_uiOutput);
   }
 }
 
@@ -288,10 +298,15 @@ void ezPowerConnectorComponent::Detach()
   }
 }
 
-void ezPowerConnectorComponent::InputChanged(ezInt32 iInput)
+void ezPowerConnectorComponent::InputChanged(ezUInt16 uiInput)
 {
   if (!IsActiveAndSimulating())
     return;
+
+  ezMsgSetPowerInput msg;
+  msg.m_uiPower = uiInput;
+
+  GetOwner()->PostEventMessage(msg, this, ezTime());
 
   if (m_hBuddy.IsInvalidated())
     return;
@@ -302,12 +317,12 @@ void ezPowerConnectorComponent::InputChanged(ezInt32 iInput)
     ezPowerConnectorComponent* pConnector;
     if (pBuddy->TryGetComponentOfBaseType(pConnector))
     {
-      pConnector->SetOutput(iInput);
+      pConnector->SetOutput(uiInput);
     }
   }
 }
 
-void ezPowerConnectorComponent::OutputChanged(ezInt32 iOutput)
+void ezPowerConnectorComponent::OutputChanged(ezUInt16 uiOutput)
 {
   if (!IsActiveAndSimulating())
     return;
@@ -321,7 +336,7 @@ void ezPowerConnectorComponent::OutputChanged(ezInt32 iOutput)
     ezPowerConnectorComponent* pConnector;
     if (pConnectedTo->TryGetComponentOfBaseType(pConnector))
     {
-      pConnector->SetInput(iOutput);
+      pConnector->SetInput(uiOutput);
     }
   }
 }
