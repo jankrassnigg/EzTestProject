@@ -63,7 +63,6 @@ export import Physics = __Physics.Physics;
 
 // AUTO-GENERATED
 import __AllComponents = require("./ez/AllComponents")
-export import SocketAttachComponent = __AllComponents.SocketAttachComponent;
 export import AgentSteeringComponent = __AllComponents.AgentSteeringComponent;
 export import RenderComponent = __AllComponents.RenderComponent;
 export import AlwaysVisibleComponent = __AllComponents.AlwaysVisibleComponent;
@@ -144,6 +143,7 @@ export import ParticleComponent = __AllComponents.ParticleComponent;
 export import ParticleFinisherComponent = __AllComponents.ParticleFinisherComponent;
 export import PlayerStartPointComponent = __AllComponents.PlayerStartPointComponent;
 export import PointLightComponent = __AllComponents.PointLightComponent;
+export import PowerConnectorComponent = __AllComponents.PowerConnectorComponent;
 export import PrefabReferenceComponent = __AllComponents.PrefabReferenceComponent;
 export import ProjectileComponent = __AllComponents.ProjectileComponent;
 export import PropertyAnimComponent = __AllComponents.PropertyAnimComponent;
@@ -210,6 +210,7 @@ export import MsgPhysicsAddForce = __AllMessages.MsgPhysicsAddForce;
 export import MsgPhysicsAddImpulse = __AllMessages.MsgPhysicsAddImpulse;
 export import MsgPhysicsJointBroke = __AllMessages.MsgPhysicsJointBroke;
 export import MsgQueryAnimationSkeleton = __AllMessages.MsgQueryAnimationSkeleton;
+export import MsgReleaseObjectGrab = __AllMessages.MsgReleaseObjectGrab;
 export import MsgRetrieveBoneState = __AllMessages.MsgRetrieveBoneState;
 export import MsgRopePoseUpdated = __AllMessages.MsgRopePoseUpdated;
 export import MsgSensorDetectedObjectsChanged = __AllMessages.MsgSensorDetectedObjectsChanged;

@@ -68,9 +68,16 @@ void ezPowerConnectorComponent::Update()
   ezGameObject* pClosestSocket;
   if (pWorld->TryGetObject(m_hClosestSocket, pClosestSocket))
   {
-    const ezTransform tSocket = pClosestSocket->GetGlobalTransform();
+    ezPowerConnectorComponent* pConnector;
+    if (pClosestSocket->TryGetComponentOfBaseType(pConnector))
+    {
+      // don't connect to an already connected object
+      if (pConnector->IsConnected())
+        return;
+    }
 
     m_Attached = tNow;
+    const ezTransform tSocket = pClosestSocket->GetGlobalTransform();
 
     ezGameObjectDesc go;
     go.m_hParent = m_hClosestSocket;
@@ -84,6 +91,17 @@ void ezPowerConnectorComponent::Update()
     pConstraint->SetActors({}, tSocket, GetOwner()->GetHandle(), ezTransform::IdentityTransform());
 
     SetConnectedTo(m_hClosestSocket);
+
+    if (!m_hGrabbedBy.IsInvalidated())
+    {
+      ezGameObject* pGrab;
+      if (pWorld->TryGetObject(m_hGrabbedBy, pGrab))
+      {
+        ezMsgReleaseObjectGrab msg;
+        msg.m_hGrabbedObjectToRelease = GetOwner()->GetHandle();
+        pGrab->SendMessage(msg);
+      }
+    }
   }
 }
 
@@ -198,6 +216,12 @@ void ezPowerConnectorComponent::SetConnectedTo(ezGameObjectHandle hNewConnectedT
   }
 }
 
+bool ezPowerConnectorComponent::IsConnected() const
+{
+  // since connectors automatically disconnect themselves from their peers upon destruction, this should be sufficient (no need to check object for existence)
+  return !m_hConnectedTo.IsInvalidated();
+}
+
 void ezPowerConnectorComponent::OnDeactivated()
 {
   Detach();
@@ -233,14 +257,23 @@ void ezPowerConnectorComponent::OnMsgObjectGrabbed(ezMsgObjectGrabbed& msg)
 {
   if (msg.m_bGotGrabbed)
   {
-    ++m_iGrabs;
-
     Detach();
     m_Attached = GetOwner()->GetWorld()->GetClock().GetAccumulatedTime();
+    m_hGrabbedBy = msg.m_hGrabbedBy;
+
+    if (ezGameObject* pSensor = GetOwner()->FindChildByName("SensorOnGrab"))
+    {
+      pSensor->SetActiveFlag(true);
+    }
   }
   else
   {
-    --m_iGrabs;
+    m_hGrabbedBy.Invalidate();
+
+    if (ezGameObject* pSensor = GetOwner()->FindChildByName("SensorOnGrab"))
+    {
+      pSensor->SetActiveFlag(false);
+    }
   }
 }
 

@@ -39,15 +39,6 @@ declare function __CPP_ComponentProperty_get(component: Component, id: number);
 declare function __CPP_ComponentProperty_set(component: Component, id: number, value);
 declare function __CPP_ComponentFunction_Call(component: Component, id: number, ...args);
 
-export class SocketAttachComponent extends Component
-{
-  public static GetTypeNameHash(): number { return 1416590267; }
-  get Output(): number { return __CPP_ComponentProperty_get(this, 3252953453); }
-  set Output(value: number) { __CPP_ComponentProperty_set(this, 3252953453, value); }
-  get Buddy(): string { return __CPP_ComponentProperty_get(this, 4124619687); }
-  set Buddy(value: string) { __CPP_ComponentProperty_set(this, 4124619687, value); }
-}
-
 export class AgentSteeringComponent extends Component
 {
   public static GetTypeNameHash(): number { return 2433025557; }
@@ -1099,6 +1090,15 @@ export class PointLightComponent extends LightComponent
   public static GetTypeNameHash(): number { return 2694457879; }
   get Range(): number { return __CPP_ComponentProperty_get(this, 2070313016); }
   set Range(value: number) { __CPP_ComponentProperty_set(this, 2070313016, value); }
+}
+
+export class PowerConnectorComponent extends Component
+{
+  public static GetTypeNameHash(): number { return 3608170608; }
+  get Output(): number { return __CPP_ComponentProperty_get(this, 332165697); }
+  set Output(value: number) { __CPP_ComponentProperty_set(this, 332165697, value); }
+  get Buddy(): string { return __CPP_ComponentProperty_get(this, 2676937451); }
+  set Buddy(value: string) { __CPP_ComponentProperty_set(this, 2676937451, value); }
 }
 
 export class PrefabReferenceComponent extends Component

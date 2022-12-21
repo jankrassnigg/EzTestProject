@@ -25,12 +25,14 @@ public:
 
   void SetConnectedTo(ezGameObjectHandle hObject);
 
+  bool IsConnected() const;
+
 protected:
   virtual void OnDeactivated() override;
   virtual void OnSimulationStarted() override;
 
-  void OnMsgSensorDetectedObjectsChanged(ezMsgSensorDetectedObjectsChanged& msg);
-  void OnMsgObjectGrabbed(ezMsgObjectGrabbed& msg);
+  void OnMsgSensorDetectedObjectsChanged(ezMsgSensorDetectedObjectsChanged& msg); // [ message handler ]
+  void OnMsgObjectGrabbed(ezMsgObjectGrabbed& msg);                               // [ message handler ]
 
   void Detach();
 
@@ -38,7 +40,7 @@ protected:
 
   ezTime m_Attached;
   ezGameObjectHandle m_hAttachPoint;
-  ezInt32 m_iGrabs = 0;
+  ezGameObjectHandle m_hGrabbedBy;
 
   ezInt32 m_iOutput = 0;
   ezInt32 m_iInput = 0;
