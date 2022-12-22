@@ -283,7 +283,8 @@ export class MsgSetPowerInput extends EventMessage
 {
   public static GetTypeNameHash(): number { return 4160303656; }
   constructor() { super(); this.TypeNameHash = 4160303656; }
-  Power: number = 0;
+  PrevValue: number = 0;
+  NewValue: number = 0;
 }
 
 export class MsgStateMachineStateChanged extends EventMessage

@@ -10,7 +10,8 @@ EZ_BEGIN_DYNAMIC_REFLECTED_TYPE(ezMsgSetPowerInput, 1, ezRTTIDefaultAllocator<ez
 {
   EZ_BEGIN_PROPERTIES
   {
-    EZ_MEMBER_PROPERTY("Power", m_uiPower),
+    EZ_MEMBER_PROPERTY("PrevValue", m_uiPrevValue),
+    EZ_MEMBER_PROPERTY("NewValue", m_uiNewValue),
   }
   EZ_END_PROPERTIES;
   EZ_BEGIN_ATTRIBUTES
@@ -101,9 +102,8 @@ void ezPowerConnectorComponent::SetInput(ezUInt16 value)
   if (m_uiInput == value)
     return;
 
+  InputChanged(m_uiInput, value);
   m_uiInput = value;
-
-  InputChanged(m_uiInput);
 }
 
 void ezPowerConnectorComponent::SetBuddyReference(const char* szReference)
@@ -230,7 +230,7 @@ void ezPowerConnectorComponent::OnSimulationStarted()
 
   if (m_uiInput != 0)
   {
-    InputChanged(m_uiInput);
+    InputChanged(0, m_uiInput);
   }
 
   if (m_uiOutput != 0)
@@ -326,13 +326,14 @@ void ezPowerConnectorComponent::Detach()
   }
 }
 
-void ezPowerConnectorComponent::InputChanged(ezUInt16 uiInput)
+void ezPowerConnectorComponent::InputChanged(ezUInt16 uiPrevInput, ezUInt16 uiInput)
 {
   if (!IsActiveAndSimulating())
     return;
 
   ezMsgSetPowerInput msg;
-  msg.m_uiPower = uiInput;
+  msg.m_uiPrevValue = uiPrevInput;
+  msg.m_uiNewValue = uiInput;
 
   GetOwner()->PostEventMessage(msg, this, ezTime());
 

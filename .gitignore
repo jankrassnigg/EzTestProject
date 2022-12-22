@@ -33,3 +33,4 @@
 AssetCache/
 tsconfig.json
 
+*.blend1

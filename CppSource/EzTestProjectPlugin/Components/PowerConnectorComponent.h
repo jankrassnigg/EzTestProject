@@ -6,7 +6,8 @@ class ezMsgSetPowerInput : public ezEventMessage
 {
   EZ_DECLARE_MESSAGE_TYPE(ezMsgSetPowerInput, ezEventMessage);
 
-  ezUInt16 m_uiPower = 0;
+  ezUInt16 m_uiPrevValue = 0;
+  ezUInt16 m_uiNewValue = 0;
 };
 
 using ezPowerConnectorComponentManager = ezComponentManagerSimple<class ezPowerConnectorComponent, ezComponentUpdateType::WhenSimulating>;
@@ -57,7 +58,7 @@ protected:
   ezGameObjectHandle m_hBuddy;
   ezGameObjectHandle m_hConnectedTo;
 
-  void InputChanged(ezUInt16 uiInput);
+  void InputChanged(ezUInt16 uiPrevInput, ezUInt16 uiInput);
   void OutputChanged(ezUInt16 uiOutput);
 
 private:
