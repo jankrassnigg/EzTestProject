@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{13123664383442423628,11094332277691674355}}
-		u4 %Hash{2894347766159907732}
+		u4 %Hash{15393798408213346822}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -189,7 +189,7 @@ o
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{"SensorOnGrab"}
+		s %Name{"ActiveWhenGrabbed"}
 		VarArray %Tags
 		{
 			s{"CastShadow"}
@@ -298,7 +298,7 @@ o
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{"SensorOnGrab"}
+		s %Name{"ActiveWhenGrabbed"}
 		VarArray %Tags
 		{
 			s{"CastShadow"}
@@ -6391,7 +6391,7 @@ o
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{"SensorOnGrab"}
+		s %Name{"ActiveWhenGrabbed"}
 		VarArray %Tags
 		{
 			s{"CastShadow"}
@@ -6975,7 +6975,7 @@ o
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{"SensorOnGrab"}
+		s %Name{"ActiveWhenGrabbed"}
 		VarArray %Tags
 		{
 			s{"CastShadow"}
@@ -9916,7 +9916,7 @@ o
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{"SensorOnGrab"}
+		s %Name{"ActiveWhenGrabbed"}
 		VarArray %Tags
 		{
 			s{"CastShadow"}
@@ -10548,7 +10548,7 @@ o
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{"SensorOnGrab"}
+		s %Name{"ActiveWhenGrabbed"}
 		VarArray %Tags
 		{
 			s{"CastShadow"}

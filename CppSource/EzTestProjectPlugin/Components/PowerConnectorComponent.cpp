@@ -5,8 +5,8 @@
 #include <JoltPlugin/Constraints/JoltFixedConstraintComponent.h>
 
 // clang-format off
-EZ_IMPLEMENT_MESSAGE_TYPE(ezMsgSetPowerInput);
-EZ_BEGIN_DYNAMIC_REFLECTED_TYPE(ezMsgSetPowerInput, 1, ezRTTIDefaultAllocator<ezMsgSetPowerInput>)
+EZ_IMPLEMENT_MESSAGE_TYPE(ezEventMsgSetPowerInput);
+EZ_BEGIN_DYNAMIC_REFLECTED_TYPE(ezEventMsgSetPowerInput, 1, ezRTTIDefaultAllocator<ezEventMsgSetPowerInput>)
 {
   EZ_BEGIN_PROPERTIES
   {
@@ -53,7 +53,7 @@ void ezPowerConnectorComponent::SerializeComponent(ezWorldWriter& stream) const
   auto& s = stream.GetStream();
 
   stream.WriteGameObjectHandle(m_hBuddy);
-  // stream.WriteGameObjectHandle(m_hConnectedTo);
+  stream.WriteGameObjectHandle(m_hConnectedTo);
 
   s << m_uiOutput;
 }
@@ -65,26 +65,23 @@ void ezPowerConnectorComponent::DeserializeComponent(ezWorldReader& stream)
   auto& s = stream.GetStream();
 
   m_hBuddy = stream.ReadGameObjectHandle();
-  // m_hConnectedTo = stream.ReadGameObjectHandle();
+  m_hConnectedTo = stream.ReadGameObjectHandle();
 
   s >> m_uiOutput;
 }
 
-void ezPowerConnectorComponent::Update()
+void ezPowerConnectorComponent::ConnectToSocket(ezGameObjectHandle hSocket)
 {
-  if (!m_hAttachPoint.IsInvalidated())
+  if (IsConnected())
     return;
 
-  ezWorld* pWorld = GetOwner()->GetWorld();
-  const ezTime tNow = pWorld->GetClock().GetAccumulatedTime();
-
-  if (tNow - m_Attached < ezTime::Seconds(1))
+  if (GetOwner()->GetWorld()->GetClock().GetAccumulatedTime() - m_DetachTime < ezTime::Seconds(1))
+  {
+    // recently detached -> wait a bit before allowing to attach again
     return;
+  }
 
-  if (m_hClosestSocket.IsInvalidated())
-    return;
-
-  Attach(m_hClosestSocket);
+  Attach(hSocket);
 }
 
 void ezPowerConnectorComponent::SetOutput(ezUInt16 value)
@@ -200,12 +197,23 @@ void ezPowerConnectorComponent::SetConnectedTo(ezGameObjectHandle hNewConnectedT
       pConnector->SetInput(m_uiOutput);
     }
   }
+
+  if (hNewConnectedTo.IsInvalidated() && IsAttached())
+  {
+    // make sure that if we get disconnected, we also clean up our detachment state
+    Detach();
+  }
 }
 
 bool ezPowerConnectorComponent::IsConnected() const
 {
   // since connectors automatically disconnect themselves from their peers upon destruction, this should be sufficient (no need to check object for existence)
   return !m_hConnectedTo.IsInvalidated();
+}
+
+bool ezPowerConnectorComponent::IsAttached() const
+{
+  return !m_hAttachPoint.IsInvalidated();
 }
 
 void ezPowerConnectorComponent::OnDeactivated()
@@ -241,10 +249,10 @@ void ezPowerConnectorComponent::OnSimulationStarted()
 
 void ezPowerConnectorComponent::OnMsgSensorDetectedObjectsChanged(ezMsgSensorDetectedObjectsChanged& msg)
 {
-  if (msg.m_DetectedObjects.IsEmpty())
-    m_hClosestSocket.Invalidate();
-  else
-    m_hClosestSocket = msg.m_DetectedObjects[0];
+  if (!msg.m_DetectedObjects.IsEmpty())
+  {
+    ConnectToSocket(msg.m_DetectedObjects[0]);
+  }
 }
 
 void ezPowerConnectorComponent::OnMsgObjectGrabbed(ezMsgObjectGrabbed& msg)
@@ -252,10 +260,10 @@ void ezPowerConnectorComponent::OnMsgObjectGrabbed(ezMsgObjectGrabbed& msg)
   if (msg.m_bGotGrabbed)
   {
     Detach();
-    m_Attached = GetOwner()->GetWorld()->GetClock().GetAccumulatedTime();
+
     m_hGrabbedBy = msg.m_hGrabbedBy;
 
-    if (ezGameObject* pSensor = GetOwner()->FindChildByName("SensorOnGrab"))
+    if (ezGameObject* pSensor = GetOwner()->FindChildByName("ActiveWhenGrabbed"))
     {
       pSensor->SetActiveFlag(true);
     }
@@ -264,7 +272,7 @@ void ezPowerConnectorComponent::OnMsgObjectGrabbed(ezMsgObjectGrabbed& msg)
   {
     m_hGrabbedBy.Invalidate();
 
-    if (ezGameObject* pSensor = GetOwner()->FindChildByName("SensorOnGrab"))
+    if (ezGameObject* pSensor = GetOwner()->FindChildByName("ActiveWhenGrabbed"))
     {
       pSensor->SetActiveFlag(false);
     }
@@ -287,7 +295,6 @@ void ezPowerConnectorComponent::Attach(ezGameObjectHandle hSocket)
       return;
   }
 
-  m_Attached = pWorld->GetClock().GetAccumulatedTime();
   const ezTransform tSocket = pSocket->GetGlobalTransform();
 
   ezGameObjectDesc go;
@@ -317,7 +324,12 @@ void ezPowerConnectorComponent::Attach(ezGameObjectHandle hSocket)
 
 void ezPowerConnectorComponent::Detach()
 {
-  SetConnectedTo({});
+  if (IsConnected())
+  {
+    m_DetachTime = GetOwner()->GetWorld()->GetClock().GetAccumulatedTime();
+
+    SetConnectedTo({});
+  }
 
   if (!m_hAttachPoint.IsInvalidated())
   {
@@ -331,7 +343,7 @@ void ezPowerConnectorComponent::InputChanged(ezUInt16 uiPrevInput, ezUInt16 uiIn
   if (!IsActiveAndSimulating())
     return;
 
-  ezMsgSetPowerInput msg;
+  ezEventMsgSetPowerInput msg;
   msg.m_uiPrevValue = uiPrevInput;
   msg.m_uiNewValue = uiInput;
 
