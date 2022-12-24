@@ -27,6 +27,7 @@ EzTestProjectGameState::EzTestProjectGameState()
 {
   // TODO: put this into default code
   // EnableSceneSelectionMenu(false);
+  EnableAutoSwitchToLoadedScene(false);
 
   m_pGlobalStateBlackboard = ezBlackboard::Create();
   m_pGlobalStateBlackboard->SetName("Globals");
@@ -189,7 +190,7 @@ void EzTestProjectGameState::OnMsgGenericEvent(ezMsgGenericEvent& msg)
       ezLog::Info("Sender: {}", pSender->GetName());
     }
 
-    //if (m_pMainWorld->TryGetObjectWithGlobalKey("ButtonLight", pSender))
+    // if (m_pMainWorld->TryGetObjectWithGlobalKey("ButtonLight", pSender))
     {
       if (auto pBB = m_pGlobalStateBlackboard) // ezBlackboardComponent::FindBlackboard(pSender))
       {
