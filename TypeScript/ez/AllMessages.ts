@@ -35,6 +35,14 @@ import Enum = require("./AllEnums")
 import Flags = require("./AllFlags")
 
 
+export class EventMsgSetPowerInput extends EventMessage
+{
+  public static GetTypeNameHash(): number { return 2697475808; }
+  constructor() { super(); this.TypeNameHash = 2697475808; }
+  PrevValue: number = 0;
+  NewValue: number = 0;
+}
+
 export class MsgAnimationPosePreparing extends Message
 {
   public static GetTypeNameHash(): number { return 2419062254; }
@@ -277,14 +285,6 @@ export class MsgSetPlaying extends Message
   public static GetTypeNameHash(): number { return 3392464038; }
   constructor() { super(); this.TypeNameHash = 3392464038; }
   Play: boolean = true;
-}
-
-export class MsgSetPowerInput extends EventMessage
-{
-  public static GetTypeNameHash(): number { return 4160303656; }
-  constructor() { super(); this.TypeNameHash = 4160303656; }
-  PrevValue: number = 0;
-  NewValue: number = 0;
 }
 
 export class MsgStateMachineStateChanged extends EventMessage

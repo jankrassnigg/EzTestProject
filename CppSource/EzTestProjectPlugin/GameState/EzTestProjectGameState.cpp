@@ -29,19 +29,19 @@ EzTestProjectGameState::EzTestProjectGameState()
   // EnableSceneSelectionMenu(false);
   EnableAutoSwitchToLoadedScene(false);
 
-  m_pGlobalStateBlackboard = ezBlackboard::Create();
-  m_pGlobalStateBlackboard->SetName("Globals");
+  ezHashedString sBbName;
+  sBbName.Assign("Globals");
+  m_pGlobalStateBlackboard = ezBlackboard::GetOrCreateGlobal(sBbName);
+  m_pGlobalStateBlackboard->UnregisterAllEntries();
 
   ezHashedString hs;
   hs.Assign("State");
   m_pGlobalStateBlackboard->RegisterEntry(hs, 0);
-
-  ezBlackboard::RegisterAsGlobal(m_pGlobalStateBlackboard);
 }
 
 EzTestProjectGameState::~EzTestProjectGameState()
 {
-  ezBlackboard::UnregisterAsGlobal(m_pGlobalStateBlackboard);
+  m_pGlobalStateBlackboard->UnregisterAllEntries();
 }
 
 void EzTestProjectGameState::ProcessInput()

@@ -184,6 +184,7 @@ export import WindVolumeSphereComponent = __AllComponents.WindVolumeSphereCompon
 
 // AUTO-GENERATED
 import __AllMessages = require("./ez/AllMessages")
+export import EventMsgSetPowerInput = __AllMessages.EventMsgSetPowerInput;
 export import MsgAnimationPosePreparing = __AllMessages.MsgAnimationPosePreparing;
 export import MsgAnimationPoseProposal = __AllMessages.MsgAnimationPoseProposal;
 export import MsgAnimationPoseUpdated = __AllMessages.MsgAnimationPoseUpdated;
@@ -218,7 +219,6 @@ export import MsgSetColor = __AllMessages.MsgSetColor;
 export import MsgSetFloatParameter = __AllMessages.MsgSetFloatParameter;
 export import MsgSetMeshMaterial = __AllMessages.MsgSetMeshMaterial;
 export import MsgSetPlaying = __AllMessages.MsgSetPlaying;
-export import MsgSetPowerInput = __AllMessages.MsgSetPowerInput;
 export import MsgStateMachineStateChanged = __AllMessages.MsgStateMachineStateChanged;
 export import MsgTransformChanged = __AllMessages.MsgTransformChanged;
 export import MsgTriggerTriggered = __AllMessages.MsgTriggerTriggered;
