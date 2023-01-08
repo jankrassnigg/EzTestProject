@@ -72,7 +72,7 @@ o
 o
 {
 	Uuid %id{u4{12974107102698500255,4972586103983696582}}
-	s %t{"VisualScriptNode::ezMsgSetPowerInput<handle>"}
+	s %t{"VisualScriptNode::ezEventMsgSetPowerInput<handle>"}
 	u3 %v{1}
 	p
 	{
@@ -531,7 +531,7 @@ o
 		s %ParentTypeName{"ezVisualScriptNodeBase"}
 		s %PluginName{"VisualScriptTypes"}
 		VarArray %Properties{}
-		s %TypeName{"VisualScriptNode::ezMsgSetPowerInput<handle>"}
+		s %TypeName{"VisualScriptNode::ezEventMsgSetPowerInput<handle>"}
 		u3 %TypeVersion{1}
 	}
 }
