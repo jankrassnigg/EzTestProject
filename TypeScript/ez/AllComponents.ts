@@ -231,6 +231,15 @@ export class CameraComponent extends Component
   set ShowStats(value: boolean) { __CPP_ComponentProperty_set(this, 602803161, value); }
 }
 
+export class CameraShakeComponent extends Component
+{
+  public static GetTypeNameHash(): number { return 1659083240; }
+  get MinShake(): number { return __CPP_ComponentProperty_get(this, 118121424); }
+  set MinShake(value: number) { __CPP_ComponentProperty_set(this, 118121424, value); }
+  get MaxShake(): number { return __CPP_ComponentProperty_get(this, 3730652188); }
+  set MaxShake(value: number) { __CPP_ComponentProperty_set(this, 3730652188, value); }
+}
+
 export class CharacterControllerComponent extends Component
 {
   public static GetTypeNameHash(): number { return 3855358184; }

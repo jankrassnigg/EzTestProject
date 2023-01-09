@@ -79,6 +79,7 @@ export import BlackboardComponent = __AllComponents.BlackboardComponent;
 export import ReflectionProbeComponentBase = __AllComponents.ReflectionProbeComponentBase;
 export import BoxReflectionProbeComponent = __AllComponents.BoxReflectionProbeComponent;
 export import CameraComponent = __AllComponents.CameraComponent;
+export import CameraShakeComponent = __AllComponents.CameraShakeComponent;
 export import CharacterControllerComponent = __AllComponents.CharacterControllerComponent;
 export import ClothSheetComponent = __AllComponents.ClothSheetComponent;
 export import CollectionComponent = __AllComponents.CollectionComponent;
