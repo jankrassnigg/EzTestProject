@@ -240,6 +240,24 @@ export class CameraShakeComponent extends Component
   set MaxShake(value: number) { __CPP_ComponentProperty_set(this, 3730652188, value); }
 }
 
+export class CameraShakeVolumeComponent extends Component
+{
+  public static GetTypeNameHash(): number { return 3118746104; }
+  get Strength(): number { return __CPP_ComponentProperty_get(this, 2023508042); }
+  set Strength(value: number) { __CPP_ComponentProperty_set(this, 2023508042, value); }
+  get BurstDuration(): number { return __CPP_ComponentProperty_get(this, 2915568765); }
+  set BurstDuration(value: number) { __CPP_ComponentProperty_set(this, 2915568765, value); }
+  get OnFinishedAction(): Enum.OnComponentFinishedAction { return __CPP_ComponentProperty_get(this, 3124898923); }
+  set OnFinishedAction(value: Enum.OnComponentFinishedAction) { __CPP_ComponentProperty_set(this, 3124898923, value); }
+}
+
+export class CameraShakeVolumeSphereComponent extends CameraShakeVolumeComponent
+{
+  public static GetTypeNameHash(): number { return 2671639002; }
+  get Radius(): number { return __CPP_ComponentProperty_get(this, 273348025); }
+  set Radius(value: number) { __CPP_ComponentProperty_set(this, 273348025, value); }
+}
+
 export class CharacterControllerComponent extends Component
 {
   public static GetTypeNameHash(): number { return 3855358184; }

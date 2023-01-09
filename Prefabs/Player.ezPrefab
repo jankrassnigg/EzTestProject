@@ -67,7 +67,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{8325318639183543703,4757176779305952111}}
-		u4 %Hash{17377557782798654010}
+		u4 %Hash{9311150580377266808}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{14146522745554303380,2902865256510917925}}
@@ -286,7 +286,7 @@ o
 	{
 		b %Active{1}
 		Angle %MaxShake{f{0xC2B8B23D}}
-		Angle %MinShake{f{0x88C3E43A}}
+		Angle %MinShake{f{0}}
 	}
 }
 o
