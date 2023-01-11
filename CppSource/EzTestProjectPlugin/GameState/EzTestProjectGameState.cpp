@@ -48,6 +48,8 @@ void EzTestProjectGameState::ProcessInput()
 {
   SUPER::ProcessInput();
 
+  m_ObjectsToHighlight.m_Objects.Clear();
+
   if (m_bSwitchLevelImmediate)
   {
     SwitchToLoadingScreen();
@@ -206,6 +208,17 @@ void EzTestProjectGameState::OnMsgGenericEvent(ezMsgGenericEvent& msg)
         }
       }
     }
+  }
+}
+
+void EzTestProjectGameState::OnActivation(ezWorld* pWorld, const ezTransform* pStartPosition)
+{
+  SUPER::OnActivation(pWorld, pStartPosition);
+
+  ezView* pView = nullptr;
+  if (ezRenderWorld::TryGetView(m_hMainView, pView))
+  {
+    pView->SetExtractorProperty("HighlightObjects", "SelectionContext", &m_ObjectsToHighlight);
   }
 }
 

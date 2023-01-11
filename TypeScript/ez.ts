@@ -144,6 +144,7 @@ export import NpcComponent = __AllComponents.NpcComponent;
 export import OccluderComponent = __AllComponents.OccluderComponent;
 export import ParticleComponent = __AllComponents.ParticleComponent;
 export import ParticleFinisherComponent = __AllComponents.ParticleFinisherComponent;
+export import PlayerComponent = __AllComponents.PlayerComponent;
 export import PlayerStartPointComponent = __AllComponents.PlayerStartPointComponent;
 export import PointLightComponent = __AllComponents.PointLightComponent;
 export import PowerConnectorComponent = __AllComponents.PowerConnectorComponent;

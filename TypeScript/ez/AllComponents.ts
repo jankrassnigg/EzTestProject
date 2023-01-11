@@ -1105,6 +1105,11 @@ export class ParticleFinisherComponent extends RenderComponent
   public static GetTypeNameHash(): number { return 1971050762; }
 }
 
+export class PlayerComponent extends Component
+{
+  public static GetTypeNameHash(): number { return 3063862833; }
+}
+
 export class PlayerStartPointComponent extends Component
 {
   public static GetTypeNameHash(): number { return 420623154; }

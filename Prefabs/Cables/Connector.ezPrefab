@@ -27,7 +27,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{4293473544329846687,4781066341418895578}}
-		u4 %Hash{11335028910579403730}
+		u4 %Hash{5239688041412184260}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{14047580131837880841,13301790935838469736}}
@@ -71,7 +71,8 @@ o
 	{
 		b %Active{1}
 		s %Buddy{""}
-		i3 %Output{0}
+		s %ConnectedTo{""}
+		u2 %Output{0}
 	}
 }
 o
@@ -146,6 +147,7 @@ o
 			Uuid{u4{6441303642307961831,491526375015483991}}
 			Uuid{u4{6621451163614241751,18345642979054747540}}
 			Uuid{u4{13268811368470883590,382483318649305352}}
+			Uuid{u4{14776138547764567452,4903802306691786241}}
 		}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0,0,0}}
@@ -188,6 +190,17 @@ o
 }
 o
 {
+	Uuid %id{u4{5699438355861640376,4851797740191584015}}
+	s %t{"ezGrabbableItemGrabPoint"}
+	u3 %v{1}
+	p
+	{
+		Vec3 %LocalPosition{f{0,0,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+	}
+}
+o
+{
 	Uuid %id{u4{2278935259612085643,4901675546152051980}}
 	s %t{"ezExposedSceneProperty"}
 	u3 %v{1}
@@ -196,6 +209,20 @@ o
 		s %Name{"Buddy"}
 		Uuid %Object{u4{13268811368470883590,382483318649305352}}
 		s %PropertyPath{"Buddy"}
+	}
+}
+o
+{
+	Uuid %id{u4{14776138547764567452,4903802306691786241}}
+	s %t{"ezGrabbableItemComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %GrabPoints
+		{
+			Uuid{u4{5699438355861640376,4851797740191584015}}
+		}
 	}
 }
 o
@@ -501,7 +528,7 @@ o
 		s %Category{"ezPropertyCategory::Member"}
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
 		s %Name{"Output"}
-		s %Type{"ezInt32"}
+		s %Type{"ezUInt16"}
 	}
 }
 o
@@ -575,6 +602,23 @@ o
 }
 o
 {
+	Uuid %id{u4{17139407494789178422,2798501593186722351}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezGrabbableItemComponent"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
 	Uuid %id{u4{10916935353549710630,2962763290225888874}}
 	s %t{"ezFunctionArgumentDescriptor"}
 	u3 %v{1}
@@ -582,6 +626,23 @@ o
 	{
 		s %Flags{""}
 		s %Type{""}
+	}
+}
+o
+{
+	Uuid %id{u4{6755576329617394298,3026008437813170610}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezGrabbableItemGrabPoint"}
+		u3 %TypeVersion{1}
 	}
 }
 o
@@ -648,6 +709,13 @@ o
 	{
 		f %Value{0x0000803F}
 	}
+}
+o
+{
+	Uuid %id{u4{13715256536231335304,3926345638035657472}}
+	s %t{"ezGameObjectReferenceAttribute"}
+	u3 %v{1}
+	p{}
 }
 o
 {
@@ -1280,6 +1348,7 @@ o
 		{
 			Uuid{u4{1243079997935383768,1702909490586100320}}
 			Uuid{u4{16204730041955164661,1625104322871004801}}
+			Uuid{u4{14851204719803681643,13459869119129204407}}
 		}
 		s %TypeName{"ezPowerConnectorComponent"}
 		u3 %TypeVersion{1}
@@ -1342,6 +1411,23 @@ o
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
 		s %Name{"HalfExtents"}
 		s %Type{"ezVec3"}
+	}
+}
+o
+{
+	Uuid %id{u4{14851204719803681643,13459869119129204407}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{13715256536231335304,3926345638035657472}}
+		}
+		s %Category{"ezPropertyCategory::Member"}
+		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Const|ezPropertyFlags::Phantom"}
+		s %Name{"ConnectedTo"}
+		s %Type{"ezConstCharPtr"}
 	}
 }
 o

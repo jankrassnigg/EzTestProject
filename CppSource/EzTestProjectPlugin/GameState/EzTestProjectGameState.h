@@ -10,6 +10,7 @@
 #include <GameEngine/GameApplication/GameApplication.h>
 #include <GameEngine/GameState/FallbackGameState.h>
 #include <GameEngine/GameState/GameState.h>
+#include <RendererCore/Pipeline/Extractor.h>
 
 class EzTestProjectGameState : public ezFallbackGameState
 {
@@ -25,6 +26,10 @@ public:
 
   void OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg);
   void OnMsgGenericEvent(ezMsgGenericEvent& msg);
+
+  ezSelectedObjectsContext m_ObjectsToHighlight;
+
+virtual void OnActivation(ezWorld* pWorld, const ezTransform* pStartPosition) override;
 
 private:
   virtual ezResult SpawnPlayer(const ezTransform* pStartPosition) override;
