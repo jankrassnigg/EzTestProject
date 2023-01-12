@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{44c50782-9049-4f28-a991-f510cee8fcfb}">
+		<property name="assetPath">
+			<value>Sonnis/Footsteps/Ground/Footsteps_Ground-05.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.42305208333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{208b2899-87b1-4185-ba7d-78376a4ddb17}</destination>
+		</relationship>
+	</object>
+</objects>

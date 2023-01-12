@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{ffc0375f-5cda-414c-a867-97adddd63bd3}">
+		<property name="assetPath">
+			<value>Sonnis/Footsteps/Stone/Footstep_Stone_5.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.31941043083900228</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{208b2899-87b1-4185-ba7d-78376a4ddb17}</destination>
+		</relationship>
+	</object>
+</objects>

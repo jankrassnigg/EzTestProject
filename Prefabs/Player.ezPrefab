@@ -21,7 +21,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{8325318639183543703,4757176779305952111}}
-		u4 %Hash{31247162504268135}
+		u4 %Hash{2501324214396648401}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{14146522745554303380,2902865256510917925}}
@@ -400,7 +400,7 @@ o
 		f %WalkSpeedCrouching{0x00000040}
 		f %WalkSpeedRunning{0x00002041}
 		f %WalkSpeedStanding{0x00008040}
-		s %WalkSurfaceInteraction{"Footstep"}
+		s %WalkSurfaceInteraction{"Footstep_Robot"}
 	}
 }
 o

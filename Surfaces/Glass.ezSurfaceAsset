@@ -11,12 +11,13 @@ o
 		s %AssetType{"Surface"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{10025688183499857836,5231213208591960990}}
-		u4 %Hash{10930663955079293863}
+		u4 %Hash{5817762404667919494}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
 		{
 			s{"{ 0a105955-e069-4523-80ce-7b9867bde687 }"}
+			s{"{ 3bcde7f2-1948-484a-b3bd-ae00c79322fd }"}
 		}
 	}
 }
@@ -32,12 +33,30 @@ o
 	{
 		s %BaseSurface{"{ 0a105955-e069-4523-80ce-7b9867bde687 }"}
 		f %DynamicFriction{0xCDCC4C3D}
-		VarArray %Interactions{}
+		VarArray %Interactions
+		{
+			Uuid{u4{10802236204519535539,5334018306015670844}}
+		}
 		s %OnCollideInteraction{"Bump_Generic"}
 		f %Restitution{0x0000803E}
 		s %RollReaction{""}
 		s %SlideReaction{""}
 		f %StaticFriction{0xCDCCCC3D}
+	}
+}
+o
+{
+	Uuid %id{u4{10802236204519535539,5334018306015670844}}
+	s %t{"ezSurfaceInteraction"}
+	u3 %v{1}
+	p
+	{
+		s %Alignment{"ezSurfaceInteractionAlignment::SurfaceNormal"}
+		Angle %Deviation{f{0}}
+		f %ImpulseScale{0x0000803F}
+		f %ImpulseThreshold{0}
+		s %Prefab{"{ 3bcde7f2-1948-484a-b3bd-ae00c79322fd }"}
+		s %Type{"Footstep_Robot"}
 	}
 }
 o
@@ -71,7 +90,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezSurfaceResourceDescriptor"}
-		u3 %TypeSize{2000}
 		u3 %TypeVersion{2}
 	}
 }
@@ -89,7 +107,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezDocumentRoot"}
-		u3 %TypeSize{72}
 		u3 %TypeVersion{1}
 	}
 }
@@ -107,7 +124,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezSurfaceInteractionAlignment"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{2}
 	}
 }
@@ -125,7 +141,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezEnumBase"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -143,7 +158,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezSurfaceInteraction"}
-		u3 %TypeSize{120}
 		u3 %TypeVersion{1}
 	}
 }
@@ -161,7 +175,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezReflectedClass"}
-		u3 %TypeSize{8}
 		u3 %TypeVersion{1}
 	}
 }
