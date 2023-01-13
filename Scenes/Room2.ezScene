@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{2405214753305512840,5374465511460008288}}
-		u4 %Hash{382881189393798605}
+		u4 %Hash{17440382056130585032}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %References
@@ -995,6 +995,7 @@ o
 		VarArray %Layers
 		{
 			Uuid{u4{16809064726929636272,4613686734585064671}}
+			Uuid{u4{3865655868639763584,4942471016036175395}}
 		}
 	}
 }
@@ -1059,6 +1060,16 @@ o
 		s %OnFinishedAction{"ezOnComponentFinishedAction::None"}
 		f %Radius{0x0000E040}
 		f %Strength{0xCDCCCC3D}
+	}
+}
+o
+{
+	Uuid %id{u4{3865655868639763584,4942471016036175395}}
+	s %t{"ezSceneLayer"}
+	u3 %v{1}
+	p
+	{
+		Uuid %Layer{u4{1850276526070524074,5344500383320612929}}
 	}
 }
 o
@@ -2159,7 +2170,7 @@ o
 			Uuid{u4{14845498283889884077,5629944282445945503}}
 		}
 		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x68666640,0x3433B3BF,0x9A99193F}}
+		Vec3 %LocalPosition{f{0x34337340,0x3433B3BF,0x9A99193F}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
