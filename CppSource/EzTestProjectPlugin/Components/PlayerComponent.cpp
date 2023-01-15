@@ -4,9 +4,9 @@
 #include <Core/Messages/CommonMessages.h>
 #include <EzTestProjectPlugin/Components/PlayerComponent.h>
 #include <EzTestProjectPlugin/GameState/EzTestProjectGameState.h>
+#include <GameComponentsPlugin/Gameplay/HeadBoneComponent.h>
 #include <GameEngine/GameApplication/GameApplication.h>
 #include <GameEngine/Gameplay/GrabbableItemComponent.h>
-#include <GameEngine/Gameplay/HeadBoneComponent.h>
 #include <GameEngine/Gameplay/InputComponent.h>
 #include <GameEngine/Physics/CharacterControllerComponent.h>
 #include <JoltPlugin/Constraints/JoltGrabObjectComponent.h>
@@ -231,6 +231,5 @@ void ezPlayerComponent::Update()
         }
       }
     }
-
   }
 }

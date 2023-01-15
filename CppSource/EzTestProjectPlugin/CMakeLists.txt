@@ -10,6 +10,7 @@ target_link_libraries(${PROJECT_NAME}
   GameEngine
   Utilities
   JoltPlugin
+  GameComponentsPlugin
 )
 
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
