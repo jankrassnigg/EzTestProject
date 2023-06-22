@@ -6,8 +6,10 @@
 #include <EzTestProjectPlugin/GameState/EzTestProjectGameState.h>
 #include <GameComponentsPlugin/Gameplay/HeadBoneComponent.h>
 #include <GameEngine/GameApplication/GameApplication.h>
+#include <GameEngine/Gameplay/BlackboardComponent.h>
 #include <GameEngine/Gameplay/GrabbableItemComponent.h>
 #include <GameEngine/Gameplay/InputComponent.h>
+#include <GameEngine/Gameplay/SpawnComponent.h>
 #include <GameEngine/Physics/CharacterControllerComponent.h>
 #include <JoltPlugin/Constraints/JoltGrabObjectComponent.h>
 #include <RendererCore/Lights/SpotLightComponent.h>
@@ -61,9 +63,12 @@ void ezPlayerComponent::OnSimulationStarted()
 
 void ezPlayerComponent::OnMsgInputActionTriggered(ezMsgInputActionTriggered& msg)
 {
-  if (msg.m_TriggerState == ezTriggerState::Activated)
+  if (msg.m_TriggerState == ezTriggerState::Continuing)
+    return;
+
+  if (msg.m_sInputAction == ezTempHashedString("Flashlight"))
   {
-    if (msg.m_sInputAction == ezTempHashedString("Flashlight"))
+    if (msg.m_TriggerState == ezTriggerState::Activated)
     {
       if (ezGameObject* pFlashlightObject = GetOwner()->FindChildByName("Flashlight", true))
       {
@@ -71,55 +76,97 @@ void ezPlayerComponent::OnMsgInputActionTriggered(ezMsgInputActionTriggered& msg
         if (pFlashlightObject->TryGetComponentOfBaseType(pFlashlightComponent))
         {
           pFlashlightComponent->SetActiveFlag(!pFlashlightComponent->GetActiveFlag());
+          return;
         }
       }
     }
+  }
 
-    if (ezGameObject* pGrabObject = GetOwner()->FindChildByName("GrabObject", true))
+  ezGameObject* pWeaponsObject = GetOwner()->FindChildByName("Weapons", true);
+  ezGameObject* pGrabObject = GetOwner()->FindChildByName("GrabObject", true);
+  ezGameObject* pCameraObject = GetOwner()->FindChildByName("Camera", true);
+  ezGameObject* pSpawnBulletObject = GetOwner()->FindChildByName("Spawn_Bullet", true);
+  ezSharedPtr<ezBlackboard> pWeaponsBlackboard = ezBlackboardComponent::FindBlackboard(pWeaponsObject);
+
+  ezJoltGrabObjectComponent* pGrabComponent = nullptr;
+  if (pGrabObject)
+  {
+    pGrabObject->TryGetComponentOfBaseType(pGrabComponent);
+  }
+
+  ezSpawnComponent* pSpawnBullet = nullptr;
+  if (pSpawnBulletObject)
+  {
+    pSpawnBulletObject->TryGetComponentOfBaseType(pSpawnBullet);
+  }
+
+  if (msg.m_sInputAction == ezTempHashedString("Shoot"))
+  {
+    if (msg.m_TriggerState == ezTriggerState::Activated)
     {
-      ezJoltGrabObjectComponent* pGrabComponent = nullptr;
-      if (pGrabObject->TryGetComponentOfBaseType(pGrabComponent))
+      if (pGrabComponent && pGrabComponent->HasObjectGrabbed())
       {
-        if (msg.m_sInputAction == ezTempHashedString("Shoot"))
+        ezVec3 dir = ezVec3::UnitXAxis() * 4.0f;
+        pGrabComponent->ThrowGrabbedObject(dir);
+      }
+      else if (pWeaponsBlackboard)
+      {
+        if (pSpawnBullet && pSpawnBullet->CanTriggerManualSpawn())
         {
-          if (pGrabComponent->HasObjectGrabbed())
+          const ezUInt32 uiWeaponState = pWeaponsBlackboard->GetEntryValue(ezTempHashedString("Weapon-State")).ConvertTo<ezUInt32>();
+
+          if (uiWeaponState == 0)
           {
-            ezVec3 dir = ezVec3::UnitXAxis() * 4.0f;
-            pGrabComponent->ThrowGrabbedObject(dir);
+            pSpawnBullet->TriggerManualSpawn();
+            pWeaponsBlackboard->SetEntryValue(ezTempHashedString("Weapon-State"), 1).AssertSuccess();
           }
         }
+      }
+    }
+  }
 
-        if (msg.m_sInputAction == ezTempHashedString("Use"))
+  if (msg.m_sInputAction == ezTempHashedString("Reload"))
+  {
+    if (msg.m_TriggerState == ezTriggerState::Activated)
+    {
+      if (pWeaponsBlackboard)
+      {
+        const ezUInt32 uiWeaponState = pWeaponsBlackboard->GetEntryValue(ezTempHashedString("Weapon-State")).ConvertTo<ezUInt32>();
+
+        if (uiWeaponState == 0)
         {
-          if (pGrabComponent->HasObjectGrabbed())
-          {
-            pGrabComponent->DropGrabbedObject();
-          }
-          else if (pGrabComponent->GrabNearbyObject())
-          {
-          }
-          else
-          {
-            ezGameObject* pCameraObject = GetOwner()->FindChildByName("Camera", true);
+          pWeaponsBlackboard->SetEntryValue(ezTempHashedString("Weapon-State"), 2).AssertSuccess();
+        }
+      }
+    }
+  }
 
-            if (ezPhysicsWorldModuleInterface* pPhysics = GetOwner()->GetWorld()->GetModule<ezPhysicsWorldModuleInterface>())
-            {
-              ezPhysicsQueryParameters params;
-              params.m_uiCollisionLayer = 8;
-              params.m_ShapeTypes = ezPhysicsShapeType::Static | ezPhysicsShapeType::Dynamic | ezPhysicsShapeType::Query;
+  if (msg.m_sInputAction == ezTempHashedString("Use") && msg.m_TriggerState == ezTriggerState::Activated)
+  {
+    if (pGrabComponent && pGrabComponent->HasObjectGrabbed())
+    {
+      pGrabComponent->DropGrabbedObject();
+    }
+    else if (pGrabComponent && pGrabComponent->GrabNearbyObject())
+    {
+    }
+    else
+    {
+      if (ezPhysicsWorldModuleInterface* pPhysics = GetOwner()->GetWorld()->GetModule<ezPhysicsWorldModuleInterface>())
+      {
+        ezPhysicsQueryParameters params;
+        params.m_uiCollisionLayer = 8;
+        params.m_ShapeTypes = ezPhysicsShapeType::Static | ezPhysicsShapeType::Dynamic | ezPhysicsShapeType::Query;
 
-              ezPhysicsCastResult result;
-              if (pPhysics->Raycast(result, pCameraObject->GetGlobalPosition(), pCameraObject->GetGlobalDirForwards(), 2.0f, params))
-              {
-                ezGameObject* pActor = nullptr;
-                if (GetOwner()->GetWorld()->TryGetObject(result.m_hActorObject, pActor))
-                {
-                  ezMsgGenericEvent msg;
-                  msg.m_sMessage.Assign("Use");
-                  pActor->SendEventMessage(msg, this);
-                }
-              }
-            }
+        ezPhysicsCastResult result;
+        if (pPhysics->Raycast(result, pCameraObject->GetGlobalPosition(), pCameraObject->GetGlobalDirForwards(), 2.0f, params))
+        {
+          ezGameObject* pActor = nullptr;
+          if (GetOwner()->GetWorld()->TryGetObject(result.m_hActorObject, pActor))
+          {
+            ezMsgGenericEvent msg;
+            msg.m_sMessage.Assign("Use");
+            pActor->SendEventMessage(msg, this);
           }
         }
       }
@@ -133,7 +180,7 @@ void ezPlayerComponent::Update()
   if (!GetOwner()->TryGetComponentOfBaseType(pInput))
     return;
 
-  ezRTTI* pCharType = ezRTTI::FindTypeByName("ezJoltCharacterControllerComponent");
+  const ezRTTI* pCharType = ezRTTI::FindTypeByName("ezJoltCharacterControllerComponent");
 
   ezComponent* pCC = nullptr;
   if (!GetOwner()->TryGetComponentOfBaseType(pCharType, pCC))
