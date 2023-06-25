@@ -11,7 +11,7 @@ o
 		s %AssetType{"Animation Controller"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{6063064388960796038,5204972294496086626}}
-		u4 %Hash{989256169979950257}
+		u4 %Hash{7638726042331831768}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -190,6 +190,7 @@ o
 	u3 %v{1}
 	p
 	{
+		b %ApplyRootMotion{0}
 		s %Clip{"{ 40158018-0c6f-4737-9c0e-8602166fafe9 }"}
 		s %CustomTitle{""}
 		Uuid %InLoop{u4{3911357416629978525,8666704993660770807}}
@@ -201,7 +202,6 @@ o
 		Uuid %OutOnStarted{u4{17525690974937120867,7261752137718231541}}
 		Uuid %OutPose{u4{13166797795756707273,6192022466141399443}}
 		f %PlaybackSpeed{0x0000803F}
-		b %RootMotion{0}
 	}
 }
 o
@@ -222,6 +222,7 @@ o
 	u3 %v{1}
 	p
 	{
+		b %ApplyRootMotion{0}
 		s %Clip{"{ 8b395f07-47d4-45b5-8e8d-61afe51088a8 }"}
 		s %CustomTitle{""}
 		Uuid %InLoop{u4{2487228965206288258,16961657320135761196}}
@@ -233,7 +234,6 @@ o
 		Uuid %OutOnStarted{u4{10546204534912981558,17786454460840256292}}
 		Uuid %OutPose{u4{16467101192079347564,16750442984466409376}}
 		f %PlaybackSpeed{0x0000803F}
-		b %RootMotion{0}
 	}
 }
 o
@@ -294,7 +294,9 @@ o
 		Uuid %InFadeDuration{u4{6835520111888731965,15328844313484338786}}
 		Uuid %InPose{u4{304338512847974528,6627821438273310261}}
 		Uuid %InTargetWeight{u4{1552149794832612717,12286386562738898814}}
+		Uuid %InWeights{u4{15535067725686322542,6733490564678609972}}
 		Vec2 %Node::Pos{f{0x7F9F5944,0xB994FAC3}}
+		Uuid %OutOnFadedOut{u4{168004118671818717,12068466925937646414}}
 		Uuid %OutPose{u4{16833360975999513720,4931059852740497013}}
 	}
 }
@@ -674,6 +676,7 @@ o
 	u3 %v{1}
 	p
 	{
+		b %ApplyRootMotion{0}
 		s %Clip{"{ c9e97787-4ba6-499b-aed8-498f7ce9f596 }"}
 		s %CustomTitle{""}
 		Uuid %InLoop{u4{9702833188742452990,690017017327744920}}
@@ -685,7 +688,6 @@ o
 		Uuid %OutOnStarted{u4{14669541189284642631,8396265892166658848}}
 		Uuid %OutPose{u4{12070324072261540202,13343842187610405087}}
 		f %PlaybackSpeed{0x0000803F}
-		b %RootMotion{0}
 	}
 }
 o
@@ -732,6 +734,7 @@ o
 		Uuid %InPose3{u4{6526332056573747767,18347759681189269100}}
 		Vec2 %Node::Pos{f{0x79401044,0x4D12FDC3}}
 		Uuid %OutPose{u4{16865361807298303417,1405891971049910505}}
+		Time %TransitionDuration{d{0x9A9999999999C93F}}
 	}
 }
 o
@@ -891,6 +894,17 @@ o
 }
 o
 {
+	Uuid %id{u4{15535067725686322542,6733490564678609972}}
+	s %t{"ezAnimGraphBoneWeightsInputPin"}
+	u3 %v{1}
+	p
+	{
+		u1 %NumConnections{0}
+		i2 %PinIdx{0}
+	}
+}
+o
+{
 	Uuid %id{u4{17125779375924540540,6792706376684817383}}
 	s %t{"ezAnimGraphModelPoseOutputPin"}
 	u3 %v{1}
@@ -915,6 +929,17 @@ o
 {
 	Uuid %id{u4{17525690974937120867,7261752137718231541}}
 	s %t{"ezAnimGraphTriggerOutputPin"}
+	u3 %v{1}
+	p
+	{
+		u1 %NumConnections{0}
+		i2 %PinIdx{0}
+	}
+}
+o
+{
+	Uuid %id{u4{2289242077954015186,7804569690499746285}}
+	s %t{"ezAnimGraphBoneWeightsInputPin"}
 	u3 %v{1}
 	p
 	{
@@ -1005,7 +1030,9 @@ o
 		Uuid %InFadeDuration{u4{8370557830236781347,18442465557004816330}}
 		Uuid %InPose{u4{5551269384804618840,17076416370223678415}}
 		Uuid %InTargetWeight{u4{3668226885686312111,17461269772333859325}}
+		Uuid %InWeights{u4{2289242077954015186,7804569690499746285}}
 		Vec2 %Node::Pos{f{0x3E960A44,0x29CC3DC2}}
+		Uuid %OutOnFadedOut{u4{13485129276232659529,15871656379186234590}}
 		Uuid %OutPose{u4{9890202737887860764,13454387344462709935}}
 	}
 }
@@ -1082,6 +1109,7 @@ o
 	u3 %v{1}
 	p
 	{
+		b %ApplyRootMotion{0}
 		s %Clip{"{ f4d1bcd3-754e-49b0-87fd-6b0225158e91 }"}
 		s %CustomTitle{""}
 		Uuid %InLoop{u4{6315467467318976500,9067539717614539569}}
@@ -1093,7 +1121,6 @@ o
 		Uuid %OutOnStarted{u4{10157414007425466505,364557956573274173}}
 		Uuid %OutPose{u4{14493325624386333372,2083654665615963697}}
 		f %PlaybackSpeed{0x0000803F}
-		b %RootMotion{0}
 	}
 }
 o
@@ -1150,6 +1177,17 @@ o
 }
 o
 {
+	Uuid %id{u4{168004118671818717,12068466925937646414}}
+	s %t{"ezAnimGraphTriggerOutputPin"}
+	u3 %v{1}
+	p
+	{
+		u1 %NumConnections{0}
+		i2 %PinIdx{0}
+	}
+}
+o
+{
 	Uuid %id{u4{1552149794832612717,12286386562738898814}}
 	s %t{"ezAnimGraphNumberInputPin"}
 	u3 %v{1}
@@ -1174,6 +1212,17 @@ o
 {
 	Uuid %id{u4{9314107897873763460,12637753178895358614}}
 	s %t{"ezAnimGraphNumberInputPin"}
+	u3 %v{1}
+	p
+	{
+		u1 %NumConnections{0}
+		i2 %PinIdx{0}
+	}
+}
+o
+{
+	Uuid %id{u4{2101231132531792003,13035490491806382211}}
+	s %t{"ezAnimGraphBoneWeightsInputPin"}
 	u3 %v{1}
 	p
 	{
@@ -1286,7 +1335,9 @@ o
 		Uuid %InFadeDuration{u4{2447687578823829014,17071894548631582552}}
 		Uuid %InPose{u4{7930586985424939300,4268775111389494881}}
 		Uuid %InTargetWeight{u4{16597971461077574082,11134662637198384059}}
+		Uuid %InWeights{u4{2101231132531792003,13035490491806382211}}
 		Vec2 %Node::Pos{f{0x1A020A44,0x9CA9F742}}
+		Uuid %OutOnFadedOut{u4{9532865494745619273,18123347970303886905}}
 		Uuid %OutPose{u4{17166806946427124235,13671652306122618705}}
 	}
 }
@@ -1347,11 +1398,23 @@ o
 }
 o
 {
+	Uuid %id{u4{13485129276232659529,15871656379186234590}}
+	s %t{"ezAnimGraphTriggerOutputPin"}
+	u3 %v{1}
+	p
+	{
+		u1 %NumConnections{0}
+		i2 %PinIdx{0}
+	}
+}
+o
+{
 	Uuid %id{u4{6606263563426612455,16412770063911005663}}
 	s %t{"ezSampleAnimClipAnimNode"}
 	u3 %v{1}
 	p
 	{
+		b %ApplyRootMotion{0}
 		s %Clip{"{ c567a2bd-5aed-4b17-b921-5b487eca40b0 }"}
 		s %CustomTitle{""}
 		Uuid %InLoop{u4{14738798851158487308,11702609808986162400}}
@@ -1363,7 +1426,6 @@ o
 		Uuid %OutOnStarted{u4{1798378514858614139,4268873816007684692}}
 		Uuid %OutPose{u4{13338415420107368976,9985927408217612071}}
 		f %PlaybackSpeed{0x0000803F}
-		b %RootMotion{0}
 	}
 }
 o
@@ -1458,6 +1520,17 @@ o
 {
 	Uuid %id{u4{4364503135614541218,18031950722116947847}}
 	s %t{"ezAnimGraphNumberOutputPin"}
+	u3 %v{1}
+	p
+	{
+		u1 %NumConnections{0}
+		i2 %PinIdx{0}
+	}
+}
+o
+{
+	Uuid %id{u4{9532865494745619273,18123347970303886905}}
+	s %t{"ezAnimGraphTriggerOutputPin"}
 	u3 %v{1}
 	p
 	{
@@ -1623,6 +1696,23 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezAnimGraphBoolInputPin"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{18370872613231161803,4639946915511137212}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezAnimGraphInputPin"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezAnimGraphBoneWeightsInputPin"}
 		u3 %TypeVersion{1}
 	}
 }

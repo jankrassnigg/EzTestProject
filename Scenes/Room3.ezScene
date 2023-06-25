@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{1145767619572096915,5739173809243004041}}
-		u4 %Hash{5223351719085372186}
+		u4 %Hash{12756482333042754279}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -166,7 +166,7 @@ o
 	p
 	{
 		s %Flags{""}
-		f %InitialValue{0}
+		f %InitialValue{0x0000B040}
 		s %Name{"Speed"}
 	}
 }
@@ -329,6 +329,7 @@ o
 		VarArray %Entries
 		{
 			Uuid{u4{17741053126506938800,5000809435239747892}}
+			Uuid{u4{13092309702651763588,5533955755541929126}}
 		}
 		b %SendEntryChangedMessage{0}
 		b %ShowDebugInfo{0}
@@ -550,6 +551,18 @@ o
 		{
 			s{"CastShadow"}
 		}
+	}
+}
+o
+{
+	Uuid %id{u4{13092309702651763588,5533955755541929126}}
+	s %t{"ezBlackboardEntry"}
+	u3 %v{1}
+	p
+	{
+		s %Flags{""}
+		i3 %InitialValue{0}
+		s %Name{"Weight"}
 	}
 }
 o
