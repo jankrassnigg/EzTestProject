@@ -11,7 +11,7 @@ o
 		s %AssetType{"Animation Controller"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{11272234483823308468,4982558273156090605}}
-		u4 %Hash{8650292262472862776}
+		u4 %Hash{13381863129930176709}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -208,7 +208,6 @@ o
 		Uuid %InWeights{u4{11021210079244777353,6209748681659414934}}
 		Vec2 %Node::Pos{f{0x74DE1344,0x5F71A043}}
 		Uuid %OutOnFadedOut{u4{12701678247880362626,10348191923622368138}}
-		Uuid %OutPose{u4{13137284298194714476,13711064147798858208}}
 	}
 }
 o
@@ -443,17 +442,6 @@ o
 }
 o
 {
-	Uuid %id{u4{5036630396890328419,5309512427399983816}}
-	s %t{"ezAnimGraphLocalPoseOutputPin"}
-	u3 %v{1}
-	p
-	{
-		u1 %NumConnections{0}
-		i2 %PinIdx{0}
-	}
-}
-o
-{
 	Uuid %id{u4{12345698594657809851,5354547079538052565}}
 	s %t{"DocumentNodeManager_DefaultConnection"}
 	u3 %v{1}
@@ -499,7 +487,7 @@ o
 		Uuid %InSpeed{u4{4357329647739883460,13754117083416103949}}
 		Uuid %InStart{u4{8441567232793871417,922357898818560665}}
 		b %Loop{1}
-		Vec2 %Node::Pos{f{0x4B689A43,0x5F71A043}}
+		Vec2 %Node::Pos{f{0xE7A59843,0x5F71A043}}
 		Uuid %OutOnFinished{u4{9826619043104682750,9872713367591421774}}
 		Uuid %OutOnStarted{u4{16479666903104679831,1162272117292729965}}
 		Uuid %OutPose{u4{8306037843618784830,7688989582922866493}}
@@ -528,7 +516,7 @@ o
 	{
 		s %BlackboardEntry{"Speed"}
 		s %CustomTitle{""}
-		Vec2 %Node::Pos{f{0xD2CD0842,0x9EF09F43}}
+		Vec2 %Node::Pos{f{0x575F4A37,0x21F2A043}}
 		Uuid %Number{u4{10115979377141860014,14332489643584331623}}
 	}
 }
@@ -593,19 +581,6 @@ o
 		Uuid %LocalPose{u4{2140072505518064743,16437339137715132779}}
 		Uuid %ModelPose{u4{10916515896914019326,954512408660229696}}
 		Vec2 %Node::Pos{f{0xF1358E44,0xE975A343}}
-	}
-}
-o
-{
-	Uuid %id{u4{8235252590740225422,5571151275069412440}}
-	s %t{"DocumentNodeManager_DefaultConnection"}
-	u3 %v{1}
-	p
-	{
-		Uuid %Connection::Source{u4{17766744462073884741,10027061935232257488}}
-		s %Connection::SourcePin{"OutPose"}
-		Uuid %Connection::Target{u4{18124450759373752753,4729324167927216528}}
-		s %Connection::TargetPin{"LocalPoses"}
 	}
 }
 o
@@ -786,7 +761,6 @@ o
 			Uuid{u4{17104667977040865313,11066100648358798023}}
 			Uuid{u4{3415741496812663992,5748166893328174636}}
 			Uuid{u4{8786917597482378112,5260708953227240447}}
-			Uuid{u4{8235252590740225422,5571151275069412440}}
 		}
 	}
 }
@@ -915,7 +889,6 @@ o
 		Uuid %InWeights{u4{8319529387925169276,4102498621328726016}}
 		Vec2 %Node::Pos{f{0x06E61844,0xD6820144}}
 		Uuid %OutOnFadedOut{u4{9408899390224709058,17715398058258113435}}
-		Uuid %OutPose{u4{5036630396890328419,5309512427399983816}}
 	}
 }
 o
@@ -1045,17 +1018,6 @@ o
 {
 	Uuid %id{u4{13488708239985363418,12902834462553533968}}
 	s %t{"ezAnimGraphTriggerOutputPin"}
-	u3 %v{1}
-	p
-	{
-		u1 %NumConnections{0}
-		i2 %PinIdx{0}
-	}
-}
-o
-{
-	Uuid %id{u4{13137284298194714476,13711064147798858208}}
-	s %t{"ezAnimGraphLocalPoseOutputPin"}
 	u3 %v{1}
 	p
 	{
@@ -1306,7 +1268,7 @@ o
 	p
 	{
 		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Abstract|ezTypeFlags::Minimal"}
 		VarArray %Functions{}
 		s %ParentTypeName{"ezAnimGraphPin"}
 		s %PluginName{"Static"}
@@ -1408,7 +1370,7 @@ o
 	p
 	{
 		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Abstract|ezTypeFlags::Minimal"}
 		VarArray %Functions{}
 		s %ParentTypeName{"ezReflectedClass"}
 		s %PluginName{"Static"}
@@ -1748,7 +1710,7 @@ o
 	p
 	{
 		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Abstract|ezTypeFlags::Minimal"}
 		VarArray %Functions{}
 		s %ParentTypeName{"ezAnimGraphPin"}
 		s %PluginName{"Static"}

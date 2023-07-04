@@ -215,7 +215,7 @@ o
 	{
 		s %BlackboardEntry{"Weapon-State"}
 		s %CustomTitle{""}
-		Vec2 %Node::Pos{f{0x9D05E0C1,0xE36441C3}}
+		Vec2 %Node::Pos{f{0x29C9BCC2,0x3E5436C3}}
 		Uuid %Number{u4{474938344893472222,3231363388111077990}}
 	}
 }
@@ -329,7 +329,7 @@ o
 		s %CustomTitle{""}
 		Uuid %InAbsPos{u4{7714480491532524895,7668948950216819907}}
 		Uuid %InNormPos{u4{16040038640326386009,2972000737479590802}}
-		Vec2 %Node::Pos{f{0xD3847EC3,0x753FE8C2}}
+		Vec2 %Node::Pos{f{0x40CC85C3,0x8948EEC2}}
 		f %NormPos{0}
 		Uuid %OutPose{u4{9832347551265583493,375057263780333873}}
 	}
@@ -522,7 +522,7 @@ o
 		s %CustomTitle{""}
 		f %DeactivationValue{0}
 		f %HoldValue{0}
-		Vec2 %Node::Pos{f{0xABA3F442,0x4A0B6943}}
+		Vec2 %Node::Pos{f{0x6D5C0143,0x0B287C43}}
 		b %SetOnActivation{1}
 		b %SetOnDeactivation{0}
 		b %SetOnHold{0}
@@ -731,7 +731,7 @@ o
 	p
 	{
 		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Abstract|ezTypeFlags::Minimal"}
 		VarArray %Functions{}
 		s %ParentTypeName{"ezAnimGraphPin"}
 		s %PluginName{"Static"}
@@ -816,7 +816,7 @@ o
 	p
 	{
 		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Abstract|ezTypeFlags::Minimal"}
 		VarArray %Functions{}
 		s %ParentTypeName{"ezReflectedClass"}
 		s %PluginName{"Static"}
@@ -1037,7 +1037,7 @@ o
 	p
 	{
 		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Abstract|ezTypeFlags::Minimal"}
 		VarArray %Functions{}
 		s %ParentTypeName{"ezAnimGraphPin"}
 		s %PluginName{"Static"}
