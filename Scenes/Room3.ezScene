@@ -11,7 +11,7 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{1145767619572096915,5739173809243004041}}
-		u4 %Hash{12756482333042754279}
+		u4 %Hash{4332846351955846459}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -64,6 +64,18 @@ o
 }
 o
 {
+	Uuid %id{u4{18083575125245813429,4704447345046069914}}
+	s %t{"ezBlackboardEntry"}
+	u3 %v{1}
+	p
+	{
+		s %Flags{""}
+		i3 %InitialValue{1}
+		s %Name{"Jump"}
+	}
+}
+o
+{
 	Uuid %id{u4{16482737238555368080,4757135896037335828}}
 	s %t{"ezBlackboardEntry"}
 	u3 %v{1}
@@ -88,7 +100,7 @@ o
 			Uuid{u4{5608335663473256877,5094955944767730812}}
 		}
 		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x6766A241,0x0000A040,0x0000E0C0}}
+		Vec3 %LocalPosition{f{0x6766B841,0x00009840,0x0000C8C0}}
 		Quat %LocalRotation{f{0,0,0x9E067FBF,0xA97EB2BD}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
@@ -160,18 +172,6 @@ o
 }
 o
 {
-	Uuid %id{u4{17741053126506938800,5000809435239747892}}
-	s %t{"ezBlackboardEntry"}
-	u3 %v{1}
-	p
-	{
-		s %Flags{""}
-		f %InitialValue{0x0000B040}
-		s %Name{"Speed"}
-	}
-}
-o
-{
 	Uuid %id{u4{18236190917757058475,5013874352296658613}}
 	s %t{"ezBlackboardEntry"}
 	u3 %v{1}
@@ -205,6 +205,18 @@ o
 		s %AnimController{"{ c8270aed-9a59-4525-b46e-32498a056f9c }"}
 		s %InvisibleUpdateRate{"ezAnimationInvisibleUpdateRate::Max5FPS"}
 		s %RootMotionMode{"ezRootMotionMode::ApplyToOwner"}
+	}
+}
+o
+{
+	Uuid %id{u4{9961099525437672095,5070352661311672172}}
+	s %t{"ezBlackboardEntry"}
+	u3 %v{1}
+	p
+	{
+		s %Flags{""}
+		b %InitialValue{1}
+		s %Name{"JumpLoop"}
 	}
 }
 o
@@ -321,18 +333,19 @@ o
 {
 	Uuid %id{u4{16866155107809160100,5165625288110936438}}
 	s %t{"ezBlackboardComponent"}
-	u3 %v{1}
+	u3 %v{2}
 	p
 	{
 		b %Active{1}
 		s %BlackboardName{""}
 		VarArray %Entries
 		{
-			Uuid{u4{17741053126506938800,5000809435239747892}}
-			Uuid{u4{13092309702651763588,5533955755541929126}}
+			Uuid{u4{18083575125245813429,4704447345046069914}}
+			Uuid{u4{9961099525437672095,5070352661311672172}}
 		}
 		b %SendEntryChangedMessage{0}
 		b %ShowDebugInfo{0}
+		s %Template{""}
 	}
 }
 o
@@ -445,7 +458,7 @@ o
 {
 	Uuid %id{u4{14300577531391623315,5394420748807630347}}
 	s %t{"ezBlackboardComponent"}
-	u3 %v{1}
+	u3 %v{2}
 	p
 	{
 		b %Active{1}
@@ -458,6 +471,7 @@ o
 		}
 		b %SendEntryChangedMessage{0}
 		b %ShowDebugInfo{0}
+		s %Template{""}
 	}
 }
 o
@@ -551,18 +565,6 @@ o
 		{
 			s{"CastShadow"}
 		}
-	}
-}
-o
-{
-	Uuid %id{u4{13092309702651763588,5533955755541929126}}
-	s %t{"ezBlackboardEntry"}
-	u3 %v{1}
-	p
-	{
-		s %Flags{""}
-		i3 %InitialValue{0}
-		s %Name{"Weight"}
 	}
 }
 o
@@ -812,7 +814,7 @@ o
 {
 	Uuid %id{u4{9949345000164922155,10189271432058765412}}
 	s %t{"ezBlackboardComponent"}
-	u3 %v{1}
+	u3 %v{2}
 	p
 	{
 		b %Active{1}
@@ -825,6 +827,7 @@ o
 		}
 		b %SendEntryChangedMessage{0}
 		b %ShowDebugInfo{0}
+		s %Template{""}
 	}
 }
 o
@@ -933,7 +936,7 @@ o
 {
 	Uuid %id{u4{13037504561066984781,10610323733686521202}}
 	s %t{"ezBlackboardComponent"}
-	u3 %v{1}
+	u3 %v{2}
 	p
 	{
 		b %Active{1}
@@ -946,6 +949,7 @@ o
 		}
 		b %SendEntryChangedMessage{0}
 		b %ShowDebugInfo{0}
+		s %Template{""}
 	}
 }
 o
@@ -1054,7 +1058,7 @@ o
 {
 	Uuid %id{u4{9598319208338345020,11147775614876214680}}
 	s %t{"ezBlackboardComponent"}
-	u3 %v{1}
+	u3 %v{2}
 	p
 	{
 		b %Active{1}
@@ -1067,6 +1071,7 @@ o
 		}
 		b %SendEntryChangedMessage{0}
 		b %ShowDebugInfo{0}
+		s %Template{""}
 	}
 }
 o
@@ -1393,7 +1398,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezBlackboardComponent"}
-		u3 %TypeVersion{1}
+		u3 %TypeVersion{2}
 	}
 }
 o
@@ -1427,7 +1432,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezMeshComponentBase"}
-		u3 %TypeVersion{2}
+		u3 %TypeVersion{3}
 	}
 }
 o
