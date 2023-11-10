@@ -106,7 +106,7 @@ void ezPlayerComponent::OnMsgInputActionTriggered(ezMsgInputActionTriggered& msg
     {
       if (pGrabComponent && pGrabComponent->HasObjectGrabbed())
       {
-        ezVec3 dir = ezVec3::UnitXAxis() * 4.0f;
+        ezVec3 dir = ezVec3::MakeAxisX() * 4.0f;
         pGrabComponent->ThrowGrabbedObject(dir);
       }
       else if (pWeaponsBlackboard)
@@ -118,7 +118,7 @@ void ezPlayerComponent::OnMsgInputActionTriggered(ezMsgInputActionTriggered& msg
           if (uiWeaponState == 0)
           {
             pSpawnBullet->TriggerManualSpawn();
-            pWeaponsBlackboard->SetEntryValue(ezTempHashedString("Weapon-State"), 1).AssertSuccess();
+            pWeaponsBlackboard->SetEntryValue("Weapon-State", 1);
           }
         }
       }
@@ -135,7 +135,7 @@ void ezPlayerComponent::OnMsgInputActionTriggered(ezMsgInputActionTriggered& msg
 
         if (uiWeaponState == 0)
         {
-          pWeaponsBlackboard->SetEntryValue(ezTempHashedString("Weapon-State"), 2).AssertSuccess();
+          pWeaponsBlackboard->SetEntryValue("Weapon-State", 2);
         }
       }
     }

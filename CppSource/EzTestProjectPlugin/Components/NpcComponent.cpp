@@ -72,13 +72,13 @@ void ezNpcComponent::OnMsgDamage(ezMsgDamage& msg)
   if (m_iHealth > 0 && msg.m_fDamage >= m_iHealth)
   {
     m_iHealth = 0;
-    pBlackboard->SetEntryValue(ezTempHashedString("MoveState"), 2).AssertSuccess();
+    pBlackboard->SetEntryValue("MoveState", 2);
   }
   else
   {
     m_iHealth -= (ezInt32)msg.m_fDamage;
     ezUInt32 uiHitState = pBlackboard->GetEntryValue(ezTempHashedString("HitState")).ConvertTo<ezUInt32>();
-    pBlackboard->SetEntryValue(ezTempHashedString("HitState"), uiHitState + 1).AssertSuccess();
+    pBlackboard->SetEntryValue("HitState", uiHitState + 1);
   }
 }
 
