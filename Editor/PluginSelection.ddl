@@ -1,11 +1,5 @@
 PluginState
 {
-	string %ID{"EzTestProjectPlugin"}
-	bool %Selected{true}
-	bool %LoadCopy{true}
-}
-PluginState
-{
 	string %ID{"Fmod"}
 	bool %Selected{true}
 	bool %LoadCopy{false}
@@ -30,7 +24,7 @@ PluginState
 }
 PluginState
 {
-	string %ID{"XBoxController"}
+	string %ID{"VisualScript"}
 	bool %Selected{true}
 	bool %LoadCopy{false}
 }

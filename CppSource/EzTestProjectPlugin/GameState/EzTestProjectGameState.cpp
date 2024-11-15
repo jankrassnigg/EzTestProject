@@ -32,16 +32,16 @@ EzTestProjectGameState::EzTestProjectGameState()
   ezHashedString sBbName;
   sBbName.Assign("Globals");
   m_pGlobalStateBlackboard = ezBlackboard::GetOrCreateGlobal(sBbName);
-  m_pGlobalStateBlackboard->UnregisterAllEntries();
+  m_pGlobalStateBlackboard->RemoveAllEntries();
 
   ezHashedString hs;
   hs.Assign("State");
-  m_pGlobalStateBlackboard->RegisterEntry(hs, 0);
+  m_pGlobalStateBlackboard->SetEntryValue(hs, 0);
 }
 
 EzTestProjectGameState::~EzTestProjectGameState()
 {
-  m_pGlobalStateBlackboard->UnregisterAllEntries();
+  m_pGlobalStateBlackboard->RemoveAllEntries();
 }
 
 void EzTestProjectGameState::ProcessInput()
@@ -67,7 +67,7 @@ void EzTestProjectGameState::ProcessInput()
   if (IsLoadingScene())
   {
     const ezInt32 iPerc = (ezInt32)(m_pSceneToLoad->GetLoadingProgress() * 100.0f);
-    ezDebugRenderer::DrawInfoText(m_pMainWorld, ezDebugRenderer::ScreenPlacement::TopCenter, "Loading", ezFmt("Loading Level: {}%%", iPerc));
+    ezDebugRenderer::DrawInfoText(m_pMainWorld, ezDebugTextPlacement::TopCenter, "Loading", ezFmt("Loading Level: {}%%", iPerc));
 
     if (m_pSceneToLoad->GetLoadingState() == ezSceneLoadUtility::LoadingState::FinishedSuccessfully && IsInLoadingScreen())
     {
@@ -129,7 +129,7 @@ void EzTestProjectGameState::OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg)
     ezGameObject* pReferenceNode;
     if (m_pMainWorld->TryGetObject(m_hSpawnedPlayer, pPlayerNode) && m_pMainWorld->TryGetObjectWithGlobalKey(ezTempHashedString(m_sSwitchLevelToSpawnPoint), pReferenceNode))
     {
-      m_RelativeSpawnPosition.SetLocalTransform(pReferenceNode->GetGlobalTransform(), pPlayerNode->GetGlobalTransform());
+      m_RelativeSpawnPosition = ezTransform::MakeLocalTransform(pReferenceNode->GetGlobalTransform(), pPlayerNode->GetGlobalTransform());
     }
     else
     {
@@ -204,7 +204,7 @@ void EzTestProjectGameState::OnMsgGenericEvent(ezMsgGenericEvent& msg)
 
           ezInt32 val = pEntry->m_Value.ConvertTo<ezInt32>();
           val = (val == 0) ? 1 : 0;
-          pBB->SetEntryValue("State", val).IgnoreResult();
+          pBB->SetEntryValue("State", val);
         }
       }
     }

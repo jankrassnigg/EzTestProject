@@ -20,8 +20,6 @@ public:
   EzTestProjectGameState();
   ~EzTestProjectGameState();
 
-  virtual ezGameStatePriority DeterminePriority(ezWorld* pWorld) const override { return ezGameStatePriority::Default; }
-
   virtual void ProcessInput() override;
 
   void OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg);
@@ -29,7 +27,7 @@ public:
 
   ezSelectedObjectsContext m_ObjectsToHighlight;
 
-virtual void OnActivation(ezWorld* pWorld, const ezTransform* pStartPosition) override;
+  virtual void OnActivation(ezWorld* pWorld, const ezTransform* pStartPosition) override;
 
 private:
   virtual ezResult SpawnPlayer(const ezTransform* pStartPosition) override;
