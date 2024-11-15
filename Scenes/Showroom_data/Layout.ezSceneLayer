@@ -11,7 +11,7 @@ o
 		s %AssetType{"Layer"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{942465577155070876,6255082172487507317}}
-		u4 %Hash{10281241242017638152}
+		u4 %Hash{8972990608833779382}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -99,8 +99,8 @@ o
 			Uuid{u4{14213507439052384183,5513871922342423812}}
 		}
 		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x0000A040,0x000030C1,0}}
-		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalPosition{f{0x9A999940,0x67661EC1,0xCDCCCC3D}}
+		Quat %LocalRotation{f{0,0,0xF30435BF,0xF304353F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
@@ -137,7 +137,6 @@ o
 			Uuid{u4{16521085968534245028,13426889023397725515}}
 			Uuid{u4{16814698762126144977,13563277321797647148}}
 			Uuid{u4{5075271518242172093,13849105241397677940}}
-			Uuid{u4{2246525818973924610,16214377232430191274}}
 		}
 		VarArray %Components{}
 		s %GlobalKey{""}
@@ -146,7 +145,7 @@ o
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{""}
+		s %Name{"Ceiling"}
 		VarArray %Tags
 		{
 			s{"CastShadow"}
@@ -175,6 +174,7 @@ o
 		b %Active{1}
 		VarArray %Children
 		{
+			Uuid{u4{2246525818973924610,16214377232430191274}}
 			Uuid{u4{14916600312012676517,5050952377993030119}}
 		}
 		VarArray %Components{}
@@ -1038,12 +1038,12 @@ o
 			Uuid{u4{15305754545484025642,16723143317268587854}}
 		}
 		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0,0xD4CCCCBE,0xCFCCECC0}}
+		Vec3 %LocalPosition{f{0x00004040,0x0000803F,0}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{""}
+		s %Name{"Floor"}
 		VarArray %Tags
 		{
 			s{"CastShadow"}
@@ -1075,7 +1075,7 @@ o
 		b %SlopedBottom{0}
 		b %SlopedTop{0}
 		f %Thickness{0x0000003F}
-		b %UseAsOccluder{1}
+		b %UseAsOccluder{0}
 	}
 }
 }

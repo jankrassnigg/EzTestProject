@@ -11,7 +11,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{3762155954619595530,10109334088401710135}}
-		u4 %Hash{12480528311530487257}
+		u4 %Hash{15102113601743869532}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{18109574081511312074,17852915168099253588}}
@@ -191,18 +191,6 @@ o
 }
 o
 {
-	Uuid %id{u4{12337047758047185682,10488394208302173182}}
-	s %t{"ezCameraShakeComponent"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		Angle %MaxShake{f{0xC2B8B23D}}
-		Angle %MinShake{f{0}}
-	}
-}
-o
-{
 	Uuid %id{u4{7322606786816387915,10591960731220097506}}
 	s %t{"ezGameObject"}
 	u3 %v{1}
@@ -213,10 +201,7 @@ o
 		{
 			Uuid{u4{9370992393677608728,7742031495292344557}}
 		}
-		VarArray %Components
-		{
-			Uuid{u4{12337047758047185682,10488394208302173182}}
-		}
+		VarArray %Components{}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0,0,0}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
@@ -445,16 +430,6 @@ o
 }
 o
 {
-	Uuid %id{u4{1967023968389889979,1934831520296666018}}
-	s %t{"ezDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		Angle %Value{f{0xC2B8B23D}}
-	}
-}
-o
-{
 	Uuid %id{u4{5332337980524179225,1953809954450076278}}
 	s %t{"ezReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -627,30 +602,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezCameraMode"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{12187813566348499432,3388657587717410465}}
-	s %t{"ezReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{897810936654668581,6765874523813887072}}
-		}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
-		VarArray %Functions{}
-		s %ParentTypeName{"ezComponent"}
-		s %PluginName{"ezGameComponentsPlugin"}
-		VarArray %Properties
-		{
-			Uuid{u4{10294009744733898264,12487432856664269996}}
-			Uuid{u4{6811354964399535199,14960796038750974747}}
-		}
-		s %TypeName{"ezCameraShakeComponent"}
 		u3 %TypeVersion{1}
 	}
 }
@@ -986,16 +937,6 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezVisualizerAnchor"}
 		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{897810936654668581,6765874523813887072}}
-	s %t{"ezCategoryAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Category{"Effects/CameraShake"}
 	}
 }
 o
@@ -1631,21 +1572,6 @@ o
 }
 o
 {
-	Uuid %id{u4{10294009744733898264,12487432856664269996}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes{}
-		s %Category{"ezPropertyCategory::Member"}
-		Invalid %ConstantValue{}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"MinShake"}
-		s %Type{"ezAngle"}
-	}
-}
-o
-{
 	Uuid %id{u4{12259091969111677279,12532376757824778256}}
 	s %t{"ezDefaultValueAttribute"}
 	u3 %v{1}
@@ -1834,24 +1760,6 @@ o
 		s %Name{"TeleportCharacter"}
 		Uuid %ReturnValue{u4{15388641241972854133,10699524964063111154}}
 		s %Type{"ezFunctionType::Member"}
-	}
-}
-o
-{
-	Uuid %id{u4{6811354964399535199,14960796038750974747}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{1967023968389889979,1934831520296666018}}
-		}
-		s %Category{"ezPropertyCategory::Member"}
-		Invalid %ConstantValue{}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"MaxShake"}
-		s %Type{"ezAngle"}
 	}
 }
 o
