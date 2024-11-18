@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{4455235670604856189,5095343798045264387}}
+	Uuid %id{u4{15335483649439909725,5235084433231307973}}
 	s %t{"ezExposedParameters"}
 	u3 %v{3}
 	p
@@ -12,7 +12,7 @@ o
 }
 o
 {
-	Uuid %id{u4{2721560248301467930,9839333268616486115}}
+	Uuid %id{u4{7214629749568685084,9767243149439059040}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -20,20 +20,20 @@ o
 	{
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
-		Uuid %DocumentID{u4{2721560248301467930,9839333268616486115}}
-		u4 %Hash{3466466241742789664}
+		Uuid %DocumentID{u4{7214629749568685084,9767243149439059040}}
+		u4 %Hash{10886999788916480332}
 		VarArray %MetaInfo
 		{
-			Uuid{u4{4455235670604856189,5095343798045264387}}
+			Uuid{u4{15335483649439909725,5235084433231307973}}
 		}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
-			s{"{ a96d1948-d1c2-4cc2-934c-cfdb3a76c0a0 }"}
+			s{"{ c5e3c0cc-6554-4365-bbf0-1f7a922e1b93 }"}
 		}
 		VarArray %References
 		{
-			s{"{ a96d1948-d1c2-4cc2-934c-cfdb3a76c0a0 }"}
+			s{"{ c5e3c0cc-6554-4365-bbf0-1f7a922e1b93 }"}
 		}
 		s %Tags{""}
 	}
@@ -43,59 +43,66 @@ Objects
 {
 o
 {
-	Uuid %id{u4{1157744387103891369,4731281683733500434}}
-	s %t{"ezJoltShapeSphereComponent"}
+	Uuid %id{u4{1838938391393856149,4711566425274143484}}
+	s %t{"ezPointLightComponent"}
+	u3 %v{2}
+	p
+	{
+		b %Active{1}
+		b %CastShadows{1}
+		f %ConstantBias{0xCDCCCC3D}
+		ColorGamma %EffectiveColor{u1{255,255,255,255}}
+		f %Intensity{0x0000A040}
+		ColorGamma %LightColor{u1{255,255,255,255}}
+		f %PenumbraSize{0xCDCCCC3D}
+		f %Range{0x00000040}
+		f %ShadowFadeOutRange{0}
+		f %SlopeBias{0x0000803E}
+		f %SpecularMultiplier{0}
+		u3 %Temperature{3138}
+		b %TransparentShadows{0}
+		b %UseColorTemperature{1}
+	}
+}
+o
+{
+	Uuid %id{u4{9088634933799319988,4919461297425780864}}
+	s %t{"ezJoltShapeCylinderComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
-		f %Radius{0xCDCC4C3D}
+		f %Height{0xCDCC4C3E}
+		f %Radius{0x8FC2753D}
 	}
 }
 o
 {
-	Uuid %id{u4{8578258014697232778,4755815092751677445}}
-	s %t{"ezGameObject"}
-	u3 %v{1}
+	Uuid %id{u4{3095036048299628713,4938086372712780972}}
+	s %t{"ezJoltDynamicActorComponent"}
+	u3 %v{4}
 	p
 	{
 		b %Active{1}
-		VarArray %Children{}
-		VarArray %Components
-		{
-			Uuid{u4{1157744387103891369,4731281683733500434}}
-		}
-		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0,0,0x0DFA123D}}
-		Quat %LocalRotation{f{0,0,0,0x0000803F}}
-		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
-		f %LocalUniformScaling{0x0000803F}
-		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		b %AllowSleeping{1}
+		f %AngularDamping{0xCDCC4C3E}
+		Vec3 %CenterOfMass{f{0,0,0}}
+		u1 %CollisionLayer{0}
+		b %ContinuousCollisionDetection{0}
+		b %CustomCenterOfMass{0}
+		f %Density{0x0000C842}
+		f %GravityFactor{0x0000803F}
+		b %Kinematic{0}
+		f %LinearDamping{0xCDCC4C3E}
+		f %Mass{0x00004040}
+		s %OnContact{""}
+		b %StartAsleep{0}
+		s %Surface{""}
 	}
 }
 o
 {
-	Uuid %id{u4{15081524765783445387,4944702856890080791}}
-	s %t{"ezMeshComponent"}
-	u3 %v{3}
-	p
-	{
-		b %Active{1}
-		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
-		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
-		VarArray %Materials{}
-		s %Mesh{"{ a96d1948-d1c2-4cc2-934c-cfdb3a76c0a0 }"}
-		f %SortingDepthOffset{0}
-	}
-}
-o
-{
-	Uuid %id{u4{3902679085265203072,5351190685473312405}}
+	Uuid %id{u4{8395748586532420226,5279100566295885330}}
 	s %t{"ezGameObject"}
 	u3 %v{1}
 	p
@@ -103,12 +110,12 @@ o
 		b %Active{1}
 		VarArray %Children
 		{
-			Uuid{u4{8578258014697232778,4755815092751677445}}
+			Uuid{u4{4948766630380542651,5752623530406008357}}
 		}
 		VarArray %Components
 		{
-			Uuid{u4{15081524765783445387,4944702856890080791}}
-			Uuid{u4{423116420087630493,5504701277925957891}}
+			Uuid{u4{13946559007916862612,5472263516480511534}}
+			Uuid{u4{3095036048299628713,4938086372712780972}}
 		}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0,0,0}}
@@ -126,26 +133,44 @@ o
 }
 o
 {
-	Uuid %id{u4{423116420087630493,5504701277925957891}}
-	s %t{"ezJoltDynamicActorComponent"}
-	u3 %v{4}
+	Uuid %id{u4{13946559007916862612,5472263516480511534}}
+	s %t{"ezMeshComponent"}
+	u3 %v{3}
 	p
 	{
 		b %Active{1}
-		b %AllowSleeping{1}
-		f %AngularDamping{0xCDCC4C3E}
-		Vec3 %CenterOfMass{f{0,0,0}}
-		u1 %CollisionLayer{0}
-		b %ContinuousCollisionDetection{0}
-		b %CustomCenterOfMass{0}
-		f %Density{0x0000C842}
-		f %GravityFactor{0x0000803F}
-		b %Kinematic{0}
-		f %LinearDamping{0xCDCC4C3E}
-		f %Mass{0x0000803F}
-		s %OnContact{""}
-		b %StartAsleep{0}
-		s %Surface{""}
+		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
+		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
+		VarArray %Materials{}
+		s %Mesh{"{ c5e3c0cc-6554-4365-bbf0-1f7a922e1b93 }"}
+		f %SortingDepthOffset{0}
+	}
+}
+o
+{
+	Uuid %id{u4{4948766630380542651,5752623530406008357}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{9088634933799319988,4919461297425780864}}
+			Uuid{u4{1838938391393856149,4711566425274143484}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0,0xCDCCCC3D}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
 	}
 }
 o
@@ -158,14 +183,14 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{3902679085265203072,5351190685473312405}}
+			Uuid{u4{8395748586532420226,5279100566295885330}}
 		}
-		Uuid %Settings{u4{11663805958314679068,9865607941831972076}}
+		Uuid %Settings{u4{16156875459581896222,9793517822654545001}}
 	}
 }
 o
 {
-	Uuid %id{u4{11663805958314679068,9865607941831972076}}
+	Uuid %id{u4{16156875459581896222,9793517822654545001}}
 	s %t{"ezPrefabDocumentSettings"}
 	u3 %v{1}
 	p
@@ -312,6 +337,25 @@ o
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
 		s %Name{"AllowSleeping"}
 		s %Type{"bool"}
+	}
+}
+o
+{
+	Uuid %id{u4{16062387228877738411,1995890044582742863}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{1429825417086303755,16525450792367066106}}
+			Uuid{u4{2237478171367293906,15066526292263880887}}
+		}
+		s %Category{"ezPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
+		s %Name{"Radius"}
+		s %Type{"float"}
 	}
 }
 o
@@ -559,23 +603,6 @@ o
 }
 o
 {
-	Uuid %id{u4{15911470964782105249,5599265681763992237}}
-	s %t{"ezSphereVisualizerAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Anchor{""}
-		Color %Color{f{0x71941A3F,0x782DE03D,0x70944E3F,0x0000803F}}
-		Vec3 %OffsetOrScale{f{0,0,0}}
-		s %Property1{"Radius"}
-		s %Property2{""}
-		s %Property3{""}
-		s %Property4{""}
-		s %Property5{""}
-	}
-}
-o
-{
 	Uuid %id{u4{6818841624920768409,6243926554597233956}}
 	s %t{"ezScriptableFunctionAttribute"}
 	u3 %v{1}
@@ -624,25 +651,6 @@ o
 }
 o
 {
-	Uuid %id{u4{6916421691460421263,6517784942153784783}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{5517296636975087105,15177664328615910206}}
-			Uuid{u4{14959600739992083939,7823142109229508990}}
-		}
-		s %Category{"ezPropertyCategory::Member"}
-		Invalid %ConstantValue{}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"Radius"}
-		s %Type{"float"}
-	}
-}
-o
-{
 	Uuid %id{u4{6336723317049884733,6579878144043010185}}
 	s %t{"ezFunctionArgumentDescriptor"}
 	u3 %v{1}
@@ -684,6 +692,25 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezMeshComponentBase"}
 		u3 %TypeVersion{4}
+	}
+}
+o
+{
+	Uuid %id{u4{7502524371948283983,7138786378561520197}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{13745345519308142034,15409239583049512717}}
+			Uuid{u4{6301175475830618990,18195981244703891712}}
+		}
+		s %Category{"ezPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
+		s %Name{"Height"}
+		s %Type{"float"}
 	}
 }
 o
@@ -795,17 +822,6 @@ o
 }
 o
 {
-	Uuid %id{u4{14959600739992083939,7823142109229508990}}
-	s %t{"ezClampValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		Invalid %Max{}
-		f %Min{0}
-	}
-}
-o
-{
 	Uuid %id{u4{878044963436546334,8122785390929912541}}
 	s %t{"ezFunctionArgumentDescriptor"}
 	u3 %v{1}
@@ -864,6 +880,24 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezDocumentRoot"}
 		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{1775772924471429469,8816724034088437435}}
+	s %t{"ezCylinderVisualizerAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %Anchor{""}
+		s %Axis{"ezBasisAxis::PositiveZ"}
+		Color %Color{f{0x71941A3F,0x782DE03D,0x70944E3F,0x0000803F}}
+		Vec3 %OffsetOrScale{f{0,0,0}}
+		s %Property1{"Height"}
+		s %Property2{"Radius"}
+		s %Property3{""}
+		s %Property4{""}
+		s %Property5{""}
 	}
 }
 o
@@ -1068,30 +1102,6 @@ o
 }
 o
 {
-	Uuid %id{u4{1437521466418797355,11653301487602574059}}
-	s %t{"ezReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{3718828775820470108,12106779719480930284}}
-			Uuid{u4{15911470964782105249,5599265681763992237}}
-		}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
-		VarArray %Functions{}
-		s %ParentTypeName{"ezJoltShapeComponent"}
-		s %PluginName{"ezJoltPlugin"}
-		VarArray %Properties
-		{
-			Uuid{u4{6916421691460421263,6517784942153784783}}
-		}
-		s %TypeName{"ezJoltShapeSphereComponent"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
 	Uuid %id{u4{12162947412619476030,11678637699905460909}}
 	s %t{"ezReflectedPropertyDescriptor"}
 	u3 %v{2}
@@ -1132,17 +1142,19 @@ o
 }
 o
 {
-	Uuid %id{u4{3718828775820470108,12106779719480930284}}
-	s %t{"ezSphereManipulatorAttribute"}
+	Uuid %id{u4{13157915159061735959,12012078319048480294}}
+	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
 	p
 	{
-		s %Property1{"Radius"}
-		s %Property2{""}
-		s %Property3{""}
-		s %Property4{""}
-		s %Property5{""}
-		s %Property6{""}
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezLightComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezPointLightComponent"}
+		u3 %TypeVersion{2}
 	}
 }
 o
@@ -1237,6 +1249,23 @@ o
 }
 o
 {
+	Uuid %id{u4{17338863546649435593,13192242791875444156}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezVisualizerAttribute"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezPointLightVisualizerAttribute"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
 	Uuid %id{u4{4903960154749262079,14218359138397949918}}
 	s %t{"ezFunctionArgumentDescriptor"}
 	u3 %v{1}
@@ -1244,6 +1273,23 @@ o
 	{
 		s %Flags{""}
 		s %Type{""}
+	}
+}
+o
+{
+	Uuid %id{u4{12814930320360971966,14780945004767832345}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Abstract|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezRenderComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezLightComponent"}
+		u3 %TypeVersion{7}
 	}
 }
 o
@@ -1286,12 +1332,30 @@ o
 }
 o
 {
-	Uuid %id{u4{5517296636975087105,15177664328615910206}}
-	s %t{"ezDefaultValueAttribute"}
+	Uuid %id{u4{2237478171367293906,15066526292263880887}}
+	s %t{"ezClampValueAttribute"}
 	u3 %v{1}
 	p
 	{
-		f %Value{0x0000003F}
+		Invalid %Max{}
+		f %Min{0}
+	}
+}
+o
+{
+	Uuid %id{u4{2971759590607246163,15191316629823599218}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezVisualizerAttribute"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezCylinderVisualizerAttribute"}
+		u3 %TypeVersion{1}
 	}
 }
 o
@@ -1350,12 +1414,46 @@ o
 }
 o
 {
+	Uuid %id{u4{13745345519308142034,15409239583049512717}}
+	s %t{"ezDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x0000803F}
+	}
+}
+o
+{
 	Uuid %id{u4{10630366608556099574,15734649419491018854}}
 	s %t{"ezDynamicEnumAttribute"}
 	u3 %v{1}
 	p
 	{
 		s %DynamicEnum{"PhysicsCollisionLayer"}
+	}
+}
+o
+{
+	Uuid %id{u4{7800924204755200005,16261481570329149190}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{1775772924471429469,8816724034088437435}}
+		}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezJoltShapeComponent"}
+		s %PluginName{"ezJoltPlugin"}
+		VarArray %Properties
+		{
+			Uuid{u4{7502524371948283983,7138786378561520197}}
+			Uuid{u4{16062387228877738411,1995890044582742863}}
+		}
+		s %TypeName{"ezJoltShapeCylinderComponent"}
+		u3 %TypeVersion{1}
 	}
 }
 o
@@ -1404,18 +1502,28 @@ o
 }
 o
 {
-	Uuid %id{u4{14207082430471941233,17000358661146427261}}
+	Uuid %id{u4{1429825417086303755,16525450792367066106}}
+	s %t{"ezDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		f %Value{0x0000803E}
+	}
+}
+o
+{
+	Uuid %id{u4{14469700887475489738,16951777026318265606}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
 	p
 	{
 		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		s %Flags{"ezTypeFlags::IsEnum|ezTypeFlags::Minimal"}
 		VarArray %Functions{}
-		s %ParentTypeName{"ezVisualizerAttribute"}
+		s %ParentTypeName{"ezEnumBase"}
 		s %PluginName{"Static"}
 		VarArray %Properties{}
-		s %TypeName{"ezSphereVisualizerAttribute"}
+		s %TypeName{"ezBasisAxis"}
 		u3 %TypeVersion{1}
 	}
 }
@@ -1500,6 +1608,17 @@ o
 	{
 		s %Flags{""}
 		s %Type{""}
+	}
+}
+o
+{
+	Uuid %id{u4{6301175475830618990,18195981244703891712}}
+	s %t{"ezClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		Invalid %Max{}
+		f %Min{0}
 	}
 }
 }
