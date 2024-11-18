@@ -34,7 +34,7 @@ AssetProfiles
 				uint32 %v{1}
 				p
 				{
-					uint16 %MaxResolution{16384}
+					uint16 %MaxResolution{512}
 				}
 			}
 			o
