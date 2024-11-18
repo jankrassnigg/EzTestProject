@@ -27,10 +27,10 @@ public:
 
   ezSelectedObjectsContext m_ObjectsToHighlight;
 
-  virtual void OnActivation(ezWorld* pWorld, const ezTransform* pStartPosition) override;
+  virtual void OnActivation(ezWorld* pWorld, ezStringView sStartPosition, const ezTransform& startPositionOffset) override;
 
 private:
-  virtual ezResult SpawnPlayer(const ezTransform* pStartPosition) override;
+  virtual ezResult SpawnPlayer(ezStringView sStartPosition, const ezTransform& startPositionOffset) override;
 
   ezString m_sSwitchLevelTo;
   ezString m_sSwitchLevelToCollection;

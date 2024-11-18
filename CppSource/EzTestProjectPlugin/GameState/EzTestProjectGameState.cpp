@@ -25,10 +25,6 @@ EZ_END_DYNAMIC_REFLECTED_TYPE;
 
 EzTestProjectGameState::EzTestProjectGameState()
 {
-  // TODO: put this into default code
-  // EnableSceneSelectionMenu(false);
-  EnableAutoSwitchToLoadedScene(false);
-
   ezHashedString sBbName;
   sBbName.Assign("Globals");
   m_pGlobalStateBlackboard = ezBlackboard::GetOrCreateGlobal(sBbName);
@@ -50,30 +46,30 @@ void EzTestProjectGameState::ProcessInput()
 
   m_ObjectsToHighlight.m_Objects.Clear();
 
-  if (m_bSwitchLevelImmediate)
-  {
-    SwitchToLoadingScreen();
-    m_bSwitchLevelImmediate = false;
-  }
+  // if (m_bSwitchLevelImmediate)
+  //{
+  //   SwitchToLoadingScreen();
+  //   m_bSwitchLevelImmediate = false;
+  // }
 
-  if (!m_sSwitchLevelTo.IsEmpty())
-  {
-    StartSceneLoading(m_sSwitchLevelTo, m_sSwitchLevelToCollection).AssertSuccess();
+  // if (!m_sSwitchLevelTo.IsEmpty())
+  //{
+  //   StartSceneLoading(m_sSwitchLevelTo, m_sSwitchLevelToCollection).AssertSuccess();
 
-    m_sSwitchLevelTo.Clear();
-    m_sSwitchLevelToCollection.Clear();
-  }
+  //  m_sSwitchLevelTo.Clear();
+  //  m_sSwitchLevelToCollection.Clear();
+  //}
 
-  if (IsLoadingScene())
-  {
-    const ezInt32 iPerc = (ezInt32)(m_pSceneToLoad->GetLoadingProgress() * 100.0f);
-    ezDebugRenderer::DrawInfoText(m_pMainWorld, ezDebugTextPlacement::TopCenter, "Loading", ezFmt("Loading Level: {}%%", iPerc));
+  // if (IsLoadingScene())
+  //{
+  //   const ezInt32 iPerc = (ezInt32)(m_pSceneToLoad->GetLoadingProgress() * 100.0f);
+  //   ezDebugRenderer::DrawInfoText(m_pMainWorld, ezDebugTextPlacement::TopCenter, "Loading", ezFmt("Loading Level: {}%%", iPerc));
 
-    if (m_pSceneToLoad->GetLoadingState() == ezSceneLoadUtility::LoadingState::FinishedSuccessfully && IsInLoadingScreen())
-    {
-      SwitchToLoadedScene();
-    }
-  }
+  //  if (m_pSceneToLoad->GetLoadingState() == ezSceneLoadUtility::LoadingState::FinishedSuccessfully && IsInLoadingScreen())
+  //  {
+  //    SwitchToLoadedScene();
+  //  }
+  //}
 }
 
 void EzTestProjectGameState::OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg)
@@ -82,62 +78,62 @@ void EzTestProjectGameState::OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg)
 
   ezLog::Info("Trigger Msg: {}", triggerMsg);
 
-  if (triggerMsg.StartsWith("ChangeLevel_") || triggerMsg.StartsWith("PreloadLevel_"))
-  {
-    if (msg.m_TriggerState != ezTriggerState::Activated)
-      return;
+  // if (triggerMsg.StartsWith("ChangeLevel_") || triggerMsg.StartsWith("PreloadLevel_"))
+  //{
+  //   if (msg.m_TriggerState != ezTriggerState::Activated)
+  //     return;
 
-    triggerMsg.TrimWordStart("PreloadLevel_");
+  //  triggerMsg.TrimWordStart("PreloadLevel_");
 
-    m_bSwitchLevelImmediate = triggerMsg.TrimWordStart("ChangeLevel_");
-    m_sSwitchLevelToSpawnPoint = triggerMsg;
+  //  m_bSwitchLevelImmediate = triggerMsg.TrimWordStart("ChangeLevel_");
+  //  m_sSwitchLevelToSpawnPoint = triggerMsg;
 
-    if (triggerMsg.StartsWith("Room1"))
-    {
-      m_sSwitchLevelTo = "{ 4413ae89-ce73-92dc-358c-ba3152a1427c }";
-      m_sSwitchLevelToCollection = "{ f0261110-f1f9-4730-a36c-1b9470c9020e }";
-    }
-    else if (triggerMsg.StartsWith("Room2"))
-    {
-      m_sSwitchLevelTo = "{ 54297160-efe8-4a95-88cb-4d23130a6121 }";
-      m_sSwitchLevelToCollection = "{ 3d949c7e-c45f-478b-ade2-c99a261a6a48 }";
-    }
-    else if (triggerMsg.StartsWith("Room3"))
-    {
-      m_sSwitchLevelTo = "{ 0c279c89-a42c-4fa5-935f-bd579495e60f }";
-      m_sSwitchLevelToCollection = "{ cc9c120c-5d42-442e-9aa2-00f97d313031 }";
-    }
-    else if (triggerMsg.StartsWith("Hub"))
-    {
-      m_sSwitchLevelTo = "{ 1ff66ef3-fc6d-99f6-4c0f-887e399f20b6 }";
-      m_sSwitchLevelToCollection = "{ 2e3c8c40-ef0c-4b13-a0b7-4ca55119f86e }";
-    }
+  //  if (triggerMsg.StartsWith("Room1"))
+  //  {
+  //    m_sSwitchLevelTo = "{ 4413ae89-ce73-92dc-358c-ba3152a1427c }";
+  //    m_sSwitchLevelToCollection = "{ f0261110-f1f9-4730-a36c-1b9470c9020e }";
+  //  }
+  //  else if (triggerMsg.StartsWith("Room2"))
+  //  {
+  //    m_sSwitchLevelTo = "{ 54297160-efe8-4a95-88cb-4d23130a6121 }";
+  //    m_sSwitchLevelToCollection = "{ 3d949c7e-c45f-478b-ade2-c99a261a6a48 }";
+  //  }
+  //  else if (triggerMsg.StartsWith("Room3"))
+  //  {
+  //    m_sSwitchLevelTo = "{ 0c279c89-a42c-4fa5-935f-bd579495e60f }";
+  //    m_sSwitchLevelToCollection = "{ cc9c120c-5d42-442e-9aa2-00f97d313031 }";
+  //  }
+  //  else if (triggerMsg.StartsWith("Hub"))
+  //  {
+  //    m_sSwitchLevelTo = "{ 1ff66ef3-fc6d-99f6-4c0f-887e399f20b6 }";
+  //    m_sSwitchLevelToCollection = "{ 2e3c8c40-ef0c-4b13-a0b7-4ca55119f86e }";
+  //  }
 
-    if (m_sSwitchLevelTo == GetActiveSceneName())
-    {
-      ezLog::Info("Active scene: {}", GetActiveSceneName());
-      ezLog::Info("Loading scene: {}", GetLoadingSceneName());
-      ezLog::Info("Ignoring scene load request '{}' (already there).", m_sSwitchLevelTo);
+  //  if (m_sSwitchLevelTo == GetActiveSceneName())
+  //  {
+  //    ezLog::Info("Active scene: {}", GetActiveSceneName());
+  //    ezLog::Info("Loading scene: {}", GetLoadingSceneName());
+  //    ezLog::Info("Ignoring scene load request '{}' (already there).", m_sSwitchLevelTo);
 
-      m_bSwitchLevelImmediate = false;
-      m_sSwitchLevelToSpawnPoint.Clear();
-      m_sSwitchLevelTo.Clear();
-      m_sSwitchLevelToCollection.Clear();
-    }
+  //    m_bSwitchLevelImmediate = false;
+  //    m_sSwitchLevelToSpawnPoint.Clear();
+  //    m_sSwitchLevelTo.Clear();
+  //    m_sSwitchLevelToCollection.Clear();
+  //  }
 
-    ezGameObject* pPlayerNode;
-    ezGameObject* pReferenceNode;
-    if (m_pMainWorld->TryGetObject(m_hSpawnedPlayer, pPlayerNode) && m_pMainWorld->TryGetObjectWithGlobalKey(ezTempHashedString(m_sSwitchLevelToSpawnPoint), pReferenceNode))
-    {
-      m_RelativeSpawnPosition = ezTransform::MakeLocalTransform(pReferenceNode->GetGlobalTransform(), pPlayerNode->GetGlobalTransform());
-    }
-    else
-    {
-      m_RelativeSpawnPosition.SetIdentity();
-    }
+  //  ezGameObject* pPlayerNode;
+  //  ezGameObject* pReferenceNode;
+  //  if (m_pMainWorld->TryGetObject(m_hSpawnedPlayer, pPlayerNode) && m_pMainWorld->TryGetObjectWithGlobalKey(ezTempHashedString(m_sSwitchLevelToSpawnPoint), pReferenceNode))
+  //  {
+  //    m_RelativeSpawnPosition = ezTransform::MakeLocalTransform(pReferenceNode->GetGlobalTransform(), pPlayerNode->GetGlobalTransform());
+  //  }
+  //  else
+  //  {
+  //    m_RelativeSpawnPosition.SetIdentity();
+  //  }
 
-    return;
-  }
+  //  return;
+  //}
 
   if (msg.m_sMessage.GetString() == "Pickup_Item1")
   {
@@ -182,38 +178,38 @@ void EzTestProjectGameState::OnMsgTriggerTriggered(ezMsgTriggerTriggered& msg)
 
 void EzTestProjectGameState::OnMsgGenericEvent(ezMsgGenericEvent& msg)
 {
-  ezLog::Info("ezMsgGenericEvent: {}", msg.m_sMessage.GetString());
+  //ezLog::Info("ezMsgGenericEvent: {}", msg.m_sMessage.GetString());
 
-  if (msg.m_sMessage.GetString() == "Use")
-  {
-    ezGameObject* pSender;
-    if (m_pMainWorld->TryGetObject(msg.m_hSenderObject, pSender))
-    {
-      ezLog::Info("Sender: {}", pSender->GetName());
-    }
+  //if (msg.m_sMessage.GetString() == "Use")
+  //{
+  //  ezGameObject* pSender;
+  //  if (m_pMainWorld->TryGetObject(msg.m_hSenderObject, pSender))
+  //  {
+  //    ezLog::Info("Sender: {}", pSender->GetName());
+  //  }
 
-    // if (m_pMainWorld->TryGetObjectWithGlobalKey("ButtonLight", pSender))
-    {
-      if (auto pBB = m_pGlobalStateBlackboard) // ezBlackboardComponent::FindBlackboard(pSender))
-      {
-        ezLog::Info("Found Blackboard");
+  //  // if (m_pMainWorld->TryGetObjectWithGlobalKey("ButtonLight", pSender))
+  //  {
+  //    if (auto pBB = m_pGlobalStateBlackboard) // ezBlackboardComponent::FindBlackboard(pSender))
+  //    {
+  //      ezLog::Info("Found Blackboard");
 
-        if (auto pEntry = pBB->GetEntry("State"))
-        {
-          ezLog::Info("Found State entry");
+  //      if (auto pEntry = pBB->GetEntry("State"))
+  //      {
+  //        ezLog::Info("Found State entry");
 
-          ezInt32 val = pEntry->m_Value.ConvertTo<ezInt32>();
-          val = (val == 0) ? 1 : 0;
-          pBB->SetEntryValue("State", val);
-        }
-      }
-    }
-  }
+  //        ezInt32 val = pEntry->m_Value.ConvertTo<ezInt32>();
+  //        val = (val == 0) ? 1 : 0;
+  //        pBB->SetEntryValue("State", val);
+  //      }
+  //    }
+  //  }
+  //}
 }
 
-void EzTestProjectGameState::OnActivation(ezWorld* pWorld, const ezTransform* pStartPosition)
+void EzTestProjectGameState::OnActivation(ezWorld* pWorld, ezStringView sStartPosition, const ezTransform& startPositionOffset)
 {
-  SUPER::OnActivation(pWorld, pStartPosition);
+  SUPER::OnActivation(pWorld, sStartPosition, startPositionOffset);
 
   ezView* pView = nullptr;
   if (ezRenderWorld::TryGetView(m_hMainView, pView))
@@ -222,66 +218,69 @@ void EzTestProjectGameState::OnActivation(ezWorld* pWorld, const ezTransform* pS
   }
 }
 
-ezResult EzTestProjectGameState::SpawnPlayer(const ezTransform* pStartPosition)
+ezResult EzTestProjectGameState::SpawnPlayer(ezStringView sStartPosition, const ezTransform& startPositionOffset)
 {
-  if (m_pMainWorld == nullptr)
-    return EZ_FAILURE;
 
-  EZ_LOCK(m_pMainWorld->GetWriteMarker());
+  // if (m_pMainWorld == nullptr)
+  //   return EZ_FAILURE;
 
-  ezGameObject* pStartNode = nullptr;
-  ezTransform customTransform;
-  if (m_pMainWorld->TryGetObjectWithGlobalKey(ezTempHashedString(m_sSwitchLevelToSpawnPoint), pStartNode))
-  {
-    customTransform = pStartNode->GetGlobalTransform() * m_RelativeSpawnPosition;
-    pStartPosition = &customTransform;
+  // EZ_LOCK(m_pMainWorld->GetWriteMarker());
 
-    ezLog::Info("Found target spawn position '{}'", m_sSwitchLevelToSpawnPoint);
-  }
-  else
-  {
-    ezLog::Warning("Did not find target spawn position '{}'", m_sSwitchLevelToSpawnPoint);
-  }
+  // ezGameObject* pStartNode = nullptr;
+  // ezTransform customTransform;
+  // if (m_pMainWorld->TryGetObjectWithGlobalKey(ezTempHashedString(m_sSwitchLevelToSpawnPoint), pStartNode))
+  //{
+  //   customTransform = pStartNode->GetGlobalTransform() * m_RelativeSpawnPosition;
+  //   pStartPosition = &customTransform;
 
-  ezPlayerStartPointComponentManager* pMan = m_pMainWorld->GetComponentManager<ezPlayerStartPointComponentManager>();
-  if (pMan == nullptr)
-    return EZ_FAILURE;
+  //  ezLog::Info("Found target spawn position '{}'", m_sSwitchLevelToSpawnPoint);
+  //}
+  // else
+  //{
+  //  ezLog::Warning("Did not find target spawn position '{}'", m_sSwitchLevelToSpawnPoint);
+  //}
 
-  for (auto it = pMan->GetComponents(); it.IsValid(); ++it)
-  {
-    if (it->IsActive() && it->GetPlayerPrefab().IsValid())
-    {
-      ezResourceLock<ezPrefabResource> pPrefab(it->GetPlayerPrefab(), ezResourceAcquireMode::BlockTillLoaded);
+  // ezPlayerStartPointComponentManager* pMan = m_pMainWorld->GetComponentManager<ezPlayerStartPointComponentManager>();
+  // if (pMan == nullptr)
+  //   return EZ_FAILURE;
 
-      if (pPrefab.GetAcquireResult() == ezResourceAcquireResult::Final)
-      {
-        const ezUInt16 uiTeamID = it->GetOwner()->GetTeamID();
-        ezTransform startPos = it->GetOwner()->GetGlobalTransform();
+  // for (auto it = pMan->GetComponents(); it.IsValid(); ++it)
+  //{
+  //   if (it->IsActive() && it->GetPlayerPrefab().IsValid())
+  //   {
+  //     ezResourceLock<ezPrefabResource> pPrefab(it->GetPlayerPrefab(), ezResourceAcquireMode::BlockTillLoaded);
 
-        if (pStartPosition)
-        {
-          startPos = *pStartPosition;
-          startPos.m_vScale.Set(1.0f);
-          // startPos.m_vPosition.z += 1.0f; // do not spawn player prefabs on the ground, they may not have their origin there
-        }
+  //    if (pPrefab.GetAcquireResult() == ezResourceAcquireResult::Final)
+  //    {
+  //      const ezUInt16 uiTeamID = it->GetOwner()->GetTeamID();
+  //      ezTransform startPos = it->GetOwner()->GetGlobalTransform();
 
-        ezDynamicArray<ezGameObject*> spawnedRoots;
+  //      if (pStartPosition)
+  //      {
+  //        startPos = *pStartPosition;
+  //        startPos.m_vScale.Set(1.0f);
+  //        // startPos.m_vPosition.z += 1.0f; // do not spawn player prefabs on the ground, they may not have their origin there
+  //      }
 
-        ezPrefabInstantiationOptions options;
-        options.m_pOverrideTeamID = &uiTeamID;
-        options.m_pCreatedRootObjectsOut = &spawnedRoots;
+  //      ezDynamicArray<ezGameObject*> spawnedRoots;
 
-        pPrefab->InstantiatePrefab(*m_pMainWorld, startPos, options, &(it->m_Parameters));
+  //      ezPrefabInstantiationOptions options;
+  //      options.m_pOverrideTeamID = &uiTeamID;
+  //      options.m_pCreatedRootObjectsOut = &spawnedRoots;
 
-        if (!spawnedRoots.IsEmpty())
-          m_hSpawnedPlayer = spawnedRoots[0]->GetHandle();
-        else
-          m_hSpawnedPlayer.Invalidate();
+  //      pPrefab->InstantiatePrefab(*m_pMainWorld, startPos, options, &(it->m_Parameters));
 
-        return EZ_SUCCESS;
-      }
-    }
-  }
+  //      if (!spawnedRoots.IsEmpty())
+  //        m_hSpawnedPlayer = spawnedRoots[0]->GetHandle();
+  //      else
+  //        m_hSpawnedPlayer.Invalidate();
 
-  return EZ_FAILURE;
+  //      return EZ_SUCCESS;
+  //    }
+  //  }
+  //}
+
+  // return EZ_FAILURE;
+
+  return SUPER::SpawnPlayer(sStartPosition, startPositionOffset);
 }

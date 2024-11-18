@@ -84,7 +84,7 @@ void ezPlayerComponent::OnMsgInputActionTriggered(ezMsgInputActionTriggered& msg
         {
           if (pGrabComponent->HasObjectGrabbed())
           {
-            ezVec3 dir = ezVec3::UnitXAxis() * 4.0f;
+            ezVec3 dir = ezVec3::MakeAxisX() * 4.0f;
             pGrabComponent->ThrowGrabbedObject(dir);
           }
         }
@@ -133,7 +133,7 @@ void ezPlayerComponent::Update()
   if (!GetOwner()->TryGetComponentOfBaseType(pInput))
     return;
 
-  ezRTTI* pCharType = ezRTTI::FindTypeByName("ezJoltCharacterControllerComponent");
+  const ezRTTI* pCharType = ezRTTI::FindTypeByName("ezJoltCharacterControllerComponent");
 
   ezComponent* pCC = nullptr;
   if (!GetOwner()->TryGetComponentOfBaseType(pCharType, pCC))
