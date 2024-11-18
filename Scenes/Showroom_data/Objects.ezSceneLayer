@@ -11,7 +11,7 @@ o
 		s %AssetType{"Layer"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{2901244635271379633,6534019765202990592}}
-		u4 %Hash{13411482782141375971}
+		u4 %Hash{15562480142133827265}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -51,6 +51,7 @@ o
 			s{"{ 589b3954-0f68-41de-a90c-572bb20b44a0 }"}
 			s{"{ 58e63524-2081-4782-ae3e-21a8e3cdc45b }"}
 			s{"{ 5a6d845b-3032-48c3-a5c2-c6d48544266c }"}
+			s{"{ 5ec19205-1fe4-9551-2277-0e0ec23356b9 }"}
 			s{"{ 6203debd-cce5-4c93-a213-f66beaf319d8 }"}
 			s{"{ 64ada148-3e64-477b-9b4a-2e1504bc22e7 }"}
 			s{"{ 6914fcba-bbc7-4066-a057-cb1d7f7bfbb9 }"}
@@ -132,6 +133,7 @@ o
 			s{"{ 589b3954-0f68-41de-a90c-572bb20b44a0 }"}
 			s{"{ 58e63524-2081-4782-ae3e-21a8e3cdc45b }"}
 			s{"{ 5a6d845b-3032-48c3-a5c2-c6d48544266c }"}
+			s{"{ 5ec19205-1fe4-9551-2277-0e0ec23356b9 }"}
 			s{"{ 64ada148-3e64-477b-9b4a-2e1504bc22e7 }"}
 			s{"{ 73196af8-7d11-41ae-8ff1-cdc52b699371 }"}
 			s{"{ 758f91cd-2500-4790-bfbe-cad1c4fc7a50 }"}
@@ -4588,6 +4590,18 @@ o
 }
 o
 {
+	Uuid %id{u4{10116760754071840920,4829488937775659616}}
+	s %t{"ezPrefabReferenceComponent"}
+	u3 %v{4}
+	p
+	{
+		b %Active{1}
+		VarDict %Parameters{}
+		s %Prefab{"{ 5ec19205-1fe4-9551-2277-0e0ec23356b9 }"}
+	}
+}
+o
+{
 	Uuid %id{u4{13567441387970645635,4832495062847530348}}
 	s %t{"ezGameObject"}
 	u3 %v{1}
@@ -6618,6 +6632,32 @@ o
 }
 o
 {
+	Uuid %id{u4{7504022929566630274,5526457210657896878}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{10116760754071840920,4829488937775659616}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xDC600E41,0xC797E9C0,0xD7755A3F}}
+		Quat %LocalRotation{f{0xC548BBBD,0xFF80333F,0xD9B8BBBD,0xBD7C33BF}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
 	Uuid %id{u4{8490688417408680089,5528965923140390479}}
 	s %t{"ezPrefabReferenceComponent"}
 	u3 %v{4}
@@ -8110,6 +8150,7 @@ o
 			Uuid{u4{6591371997956241814,5403660560066571654}}
 			Uuid{u4{6638704261295613187,10761885036124559073}}
 			Uuid{u4{18005302215374274104,10485091363020703718}}
+			Uuid{u4{7504022929566630274,5526457210657896878}}
 		}
 		Uuid %Settings{u4{3301291802238557629,6136890303234255164}}
 	}
