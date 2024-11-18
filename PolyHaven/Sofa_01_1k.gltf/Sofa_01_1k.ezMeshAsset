@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/Sofa_01_1k.gltf/Sofa_01_1k.gltf"}
 		}
 		Uuid %DocumentID{u4{11707325557657879182,4838299627598448417}}
-		u4 %Hash{15223263247715577522}
+		u4 %Hash{3993213752679284809}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -65,7 +65,7 @@ o
 		}
 		u1 %MaxSimplificationError{5}
 		s %MeshFile{"PolyHaven/Sofa_01_1k.gltf/Sofa_01_1k.gltf"}
-		u1 %MeshSimplification{50}
+		u1 %MeshSimplification{55}
 		s %NormalPrecision{"ezMeshNormalPrecision::_10Bit"}
 		s %PrimitiveType{"ezMeshPrimitive::File"}
 		f %Radius{0x0000003F}

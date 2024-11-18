@@ -14,15 +14,23 @@ o
 			s{"PolyHaven/modern_ceiling_lamp_01_2k.gltf/modern_ceiling_lamp_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{11446890131185073792,5478983166272556352}}
-		u4 %Hash{14368473501957898816}
+		u4 %Hash{4173097991402349175}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
-		VarArray %References
+		VarArray %PackageDeps
 		{
 			s{"{ 23d241a1-9401-4b85-9e2a-0501d75cd716 }"}
 			s{"{ 4115d2d4-749b-446c-a412-0c9c042b8dcf }"}
 			s{"{ cbfe767d-d621-4554-a543-526d96b79eba }"}
 		}
+		VarArray %References
+		{
+			s{"PolyHaven/modern_ceiling_lamp_01_2k.gltf/modern_ceiling_lamp_01_2k.gltf"}
+			s{"{ 23d241a1-9401-4b85-9e2a-0501d75cd716 }"}
+			s{"{ 4115d2d4-749b-446c-a412-0c9c042b8dcf }"}
+			s{"{ cbfe767d-d621-4554-a543-526d96b79eba }"}
+		}
+		s %Tags{""}
 	}
 }
 }
@@ -68,6 +76,7 @@ o
 	u3 %v{3}
 	p
 	{
+		b %AggressiveSimplification{0}
 		Angle %Angle{f{0xDC0FC940}}
 		b %Cap{1}
 		b %Cap2{1}
@@ -82,7 +91,9 @@ o
 			Uuid{u4{5532732395682649482,4691624791513924723}}
 			Uuid{u4{8060726673568904377,4676255887093570952}}
 		}
+		u1 %MaxSimplificationError{5}
 		s %MeshFile{"PolyHaven/modern_ceiling_lamp_01_2k.gltf/modern_ceiling_lamp_01_2k.gltf"}
+		u1 %MeshSimplification{70}
 		s %NormalPrecision{"ezMeshNormalPrecision::_10Bit"}
 		s %PrimitiveType{"ezMeshPrimitive::File"}
 		f %Radius{0x0000003F}
@@ -90,9 +101,11 @@ o
 		b %RecalculateNormals{0}
 		b %RecalculateTangents{1}
 		s %RightDir{"ezBasisAxis::PositiveX"}
+		b %SimplifyMesh{1}
 		s %TexCoordPrecision{"ezMeshTexCoordPrecision::_16Bit"}
 		f %UniformScaling{0x0000803F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
+		s %VertexColorConversion{"ezMeshVertexColorConversion::None"}
 	}
 }
 o
@@ -126,7 +139,6 @@ o
 		s %PluginName{"ezEditorPluginAssets"}
 		VarArray %Properties{}
 		s %TypeName{"ezMeshPrimitive"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -144,7 +156,6 @@ o
 		s %PluginName{"ezEditorPluginAssets"}
 		VarArray %Properties{}
 		s %TypeName{"ezMeshAssetProperties"}
-		u3 %TypeSize{1240}
 		u3 %TypeVersion{3}
 	}
 }
@@ -162,7 +173,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezDocumentRoot"}
-		u3 %TypeSize{72}
 		u3 %TypeVersion{1}
 	}
 }
@@ -180,7 +190,6 @@ o
 		s %PluginName{"ezEditorPluginAssets"}
 		VarArray %Properties{}
 		s %TypeName{"ezMaterialResourceSlot"}
-		u3 %TypeSize{136}
 		u3 %TypeVersion{1}
 	}
 }
@@ -198,7 +207,23 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezMeshTexCoordPrecision"}
-		u3 %TypeSize{1}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{1149684950174857976,12897203947091760514}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::IsEnum|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezMeshVertexColorConversion"}
 		u3 %TypeVersion{1}
 	}
 }
@@ -216,7 +241,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezMeshNormalPrecision"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -234,7 +258,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezEnumBase"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -252,7 +275,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezBasisAxis"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -270,7 +292,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezReflectedClass"}
-		u3 %TypeSize{8}
 		u3 %TypeVersion{1}
 	}
 }

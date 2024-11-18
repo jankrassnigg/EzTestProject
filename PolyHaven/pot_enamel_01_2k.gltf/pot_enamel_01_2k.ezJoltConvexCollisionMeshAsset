@@ -14,10 +14,15 @@ o
 			s{"PolyHaven/pot_enamel_01_2k.gltf/pot_enamel_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{4773930531044813212,5038854820020313690}}
-		u4 %Hash{16627706876996584381}
+		u4 %Hash{5857911679378562716}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
-		VarArray %References{}
+		VarArray %PackageDeps{}
+		VarArray %References
+		{
+			s{"PolyHaven/pot_enamel_01_2k.gltf/pot_enamel_01_2k.gltf"}
+		}
+		s %Tags{""}
 	}
 }
 }
@@ -30,16 +35,20 @@ o
 	u3 %v{1}
 	p
 	{
+		b %AggressiveSimplification{0}
 		s %ConvexMeshType{"ezJoltConvexCollisionMeshType::ConvexHull"}
 		u1 %Detail{1}
 		b %FlipForwardDir{0}
 		f %Height{0x0000803F}
 		b %IsConvexMesh{1}
 		u2 %MaxConvexPieces{5}
+		u1 %MaxSimplificationError{20}
 		s %MeshFile{"PolyHaven/pot_enamel_01_2k.gltf/pot_enamel_01_2k.gltf"}
+		u1 %MeshSimplification{50}
 		f %Radius{0x0000003F}
 		f %Radius2{0x0000003F}
 		s %RightDir{"ezBasisAxis::PositiveX"}
+		b %SimplifyMesh{1}
 		s %Surface{""}
 		VarArray %Surfaces{}
 		f %UniformScaling{0x0000803F}

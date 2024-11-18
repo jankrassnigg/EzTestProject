@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/modular_airduct_rectangular_01_1k.gltf/straight-short.glb"}
 		}
 		Uuid %DocumentID{u4{5484673057785623948,4705825846561853548}}
-		u4 %Hash{13010285180340405062}
+		u4 %Hash{11049160102858692994}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -54,7 +54,7 @@ o
 		}
 		u1 %MaxSimplificationError{5}
 		s %MeshFile{"PolyHaven/modular_airduct_rectangular_01_1k.gltf/straight-short.glb"}
-		u1 %MeshSimplification{50}
+		u1 %MeshSimplification{100}
 		s %NormalPrecision{"ezMeshNormalPrecision::_10Bit"}
 		s %PrimitiveType{"ezMeshPrimitive::File"}
 		f %Radius{0x0000003F}
@@ -62,7 +62,7 @@ o
 		b %RecalculateNormals{0}
 		b %RecalculateTangents{1}
 		s %RightDir{"ezBasisAxis::PositiveX"}
-		b %SimplifyMesh{0}
+		b %SimplifyMesh{1}
 		s %TexCoordPrecision{"ezMeshTexCoordPrecision::_16Bit"}
 		f %UniformScaling{0x0000803F}
 		s %UpDir{"ezBasisAxis::PositiveY"}

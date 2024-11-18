@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{2182870431002002852,5098238921101226530}}
+	Uuid %id{u4{6752140518457000593,4931052684837633675}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -11,17 +11,24 @@ o
 		s %AssetType{"Mesh"}
 		VarArray %Dependencies
 		{
-			s{"PolyHaven/book_encyclopedia_set_01_2k.gltf/book_encyclopedia_set_01_2k.gltf"}
+			s{"PolyHaven/horse_statue_01_1k.gltf/horse_statue_01_1k.gltf"}
 		}
-		Uuid %DocumentID{u4{2182870431002002852,5098238921101226530}}
-		u4 %Hash{18152536563803388880}
+		Uuid %DocumentID{u4{6752140518457000593,4931052684837633675}}
+		u4 %Hash{17072628298981419222}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
+		VarArray %PackageDeps
+		{
+			s{"{ 0d9d519f-7e72-4206-a78a-8a996c6d588f }"}
+			s{"{ cfe2b06d-b58f-430e-9436-e35f50e2f387 }"}
+		}
 		VarArray %References
 		{
-			s{"{ 4f51af69-cb49-432f-917d-ed8e3ece8fda }"}
-			s{"{ 537d2e92-0b8e-41cb-845e-09fab419d1b9 }"}
+			s{"PolyHaven/horse_statue_01_1k.gltf/horse_statue_01_1k.gltf"}
+			s{"{ 0d9d519f-7e72-4206-a78a-8a996c6d588f }"}
+			s{"{ cfe2b06d-b58f-430e-9436-e35f50e2f387 }"}
 		}
+		s %Tags{""}
 	}
 }
 }
@@ -29,34 +36,35 @@ Objects
 {
 o
 {
-	Uuid %id{u4{4476308820676877709,4717858486755235561}}
+	Uuid %id{u4{15404907140066898075,4722683283107092580}}
 	s %t{"ezMaterialResourceSlot"}
 	u3 %v{1}
 	p
 	{
-		s %Label{"book_encyclopedia_set_01_paper"}
-		s %Resource{"{ 4f51af69-cb49-432f-917d-ed8e3ece8fda }"}
+		s %Label{"horse_statue_01"}
+		s %Resource{"{ cfe2b06d-b58f-430e-9436-e35f50e2f387 }"}
 	}
 }
 o
 {
-	Uuid %id{u4{5606284362041262009,5158296473532760581}}
+	Uuid %id{u4{13946951155452972199,5451438685308986754}}
 	s %t{"ezMaterialResourceSlot"}
 	u3 %v{1}
 	p
 	{
-		s %Label{"book_encyclopedia_set_01_cover"}
-		s %Resource{"{ 537d2e92-0b8e-41cb-845e-09fab419d1b9 }"}
+		s %Label{"horse_statue_01_base"}
+		s %Resource{"{ 0d9d519f-7e72-4206-a78a-8a996c6d588f }"}
 	}
 }
 o
 {
-	Uuid %id{u4{17167361181848852139,5410753387806510063}}
+	Uuid %id{u4{17642179064341062303,5760648503665009492}}
 	s %t{"ezMeshAssetProperties"}
 	u3 %v{3}
 	p
 	{
-		Angle %Angle{f{0xDC0FC940}}
+		b %AggressiveSimplification{0}
+		Angle %Angle{f{0xDB0FC940}}
 		b %Cap{1}
 		b %Cap2{1}
 		u2 %Detail{0}
@@ -66,10 +74,12 @@ o
 		b %ImportMaterials{1}
 		VarArray %Materials
 		{
-			Uuid{u4{5606284362041262009,5158296473532760581}}
-			Uuid{u4{4476308820676877709,4717858486755235561}}
+			Uuid{u4{15404907140066898075,4722683283107092580}}
+			Uuid{u4{13946951155452972199,5451438685308986754}}
 		}
-		s %MeshFile{"PolyHaven/book_encyclopedia_set_01_2k.gltf/book_encyclopedia_set_01_2k.gltf"}
+		u1 %MaxSimplificationError{5}
+		s %MeshFile{"PolyHaven/horse_statue_01_1k.gltf/horse_statue_01_1k.gltf"}
+		u1 %MeshSimplification{90}
 		s %NormalPrecision{"ezMeshNormalPrecision::_10Bit"}
 		s %PrimitiveType{"ezMeshPrimitive::File"}
 		f %Radius{0x0000003F}
@@ -77,9 +87,11 @@ o
 		b %RecalculateNormals{0}
 		b %RecalculateTangents{1}
 		s %RightDir{"ezBasisAxis::PositiveX"}
+		b %SimplifyMesh{1}
 		s %TexCoordPrecision{"ezMeshTexCoordPrecision::_16Bit"}
 		f %UniformScaling{0x0000803F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
+		s %VertexColorConversion{"ezMeshVertexColorConversion::None"}
 	}
 }
 o
@@ -92,7 +104,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{17167361181848852139,5410753387806510063}}
+			Uuid{u4{17642179064341062303,5760648503665009492}}
 		}
 	}
 }
@@ -113,7 +125,6 @@ o
 		s %PluginName{"ezEditorPluginAssets"}
 		VarArray %Properties{}
 		s %TypeName{"ezMeshPrimitive"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -131,7 +142,6 @@ o
 		s %PluginName{"ezEditorPluginAssets"}
 		VarArray %Properties{}
 		s %TypeName{"ezMeshAssetProperties"}
-		u3 %TypeSize{1240}
 		u3 %TypeVersion{3}
 	}
 }
@@ -149,7 +159,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezDocumentRoot"}
-		u3 %TypeSize{72}
 		u3 %TypeVersion{1}
 	}
 }
@@ -167,7 +176,6 @@ o
 		s %PluginName{"ezEditorPluginAssets"}
 		VarArray %Properties{}
 		s %TypeName{"ezMaterialResourceSlot"}
-		u3 %TypeSize{136}
 		u3 %TypeVersion{1}
 	}
 }
@@ -185,7 +193,23 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezMeshTexCoordPrecision"}
-		u3 %TypeSize{1}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{1149684950174857976,12897203947091760514}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::IsEnum|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezMeshVertexColorConversion"}
 		u3 %TypeVersion{1}
 	}
 }
@@ -203,7 +227,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezMeshNormalPrecision"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -221,7 +244,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezEnumBase"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -239,7 +261,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezBasisAxis"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -257,7 +278,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezReflectedClass"}
-		u3 %TypeSize{8}
 		u3 %TypeVersion{1}
 	}
 }

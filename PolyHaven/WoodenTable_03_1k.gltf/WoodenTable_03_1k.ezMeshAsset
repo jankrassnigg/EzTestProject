@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/WoodenTable_03_1k.gltf/WoodenTable_03_1k.gltf"}
 		}
 		Uuid %DocumentID{u4{11898852560206886297,5620574881629703391}}
-		u4 %Hash{11287440587950971685}
+		u4 %Hash{10105353443950177442}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -73,7 +73,7 @@ o
 		b %RecalculateNormals{0}
 		b %RecalculateTangents{1}
 		s %RightDir{"ezBasisAxis::PositiveX"}
-		b %SimplifyMesh{0}
+		b %SimplifyMesh{1}
 		s %TexCoordPrecision{"ezMeshTexCoordPrecision::_16Bit"}
 		f %UniformScaling{0x0000803F}
 		s %UpDir{"ezBasisAxis::PositiveY"}

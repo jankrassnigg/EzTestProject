@@ -14,13 +14,19 @@ o
 			s{"PolyHaven/wooden_crate_02_2k.gltf/wooden_crate_02_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{16095790185289265841,4856379074940333559}}
-		u4 %Hash{18415309202567523824}
+		u4 %Hash{2335397031687942645}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
-		VarArray %References
+		VarArray %PackageDeps
 		{
 			s{"{ a4e60ee2-4233-48f6-b430-b7fe65f813cb }"}
 		}
+		VarArray %References
+		{
+			s{"PolyHaven/wooden_crate_02_2k.gltf/wooden_crate_02_2k.gltf"}
+			s{"{ a4e60ee2-4233-48f6-b430-b7fe65f813cb }"}
+		}
+		s %Tags{""}
 	}
 }
 }
@@ -33,6 +39,7 @@ o
 	u3 %v{3}
 	p
 	{
+		b %AggressiveSimplification{0}
 		Angle %Angle{f{0xDB0FC940}}
 		b %Cap{1}
 		b %Cap2{1}
@@ -45,7 +52,9 @@ o
 		{
 			Uuid{u4{11783695844885548683,5243387181850601271}}
 		}
+		u1 %MaxSimplificationError{5}
 		s %MeshFile{"PolyHaven/wooden_crate_02_2k.gltf/wooden_crate_02_2k.gltf"}
+		u1 %MeshSimplification{35}
 		s %NormalPrecision{"ezMeshNormalPrecision::_10Bit"}
 		s %PrimitiveType{"ezMeshPrimitive::File"}
 		f %Radius{0x0000003F}
@@ -53,9 +62,11 @@ o
 		b %RecalculateNormals{0}
 		b %RecalculateTangents{1}
 		s %RightDir{"ezBasisAxis::PositiveZ"}
+		b %SimplifyMesh{1}
 		s %TexCoordPrecision{"ezMeshTexCoordPrecision::_16Bit"}
 		f %UniformScaling{0x0000803F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
+		s %VertexColorConversion{"ezMeshVertexColorConversion::None"}
 	}
 }
 o
@@ -168,6 +179,23 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezMeshTexCoordPrecision"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{1149684950174857976,12897203947091760514}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::IsEnum|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezMeshVertexColorConversion"}
 		u3 %TypeVersion{1}
 	}
 }

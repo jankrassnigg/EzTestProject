@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/standing_picture_frame_01_1k.gltf/standing_picture_frame_01_1k.gltf"}
 		}
 		Uuid %DocumentID{u4{7146933975016090545,5389818628860663726}}
-		u4 %Hash{12811183115615422782}
+		u4 %Hash{3127725418964967234}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -58,9 +58,9 @@ o
 			Uuid{u4{9471326227547760570,5566275100150415411}}
 			Uuid{u4{13628822022164702091,5042831368701793018}}
 		}
-		u1 %MaxSimplificationError{5}
+		u1 %MaxSimplificationError{45}
 		s %MeshFile{"PolyHaven/standing_picture_frame_01_1k.gltf/standing_picture_frame_01_1k.gltf"}
-		u1 %MeshSimplification{50}
+		u1 %MeshSimplification{100}
 		s %NormalPrecision{"ezMeshNormalPrecision::_10Bit"}
 		s %PrimitiveType{"ezMeshPrimitive::File"}
 		f %Radius{0x0000003F}
@@ -68,7 +68,7 @@ o
 		b %RecalculateNormals{0}
 		b %RecalculateTangents{1}
 		s %RightDir{"ezBasisAxis::PositiveZ"}
-		b %SimplifyMesh{0}
+		b %SimplifyMesh{1}
 		s %TexCoordPrecision{"ezMeshTexCoordPrecision::_16Bit"}
 		f %UniformScaling{0x0000803F}
 		s %UpDir{"ezBasisAxis::PositiveY"}

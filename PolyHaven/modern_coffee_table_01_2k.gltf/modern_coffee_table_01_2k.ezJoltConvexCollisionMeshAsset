@@ -14,14 +14,19 @@ o
 			s{"PolyHaven/modern_coffee_table_01_2k.gltf/modern_coffee_table_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{15284215859151210661,5015635178906300987}}
-		u4 %Hash{13157830846140460732}
+		u4 %Hash{16523771395050773952}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
-		VarArray %References
+		VarArray %PackageDeps
 		{
 			s{"{ 14bf3313-89f3-4692-873c-d127980bf748 }"}
 			s{"{ 58d44330-37a1-4c9d-9fa2-0540a1d8ee90 }"}
 		}
+		VarArray %References
+		{
+			s{"PolyHaven/modern_coffee_table_01_2k.gltf/modern_coffee_table_01_2k.gltf"}
+		}
+		s %Tags{""}
 	}
 }
 }
@@ -34,16 +39,20 @@ o
 	u3 %v{1}
 	p
 	{
+		b %AggressiveSimplification{0}
 		s %ConvexMeshType{"ezJoltConvexCollisionMeshType::ConvexHull"}
 		u1 %Detail{1}
 		b %FlipForwardDir{0}
 		f %Height{0x0000803F}
 		b %IsConvexMesh{1}
 		u2 %MaxConvexPieces{5}
+		u1 %MaxSimplificationError{20}
 		s %MeshFile{"PolyHaven/modern_coffee_table_01_2k.gltf/modern_coffee_table_01_2k.gltf"}
+		u1 %MeshSimplification{50}
 		f %Radius{0x0000003F}
 		f %Radius2{0x0000003F}
 		s %RightDir{"ezBasisAxis::PositiveX"}
+		b %SimplifyMesh{0}
 		s %Surface{"{ 14bf3313-89f3-4692-873c-d127980bf748 }"}
 		VarArray %Surfaces
 		{
@@ -60,6 +69,7 @@ o
 	u3 %v{1}
 	p
 	{
+		b %Exclude{0}
 		s %Label{"modern_coffee_table_01"}
 		s %Resource{"{ 58d44330-37a1-4c9d-9fa2-0540a1d8ee90 }"}
 	}
@@ -95,7 +105,6 @@ o
 		s %PluginName{"ezEditorPluginJolt"}
 		VarArray %Properties{}
 		s %TypeName{"ezJoltConvexCollisionMeshType"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -113,7 +122,6 @@ o
 		s %PluginName{"ezEditorPluginJolt"}
 		VarArray %Properties{}
 		s %TypeName{"ezJoltSurfaceResourceSlot"}
-		u3 %TypeSize{128}
 		u3 %TypeVersion{1}
 	}
 }
@@ -131,7 +139,6 @@ o
 		s %PluginName{"ezEditorPluginJolt"}
 		VarArray %Properties{}
 		s %TypeName{"ezJoltCollisionMeshAssetProperties"}
-		u3 %TypeSize{1224}
 		u3 %TypeVersion{1}
 	}
 }
@@ -149,7 +156,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezDocumentRoot"}
-		u3 %TypeSize{72}
 		u3 %TypeVersion{1}
 	}
 }
@@ -167,7 +173,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezEnumBase"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -185,7 +190,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezBasisAxis"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -203,7 +207,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezReflectedClass"}
-		u3 %TypeSize{8}
 		u3 %TypeVersion{1}
 	}
 }

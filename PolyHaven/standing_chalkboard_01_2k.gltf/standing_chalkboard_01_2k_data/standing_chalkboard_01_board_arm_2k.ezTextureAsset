@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{11607681854062585019,5392024190679825638}}
+	Uuid %id{u4{12839769208526381189,5259509489086210669}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -11,13 +11,21 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"PolyHaven/book_encyclopedia_set_01_2k.gltf/textures/book_encyclopedia_set_01_paper_nor_gl_2k.jpg"}
+			s{"PolyHaven/standing_chalkboard_01_2k.gltf/textures/standing_chalkboard_01_board_arm_2k.jpg"}
 		}
-		Uuid %DocumentID{u4{11607681854062585019,5392024190679825638}}
-		u4 %Hash{1330046667964140694}
+		Uuid %DocumentID{u4{12839769208526381189,5259509489086210669}}
+		u4 %Hash{14247024951735027267}
 		VarArray %MetaInfo{}
-		VarArray %Outputs{}
-		VarArray %References{}
+		VarArray %Outputs
+		{
+			s{"LOWRES"}
+		}
+		VarArray %PackageDeps{}
+		VarArray %References
+		{
+			s{"PolyHaven/standing_chalkboard_01_2k.gltf/textures/standing_chalkboard_01_board_arm_2k.jpg"}
+		}
+		s %Tags{""}
 	}
 }
 }
@@ -25,7 +33,7 @@ Objects
 {
 o
 {
-	Uuid %id{u4{2850327074555555764,5517726715196613139}}
+	Uuid %id{u4{3936182680542164135,5506789789586667783}}
 	s %t{"ezTextureAssetProperties"}
 	u3 %v{5}
 	p
@@ -41,7 +49,7 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"PolyHaven/book_encyclopedia_set_01_2k.gltf/textures/book_encyclopedia_set_01_paper_nor_gl_2k.jpg"}
+		s %Input1{"PolyHaven/standing_chalkboard_01_2k.gltf/textures/standing_chalkboard_01_board_arm_2k.jpg"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}
@@ -51,7 +59,7 @@ o
 		b %PreserveAlphaCoverage{0}
 		s %Resolution{"ezTexture2DResolution::Fixed256x256"}
 		s %TextureFilter{"ezTextureFilterSetting::DefaultQuality"}
-		s %Usage{"ezTexConvUsage::NormalMap"}
+		s %Usage{"ezTexConvUsage::Linear"}
 	}
 }
 o
@@ -64,7 +72,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{2850327074555555764,5517726715196613139}}
+			Uuid{u4{3936182680542164135,5506789789586667783}}
 		}
 	}
 }
@@ -85,7 +93,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezTexConvCompressionMode"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -103,7 +110,6 @@ o
 		s %PluginName{"ezEditorPluginAssets"}
 		VarArray %Properties{}
 		s %TypeName{"ezTextureAssetProperties"}
-		u3 %TypeSize{296}
 		u3 %TypeVersion{5}
 	}
 }
@@ -121,7 +127,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezTexConvUsage"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -139,7 +144,6 @@ o
 		s %PluginName{"ezEditorPluginAssets"}
 		VarArray %Properties{}
 		s %TypeName{"ezRenderTargetFormat"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -157,7 +161,6 @@ o
 		s %PluginName{"ezEditorPluginAssets"}
 		VarArray %Properties{}
 		s %TypeName{"ezTexture2DResolution"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -175,7 +178,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezDocumentRoot"}
-		u3 %TypeSize{72}
 		u3 %TypeVersion{1}
 	}
 }
@@ -193,7 +195,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezTextureFilterSetting"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -211,7 +212,6 @@ o
 		s %PluginName{"ezEditorPluginAssets"}
 		VarArray %Properties{}
 		s %TypeName{"ezTexture2DChannelMappingEnum"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -229,7 +229,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezImageAddressMode"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -247,7 +246,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezEnumBase"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -265,7 +263,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezTexConvMipmapMode"}
-		u3 %TypeSize{1}
 		u3 %TypeVersion{1}
 	}
 }
@@ -283,7 +280,6 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezReflectedClass"}
-		u3 %TypeSize{8}
 		u3 %TypeVersion{1}
 	}
 }
