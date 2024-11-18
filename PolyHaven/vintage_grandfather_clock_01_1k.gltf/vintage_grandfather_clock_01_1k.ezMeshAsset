@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{4475908607929356466,4867204142030372782}}
+	Uuid %id{u4{7151440602531322029,5485101572444022124}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -11,20 +11,22 @@ o
 		s %AssetType{"Mesh"}
 		VarArray %Dependencies
 		{
-			s{"PolyHaven/GothicCommode_01_1k.gltf/GothicCommode_01_1k.gltf"}
+			s{"PolyHaven/vintage_grandfather_clock_01_1k.gltf/vintage_grandfather_clock_01_1k.gltf"}
 		}
-		Uuid %DocumentID{u4{4475908607929356466,4867204142030372782}}
-		u4 %Hash{1606977812225091405}
+		Uuid %DocumentID{u4{7151440602531322029,5485101572444022124}}
+		u4 %Hash{16058931908210159085}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
-			s{"{ ea14f946-e117-4010-afbc-2fe793544dda }"}
+			s{"{ 13221ec2-31f2-4d31-bea4-fdd841fb75a8 }"}
+			s{"{ 16cfe7b1-fe34-4487-a967-e0d13652394f }"}
 		}
 		VarArray %References
 		{
-			s{"PolyHaven/GothicCommode_01_1k.gltf/GothicCommode_01_1k.gltf"}
-			s{"{ ea14f946-e117-4010-afbc-2fe793544dda }"}
+			s{"PolyHaven/vintage_grandfather_clock_01_1k.gltf/vintage_grandfather_clock_01_1k.gltf"}
+			s{"{ 13221ec2-31f2-4d31-bea4-fdd841fb75a8 }"}
+			s{"{ 16cfe7b1-fe34-4487-a967-e0d13652394f }"}
 		}
 		s %Tags{""}
 	}
@@ -34,7 +36,7 @@ Objects
 {
 o
 {
-	Uuid %id{u4{15977142805111118525,5174571123021538643}}
+	Uuid %id{u4{10695988188102468521,4690407975057936744}}
 	s %t{"ezMeshAssetProperties"}
 	u3 %v{3}
 	p
@@ -50,11 +52,12 @@ o
 		b %ImportMaterials{1}
 		VarArray %Materials
 		{
-			Uuid{u4{8796125050781509294,5361691165551131165}}
+			Uuid{u4{9074092431665615751,5553976341339892023}}
+			Uuid{u4{7915599387755503774,5055982894291968843}}
 		}
 		u1 %MaxSimplificationError{5}
-		s %MeshFile{"PolyHaven/GothicCommode_01_1k.gltf/GothicCommode_01_1k.gltf"}
-		u1 %MeshSimplification{55}
+		s %MeshFile{"PolyHaven/vintage_grandfather_clock_01_1k.gltf/vintage_grandfather_clock_01_1k.gltf"}
+		u1 %MeshSimplification{50}
 		s %NormalPrecision{"ezMeshNormalPrecision::_10Bit"}
 		s %PrimitiveType{"ezMeshPrimitive::File"}
 		f %Radius{0x0000003F}
@@ -71,13 +74,24 @@ o
 }
 o
 {
-	Uuid %id{u4{8796125050781509294,5361691165551131165}}
+	Uuid %id{u4{7915599387755503774,5055982894291968843}}
 	s %t{"ezMaterialResourceSlot"}
 	u3 %v{1}
 	p
 	{
-		s %Label{"GothicCommode_01"}
-		s %Resource{"{ ea14f946-e117-4010-afbc-2fe793544dda }"}
+		s %Label{"vintage_grandfather_clock_01_glass"}
+		s %Resource{"{ 16cfe7b1-fe34-4487-a967-e0d13652394f }"}
+	}
+}
+o
+{
+	Uuid %id{u4{9074092431665615751,5553976341339892023}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"vintage_grandfather_clock_01"}
+		s %Resource{"{ 13221ec2-31f2-4d31-bea4-fdd841fb75a8 }"}
 	}
 }
 o
@@ -90,7 +104,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{15977142805111118525,5174571123021538643}}
+			Uuid{u4{10695988188102468521,4690407975057936744}}
 		}
 	}
 }
