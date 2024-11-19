@@ -14,7 +14,7 @@ o
 			s{"{ 7c71fc2d-2a1a-4938-9305-f3a0f26d73cc }"}
 		}
 		Uuid %DocumentID{u4{16323989234674319496,5541801524592302185}}
-		u4 %Hash{14033134211535132974}
+		u4 %Hash{6834100543210047898}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -22,14 +22,12 @@ o
 			s{"{ 56a944d9-3686-4730-8b7d-104d2f02e2b1 }"}
 			s{"{ 7c71fc2d-2a1a-4938-9305-f3a0f26d73cc }"}
 			s{"{ 7d0be14a-5de9-4c1e-96af-2c7f53aa6c58 }"}
-			s{"{ ddac3034-9861-4d2e-9c2c-490ca1e10f4e }"}
 			s{"{ f23a3fa6-b29e-4653-a75f-b29ff721b8ce }"}
 		}
 		VarArray %References
 		{
 			s{"{ 7c71fc2d-2a1a-4938-9305-f3a0f26d73cc }"}
 			s{"{ 7d0be14a-5de9-4c1e-96af-2c7f53aa6c58 }"}
-			s{"{ ddac3034-9861-4d2e-9c2c-490ca1e10f4e }"}
 			s{"{ f23a3fa6-b29e-4653-a75f-b29ff721b8ce }"}
 		}
 		s %Tags{""}
@@ -56,9 +54,9 @@ o
 		f %MetallicValue{0}
 		s %NormalTexture{"{ 7d0be14a-5de9-4c1e-96af-2c7f53aa6c58 }"}
 		s %OcclusionTexture{""}
-		s %OrmTexture{"{ ddac3034-9861-4d2e-9c2c-490ca1e10f4e }"}
+		s %OrmTexture{""}
 		s %RoughnessTexture{""}
-		f %RoughnessValue{0x3333333F}
+		f %RoughnessValue{0x0000803F}
 		s %SHADING_MODE{"SHADING_MODE::SHADING_MODE_LIT"}
 		b %TWO_SIDED{0}
 		b %UseBaseTexture{1}
@@ -66,7 +64,7 @@ o
 		b %UseMetallicTexture{0}
 		b %UseNormalTexture{1}
 		b %UseOcclusionTexture{0}
-		b %UseOrmTexture{1}
+		b %UseOrmTexture{0}
 		b %UseRoughnessTexture{0}
 	}
 }

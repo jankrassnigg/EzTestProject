@@ -21,7 +21,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{2721560248301467930,9839333268616486115}}
-		u4 %Hash{3466466241742789664}
+		u4 %Hash{11849995198396380385}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{4455235670604856189,5095343798045264387}}
@@ -142,7 +142,7 @@ o
 		f %GravityFactor{0x0000803F}
 		b %Kinematic{0}
 		f %LinearDamping{0xCDCC4C3E}
-		f %Mass{0x0000803F}
+		f %Mass{0x00000040}
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}

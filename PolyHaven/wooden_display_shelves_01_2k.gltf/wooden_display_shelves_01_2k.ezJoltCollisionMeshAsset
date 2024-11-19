@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/wooden_display_shelves_01_2k.gltf/wooden_display_shelves_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{7956499559462077849,5543595812641441002}}
-		u4 %Hash{9000151040171676675}
+		u4 %Hash{7278524094697039167}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -69,7 +69,7 @@ o
 		{
 			Uuid{u4{5356854696017074319,4637321086663053319}}
 		}
-		f %UniformScaling{0x0000803F}
+		f %UniformScaling{0x0000C03F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 	}
 }

@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/wooden_display_shelves_01_2k.gltf/wooden_display_shelves_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{8927309795007615160,5089659704406677749}}
-		u4 %Hash{11775818325928621789}
+		u4 %Hash{13028555824331842603}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -64,7 +64,7 @@ o
 		s %RightDir{"ezBasisAxis::PositiveZ"}
 		b %SimplifyMesh{1}
 		s %TexCoordPrecision{"ezMeshTexCoordPrecision::_16Bit"}
-		f %UniformScaling{0x0000803F}
+		f %UniformScaling{0x0000C03F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 		s %VertexColorConversion{"ezMeshVertexColorConversion::None"}
 	}

@@ -11,7 +11,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{3762155954619595530,10109334088401710135}}
-		u4 %Hash{17408213193234733651}
+		u4 %Hash{6762363514191142135}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{18109574081511312074,17852915168099253588}}
@@ -131,6 +131,17 @@ o
 	{
 		b %Active{1}
 		f %Radius{0xCDCC4C3D}
+	}
+}
+o
+{
+	Uuid %id{u4{16674472932534004893,5521206366369491432}}
+	s %t{"ezFmodListenerComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		u1 %ListenerIndex{0}
 	}
 }
 o
@@ -264,6 +275,7 @@ o
 			Uuid{u4{7274621451599818875,1684308076392842720}}
 			Uuid{u4{15177458110952034583,6710155019620363084}}
 			Uuid{u4{1782351663052442255,5260869815680997060}}
+			Uuid{u4{16674472932534004893,5521206366369491432}}
 		}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0,0,0xCDCCCC3F}}
@@ -345,7 +357,7 @@ o
 		f %WalkSpeedCrouching{0x00000040}
 		f %WalkSpeedRunning{0x00002041}
 		f %WalkSpeedStanding{0x00008040}
-		s %WalkSurfaceInteraction{"Footstep_Robot"}
+		s %WalkSurfaceInteraction{"Footstep"}
 	}
 }
 }
@@ -413,6 +425,23 @@ o
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::ReadOnly"}
 		s %Name{"ezOnJoltContact::ImpactReactions"}
 		s %Type{"ezUInt32"}
+	}
+}
+o
+{
+	Uuid %id{u4{12339003457353207217,317585083296737199}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezFmodComponent"}
+		s %PluginName{"ezEditorPluginFmod"}
+		VarArray %Properties{}
+		s %TypeName{"ezFmodListenerComponent"}
+		u3 %TypeVersion{1}
 	}
 }
 o
@@ -2339,6 +2368,23 @@ o
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
 		s %Name{"Density"}
 		s %Type{"float"}
+	}
+}
+o
+{
+	Uuid %id{u4{1059777785414581172,10096107093115669027}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Abstract|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezComponent"}
+		s %PluginName{"ezEditorPluginFmod"}
+		VarArray %Properties{}
+		s %TypeName{"ezFmodComponent"}
+		u3 %TypeVersion{1}
 	}
 }
 o
