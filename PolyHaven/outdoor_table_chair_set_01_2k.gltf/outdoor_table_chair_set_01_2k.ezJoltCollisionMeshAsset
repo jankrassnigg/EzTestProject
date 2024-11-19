@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/outdoor_table_chair_set_01_2k.gltf/outdoor_table_chair_set_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{13263987258342506168,4844006618326761856}}
-		u4 %Hash{2674188549102045988}
+		u4 %Hash{5719292142170520453}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -70,7 +70,7 @@ o
 			Uuid{u4{10196999621267467405,4652087995409244553}}
 			Uuid{u4{16942022319788936880,4976448972073929014}}
 		}
-		f %UniformScaling{0x0000803F}
+		f %UniformScaling{0x6666A63F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 	}
 }

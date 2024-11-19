@@ -2,31 +2,25 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{2381162273044081840,5068851304923300773}}
+	Uuid %id{u4{11305088266740624271,5141241246533228036}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
 	p
 	{
 		s %AssetType{"Mesh"}
-		VarArray %Dependencies
-		{
-			s{"PolyHaven/outdoor_table_chair_set_01_2k.gltf/outdoor_table_chair_set_01_2k.gltf"}
-		}
-		Uuid %DocumentID{u4{2381162273044081840,5068851304923300773}}
-		u4 %Hash{18356890716713036704}
+		VarArray %Dependencies{}
+		Uuid %DocumentID{u4{11305088266740624271,5141241246533228036}}
+		u4 %Hash{7277753433652001674}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
-			s{"{ 792584ea-37f2-428c-8b09-a66db639e5df }"}
-			s{"{ c560fbef-8888-425d-ba79-f77f610e0847 }"}
+			s{"{ 7bf977c8-fb48-4612-a8ed-11eb234a3ef7 }"}
 		}
 		VarArray %References
 		{
-			s{"PolyHaven/outdoor_table_chair_set_01_2k.gltf/outdoor_table_chair_set_01_2k.gltf"}
-			s{"{ 792584ea-37f2-428c-8b09-a66db639e5df }"}
-			s{"{ c560fbef-8888-425d-ba79-f77f610e0847 }"}
+			s{"{ 7bf977c8-fb48-4612-a8ed-11eb234a3ef7 }"}
 		}
 		s %Tags{""}
 	}
@@ -36,35 +30,13 @@ Objects
 {
 o
 {
-	Uuid %id{u4{3368983769850749338,4926941001560093398}}
-	s %t{"ezMaterialResourceSlot"}
-	u3 %v{1}
-	p
-	{
-		s %Label{"outdoor_table_chair_set_01_chair"}
-		s %Resource{"{ 792584ea-37f2-428c-8b09-a66db639e5df }"}
-	}
-}
-o
-{
-	Uuid %id{u4{369911559456269456,5322886437978209703}}
-	s %t{"ezMaterialResourceSlot"}
-	u3 %v{1}
-	p
-	{
-		s %Label{"outdoor_table_chair_set_01_table"}
-		s %Resource{"{ c560fbef-8888-425d-ba79-f77f610e0847 }"}
-	}
-}
-o
-{
-	Uuid %id{u4{1007744616684301500,5760112256949477712}}
+	Uuid %id{u4{1075436127418007739,4940305675520919406}}
 	s %t{"ezMeshAssetProperties"}
 	u3 %v{3}
 	p
 	{
 		b %AggressiveSimplification{0}
-		Angle %Angle{f{0xDC0FC940}}
+		Angle %Angle{f{0xDB0FC940}}
 		b %Cap{1}
 		b %Cap2{1}
 		u2 %Detail{0}
@@ -74,24 +46,34 @@ o
 		b %ImportMaterials{1}
 		VarArray %Materials
 		{
-			Uuid{u4{3368983769850749338,4926941001560093398}}
-			Uuid{u4{369911559456269456,5322886437978209703}}
+			Uuid{u4{6911141944220063932,5144334544659972227}}
 		}
 		u1 %MaxSimplificationError{5}
-		s %MeshFile{"PolyHaven/outdoor_table_chair_set_01_2k.gltf/outdoor_table_chair_set_01_2k.gltf"}
-		u1 %MeshSimplification{49}
+		s %MeshFile{""}
+		u1 %MeshSimplification{50}
 		s %NormalPrecision{"ezMeshNormalPrecision::_10Bit"}
-		s %PrimitiveType{"ezMeshPrimitive::File"}
+		s %PrimitiveType{"ezMeshPrimitive::Rect"}
 		f %Radius{0x0000003F}
 		f %Radius2{0x0000003F}
 		b %RecalculateNormals{0}
 		b %RecalculateTangents{1}
 		s %RightDir{"ezBasisAxis::PositiveX"}
-		b %SimplifyMesh{1}
+		b %SimplifyMesh{0}
 		s %TexCoordPrecision{"ezMeshTexCoordPrecision::_16Bit"}
-		f %UniformScaling{0x6666A63F}
+		f %UniformScaling{0x00000041}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 		s %VertexColorConversion{"ezMeshVertexColorConversion::None"}
+	}
+}
+o
+{
+	Uuid %id{u4{6911141944220063932,5144334544659972227}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"Default"}
+		s %Resource{"{ 7bf977c8-fb48-4612-a8ed-11eb234a3ef7 }"}
 	}
 }
 o
@@ -104,7 +86,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{1007744616684301500,5760112256949477712}}
+			Uuid{u4{1075436127418007739,4940305675520919406}}
 		}
 	}
 }

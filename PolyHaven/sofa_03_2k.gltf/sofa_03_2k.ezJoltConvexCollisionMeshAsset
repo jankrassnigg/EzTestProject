@@ -11,7 +11,7 @@ o
 		s %AssetType{"Jolt_Colmesh_Convex"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{18345334139235906953,5056619727936520501}}
-		u4 %Hash{3709282833696339611}
+		u4 %Hash{15456783978079743188}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -55,7 +55,7 @@ o
 			Uuid{u4{5600481483977398953,5402767301878424472}}
 			Uuid{u4{8256736989720133550,5554009544955556586}}
 		}
-		f %UniformScaling{0x0000803F}
+		f %UniformScaling{0x9A99993F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 	}
 }

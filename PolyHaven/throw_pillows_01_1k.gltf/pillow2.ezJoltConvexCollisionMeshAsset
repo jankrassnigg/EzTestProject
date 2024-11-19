@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{2719452324113040268,4705448751251966982}}
+	Uuid %id{u4{4998832573163004863,5261072182216268331}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -11,19 +11,16 @@ o
 		s %AssetType{"Jolt_Colmesh_Convex"}
 		VarArray %Dependencies
 		{
-			s{"PolyHaven/alarm_clock_01_2k.gltf/alarm_clock_01_2k.gltf"}
+			s{"PolyHaven/throw_pillows_01_1k.gltf/pillow2.glb"}
 		}
-		Uuid %DocumentID{u4{2719452324113040268,4705448751251966982}}
-		u4 %Hash{11416623939500353739}
+		Uuid %DocumentID{u4{4998832573163004863,5261072182216268331}}
+		u4 %Hash{1242502993108913204}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
-		VarArray %PackageDeps
-		{
-			s{"{ 72115f7a-5947-4a21-899f-868368bd41d7 }"}
-		}
+		VarArray %PackageDeps{}
 		VarArray %References
 		{
-			s{"PolyHaven/alarm_clock_01_2k.gltf/alarm_clock_01_2k.gltf"}
+			s{"PolyHaven/throw_pillows_01_1k.gltf/pillow2.glb"}
 		}
 		s %Tags{""}
 	}
@@ -33,31 +30,7 @@ Objects
 {
 o
 {
-	Uuid %id{u4{15036313788562060704,5196654040434047670}}
-	s %t{"ezJoltSurfaceResourceSlot"}
-	u3 %v{1}
-	p
-	{
-		b %Exclude{0}
-		s %Label{"alarm_clock_01_glass"}
-		s %Resource{""}
-	}
-}
-o
-{
-	Uuid %id{u4{17075243835790180739,5214814813199818399}}
-	s %t{"ezJoltSurfaceResourceSlot"}
-	u3 %v{1}
-	p
-	{
-		b %Exclude{0}
-		s %Label{"alarm_clock_01"}
-		s %Resource{""}
-	}
-}
-o
-{
-	Uuid %id{u4{14574950564721408667,5582899424031052829}}
+	Uuid %id{u4{16017708733258981090,4749308847727085500}}
 	s %t{"ezJoltCollisionMeshAssetProperties"}
 	u3 %v{1}
 	p
@@ -65,24 +38,20 @@ o
 		b %AggressiveSimplification{0}
 		s %ConvexMeshType{"ezJoltConvexCollisionMeshType::ConvexHull"}
 		u1 %Detail{1}
-		b %FlipForwardDir{1}
+		b %FlipForwardDir{0}
 		f %Height{0x0000803F}
 		b %IsConvexMesh{1}
 		u2 %MaxConvexPieces{5}
-		u1 %MaxSimplificationError{20}
-		s %MeshFile{"PolyHaven/alarm_clock_01_2k.gltf/alarm_clock_01_2k.gltf"}
+		u1 %MaxSimplificationError{6}
+		s %MeshFile{"PolyHaven/throw_pillows_01_1k.gltf/pillow2.glb"}
 		u1 %MeshSimplification{100}
 		f %Radius{0x0000003F}
 		f %Radius2{0x0000003F}
 		s %RightDir{"ezBasisAxis::PositiveX"}
-		b %SimplifyMesh{0}
-		s %Surface{"{ 72115f7a-5947-4a21-899f-868368bd41d7 }"}
-		VarArray %Surfaces
-		{
-			Uuid{u4{17075243835790180739,5214814813199818399}}
-			Uuid{u4{15036313788562060704,5196654040434047670}}
-		}
-		f %UniformScaling{0x0000C03F}
+		b %SimplifyMesh{1}
+		s %Surface{""}
+		VarArray %Surfaces{}
+		f %UniformScaling{0x0000803F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 	}
 }
@@ -96,7 +65,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{14574950564721408667,5582899424031052829}}
+			Uuid{u4{16017708733258981090,4749308847727085500}}
 		}
 	}
 }

@@ -21,7 +21,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{1110014719621575950,10087718045189923550}}
-		u4 %Hash{16946275525220636202}
+		u4 %Hash{15111152348257244556}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{3684881514511967074,106891069427195787}}
@@ -96,18 +96,6 @@ o
 }
 o
 {
-	Uuid %id{u4{7889248700966003369,5268882046792956610}}
-	s %t{"ezGrabbableItemComponent"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		b %DebugShowPoints{0}
-		VarArray %GrabPoints{}
-	}
-}
-o
-{
 	Uuid %id{u4{17051150979387638205,5402295181342862414}}
 	s %t{"ezJoltDynamicActorComponent"}
 	u3 %v{4}
@@ -118,7 +106,7 @@ o
 		f %AngularDamping{0xCDCC4C3E}
 		Vec3 %CenterOfMass{f{0,0,0}}
 		u1 %CollisionLayer{0}
-		b %ContinuousCollisionDetection{0}
+		b %ContinuousCollisionDetection{1}
 		b %CustomCenterOfMass{0}
 		f %Density{0x0000C842}
 		f %GravityFactor{0x0000803F}
@@ -146,7 +134,6 @@ o
 		{
 			Uuid{u4{15463321117222113944,4822429386071819302}}
 			Uuid{u4{17051150979387638205,5402295181342862414}}
-			Uuid{u4{7889248700966003369,5268882046792956610}}
 		}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0,0,0}}
@@ -397,23 +384,6 @@ o
 }
 o
 {
-	Uuid %id{u4{17139407494789178422,2798501593186722351}}
-	s %t{"ezReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"ezComponent"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"ezGrabbableItemComponent"}
-		u3 %TypeVersion{1}
-	}
-}
-o
-{
 	Uuid %id{u4{10916935353549710630,2962763290225888874}}
 	s %t{"ezFunctionArgumentDescriptor"}
 	u3 %v{1}
@@ -421,23 +391,6 @@ o
 	{
 		s %Flags{""}
 		s %Type{""}
-	}
-}
-o
-{
-	Uuid %id{u4{6755576329617394298,3026008437813170610}}
-	s %t{"ezReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{""}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"ezGrabbableItemGrabPoint"}
-		u3 %TypeVersion{1}
 	}
 }
 o

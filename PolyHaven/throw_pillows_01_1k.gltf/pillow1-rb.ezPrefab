@@ -21,7 +21,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{17926048630399451459,9924594076985765858}}
-		u4 %Hash{15984222377269077288}
+		u4 %Hash{533365022169496022}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{17160079245302036411,5367012769133567434}}
@@ -42,6 +42,32 @@ o
 }
 Objects
 {
+o
+{
+	Uuid %id{u4{2391679751418929061,4659304497775121663}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children
+		{
+			Uuid{u4{660423393653634985,5436451493842592148}}
+		}
+		VarArray %Components{}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{"<Prefab-Root>"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
 o
 {
 	Uuid %id{u4{8034308527999539862,5336088626933011069}}
@@ -69,12 +95,12 @@ o
 			Uuid{u4{8034308527999539862,5336088626933011069}}
 		}
 		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0,0,0}}
+		Vec3 %LocalPosition{f{0,0xD16B75BE,0}}
 		Quat %LocalRotation{f{0,0,0,0x0000803F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{"<Prefab-Root>"}
+		s %Name{"Pillow"}
 		VarArray %Tags
 		{
 			s{"CastShadow"}
@@ -115,7 +141,7 @@ o
 		f %GravityFactor{0x0000803F}
 		b %Kinematic{0}
 		f %LinearDamping{0xCDCC4C3E}
-		f %Mass{0}
+		f %Mass{0x00000040}
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
@@ -131,7 +157,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{660423393653634985,5436451493842592148}}
+			Uuid{u4{2391679751418929061,4659304497775121663}}
 		}
 		Uuid %Settings{u4{8421550266703110981,9950868750201251819}}
 	}

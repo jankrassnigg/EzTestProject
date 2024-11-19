@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{14356352693604158344,4995772583069324340}}
+	Uuid %id{u4{13215052553763461915,10636138025618707962}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -10,28 +10,28 @@ o
 	{
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
-		Uuid %DocumentID{u4{14356352693604158344,4995772583069324340}}
-		u4 %Hash{9109697101603557291}
+		Uuid %DocumentID{u4{13215052553763461915,10636138025618707962}}
+		u4 %Hash{16674469838549907754}
 		VarArray %MetaInfo
 		{
-			Uuid{u4{11682980545735745482,14953139487805728924}}
+			Uuid{u4{2180057890863575357,16188812739415176724}}
 		}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
-			s{"{ af5d0d5e-6f58-4227-a925-7ada402e6a4c }"}
-			s{"{ e134f6ed-97b3-4791-ba2c-916a0d594fc2 }"}
+			s{"{ 06135e5a-9bc3-45ed-9c69-514d86684042 }"}
+			s{"{ 78e76544-9132-4b30-a9c0-d93f61c4fce7 }"}
 		}
 		VarArray %References
 		{
-			s{"{ e134f6ed-97b3-4791-ba2c-916a0d594fc2 }"}
+			s{"{ 78e76544-9132-4b30-a9c0-d93f61c4fce7 }"}
 		}
 		s %Tags{""}
 	}
 }
 o
 {
-	Uuid %id{u4{11682980545735745482,14953139487805728924}}
+	Uuid %id{u4{2180057890863575357,16188812739415176724}}
 	s %t{"ezExposedParameters"}
 	u3 %v{3}
 	p
@@ -44,43 +44,18 @@ Objects
 {
 o
 {
-	Uuid %id{u4{14186970706621592220,5509169050972472357}}
-	s %t{"ezPrefabDocumentSettings"}
-	u3 %v{1}
-	p
-	{
-		VarArray %ExposedProperties{}
-	}
-}
-o
-{
-	Uuid %id{u4{18096612296587978288,6449934965513159559}}
-	s %t{"ezSceneDocumentRoot"}
-	u3 %v{2}
-	s %n{"ObjectTree"}
-	p
-	{
-		VarArray %Children
-		{
-			Uuid{u4{2560972639117241125,13108439426173542625}}
-		}
-		Uuid %Settings{u4{14186970706621592220,5509169050972472357}}
-	}
-}
-o
-{
-	Uuid %id{u4{7194426862343032411,12523282419469508225}}
+	Uuid %id{u4{8284897129210322560,5243288418325791299}}
 	s %t{"ezJoltShapeConvexHullComponent"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
-		s %CollisionMesh{"{ af5d0d5e-6f58-4227-a925-7ada402e6a4c }"}
+		s %CollisionMesh{"{ 06135e5a-9bc3-45ed-9c69-514d86684042 }"}
 	}
 }
 o
 {
-	Uuid %id{u4{10271198442450538583,12802014640659375595}}
+	Uuid %id{u4{9561894822562832551,5247439292438317332}}
 	s %t{"ezMeshComponent"}
 	u3 %v{3}
 	p
@@ -89,13 +64,13 @@ o
 		Color %Color{f{0x0000803F,0x0000803F,0x0000803F,0x0000803F}}
 		Vec4 %CustomData{f{0,0x0000803F,0,0x0000803F}}
 		VarArray %Materials{}
-		s %Mesh{"{ e134f6ed-97b3-4791-ba2c-916a0d594fc2 }"}
+		s %Mesh{"{ 78e76544-9132-4b30-a9c0-d93f61c4fce7 }"}
 		f %SortingDepthOffset{0}
 	}
 }
 o
 {
-	Uuid %id{u4{4340247048881462879,13050458896931689306}}
+	Uuid %id{u4{9576515711282257565,5456663085131111807}}
 	s %t{"ezJoltDynamicActorComponent"}
 	u3 %v{4}
 	p
@@ -111,7 +86,7 @@ o
 		f %GravityFactor{0x0000803F}
 		b %Kinematic{0}
 		f %LinearDamping{0xCDCC4C3E}
-		f %Mass{0x0000C040}
+		f %Mass{0x0000A040}
 		s %OnContact{""}
 		b %StartAsleep{0}
 		s %Surface{""}
@@ -119,7 +94,7 @@ o
 }
 o
 {
-	Uuid %id{u4{2560972639117241125,13108439426173542625}}
+	Uuid %id{u4{14396171390727197057,6147995442475534252}}
 	s %t{"ezGameObject"}
 	u3 %v{1}
 	p
@@ -128,9 +103,9 @@ o
 		VarArray %Children{}
 		VarArray %Components
 		{
-			Uuid{u4{10271198442450538583,12802014640659375595}}
-			Uuid{u4{4340247048881462879,13050458896931689306}}
-			Uuid{u4{7194426862343032411,12523282419469508225}}
+			Uuid{u4{9561894822562832551,5247439292438317332}}
+			Uuid{u4{9576515711282257565,5456663085131111807}}
+			Uuid{u4{8284897129210322560,5243288418325791299}}
 		}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0,0,0}}
@@ -138,11 +113,37 @@ o
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{""}
+		s %Name{"<Prefab-Root>"}
 		VarArray %Tags
 		{
 			s{"CastShadow"}
+			s{"AutoColMesh"}
 		}
+	}
+}
+o
+{
+	Uuid %id{u4{18096612296587978288,6449934965513159559}}
+	s %t{"ezSceneDocumentRoot"}
+	u3 %v{2}
+	s %n{"ObjectTree"}
+	p
+	{
+		VarArray %Children
+		{
+			Uuid{u4{14396171390727197057,6147995442475534252}}
+		}
+		Uuid %Settings{u4{3710554190067121437,10662412698834193923}}
+	}
+}
+o
+{
+	Uuid %id{u4{3710554190067121437,10662412698834193923}}
+	s %t{"ezPrefabDocumentSettings"}
+	u3 %v{1}
+	p
+	{
+		VarArray %ExposedProperties{}
 	}
 }
 }

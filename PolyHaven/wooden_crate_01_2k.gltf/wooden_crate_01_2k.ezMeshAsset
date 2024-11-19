@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/wooden_crate_01_2k.gltf/wooden_crate_01_2k.gltf"}
 		}
 		Uuid %DocumentID{u4{3700889649335123591,4774043846634844489}}
-		u4 %Hash{13998093224550528723}
+		u4 %Hash{6418729395686378912}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -72,7 +72,7 @@ o
 		f %Radius2{0x0000003F}
 		b %RecalculateNormals{0}
 		b %RecalculateTangents{1}
-		s %RightDir{"ezBasisAxis::PositiveX"}
+		s %RightDir{"ezBasisAxis::PositiveZ"}
 		b %SimplifyMesh{1}
 		s %TexCoordPrecision{"ezMeshTexCoordPrecision::_16Bit"}
 		f %UniformScaling{0x0000803F}
