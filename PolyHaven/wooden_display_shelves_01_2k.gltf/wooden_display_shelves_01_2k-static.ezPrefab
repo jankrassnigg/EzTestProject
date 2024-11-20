@@ -21,7 +21,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{6794005572510056726,10425351436682775823}}
-		u4 %Hash{5176793551389422394}
+		u4 %Hash{4462472737343712744}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{11458816255094570565,145566965069899903}}
@@ -29,12 +29,30 @@ o
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
+			s{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+			s{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+			s{"{ 247f154a-4866-8d99-1331-790f6fc2b1a0 }"}
+			s{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
 			s{"{ 36d604ea-cf05-4cee-9905-4aa9312a6b6e }"}
+			s{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+			s{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+			s{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+			s{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
 			s{"{ f4c798f5-1a88-46a2-b850-4babf52ce47b }"}
+			s{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
 		}
 		VarArray %References
 		{
+			s{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+			s{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+			s{"{ 247f154a-4866-8d99-1331-790f6fc2b1a0 }"}
+			s{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+			s{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+			s{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+			s{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+			s{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
 			s{"{ f4c798f5-1a88-46a2-b850-4babf52ce47b }"}
+			s{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
 		}
 		s %Tags{""}
 	}
@@ -42,6 +60,652 @@ o
 }
 Objects
 {
+o
+{
+	Uuid %id{u4{5996101337475370139,1335089039553976898}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{18055187384822346472,15290520154037512107}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xCDCCCC3D,0x6766263F,0x33331340}}
+		Quat %LocalRotation{f{0,0,0x8E7776BF,0x7B6B8A3E}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{876285401943882348,1703390748674004239}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{12935371449290858681,15658821863157539448}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xCDCC4CBD,0xCDCC0CBF,0x0000E03F}}
+		Quat %LocalRotation{f{0,0,0xB3817CBF,0xDE9628BE}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{12792256527267636117,1817515189938215441}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{6404598500905060834,15772946304421750650}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x9A9919BE,0xCDCC4CBE,0x33331340}}
+		Quat %LocalRotation{f{0,0,0x5210153F,0xFE1F503F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{16997081843654962059,1892915086745161832}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{10609423817292386776,15848346201228697041}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xCDCCCC3D,0xCDCC4C3E,0x33331340}}
+		Quat %LocalRotation{f{0,0,0x477B63BF,0x8AD8EABE}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{13553542737980312915,1983116710631595511}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{5577922136893625737,4720730043677291278}}
+			Uuid{u4{13191103890458878368,5214925934403520568}}
+			Uuid{u4{6270750941575980725,5698962006201443247}}
+			Uuid{u4{8961388353279789989,4644455999003784112}}
+			Uuid{u4{12940832051234898604,4970318431315175902}}
+			Uuid{u4{17304804902045439658,5752299727149341303}}
+			Uuid{u4{10693234636622130322,5705613860916373655}}
+			Uuid{u4{1613584537178290067,5503374071309548122}}
+		}
+		u2 %EmptyChance{20}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{9896577994797694272,2003825840675305873}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{5541417186512096172,4721107148589066437}}
+			Uuid{u4{154399400296080821,5617596542102692704}}
+			Uuid{u4{8040895000353129880,5404472764732586682}}
+			Uuid{u4{10952964337591489961,4737728539721701395}}
+			Uuid{u4{10990480870858497433,5330209161292590010}}
+			Uuid{u4{13079056744968865712,5580494985870475087}}
+			Uuid{u4{1449327972716145075,5204090653728682894}}
+			Uuid{u4{190543138619328674,4630458480008602799}}
+			Uuid{u4{2086382914433860751,4789320036579585587}}
+		}
+		u2 %EmptyChance{10}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{2030384333874836309,2291431793383100170}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{11129864145636789663,4921962212889036620}}
+			Uuid{u4{13949995219532256393,5448259883225078699}}
+			Uuid{u4{8508244969869928095,4758414654720070470}}
+			Uuid{u4{8139708235542595472,4806954120534927213}}
+			Uuid{u4{12017843081633119928,4874635415603987761}}
+			Uuid{u4{429723743582008449,5385998520882409343}}
+			Uuid{u4{5472964438012498584,5425046459798422721}}
+			Uuid{u4{16339568882490450331,5593408885630747565}}
+			Uuid{u4{10941547679092811962,4791264307369962321}}
+		}
+		u2 %EmptyChance{10}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{5408134634484405334,2440290405344278207}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{6277839568254461876,5528632597002176537}}
+			Uuid{u4{16901377082805925022,5603174563172252961}}
+			Uuid{u4{3884541469821569432,5006445745590687533}}
+			Uuid{u4{6181911101298754703,5304189474680192568}}
+			Uuid{u4{9665664480352576159,5628529080831764880}}
+			Uuid{u4{2250717148460261556,5548566592224456314}}
+			Uuid{u4{11117847445876809374,5601292276938902954}}
+			Uuid{u4{9620270537711996089,5368023047579345619}}
+			Uuid{u4{11194899162753444744,5762992162124539651}}
+		}
+		u2 %EmptyChance{10}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{15236920601117810281,2511331997315076254}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{15511704422027468161,5336703319599198107}}
+			Uuid{u4{6644624759496407986,4927205723982174656}}
+			Uuid{u4{9382236904656958353,5491798264838439272}}
+			Uuid{u4{1322617749610700443,4831098158049452618}}
+			Uuid{u4{15934630109600338605,5045539855652518239}}
+			Uuid{u4{2880473548140907943,5170095856164337845}}
+			Uuid{u4{16611246493321209252,5277851164717726633}}
+			Uuid{u4{11031101719192882048,5250578208202012823}}
+			Uuid{u4{14058566997044267425,5415550921577119800}}
+		}
+		u2 %EmptyChance{10}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{17085827987325544301,2642982310188497930}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{7870614004294639802,5279892567229849377}}
+			Uuid{u4{12895053386744411046,5585950835110864293}}
+			Uuid{u4{9039007856170592676,5251743048003394567}}
+			Uuid{u4{11661964666614393235,5007813190471589904}}
+			Uuid{u4{4803048370582555067,5679264193756670768}}
+			Uuid{u4{16384163024190029472,5566274495828137085}}
+			Uuid{u4{2878277408001553816,5594147142799725097}}
+			Uuid{u4{4301820606453423243,5191831054938197719}}
+		}
+		u2 %EmptyChance{10}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{15843866758342786654,2669040233997175305}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{3150736643231365790,5208382047210247667}}
+			Uuid{u4{9378454011343849894,5203893939422004200}}
+			Uuid{u4{11400200534556923558,5493220573879109794}}
+			Uuid{u4{2415178382003212672,4984947626862696715}}
+			Uuid{u4{8687020199577951145,5568906001241440462}}
+			Uuid{u4{17113643118380018588,5255865815263407414}}
+			Uuid{u4{3876017176982104732,4979080536902983203}}
+			Uuid{u4{15790249543046705834,5166976930512545889}}
+		}
+		u2 %EmptyChance{10}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{18003030685496195395,2801090079419456510}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{11602945768472897957,5700250560454873180}}
+			Uuid{u4{12306401536170281647,4685416870617268328}}
+			Uuid{u4{10320976373155834011,4865876102893862542}}
+			Uuid{u4{15820470891038156465,5556933998497963750}}
+			Uuid{u4{918210399215328391,5327375464931854578}}
+			Uuid{u4{287277471551601300,5293166697445807306}}
+			Uuid{u4{1594910204229399979,4788002311616287023}}
+			Uuid{u4{14797042589774967196,5524608994462422587}}
+			Uuid{u4{2768292945196591774,5305200429023251090}}
+		}
+		u2 %EmptyChance{10}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{7980136171073227107,2857562896868628384}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{10511513690358152118,5442444093289444061}}
+			Uuid{u4{1925909032386705286,4962078403019645819}}
+			Uuid{u4{11282940315385065150,4744090854619645647}}
+			Uuid{u4{15584305445865730191,5181638992369298721}}
+			Uuid{u4{1691904412736381105,5402481479715062265}}
+			Uuid{u4{10476378981312804229,4959121066997458549}}
+			Uuid{u4{18219357279084587414,5761506654195472919}}
+			Uuid{u4{8544380364557371070,5373410852416447380}}
+		}
+		u2 %EmptyChance{10}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{1568935448715427644,2959390567260444613}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{10365218030446531474,5462124091594832798}}
+			Uuid{u4{11586334149046409353,5554014138286987685}}
+			Uuid{u4{1786092547047241110,4768539801048947521}}
+			Uuid{u4{2110419939667777432,5593074637396118267}}
+			Uuid{u4{8948618264414948031,4746626268319412095}}
+			Uuid{u4{14618536251553056138,5261753642112488379}}
+			Uuid{u4{17115133183537431474,5504906366899163783}}
+			Uuid{u4{1201234447264351123,5316449806187442199}}
+		}
+		u2 %EmptyChance{10}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{190543138619328674,4630458480008602799}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8961388353279789989,4644455999003784112}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{9449370329298289056,4648095354127024730}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1058488094821117587,4674102888226766021}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{12306401536170281647,4685416870617268328}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{5577922136893625737,4720730043677291278}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{5541417186512096172,4721107148589066437}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{10952964337591489961,4737728539721701395}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{11282940315385065150,4744090854619645647}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8948618264414948031,4746626268319412095}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8020110202488296613,4750399331240128123}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8508244969869928095,4758414654720070470}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1786092547047241110,4768539801048947521}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{6752488228439451037,4779657124898519424}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1594910204229399979,4788002311616287023}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{2086382914433860751,4789320036579585587}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 247f154a-4866-8d99-1331-790f6fc2b1a0 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{10941547679092811962,4791264307369962321}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 247f154a-4866-8d99-1331-790f6fc2b1a0 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8139708235542595472,4806954120534927213}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{395333961776296380,4811820427717942008}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1825633287428220814,4823009329634379819}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1322617749610700443,4831098158049452618}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{10320976373155834011,4865876102893862542}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{12017843081633119928,4874635415603987761}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{7389884989461690795,4913565062096976253}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{11129864145636789663,4921962212889036620}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{6644624759496407986,4927205723982174656}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{162933136581018798,4943055864361459494}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
 o
 {
 	Uuid %id{u4{11399443950295317899,4950674941732677191}}
@@ -55,6 +719,899 @@ o
 		b %IncludeInNavmesh{1}
 		b %PullSurfacesFromGraphicsMesh{0}
 		s %Surface{""}
+	}
+}
+o
+{
+	Uuid %id{u4{10476378981312804229,4959121066997458549}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1925909032386705286,4962078403019645819}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{12940832051234898604,4970318431315175902}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{3876017176982104732,4979080536902983203}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{2415178382003212672,4984947626862696715}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{3884541469821569432,5006445745590687533}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{11661964666614393235,5007813190471589904}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{15934630109600338605,5045539855652518239}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{10634518288311509146,5046094916020465213}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{9959352497531437482,5096717431661671386}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{16748012650811414962,5112921124633865495}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{356289255114106813,5132795769385632607}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{5226366679418559876,5158937507473938218}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{15790249543046705834,5166976930512545889}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{2880473548140907943,5170095856164337845}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{15584305445865730191,5181638992369298721}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{4301820606453423243,5191831054938197719}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{9378454011343849894,5203893939422004200}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1449327972716145075,5204090653728682894}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{3150736643231365790,5208382047210247667}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{13191103890458878368,5214925934403520568}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{11031101719192882048,5250578208202012823}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{9039007856170592676,5251743048003394567}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{17113643118380018588,5255865815263407414}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8624397813809267628,5259794393187520329}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 247f154a-4866-8d99-1331-790f6fc2b1a0 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{14618536251553056138,5261753642112488379}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{16611246493321209252,5277851164717726633}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{7870614004294639802,5279892567229849377}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{287277471551601300,5293166697445807306}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{6181911101298754703,5304189474680192568}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{2768292945196591774,5305200429023251090}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 247f154a-4866-8d99-1331-790f6fc2b1a0 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1201234447264351123,5316449806187442199}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8515079522512556427,5327326525122465612}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{918210399215328391,5327375464931854578}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{10990480870858497433,5330209161292590010}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{15511704422027468161,5336703319599198107}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{17465172763002615970,5360536360326398554}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{9620270537711996089,5368023047579345619}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8544380364557371070,5373410852416447380}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{429723743582008449,5385998520882409343}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1691904412736381105,5402481479715062265}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8040895000353129880,5404472764732586682}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{14058566997044267425,5415550921577119800}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 247f154a-4866-8d99-1331-790f6fc2b1a0 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{5472964438012498584,5425046459798422721}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{7808567052333712263,5430075669522371759}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{3805088292951247787,5430498740144741441}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{10511513690358152118,5442444093289444061}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{13949995219532256393,5448259883225078699}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{10365218030446531474,5462124091594832798}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{9382236904656958353,5491798264838439272}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{11400200534556923558,5493220573879109794}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1613584537178290067,5503374071309548122}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{17115133183537431474,5504906366899163783}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{14797042589774967196,5524608994462422587}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{6277839568254461876,5528632597002176537}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{2250717148460261556,5548566592224456314}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{11586334149046409353,5554014138286987685}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{15820470891038156465,5556933998497963750}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{16384163024190029472,5566274495828137085}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8687020199577951145,5568906001241440462}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{13079056744968865712,5580494985870475087}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{11142200415167226002,5582850216444475652}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{12895053386744411046,5585950835110864293}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{3538739321648768149,5587043769576974746}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{162933136581018798,4943055864361459494}}
+			Uuid{u4{11142200415167226002,5582850216444475652}}
+			Uuid{u4{16748012650811414962,5112921124633865495}}
+			Uuid{u4{356289255114106813,5132795769385632607}}
+			Uuid{u4{9449370329298289056,4648095354127024730}}
+			Uuid{u4{1614693190257316017,5644799338588214293}}
+			Uuid{u4{7389884989461690795,4913565062096976253}}
+			Uuid{u4{6752488228439451037,4779657124898519424}}
+		}
+		u2 %EmptyChance{50}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{2110419939667777432,5593074637396118267}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{16339568882490450331,5593408885630747565}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{2878277408001553816,5594147142799725097}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{11117847445876809374,5601292276938902954}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{16901377082805925022,5603174563172252961}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8678591377799603894,5607626005718547935}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{154399400296080821,5617596542102692704}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{9665664480352576159,5628529080831764880}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1614693190257316017,5644799338588214293}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{9593321338979129231,5655498978939596267}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{4803048370582555067,5679264193756670768}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1189909661296330647,5687800929127946971}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{6270750941575980725,5698962006201443247}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{11602945768472897957,5700250560454873180}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{10693234636622130322,5705613860916373655}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8262654029917310884,5730679684179297936}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
 	}
 }
 o
@@ -74,13 +1631,77 @@ o
 }
 o
 {
+	Uuid %id{u4{17304804902045439658,5752299727149341303}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{2926977051028866215,5759534611539231225}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{18219357279084587414,5761506654195472919}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{11194899162753444744,5762992162124539651}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 247f154a-4866-8d99-1331-790f6fc2b1a0 }"}
+	}
+}
+o
+{
 	Uuid %id{u4{7975124409473791868,5937208853539602113}}
 	s %t{"ezGameObject"}
 	u3 %v{1}
 	p
 	{
 		b %Active{1}
-		VarArray %Children{}
+		VarArray %Children
+		{
+			Uuid{u4{9926397348011343432,10078356728802991153}}
+			Uuid{u4{16350141702716413666,15096493155942332037}}
+			Uuid{u4{876285401943882348,1703390748674004239}}
+			Uuid{u4{1494456690633336582,6474429669857611918}}
+			Uuid{u4{14367794197435802390,7348875856094644791}}
+			Uuid{u4{3784780710995810321,7160353193223191712}}
+			Uuid{u4{16284236021160269555,6495138799901322280}}
+			Uuid{u4{8418042360237411592,6782744752609116577}}
+			Uuid{u4{11795792660846980617,6931603364570294614}}
+			Uuid{u4{5943944638149219062,7292403038645472917}}
+			Uuid{u4{7956593475078002927,7450703526486461020}}
+			Uuid{u4{5026741939978567968,7134295269414514337}}
+			Uuid{u4{3177834553770833948,7002644956541092661}}
+			Uuid{u4{5996101337475370139,1335089039553976898}}
+			Uuid{u4{16997081843654962059,1892915086745161832}}
+			Uuid{u4{12792256527267636117,1817515189938215441}}
+			Uuid{u4{1351184716449172618,11315228346072795327}}
+			Uuid{u4{3726237232146548662,11673286920662116128}}
+		}
 		VarArray %Components
 		{
 			Uuid{u4{14639410127193479049,5731746828192772690}}
@@ -117,6 +1738,593 @@ o
 }
 o
 {
+	Uuid %id{u4{1494456690633336582,6474429669857611918}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{13553542737980312915,1983116710631595511}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x9A9919BE,0xCDCCCCBD,0x0000E03F}}
+		Quat %LocalRotation{f{0,0,0xD6790FBF,0x0604543F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{16284236021160269555,6495138799901322280}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{9896577994797694272,2003825840675305873}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xCDCCCC3D,0xCDCCCC3D,0x9A99993F}}
+		Quat %LocalRotation{f{0,0,0xBFD24D3F,0xE73918BF}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{8418042360237411592,6782744752609116577}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{2030384333874836309,2291431793383100170}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0xCDCC0C3F,0x9A99993F}}
+		Quat %LocalRotation{f{0,0,0x1B0963BF,0xD890ECBE}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{13410270763796148951,6823915386846778920}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{5434650162709461773,9561528719892474687}}
+			Uuid{u4{13047831916274714404,10055724610618703977}}
+			Uuid{u4{6127478967391816761,10539760682416626656}}
+			Uuid{u4{8818116379095626025,9485254675218967521}}
+			Uuid{u4{12797560077050734640,9811117107530359311}}
+			Uuid{u4{17161532927861275694,10593098403364524712}}
+			Uuid{u4{10549962662437966358,10546412537131557064}}
+			Uuid{u4{1470312562994126103,10344172747524731531}}
+		}
+		u2 %EmptyChance{20}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{11795792660846980617,6931603364570294614}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{5408134634484405334,2440290405344278207}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xCDCC4CBD,0x6766263F,0x9A99193F}}
+		Quat %LocalRotation{f{0,0,0x05399BBE,0xAAF373BF}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{3177834553770833948,7002644956541092661}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{15236920601117810281,2511331997315076254}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xCDCCCC3D,0xCDCC0CBF,0x9A99193F}}
+		Quat %LocalRotation{f{0,0,0x636D4BBE,0xC7E57A3F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{5026741939978567968,7134295269414514337}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{17085827987325544301,2642982310188497930}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x9A9919BE,0xCDCCCCBD,0x9A99193F}}
+		Quat %LocalRotation{f{0,0,0xF0C275BF,0x9D598FBE}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{3784780710995810321,7160353193223191712}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{15843866758342786654,2669040233997175305}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xCDCC4CBD,0x9A9919BE,0x9A99993F}}
+		Quat %LocalRotation{f{0,0,0x6C687CBE,0xE119783F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{15785323279493524995,7181973961436099721}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{7809702678406837817,9919587294481795488}}
+			Uuid{u4{15422884431972090448,10413783185208024778}}
+			Uuid{u4{8502531483089192805,10897819257005947457}}
+			Uuid{u4{11193168894793002069,9843313249808288322}}
+			Uuid{u4{15172612592748110684,10169175682119680112}}
+			Uuid{u4{1089841369849100122,10951156977953845513}}
+			Uuid{u4{12925015178135342402,10904471111720877865}}
+			Uuid{u4{3845365078691502147,10702231322114052332}}
+		}
+		u2 %EmptyChance{20}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{5943944638149219062,7292403038645472917}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{18003030685496195395,2801090079419456510}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x22471C3E,0xAFE2E83E,0x9A99193F}}
+		Quat %LocalRotation{f{0,0,0x6B2503BF,0x28DB5B3F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{14367794197435802390,7348875856094644791}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{7980136171073227107,2857562896868628384}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0xCDCC0CBF,0x9A99993F}}
+		Quat %LocalRotation{f{0,0,0xC1DE73BF,0x3BBC9BBE}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{7956593475078002927,7450703526486461020}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{1568935448715427644,2959390567260444613}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xCDCCCC3D,0xCDCCCC3D,0x9A99193F}}
+		Quat %LocalRotation{f{0,0,0x346D69BF,0x2438D2BE}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{16112813910956804702,9435739288561324600}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8818116379095626025,9485254675218967521}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{5434650162709461773,9561528719892474687}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{18052056205999945571,9782057388982867863}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{12797560077050734640,9811117107530359311}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{11193168894793002069,9843313249808288322}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{13319070387887067965,9844277464795134695}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{4462225027039519064,9918165438945563143}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{7809702678406837817,9919587294481795488}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8667050343426845006,9993565335752509534}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
+	}
+}
+o
+{
+	Uuid %id{u4{16607783230981064516,10012666482443662089}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{7111132397761572443,10045876317647595031}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{13047831916274714404,10055724610618703977}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{9926397348011343432,10078356728802991153}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{3538739321648768149,5587043769576974746}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xDE8EFE3C,0xC60D12BF,0xE65F1440}}
+		Quat %LocalRotation{f{0,0,0x699E94BE,0x51FA743F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{11897792001419755876,10115838697465937918}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{15172612592748110684,10169175682119680112}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{6401467322082659933,10264483539367106406}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1668481503969782327,10326703615179373238}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{10606292638469985875,10339883436174052797}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{17686025047447637320,10340838936260792744}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1470312562994126103,10344172747524731531}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{5873306820357108269,10402103511986319629}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{15422884431972090448,10413783185208024778}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{3}
+		s %Prefab{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{16355357738385818973,10416019641500494413}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
 	Uuid %id{u4{15736251282523267864,10451626109898261784}}
 	s %t{"ezPrefabDocumentSettings"}
 	u3 %v{1}
@@ -125,9 +2333,406 @@ o
 		VarArray %ExposedProperties{}
 	}
 }
+o
+{
+	Uuid %id{u4{4957194347063778878,10495092632827900632}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{13907287587553838421,10528302468031833574}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{6127478967391816761,10539760682416626656}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{10549962662437966358,10546412537131557064}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{9162019663451104820,10570492529634847023}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ b8c4527d-2ae5-8d64-3169-cbde670f8549 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{17161532927861275694,10593098403364524712}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{247203117502470238,10598264847850176461}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{18112112903941164363,10603702364838779965}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{9962483676353838383,10605180196716315630}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{8020110202488296613,4750399331240128123}}
+			Uuid{u4{9959352497531437482,5096717431661671386}}
+			Uuid{u4{5226366679418559876,5158937507473938218}}
+			Uuid{u4{3805088292951247787,5430498740144741441}}
+			Uuid{u4{8515079522512556427,5327326525122465612}}
+			Uuid{u4{17465172763002615970,5360536360326398554}}
+			Uuid{u4{8262654029917310884,5730679684179297936}}
+			Uuid{u4{9593321338979129231,5655498978939596267}}
+		}
+		u2 %EmptyChance{20}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{4452028433889796180,10673664744657122852}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ fe28754e-7457-8f52-0809-576345df7251 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{3845365078691502147,10702231322114052332}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{6035436163530351682,10823265086645031287}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8502531483089192805,10897819257005947457}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 2f72069d-9ad3-4438-b706-99606b6ab211 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{4704768854468533335,10898445791884732956}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{10240261479917677624,10898664983451977678}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{1}
+		s %Prefab{"{ 52d77b13-c02a-9584-0b30-6022f322975d }"}
+	}
+}
+o
+{
+	Uuid %id{u4{12925015178135342402,10904471111720877865}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1089841369849100122,10951156977953845513}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{2}
+		s %Prefab{"{ 87be9eba-354b-8a6f-19e9-370a8540482c }"}
+	}
+}
+o
+{
+	Uuid %id{u4{8909594170855859277,10973845688691679347}}
+	s %t{"ezRandomPrefabEntry"}
+	u3 %v{1}
+	p
+	{
+		u1 %Chance{10}
+		s %Prefab{"{ 09697277-430f-46ea-8c1d-04ba206fa919 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{1351184716449172618,11315228346072795327}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{13410270763796148951,6823915386846778920}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xCECCCC3D,0xCDCCCC3E,0x0000E03F}}
+		Quat %LocalRotation{f{0,0,0xD6790FBF,0x0604543F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{3726237232146548662,11673286920662116128}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{15785323279493524995,7181973961436099721}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xCCCCCC3D,0x9A99193E,0x0000E03F}}
+		Quat %LocalRotation{f{0,0,0xD6790FBF,0x0604543F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{16350141702716413666,15096493155942332037}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{9962483676353838383,10605180196716315630}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0xCDCCCCBD,0x9A99193F,0x0000E03F}}
+		Quat %LocalRotation{f{0,0,0x747B853E,0xA125773F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
+	Uuid %id{u4{18055187384822346472,15290520154037512107}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{16112813910956804702,9435739288561324600}}
+			Uuid{u4{18052056205999945571,9782057388982867863}}
+			Uuid{u4{13319070387887067965,9844277464795134695}}
+			Uuid{u4{11897792001419755876,10115838697465937918}}
+			Uuid{u4{16607783230981064516,10012666482443662089}}
+			Uuid{u4{7111132397761572443,10045876317647595031}}
+			Uuid{u4{16355357738385818973,10416019641500494413}}
+			Uuid{u4{17686025047447637320,10340838936260792744}}
+		}
+		u2 %EmptyChance{50}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{12935371449290858681,15658821863157539448}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{1058488094821117587,4674102888226766021}}
+			Uuid{u4{395333961776296380,4811820427717942008}}
+			Uuid{u4{7808567052333712263,5430075669522371759}}
+			Uuid{u4{1189909661296330647,5687800929127946971}}
+			Uuid{u4{1825633287428220814,4823009329634379819}}
+			Uuid{u4{8678591377799603894,5607626005718547935}}
+			Uuid{u4{2926977051028866215,5759534611539231225}}
+			Uuid{u4{10634518288311509146,5046094916020465213}}
+			Uuid{u4{8624397813809267628,5259794393187520329}}
+		}
+		u2 %EmptyChance{20}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{6404598500905060834,15772946304421750650}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{4462225027039519064,9918165438945563143}}
+			Uuid{u4{6401467322082659933,10264483539367106406}}
+			Uuid{u4{1668481503969782327,10326703615179373238}}
+			Uuid{u4{247203117502470238,10598264847850176461}}
+			Uuid{u4{4957194347063778878,10495092632827900632}}
+			Uuid{u4{13907287587553838421,10528302468031833574}}
+			Uuid{u4{4704768854468533335,10898445791884732956}}
+			Uuid{u4{6035436163530351682,10823265086645031287}}
+		}
+		u2 %EmptyChance{50}
+		u2 %Seed{0}
+	}
+}
+o
+{
+	Uuid %id{u4{10609423817292386776,15848346201228697041}}
+	s %t{"ezRandomPrefabComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		b %AttachAsChild{0}
+		VarArray %Candidates
+		{
+			Uuid{u4{8667050343426845006,9993565335752509534}}
+			Uuid{u4{10606292638469985875,10339883436174052797}}
+			Uuid{u4{5873306820357108269,10402103511986319629}}
+			Uuid{u4{4452028433889796180,10673664744657122852}}
+			Uuid{u4{9162019663451104820,10570492529634847023}}
+			Uuid{u4{18112112903941164363,10603702364838779965}}
+			Uuid{u4{8909594170855859277,10973845688691679347}}
+			Uuid{u4{10240261479917677624,10898664983451977678}}
+		}
+		u2 %EmptyChance{50}
+		u2 %Seed{0}
+	}
+}
 }
 Types
 {
+o
+{
+	Uuid %id{u4{4344027156879251866,655161882131932251}}
+	s %t{"ezClampValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		i3 %Max{255}
+		i3 %Min{1}
+	}
+}
 o
 {
 	Uuid %id{u4{6914292285925798136,1108246313736053318}}
@@ -143,6 +2748,16 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezComponent"}
 		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{14741981165373262935,1174690136803363128}}
+	s %t{"ezDefaultValueAttribute"}
+	u3 %v{1}
+	p
+	{
+		i3 %Value{10}
 	}
 }
 o
@@ -241,6 +2856,21 @@ o
 		s %DependencyFlags{"ezDependencyFlags::Package"}
 		s %Filter{";CompatibleAsset_Jolt_Colmesh_Triangle;"}
 		s %RequiredTag{""}
+	}
+}
+o
+{
+	Uuid %id{u4{2163734486728560548,5207785756772715568}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"ezPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
+		s %Name{"Seed"}
+		s %Type{"ezUInt16"}
 	}
 }
 o
@@ -369,6 +2999,36 @@ o
 }
 o
 {
+	Uuid %id{u4{1842555717916688442,9205727752643474895}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"ezPropertyCategory::Array"}
+		Invalid %ConstantValue{}
+		s %Flags{"ezPropertyFlags::Class|ezPropertyFlags::Phantom"}
+		s %Name{"Candidates"}
+		s %Type{"ezRandomPrefabEntry"}
+	}
+}
+o
+{
+	Uuid %id{u4{595007754442666021,9365305369404500582}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"ezPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
+		s %Name{"AttachAsChild"}
+		s %Type{"bool"}
+	}
+}
+o
+{
 	Uuid %id{u4{14543630447052729839,9459039542380974471}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -382,6 +3042,21 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezObjectMode"}
 		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{4872600789300629116,9681972490789556420}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes{}
+		s %Category{"ezPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
+		s %Name{"EmptyChance"}
+		s %Type{"ezUInt16"}
 	}
 }
 o
@@ -418,6 +3093,27 @@ o
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
 		s %Name{"CollisionMesh"}
 		s %Type{"ezStringView"}
+	}
+}
+o
+{
+	Uuid %id{u4{14719293375670951817,10733981837586681926}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"ezGameComponentsPlugin"}
+		VarArray %Properties
+		{
+			Uuid{u4{10434703746236037151,14944494110547262276}}
+			Uuid{u4{12772838019125499941,14921965452976416594}}
+		}
+		s %TypeName{"ezRandomPrefabEntry"}
+		u3 %TypeVersion{1}
 	}
 }
 o
@@ -559,6 +3255,65 @@ o
 }
 o
 {
+	Uuid %id{u4{6807447540539695074,14233425960054648009}}
+	s %t{"ezAssetBrowserAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %DependencyFlags{"ezDependencyFlags::Package|ezDependencyFlags::Thumbnail"}
+		s %Filter{";CompatibleAsset_Prefab;"}
+		s %RequiredTag{""}
+	}
+}
+o
+{
+	Uuid %id{u4{18105780118062707531,14391840297266543594}}
+	s %t{"ezCategoryAttribute"}
+	u3 %v{1}
+	p
+	{
+		s %Category{"Construction"}
+	}
+}
+o
+{
+	Uuid %id{u4{12772838019125499941,14921965452976416594}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{14741981165373262935,1174690136803363128}}
+			Uuid{u4{4344027156879251866,655161882131932251}}
+		}
+		s %Category{"ezPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
+		s %Name{"Chance"}
+		s %Type{"ezUInt8"}
+	}
+}
+o
+{
+	Uuid %id{u4{10434703746236037151,14944494110547262276}}
+	s %t{"ezReflectedPropertyDescriptor"}
+	u3 %v{2}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{6807447540539695074,14233425960054648009}}
+		}
+		s %Category{"ezPropertyCategory::Member"}
+		Invalid %ConstantValue{}
+		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
+		s %Name{"Prefab"}
+		s %Type{"ezString"}
+	}
+}
+o
+{
 	Uuid %id{u4{2947336711354777548,15013008608905564043}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -594,6 +3349,32 @@ o
 	p
 	{
 		s %DynamicEnum{"PhysicsCollisionLayer"}
+	}
+}
+o
+{
+	Uuid %id{u4{15418017841595989912,15977829788647165162}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes
+		{
+			Uuid{u4{18105780118062707531,14391840297266543594}}
+		}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezComponent"}
+		s %PluginName{"ezGameComponentsPlugin"}
+		VarArray %Properties
+		{
+			Uuid{u4{2163734486728560548,5207785756772715568}}
+			Uuid{u4{595007754442666021,9365305369404500582}}
+			Uuid{u4{4872600789300629116,9681972490789556420}}
+			Uuid{u4{1842555717916688442,9205727752643474895}}
+		}
+		s %TypeName{"ezRandomPrefabComponent"}
+		u3 %TypeVersion{1}
 	}
 }
 o

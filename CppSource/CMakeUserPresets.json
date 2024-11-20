@@ -4,9 +4,9 @@
       "displayName" : "Build the ezEngine Plugin",
       "architecture" : "x64",
       "cacheVariables" : {
-        "EZ_BUILDTYPE_ONLY" : "Dev",
+        "EZ_BUILDTYPE_ONLY" : "Debug",
         "EZ_SDK_DIR" : "D:/GitHub/aether/",
-        "CMAKE_BUILD_TYPE" : "Dev"
+        "CMAKE_BUILD_TYPE" : "Debug"
       },
       "binaryDir" : "D:/GitHub/EzTestProject/CppSource/Build/Vs2022x64",
       "generator" : "Visual Studio 17 2022"
