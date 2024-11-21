@@ -11,10 +11,10 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"AssetCache/Default/PolyHaven/potted_plant_01_1k.gltf/textures/potted_plant_01_leaves_rough_1k.jpg"}
+			s{"PolyHaven/potted_plant_01_1k.gltf/textures/potted_plant_01_leaves_rough_1k.jpg"}
 		}
 		Uuid %DocumentID{u4{12136382741057458594,5484784035517101215}}
-		u4 %Hash{6633974946996065687}
+		u4 %Hash{18145227299557676643}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -23,7 +23,7 @@ o
 		VarArray %PackageDeps{}
 		VarArray %References
 		{
-			s{"AssetCache/Default/PolyHaven/potted_plant_01_1k.gltf/textures/potted_plant_01_leaves_rough_1k.jpg"}
+			s{"PolyHaven/potted_plant_01_1k.gltf/textures/potted_plant_01_leaves_rough_1k.jpg"}
 		}
 		s %Tags{""}
 	}
@@ -49,7 +49,7 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"AssetCache/Default/PolyHaven/potted_plant_01_1k.gltf/textures/potted_plant_01_leaves_rough_1k.jpg"}
+		s %Input1{"PolyHaven/potted_plant_01_1k.gltf/textures/potted_plant_01_leaves_rough_1k.jpg"}
 		s %Input2{""}
 		s %Input3{""}
 		s %Input4{""}

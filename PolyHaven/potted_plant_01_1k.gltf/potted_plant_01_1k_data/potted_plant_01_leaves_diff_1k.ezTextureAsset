@@ -11,10 +11,10 @@ o
 		s %AssetType{"Texture 2D"}
 		VarArray %Dependencies
 		{
-			s{"AssetCache/Default/PolyHaven/potted_plant_01_1k.gltf/textures/potted_plant_01_leaves_diff_1k.jpg"}
+			s{"PolyHaven/potted_plant_01_1k.gltf/textures/potted_plant_01_leaves_diff_1k.jpg"}
 		}
 		Uuid %DocumentID{u4{9076845466014004144,5577458152786425208}}
-		u4 %Hash{7281550432261572573}
+		u4 %Hash{12732350434392772396}
 		VarArray %MetaInfo{}
 		VarArray %Outputs
 		{
@@ -23,7 +23,7 @@ o
 		VarArray %PackageDeps{}
 		VarArray %References
 		{
-			s{"AssetCache/Default/PolyHaven/potted_plant_01_1k.gltf/textures/potted_plant_01_leaves_diff_1k.jpg"}
+			s{"PolyHaven/potted_plant_01_1k.gltf/textures/potted_plant_01_leaves_diff_1k.jpg"}
 		}
 		s %Tags{""}
 	}
@@ -49,8 +49,8 @@ o
 		b %FlipHorizontal{0}
 		s %Format{"ezRenderTargetFormat::RGBA8sRgb"}
 		f %HdrExposureBias{0}
-		s %Input1{"AssetCache/Default/PolyHaven/potted_plant_01_1k.gltf/textures/potted_plant_01_leaves_diff_1k.jpg"}
-		s %Input2{"AssetCache/Default/PolyHaven/potted_plant_01_1k.gltf/textures/potted_plant_01_leaves_diff_1k.jpg"}
+		s %Input1{"PolyHaven/potted_plant_01_1k.gltf/textures/potted_plant_01_leaves_diff_1k.jpg"}
+		s %Input2{"PolyHaven/potted_plant_01_1k.gltf/textures/potted_plant_01_leaves_diff_1k.jpg"}
 		s %Input3{""}
 		s %Input4{""}
 		b %IsRenderTarget{0}

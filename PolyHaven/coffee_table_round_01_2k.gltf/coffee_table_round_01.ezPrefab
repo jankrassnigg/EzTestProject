@@ -11,7 +11,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{11317370962342640575,4960584297522948414}}
-		u4 %Hash{7376172017167047601}
+		u4 %Hash{11650049840714107174}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{10310772953721802140,12396878233929297922}}
@@ -19,20 +19,12 @@ o
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
-			s{"{ 599d5f7e-b719-9302-254f-554273ed7dad }"}
-			s{"{ 7d0122e9-98e6-4c07-8d05-e46e2facaa99 }"}
 			s{"{ 8d2f57d9-0c7e-485e-8c39-ce88d2ab6102 }"}
 			s{"{ 99817ca5-cbc4-4645-b168-39c99618fd4e }"}
-			s{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
-			s{"{ da234b2c-74e5-8bb3-0881-07ea5434a5f8 }"}
 		}
 		VarArray %References
 		{
-			s{"{ 599d5f7e-b719-9302-254f-554273ed7dad }"}
-			s{"{ 7d0122e9-98e6-4c07-8d05-e46e2facaa99 }"}
 			s{"{ 99817ca5-cbc4-4645-b168-39c99618fd4e }"}
-			s{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
-			s{"{ da234b2c-74e5-8bb3-0881-07ea5434a5f8 }"}
 		}
 		s %Tags{""}
 	}
@@ -73,10 +65,7 @@ o
 	p
 	{
 		b %Active{1}
-		VarArray %Children
-		{
-			Uuid{u4{12633963667112506718,10403183879186130524}}
-		}
+		VarArray %Children{}
 		VarArray %Components
 		{
 			Uuid{u4{1203706001380797665,1377866592172102251}}
@@ -112,17 +101,6 @@ o
 }
 o
 {
-	Uuid %id{u4{6452508616564756108,5014742580099383029}}
-	s %t{"ezRandomPrefabEntry"}
-	u3 %v{1}
-	p
-	{
-		u1 %Chance{10}
-		s %Prefab{"{ 7d0122e9-98e6-4c07-8d05-e46e2facaa99 }"}
-	}
-}
-o
-{
 	Uuid %id{u4{1204301552782168974,5341641430510623776}}
 	s %t{"ezPrefabDocumentSettings"}
 	u3 %v{1}
@@ -148,17 +126,6 @@ o
 }
 o
 {
-	Uuid %id{u4{3014522578629525926,5571412793114772831}}
-	s %t{"ezRandomPrefabEntry"}
-	u3 %v{1}
-	p
-	{
-		u1 %Chance{10}
-		s %Prefab{"{ da234b2c-74e5-8bb3-0881-07ea5434a5f8 }"}
-	}
-}
-o
-{
 	Uuid %id{u4{18096612296587978288,6449934965513159559}}
 	s %t{"ezSceneDocumentRoot"}
 	u3 %v{2}
@@ -172,88 +139,9 @@ o
 		Uuid %Settings{u4{1204301552782168974,5341641430510623776}}
 	}
 }
-o
-{
-	Uuid %id{u4{5862875295082822979,10184689261438068468}}
-	s %t{"ezRandomPrefabEntry"}
-	u3 %v{1}
-	p
-	{
-		u1 %Chance{10}
-		s %Prefab{"{ b22d67a8-0c6f-8995-2e7e-d57bcc4e41cb }"}
-	}
-}
-o
-{
-	Uuid %id{u4{1448695301523810671,10277753794055539895}}
-	s %t{"ezRandomPrefabEntry"}
-	u3 %v{1}
-	p
-	{
-		u1 %Chance{10}
-		s %Prefab{"{ 599d5f7e-b719-9302-254f-554273ed7dad }"}
-	}
-}
-o
-{
-	Uuid %id{u4{3349924546183483473,10377717979300451638}}
-	s %t{"ezRandomPrefabComponent"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		b %AttachAsChild{0}
-		VarArray %Candidates
-		{
-			Uuid{u4{5862875295082822979,10184689261438068468}}
-			Uuid{u4{1448695301523810671,10277753794055539895}}
-			Uuid{u4{3014522578629525926,5571412793114772831}}
-			Uuid{u4{6452508616564756108,5014742580099383029}}
-		}
-		u2 %EmptyChance{20}
-		u2 %Seed{0}
-	}
-}
-o
-{
-	Uuid %id{u4{12633963667112506718,10403183879186130524}}
-	s %t{"ezGameObject"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		VarArray %Children{}
-		VarArray %Components
-		{
-			Uuid{u4{3349924546183483473,10377717979300451638}}
-		}
-		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0x3333B3BE,0xCDCC4CBD,0x48E1FA3E}}
-		Quat %LocalRotation{f{0,0,0,0x0000803F}}
-		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
-		f %LocalUniformScaling{0x0000803F}
-		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
-	}
-}
 }
 Types
 {
-o
-{
-	Uuid %id{u4{4344027156879251866,655161882131932251}}
-	s %t{"ezClampValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		i3 %Max{255}
-		i3 %Min{1}
-	}
-}
 o
 {
 	Uuid %id{u4{6914292285925798136,1108246313736053318}}
@@ -269,16 +157,6 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezComponent"}
 		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{14741981165373262935,1174690136803363128}}
-	s %t{"ezDefaultValueAttribute"}
-	u3 %v{1}
-	p
-	{
-		i3 %Value{10}
 	}
 }
 o
@@ -377,21 +255,6 @@ o
 		s %DependencyFlags{"ezDependencyFlags::Package"}
 		s %Filter{";CompatibleAsset_Jolt_Colmesh_Triangle;"}
 		s %RequiredTag{""}
-	}
-}
-o
-{
-	Uuid %id{u4{2163734486728560548,5207785756772715568}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes{}
-		s %Category{"ezPropertyCategory::Member"}
-		Invalid %ConstantValue{}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"Seed"}
-		s %Type{"ezUInt16"}
 	}
 }
 o
@@ -520,36 +383,6 @@ o
 }
 o
 {
-	Uuid %id{u4{1842555717916688442,9205727752643474895}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes{}
-		s %Category{"ezPropertyCategory::Array"}
-		Invalid %ConstantValue{}
-		s %Flags{"ezPropertyFlags::Class|ezPropertyFlags::Phantom"}
-		s %Name{"Candidates"}
-		s %Type{"ezRandomPrefabEntry"}
-	}
-}
-o
-{
-	Uuid %id{u4{595007754442666021,9365305369404500582}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes{}
-		s %Category{"ezPropertyCategory::Member"}
-		Invalid %ConstantValue{}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"AttachAsChild"}
-		s %Type{"bool"}
-	}
-}
-o
-{
 	Uuid %id{u4{14543630447052729839,9459039542380974471}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -563,21 +396,6 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezObjectMode"}
 		u3 %TypeVersion{1}
-	}
-}
-o
-{
-	Uuid %id{u4{4872600789300629116,9681972490789556420}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes{}
-		s %Category{"ezPropertyCategory::Member"}
-		Invalid %ConstantValue{}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"EmptyChance"}
-		s %Type{"ezUInt16"}
 	}
 }
 o
@@ -614,27 +432,6 @@ o
 		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
 		s %Name{"CollisionMesh"}
 		s %Type{"ezStringView"}
-	}
-}
-o
-{
-	Uuid %id{u4{14719293375670951817,10733981837586681926}}
-	s %t{"ezReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
-		VarArray %Functions{}
-		s %ParentTypeName{""}
-		s %PluginName{"ezGameComponentsPlugin"}
-		VarArray %Properties
-		{
-			Uuid{u4{10434703746236037151,14944494110547262276}}
-			Uuid{u4{12772838019125499941,14921965452976416594}}
-		}
-		s %TypeName{"ezRandomPrefabEntry"}
-		u3 %TypeVersion{1}
 	}
 }
 o
@@ -776,65 +573,6 @@ o
 }
 o
 {
-	Uuid %id{u4{6807447540539695074,14233425960054648009}}
-	s %t{"ezAssetBrowserAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %DependencyFlags{"ezDependencyFlags::Package|ezDependencyFlags::Thumbnail"}
-		s %Filter{";CompatibleAsset_Prefab;"}
-		s %RequiredTag{""}
-	}
-}
-o
-{
-	Uuid %id{u4{18105780118062707531,14391840297266543594}}
-	s %t{"ezCategoryAttribute"}
-	u3 %v{1}
-	p
-	{
-		s %Category{"Construction"}
-	}
-}
-o
-{
-	Uuid %id{u4{12772838019125499941,14921965452976416594}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{14741981165373262935,1174690136803363128}}
-			Uuid{u4{4344027156879251866,655161882131932251}}
-		}
-		s %Category{"ezPropertyCategory::Member"}
-		Invalid %ConstantValue{}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"Chance"}
-		s %Type{"ezUInt8"}
-	}
-}
-o
-{
-	Uuid %id{u4{10434703746236037151,14944494110547262276}}
-	s %t{"ezReflectedPropertyDescriptor"}
-	u3 %v{2}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{6807447540539695074,14233425960054648009}}
-		}
-		s %Category{"ezPropertyCategory::Member"}
-		Invalid %ConstantValue{}
-		s %Flags{"ezPropertyFlags::StandardType|ezPropertyFlags::Phantom"}
-		s %Name{"Prefab"}
-		s %Type{"ezString"}
-	}
-}
-o
-{
 	Uuid %id{u4{2947336711354777548,15013008608905564043}}
 	s %t{"ezReflectedTypeDescriptor"}
 	u3 %v{1}
@@ -870,32 +608,6 @@ o
 	p
 	{
 		s %DynamicEnum{"PhysicsCollisionLayer"}
-	}
-}
-o
-{
-	Uuid %id{u4{15418017841595989912,15977829788647165162}}
-	s %t{"ezReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes
-		{
-			Uuid{u4{18105780118062707531,14391840297266543594}}
-		}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Phantom"}
-		VarArray %Functions{}
-		s %ParentTypeName{"ezComponent"}
-		s %PluginName{"ezGameComponentsPlugin"}
-		VarArray %Properties
-		{
-			Uuid{u4{2163734486728560548,5207785756772715568}}
-			Uuid{u4{595007754442666021,9365305369404500582}}
-			Uuid{u4{4872600789300629116,9681972490789556420}}
-			Uuid{u4{1842555717916688442,9205727752643474895}}
-		}
-		s %TypeName{"ezRandomPrefabComponent"}
-		u3 %TypeVersion{1}
 	}
 }
 o
