@@ -11,7 +11,7 @@ o
 		s %AssetType{"Layer"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{3836388713405184903,5598852044603947509}}
-		u4 %Hash{2009111213928084879}
+		u4 %Hash{17942075211215101308}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -5548,7 +5548,7 @@ o
 		}
 		s %GlobalKey{""}
 		Vec3 %LocalPosition{f{0xDAE5BB40,0x141B6C40,0x5F80F2B3}}
-		Quat %LocalRotation{f{0,0,0xF304353F,0xF304353F}}
+		Quat %LocalRotation{f{0,0,0xF40435BF,0xF204353F}}
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}

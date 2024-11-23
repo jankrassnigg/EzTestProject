@@ -11,11 +11,12 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{17195787167308027454,10543633449090874430}}
-		u4 %Hash{3644709978087086614}
+		u4 %Hash{14892191403802541449}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
+			s{"{ 00a41a56-69ad-91a0-406f-6620fb097d70 }"}
 			s{"{ 028747cf-0017-455f-a817-a4bd203e1dad }"}
 			s{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
 			s{"{ 071c627e-2e18-931a-42a6-3d5c22a78088 }"}
@@ -107,6 +108,7 @@ o
 		}
 		VarArray %References
 		{
+			s{"{ 00a41a56-69ad-91a0-406f-6620fb097d70 }"}
 			s{"{ 028747cf-0017-455f-a817-a4bd203e1dad }"}
 			s{"{ 04d853cb-ed92-4304-947a-ec8b6f89890d }"}
 			s{"{ 071c627e-2e18-931a-42a6-3d5c22a78088 }"}
@@ -1272,6 +1274,32 @@ o
 		b %Active{1}
 		VarDict %Parameters{}
 		s %Prefab{"{ 232939d5-703c-8e61-0dd3-f05581f744ee }"}
+	}
+}
+o
+{
+	Uuid %id{u4{91661310034725039,4924526619055338620}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{7260466653705609116,5720422621194234876}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x00004040,0xCDCC8CC0,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
 	}
 }
 o
@@ -3862,6 +3890,18 @@ o
 }
 o
 {
+	Uuid %id{u4{7260466653705609116,5720422621194234876}}
+	s %t{"ezPrefabReferenceComponent"}
+	u3 %v{4}
+	p
+	{
+		b %Active{1}
+		VarDict %Parameters{}
+		s %Prefab{"{ 00a41a56-69ad-91a0-406f-6620fb097d70 }"}
+	}
+}
+o
+{
 	Uuid %id{u4{13678198335115459988,5720650680126698636}}
 	s %t{"ezPrefabReferenceComponent"}
 	u3 %v{4}
@@ -4180,6 +4220,7 @@ o
 			Uuid{u4{6162725931045108858,742783824906212964}}
 			Uuid{u4{17603327000099797519,5774581581499675860}}
 			Uuid{u4{8858348126228189892,13437652342678845924}}
+			Uuid{u4{91661310034725039,4924526619055338620}}
 		}
 		Uuid %Settings{u4{13106068080745186644,10072495051817130539}}
 	}
