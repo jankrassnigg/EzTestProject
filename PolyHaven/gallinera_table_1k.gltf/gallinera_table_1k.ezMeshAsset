@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{10692985704329799810,5470687660977757034}}
+	Uuid %id{u4{4943446023456549257,5017820414220735255}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -11,20 +11,20 @@ o
 		s %AssetType{"Mesh"}
 		VarArray %Dependencies
 		{
-			s{"PolyHaven/chinese_armchair_1k.gltf/chinese_armchair_1k.gltf"}
+			s{"PolyHaven/gallinera_table_1k.gltf/gallinera_table_1k.gltf"}
 		}
-		Uuid %DocumentID{u4{10692985704329799810,5470687660977757034}}
-		u4 %Hash{4003645130679166836}
+		Uuid %DocumentID{u4{4943446023456549257,5017820414220735255}}
+		u4 %Hash{7096367132827003239}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
-			s{"{ fc7b2425-8fb6-458e-9c0e-a874679275a0 }"}
+			s{"{ a102b5e5-cc6c-43d6-97b4-c3ddaa7bf88a }"}
 		}
 		VarArray %References
 		{
-			s{"PolyHaven/chinese_armchair_1k.gltf/chinese_armchair_1k.gltf"}
-			s{"{ fc7b2425-8fb6-458e-9c0e-a874679275a0 }"}
+			s{"PolyHaven/gallinera_table_1k.gltf/gallinera_table_1k.gltf"}
+			s{"{ a102b5e5-cc6c-43d6-97b4-c3ddaa7bf88a }"}
 		}
 		s %Tags{""}
 	}
@@ -34,18 +34,7 @@ Objects
 {
 o
 {
-	Uuid %id{u4{12485776203214402183,5235781852474896280}}
-	s %t{"ezMaterialResourceSlot"}
-	u3 %v{1}
-	p
-	{
-		s %Label{"chinese_armchair"}
-		s %Resource{"{ fc7b2425-8fb6-458e-9c0e-a874679275a0 }"}
-	}
-}
-o
-{
-	Uuid %id{u4{15253598584340857780,5687635900637958475}}
+	Uuid %id{u4{3354131691451335321,4866718695796070725}}
 	s %t{"ezMeshAssetProperties"}
 	u3 %v{3}
 	p
@@ -61,11 +50,11 @@ o
 		b %ImportMaterials{1}
 		VarArray %Materials
 		{
-			Uuid{u4{12485776203214402183,5235781852474896280}}
+			Uuid{u4{10710164331440259482,5186935633387214736}}
 		}
 		u1 %MaxSimplificationError{5}
-		s %MeshFile{"PolyHaven/chinese_armchair_1k.gltf/chinese_armchair_1k.gltf"}
-		u1 %MeshSimplification{70}
+		s %MeshFile{"PolyHaven/gallinera_table_1k.gltf/gallinera_table_1k.gltf"}
+		u1 %MeshSimplification{60}
 		s %NormalPrecision{"ezMeshNormalPrecision::_10Bit"}
 		s %PrimitiveType{"ezMeshPrimitive::File"}
 		f %Radius{0x0000003F}
@@ -75,9 +64,20 @@ o
 		s %RightDir{"ezBasisAxis::PositiveX"}
 		b %SimplifyMesh{1}
 		s %TexCoordPrecision{"ezMeshTexCoordPrecision::_16Bit"}
-		f %UniformScaling{0xCDCC4C3F}
+		f %UniformScaling{0x0000803F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 		s %VertexColorConversion{"ezMeshVertexColorConversion::None"}
+	}
+}
+o
+{
+	Uuid %id{u4{10710164331440259482,5186935633387214736}}
+	s %t{"ezMaterialResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		s %Label{"gallinera_table"}
+		s %Resource{"{ a102b5e5-cc6c-43d6-97b4-c3ddaa7bf88a }"}
 	}
 }
 o
@@ -90,7 +90,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{15253598584340857780,5687635900637958475}}
+			Uuid{u4{3354131691451335321,4866718695796070725}}
 		}
 	}
 }

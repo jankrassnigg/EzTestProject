@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{9511860456408481696,5059158976218529094}}
+	Uuid %id{u4{7734945985733405863,5113731120432688916}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -11,16 +11,16 @@ o
 		s %AssetType{"Jolt_Colmesh_Convex"}
 		VarArray %Dependencies
 		{
-			s{"PolyHaven/chinese_armchair_1k.gltf/chinese_armchair_1k.gltf"}
+			s{"PolyHaven/rubber_duck_toy_1k.gltf/rubber_duck_toy_1k.gltf"}
 		}
-		Uuid %DocumentID{u4{9511860456408481696,5059158976218529094}}
-		u4 %Hash{1881927695056412012}
+		Uuid %DocumentID{u4{7734945985733405863,5113731120432688916}}
+		u4 %Hash{2985592614424208921}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
 		VarArray %References
 		{
-			s{"PolyHaven/chinese_armchair_1k.gltf/chinese_armchair_1k.gltf"}
+			s{"PolyHaven/rubber_duck_toy_1k.gltf/rubber_duck_toy_1k.gltf"}
 		}
 		s %Tags{""}
 	}
@@ -30,28 +30,28 @@ Objects
 {
 o
 {
-	Uuid %id{u4{13507878330400778909,5091606834009208273}}
+	Uuid %id{u4{7604342729254446239,5420902305185995885}}
 	s %t{"ezJoltCollisionMeshAssetProperties"}
 	u3 %v{1}
 	p
 	{
-		b %AggressiveSimplification{0}
+		b %AggressiveSimplification{1}
 		s %ConvexMeshType{"ezJoltConvexCollisionMeshType::ConvexHull"}
 		u1 %Detail{1}
 		b %FlipForwardDir{1}
 		f %Height{0x0000803F}
 		b %IsConvexMesh{1}
 		u2 %MaxConvexPieces{5}
-		u1 %MaxSimplificationError{20}
-		s %MeshFile{"PolyHaven/chinese_armchair_1k.gltf/chinese_armchair_1k.gltf"}
-		u1 %MeshSimplification{50}
+		u1 %MaxSimplificationError{100}
+		s %MeshFile{"PolyHaven/rubber_duck_toy_1k.gltf/rubber_duck_toy_1k.gltf"}
+		u1 %MeshSimplification{90}
 		f %Radius{0x0000003F}
 		f %Radius2{0x0000003F}
 		s %RightDir{"ezBasisAxis::PositiveX"}
-		b %SimplifyMesh{0}
+		b %SimplifyMesh{1}
 		s %Surface{""}
 		VarArray %Surfaces{}
-		f %UniformScaling{0xCDCC4C3F}
+		f %UniformScaling{0x0000003F}
 		s %UpDir{"ezBasisAxis::PositiveY"}
 	}
 }
@@ -65,7 +65,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{13507878330400778909,5091606834009208273}}
+			Uuid{u4{7604342729254446239,5420902305185995885}}
 		}
 	}
 }
