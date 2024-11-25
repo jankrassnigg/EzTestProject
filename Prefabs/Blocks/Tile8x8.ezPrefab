@@ -11,7 +11,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{3232998418902887340,5045307348178078333}}
-		u4 %Hash{7588991707350927267}
+		u4 %Hash{15366011511396679791}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{12922514422615138466,10488246785808489123}}
@@ -91,10 +91,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -145,10 +142,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -243,10 +237,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{"Floor"}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -291,7 +282,7 @@ o
 {
 	Uuid %id{u4{1944131649200018307,5502297875457503147}}
 	s %t{"ezSpotLightComponent"}
-	u3 %v{2}
+	u3 %v{3}
 	p
 	{
 		b %Active{1}
@@ -388,10 +379,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -414,10 +402,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -511,10 +496,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -537,10 +519,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -647,10 +626,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -673,10 +649,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -699,10 +672,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -753,10 +723,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -807,10 +774,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -833,10 +797,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{"Ceiling"}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -1000,10 +961,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -1026,10 +984,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -1136,10 +1091,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -1218,10 +1170,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -1244,10 +1193,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -1270,10 +1216,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -1296,10 +1239,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -1322,10 +1262,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -1404,10 +1341,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 o
@@ -1430,10 +1364,7 @@ o
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
 		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
+		VarArray %Tags{}
 	}
 }
 }
@@ -1742,7 +1673,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezSpotLightComponent"}
-		u3 %TypeVersion{2}
+		u3 %TypeVersion{3}
 	}
 }
 o
@@ -1793,7 +1724,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezLightComponent"}
-		u3 %TypeVersion{7}
+		u3 %TypeVersion{6}
 	}
 }
 o

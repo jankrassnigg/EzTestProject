@@ -21,7 +21,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{8047029703967090588,5514983761808144677}}
-		u4 %Hash{9204759216606140894}
+		u4 %Hash{1528417555320571580}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{2636825694399219858,988645298550095202}}
@@ -190,7 +190,7 @@ o
 {
 	Uuid %id{u4{6758162934264221555,5971974289087569491}}
 	s %t{"ezSpotLightComponent"}
-	u3 %v{2}
+	u3 %v{3}
 	p
 	{
 		b %Active{1}
@@ -198,11 +198,11 @@ o
 		f %ConstantBias{0xCDCCCC3D}
 		ColorGamma %EffectiveColor{u1{255,255,255,255}}
 		Angle %InnerSpotAngle{f{0x920A863F}}
-		f %Intensity{0x00004842}
+		f %Intensity{0x00002042}
 		ColorGamma %LightColor{u1{255,255,255,255}}
 		Angle %OuterSpotAngle{f{0xC2B8B23F}}
 		f %PenumbraSize{0xCDCCCC3D}
-		f %Range{0x0000A040}
+		f %Range{0x00002041}
 		f %ShadowFadeOutRange{0}
 		f %SlopeBias{0x0000803E}
 		f %SpecularMultiplier{0x0000003F}
@@ -919,7 +919,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezSpotLightComponent"}
-		u3 %TypeVersion{2}
+		u3 %TypeVersion{3}
 	}
 }
 o
@@ -953,7 +953,7 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezLightComponent"}
-		u3 %TypeVersion{7}
+		u3 %TypeVersion{6}
 	}
 }
 o

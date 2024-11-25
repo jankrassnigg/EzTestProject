@@ -11,7 +11,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{9836045352195434050,10599835353703277182}}
-		u4 %Hash{14331166337160687171}
+		u4 %Hash{13653618890293387211}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{14261600656065163308,10887977475838764181}}
@@ -75,10 +75,9 @@ o
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{"<Prefab-Root>"}
+		s %Name{""}
 		VarArray %Tags
 		{
-			s{"CastShadow"}
 			s{"AutoColMesh"}
 		}
 	}

@@ -11,7 +11,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{13542057423751116308,9749055076294211216}}
-		u4 %Hash{12714378821920270093}
+		u4 %Hash{2624195529151805531}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{5795669774151440063,17959101819017494648}}
@@ -67,6 +67,32 @@ o
 }
 o
 {
+	Uuid %id{u4{5556647545610281115,5243091369420946834}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children
+		{
+			Uuid{u4{14723176260714851450,5260912493151037506}}
+		}
+		VarArray %Components{}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0,0,0}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{"<Prefab-Root>"}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
 	Uuid %id{u4{14723176260714851450,5260912493151037506}}
 	s %t{"ezGameObject"}
 	u3 %v{1}
@@ -88,7 +114,7 @@ o
 		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
 		f %LocalUniformScaling{0x0000803F}
 		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{"<Prefab-Root>"}
+		s %Name{"Goblet"}
 		VarArray %Tags
 		{
 			s{"CastShadow"}
@@ -159,7 +185,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{14723176260714851450,5260912493151037506}}
+			Uuid{u4{5556647545610281115,5243091369420946834}}
 		}
 		Uuid %Settings{u4{4037559060054775830,9775329749509697177}}
 	}
