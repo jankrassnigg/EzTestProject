@@ -11,7 +11,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{9359110392314767148,10317495126876904976}}
-		u4 %Hash{1111550980813422445}
+		u4 %Hash{5819908980975537242}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{7808035492726366545,10694737752085357408}}
@@ -69,6 +69,17 @@ o
 }
 o
 {
+	Uuid %id{u4{11080546444563471009,4742876775101712329}}
+	s %t{"ezOccluderComponent"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		Vec3 %Extents{f{0x0000803E,0xC447F33F,0x387EE73F}}
+	}
+}
+o
+{
 	Uuid %id{u4{9694784715939498666,5265596849367362214}}
 	s %t{"ezMeshComponent"}
 	u3 %v{3}
@@ -99,6 +110,32 @@ o
 }
 o
 {
+	Uuid %id{u4{12231729670189714061,5490591787243909834}}
+	s %t{"ezGameObject"}
+	u3 %v{1}
+	p
+	{
+		b %Active{1}
+		VarArray %Children{}
+		VarArray %Components
+		{
+			Uuid{u4{11080546444563471009,4742876775101712329}}
+		}
+		s %GlobalKey{""}
+		Vec3 %LocalPosition{f{0x000000BE,0x800328BB,0x377E673F}}
+		Quat %LocalRotation{f{0,0,0,0x0000803F}}
+		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
+		f %LocalUniformScaling{0x0000803F}
+		s %Mode{"ezObjectMode::Automatic"}
+		s %Name{""}
+		VarArray %Tags
+		{
+			s{"CastShadow"}
+		}
+	}
+}
+o
+{
 	Uuid %id{u4{17127567731043305383,5530462252301653261}}
 	s %t{"ezJoltShapeBoxComponent"}
 	u3 %v{1}
@@ -120,6 +157,7 @@ o
 		{
 			Uuid{u4{4238639404463663243,4620995087407983667}}
 			Uuid{u4{15173199101249162269,9969619123589963377}}
+			Uuid{u4{12231729670189714061,5490591787243909834}}
 		}
 		VarArray %Components
 		{
@@ -219,6 +257,23 @@ o
 		s %PluginName{"Static"}
 		VarArray %Properties{}
 		s %TypeName{"ezManipulatorAttribute"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{7328995269872262107,1104930957780304195}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezComponent"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezOccluderComponent"}
 		u3 %TypeVersion{1}
 	}
 }
