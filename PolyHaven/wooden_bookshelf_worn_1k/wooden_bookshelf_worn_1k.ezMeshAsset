@@ -14,7 +14,7 @@ o
 			s{"PolyHaven/wooden_bookshelf_worn_1k/wooden_bookshelf_worn_1k.gltf"}
 		}
 		Uuid %DocumentID{u4{9306751496508713364,5682603738323851369}}
-		u4 %Hash{2690832902019030141}
+		u4 %Hash{12196763324999799165}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -54,7 +54,7 @@ o
 		}
 		u1 %MaxSimplificationError{5}
 		s %MeshFile{"PolyHaven/wooden_bookshelf_worn_1k/wooden_bookshelf_worn_1k.gltf"}
-		u1 %MeshSimplification{100}
+		u1 %MeshSimplification{90}
 		s %NormalPrecision{"ezMeshNormalPrecision::_10Bit"}
 		s %PrimitiveType{"ezMeshPrimitive::File"}
 		f %Radius{0x0000003F}
