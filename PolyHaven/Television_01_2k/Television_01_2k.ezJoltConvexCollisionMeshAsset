@@ -1,0 +1,213 @@
+HeaderV2
+{
+o
+{
+	Uuid %id{u4{11845777883035240838,4626934193041016576}}
+	s %t{"ezAssetDocumentInfo"}
+	u3 %v{2}
+	s %n{"Header"}
+	p
+	{
+		s %AssetType{"Jolt_Colmesh_Convex"}
+		VarArray %Dependencies
+		{
+			s{"PolyHaven/Television_01_2k/Television_01_2k.gltf"}
+		}
+		Uuid %DocumentID{u4{11845777883035240838,4626934193041016576}}
+		u4 %Hash{8196701263543159338}
+		VarArray %MetaInfo{}
+		VarArray %Outputs{}
+		VarArray %PackageDeps
+		{
+			s{"{ 0a105955-e069-4523-80ce-7b9867bde687 }"}
+			s{"{ 72115f7a-5947-4a21-899f-868368bd41d7 }"}
+		}
+		VarArray %References
+		{
+			s{"PolyHaven/Television_01_2k/Television_01_2k.gltf"}
+		}
+		s %Tags{""}
+	}
+}
+}
+Objects
+{
+o
+{
+	Uuid %id{u4{13658662061629480366,5233205004665056372}}
+	s %t{"ezJoltCollisionMeshAssetProperties"}
+	u3 %v{1}
+	p
+	{
+		b %AggressiveSimplification{1}
+		s %ConvexMeshType{"ezJoltConvexCollisionMeshType::ConvexHull"}
+		u1 %Detail{1}
+		b %FlipForwardDir{1}
+		f %Height{0x0000803F}
+		b %IsConvexMesh{1}
+		u2 %MaxConvexPieces{5}
+		u1 %MaxSimplificationError{20}
+		s %MeshFile{"PolyHaven/Television_01_2k/Television_01_2k.gltf"}
+		u1 %MeshSimplification{100}
+		f %Radius{0x0000003F}
+		f %Radius2{0x0000003F}
+		s %RightDir{"ezBasisAxis::PositiveX"}
+		b %SimplifyMesh{1}
+		s %Surface{"{ 72115f7a-5947-4a21-899f-868368bd41d7 }"}
+		VarArray %Surfaces
+		{
+			Uuid{u4{3314947607477527169,5376649905693268589}}
+		}
+		f %UniformScaling{0x0000803F}
+		s %UpDir{"ezBasisAxis::PositiveY"}
+	}
+}
+o
+{
+	Uuid %id{u4{3314947607477527169,5376649905693268589}}
+	s %t{"ezJoltSurfaceResourceSlot"}
+	u3 %v{1}
+	p
+	{
+		b %Exclude{0}
+		s %Label{"Television_01"}
+		s %Resource{"{ 0a105955-e069-4523-80ce-7b9867bde687 }"}
+	}
+}
+o
+{
+	Uuid %id{u4{18096612296587978288,6449934965513159559}}
+	s %t{"ezDocumentRoot"}
+	u3 %v{1}
+	s %n{"ObjectTree"}
+	p
+	{
+		VarArray %Children
+		{
+			Uuid{u4{13658662061629480366,5233205004665056372}}
+		}
+	}
+}
+}
+Types
+{
+o
+{
+	Uuid %id{u4{17999953918963139426,3797774724330577832}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::IsEnum|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezEnumBase"}
+		s %PluginName{"ezEditorPluginJolt"}
+		VarArray %Properties{}
+		s %TypeName{"ezJoltConvexCollisionMeshType"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{17627676062673229848,4160480872240254573}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"ezEditorPluginJolt"}
+		VarArray %Properties{}
+		s %TypeName{"ezJoltSurfaceResourceSlot"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{721132921943597409,7082307521322309138}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezReflectedClass"}
+		s %PluginName{"ezEditorPluginJolt"}
+		VarArray %Properties{}
+		s %TypeName{"ezJoltCollisionMeshAssetProperties"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{6089094783765586323,8705960867921430659}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezReflectedClass"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezDocumentRoot"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{2947336711354777548,15013008608905564043}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezEnumBase"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{14469700887475489738,16951777026318265606}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::IsEnum|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{"ezEnumBase"}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezBasisAxis"}
+		u3 %TypeVersion{1}
+	}
+}
+o
+{
+	Uuid %id{u4{983387834180907111,17935407260904399048}}
+	s %t{"ezReflectedTypeDescriptor"}
+	u3 %v{1}
+	p
+	{
+		VarArray %Attributes{}
+		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
+		VarArray %Functions{}
+		s %ParentTypeName{""}
+		s %PluginName{"Static"}
+		VarArray %Properties{}
+		s %TypeName{"ezReflectedClass"}
+		u3 %TypeVersion{1}
+	}
+}
+}

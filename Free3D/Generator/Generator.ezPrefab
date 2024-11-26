@@ -11,7 +11,7 @@ o
 		s %AssetType{"Prefab"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{884116649506134407,5146938905732792909}}
-		u4 %Hash{11566423946778025024}
+		u4 %Hash{6895627018703989557}
 		VarArray %MetaInfo
 		{
 			Uuid{u4{10298454054538492378,11317570403403686852}}
@@ -78,7 +78,7 @@ o
 		Time %BurstDuration{d{0}}
 		s %OnFinishedAction{"ezOnComponentFinishedAction::None"}
 		f %Radius{0x0000A041}
-		f %Strength{0xCDCC4C3D}
+		f %Strength{0x8FC2F53C}
 	}
 }
 o

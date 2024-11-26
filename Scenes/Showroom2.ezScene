@@ -11,19 +11,17 @@ o
 		s %AssetType{"Scene"}
 		VarArray %Dependencies{}
 		Uuid %DocumentID{u4{18126703523604283194,10523437713074678858}}
-		u4 %Hash{6418629349069632052}
+		u4 %Hash{14722276666136160104}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
 		{
 			s{"{ 5265c89e-d8d5-459d-b04f-ef2a075d31a6 }"}
-			s{"{ 644af745-7418-95ac-2316-2da2539372a7 }"}
 			s{"{ b6ee6c37-91ca-8c4b-0abb-b870e8dc3534 }"}
 		}
 		VarArray %References
 		{
 			s{"{ 5265c89e-d8d5-459d-b04f-ef2a075d31a6 }"}
-			s{"{ 644af745-7418-95ac-2316-2da2539372a7 }"}
 		}
 		s %Tags{""}
 	}
@@ -90,44 +88,6 @@ o
 }
 o
 {
-	Uuid %id{u4{10574078477914329964,10002994238655772766}}
-	s %t{"ezPrefabReferenceComponent"}
-	u3 %v{4}
-	p
-	{
-		b %Active{1}
-		VarDict %Parameters{}
-		s %Prefab{"{ 644af745-7418-95ac-2316-2da2539372a7 }"}
-	}
-}
-o
-{
-	Uuid %id{u4{1949339639571372119,10045427667430928500}}
-	s %t{"ezGameObject"}
-	u3 %v{1}
-	p
-	{
-		b %Active{1}
-		VarArray %Children{}
-		VarArray %Components
-		{
-			Uuid{u4{10574078477914329964,10002994238655772766}}
-		}
-		s %GlobalKey{""}
-		Vec3 %LocalPosition{f{0xE818C441,0xD956D241,0xCDCC8C3F}}
-		Quat %LocalRotation{f{0,0,0,0x0000803F}}
-		Vec3 %LocalScaling{f{0x0000803F,0x0000803F,0x0000803F}}
-		f %LocalUniformScaling{0x0000803F}
-		s %Mode{"ezObjectMode::Automatic"}
-		s %Name{""}
-		VarArray %Tags
-		{
-			s{"CastShadow"}
-		}
-	}
-}
-o
-{
 	Uuid %id{u4{14036984437041442384,10052299315800934967}}
 	s %t{"ezSceneDocumentSettings"}
 	u3 %v{2}
@@ -180,7 +140,6 @@ o
 			Uuid{u4{3346301138791476258,10957723349477910509}}
 			Uuid{u4{16556698841855834565,14579611975225525594}}
 			Uuid{u4{4558133814542071072,10227635066026808372}}
-			Uuid{u4{1949339639571372119,10045427667430928500}}
 		}
 		VarArray %Components{}
 		s %GlobalKey{""}
@@ -385,23 +344,6 @@ o
 		VarArray %Properties{}
 		s %TypeName{"ezPlayerStartPointComponent"}
 		u3 %TypeVersion{2}
-	}
-}
-o
-{
-	Uuid %id{u4{1168477127324465164,3417260966341483024}}
-	s %t{"ezReflectedTypeDescriptor"}
-	u3 %v{1}
-	p
-	{
-		VarArray %Attributes{}
-		s %Flags{"ezTypeFlags::Class|ezTypeFlags::Minimal"}
-		VarArray %Functions{}
-		s %ParentTypeName{"ezComponent"}
-		s %PluginName{"Static"}
-		VarArray %Properties{}
-		s %TypeName{"ezPrefabReferenceComponent"}
-		u3 %TypeVersion{4}
 	}
 }
 o

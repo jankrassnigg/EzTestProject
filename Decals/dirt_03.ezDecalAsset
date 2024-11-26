@@ -11,16 +11,18 @@ o
 		s %AssetType{"Decal"}
 		VarArray %Dependencies
 		{
+			s{"Decals/Black.png"}
 			s{"Decals/dirt_03.png"}
 			s{"Textures/NeutralNormal.tga"}
 		}
 		Uuid %DocumentID{u4{2353451802582444963,5259854727053737288}}
-		u4 %Hash{1685244857163019041}
+		u4 %Hash{5383744960251345925}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
 		VarArray %References
 		{
+			s{"Decals/Black.png"}
 			s{"Decals/dirt_03.png"}
 			s{"Textures/NeutralNormal.tga"}
 		}
@@ -37,8 +39,8 @@ o
 	u3 %v{3}
 	p
 	{
-		s %AlphaMask{""}
-		s %BaseColor{"Decals/dirt_03.png"}
+		s %AlphaMask{"Decals/dirt_03.png"}
+		s %BaseColor{"Decals/Black.png"}
 		b %BlendModeColorize{0}
 		s %Emissive{""}
 		s %Mode{"ezDecalMode::BaseColor"}
