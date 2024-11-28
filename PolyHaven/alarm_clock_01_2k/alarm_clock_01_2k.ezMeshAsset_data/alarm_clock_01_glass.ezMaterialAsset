@@ -14,7 +14,7 @@ o
 			s{"{ 7c71fc2d-2a1a-4938-9305-f3a0f26d73cc }"}
 		}
 		Uuid %DocumentID{u4{7282523730434337676,5453144705784394060}}
-		u4 %Hash{813394026332955111}
+		u4 %Hash{7890449310215384734}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps
@@ -53,8 +53,8 @@ o
 		f %MetallicValue{0}
 		s %NormalTexture{"{ 29a3f425-d6db-4d46-9979-324961c91204 }"}
 		s %OcclusionTexture{""}
-		s %OrmTexture{"{ faae58e4-f687-4f0e-af7d-87ac6d39e523 }"}
-		s %RoughnessTexture{""}
+		s %OrmTexture{""}
+		s %RoughnessTexture{"{ faae58e4-f687-4f0e-af7d-87ac6d39e523 }"}
 		f %RoughnessValue{0x0000803F}
 		s %SHADING_MODE{"SHADING_MODE::SHADING_MODE_LIT"}
 		b %TWO_SIDED{0}
@@ -63,8 +63,8 @@ o
 		b %UseMetallicTexture{0}
 		b %UseNormalTexture{1}
 		b %UseOcclusionTexture{0}
-		b %UseOrmTexture{1}
-		b %UseRoughnessTexture{0}
+		b %UseOrmTexture{0}
+		b %UseRoughnessTexture{1}
 	}
 }
 o
