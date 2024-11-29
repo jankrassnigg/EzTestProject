@@ -2,7 +2,7 @@ HeaderV2
 {
 o
 {
-	Uuid %id{u4{32743980984961665,5617332676698946213}}
+	Uuid %id{u4{18132431014827352248,4731585508144818184}}
 	s %t{"ezAssetDocumentInfo"}
 	u3 %v{2}
 	s %n{"Header"}
@@ -11,17 +11,19 @@ o
 		s %AssetType{"Decal"}
 		VarArray %Dependencies
 		{
-			s{"Decals/dirt_02.png"}
+			s{"Kenney.nl/Water_ORM.png"}
+			s{"Kenney.nl/dirt_01.png"}
 			s{"Textures/NeutralNormal.tga"}
 		}
-		Uuid %DocumentID{u4{32743980984961665,5617332676698946213}}
-		u4 %Hash{8286206612050915039}
+		Uuid %DocumentID{u4{18132431014827352248,4731585508144818184}}
+		u4 %Hash{17377431355458953248}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
 		VarArray %References
 		{
-			s{"Decals/dirt_02.png"}
+			s{"Kenney.nl/Water_ORM.png"}
+			s{"Kenney.nl/dirt_01.png"}
 			s{"Textures/NeutralNormal.tga"}
 		}
 		s %Tags{""}
@@ -32,18 +34,18 @@ Objects
 {
 o
 {
-	Uuid %id{u4{6541316659911867572,5170325170332832384}}
+	Uuid %id{u4{11456573684012072355,5730823110379515630}}
 	s %t{"ezDecalAssetProperties"}
 	u3 %v{3}
 	p
 	{
 		s %AlphaMask{""}
-		s %BaseColor{"Decals/dirt_02.png"}
+		s %BaseColor{"Kenney.nl/dirt_01.png"}
 		b %BlendModeColorize{0}
 		s %Emissive{""}
-		s %Mode{"ezDecalMode::BaseColor"}
+		s %Mode{"ezDecalMode::BaseColorORM"}
 		s %Normal{"Textures/NeutralNormal.tga"}
-		s %ORM{""}
+		s %ORM{"Kenney.nl/Water_ORM.png"}
 	}
 }
 o
@@ -56,7 +58,7 @@ o
 	{
 		VarArray %Children
 		{
-			Uuid{u4{6541316659911867572,5170325170332832384}}
+			Uuid{u4{11456573684012072355,5730823110379515630}}
 		}
 	}
 }

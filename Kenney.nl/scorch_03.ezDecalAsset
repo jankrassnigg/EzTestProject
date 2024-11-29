@@ -11,19 +11,19 @@ o
 		s %AssetType{"Decal"}
 		VarArray %Dependencies
 		{
-			s{"Decals/Black.png"}
-			s{"Decals/scorch_03.png"}
+			s{"Kenney.nl/Black.png"}
+			s{"Kenney.nl/scorch_03.png"}
 			s{"Textures/NeutralNormal.tga"}
 		}
 		Uuid %DocumentID{u4{18058183699031407235,5533884707290812441}}
-		u4 %Hash{17849844393576466757}
+		u4 %Hash{10591442248941514989}
 		VarArray %MetaInfo{}
 		VarArray %Outputs{}
 		VarArray %PackageDeps{}
 		VarArray %References
 		{
-			s{"Decals/Black.png"}
-			s{"Decals/scorch_03.png"}
+			s{"Kenney.nl/Black.png"}
+			s{"Kenney.nl/scorch_03.png"}
 			s{"Textures/NeutralNormal.tga"}
 		}
 		s %Tags{""}
@@ -39,8 +39,8 @@ o
 	u3 %v{3}
 	p
 	{
-		s %AlphaMask{"Decals/scorch_03.png"}
-		s %BaseColor{"Decals/Black.png"}
+		s %AlphaMask{"Kenney.nl/scorch_03.png"}
+		s %BaseColor{"Kenney.nl/Black.png"}
 		b %BlendModeColorize{0}
 		s %Emissive{""}
 		s %Mode{"ezDecalMode::BaseColor"}
